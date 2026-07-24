@@ -8,3 +8,8 @@ setuptools==83.0.0
 SQLAlchemy==2.0.51
 wheel==0.47.0
 xgboost==3.3.0
+# scraping SoFIFA (teams_sofifa_ratings.ipynb)
+seleniumbase
+beautifulsoup4
+lxml
+Unidecode
