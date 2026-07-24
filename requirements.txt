@@ -13,3 +13,5 @@ seleniumbase
 beautifulsoup4
 lxml
 Unidecode
+mlflow==3.10
+boto3==1.43.55
