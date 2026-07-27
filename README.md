@@ -17,6 +17,36 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
+## Docker Compose
+
+Le projet contient deux services :
+
+- `api` : FastAPI, dans `api_football_predictor/`
+- `front` : Streamlit, dans `front/`
+
+Créer un fichier `.env` à la racine :
+
+```txt
+NEON_DATABASE_URL=postgresql://user:password@host/database?sslmode=require
+API_PORT=8000
+API_SERVER_PORT=8000
+FRONT_PORT=8501
+FRONT_SERVER_PORT=8501
+```
+
+Lancer les deux services :
+
+```bash
+docker compose up --build
+```
+
+URLs locales par défaut :
+
+```text
+API   http://127.0.0.1:8000
+Front http://127.0.0.1:8501
+```
+
 
 ## 6. Notes
 
