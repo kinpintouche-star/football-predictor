@@ -1,0 +1,874 @@
+match_id,match_date,home_team_id,away_team_id,home_sofifa_id,away_sofifa_id,home_overall,home_attack,home_midfield,home_defence,home_build_up_style,home_defensive_line,home_defensive_approach,home_sofifa_team_name,away_overall,away_attack,away_midfield,away_defence,away_build_up_style,away_defensive_line,away_defensive_approach,away_sofifa_team_name,home_score,away_score,result
+4506866,2025-07-01,418,506,243,45,85,88,85,82,Balanced,90,High,Real Madrid,80,81,80,80,Balanced,90,High,Juventus,1,0,home_win
+4506870,2025-07-05,583,27,73,21,84,85,84,85,Balanced,90,High,Paris Saint-Germain,84,89,85,82,Balanced,65,High,FC Bayern München,2,0,home_win
+4506871,2025-07-05,418,16,243,22,85,88,85,82,Balanced,90,High,Real Madrid,81,83,80,82,Balanced,65,High,Borussia Dortmund,3,2,home_win
+4506873,2025-07-09,583,418,73,243,84,85,84,85,Balanced,90,High,Paris Saint-Germain,85,88,85,82,Balanced,90,High,Real Madrid,4,0,home_win
+4506874,2025-07-13,631,583,5,73,80,80,82,80,Balanced,65,High,Chelsea,84,85,84,85,Balanced,90,High,Paris Saint-Germain,3,0,home_win
+4624298,2025-07-20,3948,2282,2014,231,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,74,73,76,73,Balanced,90,High,Club Brugge KV,1,2,away_win
+4625710,2025-07-22,124,265,86,1884,73,72,73,72,Balanced,90,High,Rangers FC,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,2,0,home_win
+4627422,2025-07-27,2282,1184,231,673,74,73,76,73,Balanced,90,High,Club Brugge KV,73,72,73,75,Balanced,50,Balanced,KRC Genk,2,1,home_win
+4625727,2025-07-30,265,124,1884,86,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,73,72,73,72,Balanced,90,High,Rangers FC,1,1,draw
+4683940,2025-07-31,336,294,237,234,79,79,80,77,Balanced,65,High,Sporting CP,78,79,78,77,Balanced,90,High,SL Benfica,0,1,away_win
+4638183,2025-08-01,413,122,252,209,68,73,68,68,Balanced,30,Deep,LASK Linz,68,67,71,67,Short passing,90,High,SK Sturm Graz,0,2,away_win
+4691926,2025-08-05,124,941,86,110468,73,72,73,72,Balanced,90,High,Rangers FC,72,73,71,73,Short passing,90,High,Viktoria Plzeň,3,0,home_win
+4627251,2025-08-06,26,452,896,900,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,70,70,71,68,Counter,50,Balanced,BSC Young Boys,4,1,home_win
+4676662,2025-08-06,409,2282,191,231,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,74,73,76,73,Balanced,90,High,Club Brugge KV,0,1,away_win
+4676659,2025-08-06,234,36,246,326,75,76,77,74,Short passing,65,High,Feyenoord,79,79,79,76,Balanced,90,High,Fenerbahçe SK,2,1,home_win
+4692614,2025-08-07,265,660,1884,101059,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,72,71,73,73,Balanced,50,Balanced,Shakhtar Donetsk,0,0,draw
+4627485,2025-08-09,157,3948,674,2014,70,70,70,68,Balanced,30,Deep,KAA Gent,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,2,3,away_win
+4703996,2025-08-10,873,31,1799,9,79,78,77,80,Short passing,30,Deep,Crystal Palace,85,85,86,83,Balanced,65,High,Liverpool,5,4,home_win
+4638193,2025-08-10,122,170,209,254,68,67,71,67,Short passing,90,High,SK Sturm Graz,69,67,69,70,Balanced,50,Balanced,SK Rapid,1,2,away_win
+4627250,2025-08-10,2790,26,10032,896,70,71,68,68,Counter,50,Balanced,FC Lugano,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,3,1,home_win
+4691930,2025-08-12,941,124,110468,86,72,73,71,73,Short passing,90,High,Viktoria Plzeň,73,72,73,72,Balanced,90,High,Rangers FC,2,1,home_win
+4676665,2025-08-12,2282,409,231,191,74,73,76,73,Balanced,90,High,Club Brugge KV,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,3,2,home_win
+4676660,2025-08-12,36,234,326,246,79,79,79,76,Balanced,90,High,Fenerbahçe SK,75,76,77,74,Short passing,65,High,Feyenoord,5,2,home_win
+4625635,2025-08-13,583,148,73,18,84,85,84,85,Balanced,90,High,Paris Saint-Germain,81,79,81,81,Balanced,90,High,Tottenham Hotspur,6,5,home_win
+4692627,2025-08-14,660,265,101059,1884,72,71,73,73,Balanced,50,Balanced,Shakhtar Donetsk,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,3,4,away_win
+4635006,2025-08-15,273,244,74,219,76,74,76,74,Balanced,65,High,Stade Rennais FC,79,81,79,79,Balanced,65,High,Olympique de Marseille,1,0,home_win
+4622725,2025-08-16,79,27,36,21,77,78,77,74,Balanced,90,High,VfB Stuttgart,84,89,85,82,Balanced,65,High,FC Bayern München,1,2,away_win
+4625775,2025-08-16,405,762,2,13,80,83,81,80,Balanced,50,Balanced,Aston Villa,81,81,84,80,Short passing,50,Balanced,Newcastle United,0,0,draw
+4645613,2025-08-17,621,368,448,481,80,78,81,78,Short passing,65,High,Athletic Club,75,75,76,75,Counter,50,Balanced,Sevilla FC,3,2,home_win
+4625781,2025-08-17,631,873,5,1799,80,80,82,80,Balanced,65,High,Chelsea,79,78,77,80,Short passing,30,Deep,Crystal Palace,0,0,draw
+4625782,2025-08-17,985,11,11,1,80,82,80,79,Balanced,65,High,Manchester United,84,86,84,84,Balanced,65,High,Arsenal,0,1,away_win
+4697246,2025-08-19,124,2282,86,231,73,72,73,72,Balanced,90,High,Rangers FC,74,73,76,73,Balanced,90,High,Club Brugge KV,1,3,away_win
+4697247,2025-08-19,279,10625,1874,113888,72,72,71,68,Short passing,50,Balanced,Ferencvárosi Torna Club,69,67,69,67,Short passing,50,Balanced,Qarabağ FK,1,3,away_win
+4697251,2025-08-20,26,190,896,819,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,72,73,72,71,Balanced,90,High,FC København,1,1,draw
+4697249,2025-08-20,501,122,918,209,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,68,67,71,67,Short passing,90,High,SK Sturm Graz,5,0,home_win
+4697252,2025-08-20,36,294,326,234,79,79,79,76,Balanced,90,High,Fenerbahçe SK,78,79,78,77,Balanced,90,High,SL Benfica,0,0,draw
+4705693,2025-08-21,238,1184,873,673,70,72,68,70,Balanced,50,Balanced,Lech Poznań,73,72,73,75,Balanced,50,Balanced,KRC Genk,1,5,away_win
+4632805,2025-08-22,27,23826,21,112172,84,89,85,82,Balanced,65,High,FC Bayern München,78,77,76,80,Counter,65,High,RB Leipzig,6,0,home_win
+4625784,2025-08-22,379,631,19,5,77,78,77,77,Short passing,30,Deep,West Ham United,80,80,82,80,Balanced,65,High,Chelsea,1,5,away_win
+4625786,2025-08-23,281,148,10,18,84,82,85,82,Balanced,65,High,Manchester City,81,79,81,81,Balanced,90,High,Tottenham Hotspur,0,2,away_win
+4642892,2025-08-23,409,413,191,252,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,68,73,68,68,Balanced,30,Deep,LASK Linz,3,0,home_win
+4620691,2025-08-23,12,1025,52,189,80,77,79,80,Balanced,50,Balanced,Roma,76,76,77,74,Balanced,65,High,Bologna,1,0,home_win
+4634126,2025-08-23,89,79,1831,36,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,77,78,77,74,Balanced,90,High,VfB Stuttgart,2,1,home_win
+4635016,2025-08-24,1082,162,65,69,76,79,76,76,Balanced,65,High,Lille OSC,78,77,75,77,Balanced,65,High,AS Monaco,1,0,home_win
+4625793,2025-08-24,873,703,1799,14,79,78,77,80,Short passing,30,Deep,Crystal Palace,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,1,1,draw
+4625785,2025-08-25,762,31,13,9,81,81,84,80,Short passing,50,Balanced,Newcastle United,85,85,86,83,Balanced,65,High,Liverpool,2,3,away_win
+4645517,2025-08-25,621,367,448,480,80,78,81,78,Short passing,65,High,Athletic Club,77,73,77,77,Short passing,65,High,Rayo Vallecano,1,0,home_win
+4705682,2025-08-26,122,501,209,918,68,67,71,67,Short passing,90,High,SK Sturm Graz,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,2,1,home_win
+4705680,2025-08-27,10625,279,113888,1874,69,67,69,67,Short passing,50,Balanced,Qarabağ FK,72,72,71,68,Short passing,50,Balanced,Ferencvárosi Torna Club,2,3,away_win
+4705686,2025-08-27,2282,124,231,86,74,73,76,73,Balanced,90,High,Club Brugge KV,73,72,73,72,Balanced,90,High,Rangers FC,6,0,home_win
+4705684,2025-08-27,190,26,819,896,72,73,72,71,Balanced,90,High,FC København,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,2,0,home_win
+4705685,2025-08-27,294,36,234,326,78,79,78,77,Balanced,90,High,SL Benfica,79,79,79,76,Balanced,90,High,Fenerbahçe SK,1,0,home_win
+4705705,2025-08-28,1184,238,673,873,73,72,73,75,Balanced,50,Balanced,KRC Genk,70,72,68,70,Balanced,50,Balanced,Lech Poznań,1,2,away_win
+4648653,2025-08-30,336,720,237,236,79,79,80,77,Balanced,65,High,Sporting CP,77,77,77,76,Balanced,65,High,FC Porto,1,2,away_win
+4634137,2025-08-31,16,89,22,1831,81,83,80,82,Balanced,65,High,Borussia Dortmund,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,3,0,home_win
+4645534,2025-08-31,367,131,480,241,77,73,77,77,Short passing,65,High,Rayo Vallecano,85,85,85,82,Balanced,65,High,FC Barcelona,1,1,draw
+4627262,2025-08-31,452,2790,900,10032,70,70,71,68,Counter,50,Balanced,BSC Young Boys,70,71,68,68,Counter,50,Balanced,FC Lugano,3,1,home_win
+4638809,2025-08-31,124,371,86,78,73,72,73,72,Balanced,90,High,Rangers FC,75,74,75,74,Balanced,90,High,Celtic,0,0,draw
+4627542,2025-08-31,157,2282,674,231,70,70,70,68,Balanced,30,Deep,KAA Gent,74,73,76,73,Balanced,90,High,Club Brugge KV,1,1,draw
+4627544,2025-08-31,3948,58,2014,229,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,71,74,70,68,Balanced,90,High,RSC Anderlecht,2,0,home_win
+4635025,2025-08-31,162,667,69,76,78,77,75,77,Balanced,65,High,AS Monaco,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,3,2,home_win
+4635032,2025-08-31,1041,244,66,219,76,74,75,76,Balanced,65,High,Olympique Lyonnais,79,81,79,79,Balanced,65,High,Olympique de Marseille,1,0,home_win
+4645533,2025-08-31,150,621,449,448,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,80,78,81,78,Short passing,65,High,Athletic Club,1,2,away_win
+4625794,2025-08-31,405,873,2,1799,80,83,81,80,Balanced,50,Balanced,Aston Villa,79,78,77,80,Short passing,30,Deep,Crystal Palace,0,3,away_win
+4625795,2025-08-31,1237,281,1808,10,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,84,82,85,82,Balanced,65,High,Manchester City,2,1,home_win
+4625798,2025-08-31,31,11,9,1,85,85,86,83,Balanced,65,High,Liverpool,84,86,84,84,Balanced,65,High,Arsenal,1,0,home_win
+4625800,2025-08-31,703,379,14,19,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,77,78,77,77,Short passing,30,Deep,West Ham United,0,3,away_win
+4634147,2025-09-12,15,24,32,1824,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,3,1,home_win
+4645565,2025-09-13,681,418,457,243,77,79,77,75,Short passing,90,High,Real Sociedad,85,88,85,82,Balanced,90,High,Real Madrid,1,2,away_win
+4634148,2025-09-13,60,79,25,36,75,71,74,76,Balanced,50,Balanced,SC Freiburg,77,78,77,74,Balanced,90,High,VfB Stuttgart,3,1,home_win
+4620707,2025-09-13,430,6195,110374,48,77,79,75,75,Short passing,65,High,Fiorentina,81,79,82,80,Balanced,65,High,Napoli,1,3,away_win
+4645566,2025-09-13,13,1050,240,483,82,84,81,82,Balanced,65,High,Atlético Madrid,79,80,79,77,Short passing,50,Balanced,Villarreal CF,2,0,home_win
+4625804,2025-09-13,11,703,1,14,84,86,84,84,Balanced,65,High,Arsenal,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,3,0,home_win
+4620708,2025-09-13,506,46,45,44,80,81,80,80,Balanced,90,High,Juventus,83,86,83,83,Balanced,90,High,Inter,4,3,home_win
+4625813,2025-09-13,379,148,19,18,77,78,77,77,Short passing,30,Deep,West Ham United,81,79,81,81,Balanced,90,High,Tottenham Hotspur,0,3,away_win
+4627572,2025-09-14,58,1184,229,673,71,74,70,68,Balanced,90,High,RSC Anderlecht,73,72,73,75,Balanced,50,Balanced,KRC Genk,1,1,draw
+4635041,2025-09-14,273,1041,74,66,76,74,76,74,Balanced,65,High,Stade Rennais FC,76,74,75,76,Balanced,65,High,Olympique Lyonnais,3,1,home_win
+4620709,2025-09-14,5,1025,47,189,81,82,79,78,Short passing,50,Balanced,AC Milan,76,76,77,74,Balanced,65,High,Bologna,1,0,home_win
+4625811,2025-09-14,281,985,10,11,84,82,85,82,Balanced,65,High,Manchester City,80,82,80,79,Balanced,65,High,Manchester United,3,0,home_win
+4716845,2025-09-16,148,1050,18,483,81,79,81,81,Balanced,90,High,Tottenham Hotspur,79,80,79,77,Short passing,50,Balanced,Villarreal CF,1,0,home_win
+4716844,2025-09-16,294,10625,234,113888,78,79,78,77,Balanced,90,High,SL Benfica,69,67,69,67,Short passing,50,Balanced,Qarabağ FK,2,3,away_win
+4716774,2025-09-16,506,16,45,22,80,81,80,80,Balanced,90,High,Juventus,81,83,80,82,Balanced,65,High,Borussia Dortmund,4,4,draw
+4716843,2025-09-16,418,244,243,219,85,88,85,82,Balanced,90,High,Real Madrid,79,81,79,79,Balanced,65,High,Olympique de Marseille,2,1,home_win
+4716779,2025-09-16,383,3948,247,2014,77,76,80,76,Balanced,65,High,PSV,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,1,3,away_win
+4716778,2025-09-16,621,11,448,1,80,78,81,78,Short passing,65,High,Athletic Club,84,86,84,84,Balanced,65,High,Arsenal,0,2,away_win
+4717479,2025-09-17,31,13,9,240,85,85,86,83,Balanced,65,High,Liverpool,82,84,81,82,Balanced,65,High,Atlético Madrid,3,2,home_win
+4716847,2025-09-17,62,501,266,918,75,74,75,73,Short passing,50,Balanced,SK Slavia Praha,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,2,2,draw
+4717478,2025-09-17,27,631,21,5,84,89,85,82,Balanced,65,High,FC Bayern München,80,80,82,80,Balanced,65,High,Chelsea,3,1,home_win
+4716777,2025-09-17,583,800,73,39,84,85,84,85,Balanced,90,High,Paris Saint-Germain,79,79,79,79,Short passing,50,Balanced,Atalanta,4,0,home_win
+4716776,2025-09-18,281,6195,10,48,84,82,85,82,Balanced,65,High,Manchester City,81,79,82,80,Balanced,65,High,Napoli,2,0,home_win
+4717481,2025-09-18,190,15,819,32,72,73,72,71,Balanced,90,High,FC København,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,2,2,draw
+4717480,2025-09-18,2282,162,231,69,74,73,76,73,Balanced,90,High,Club Brugge KV,78,77,75,77,Balanced,65,High,AS Monaco,4,1,home_win
+4717482,2025-09-18,24,141,1824,325,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,80,84,80,79,Balanced,65,High,Galatasaray SK,5,1,home_win
+4717484,2025-09-18,762,131,13,241,81,81,84,80,Short passing,50,Balanced,Newcastle United,85,85,85,82,Balanced,65,High,FC Barcelona,1,2,away_win
+4645487,2025-09-19,150,681,449,457,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,77,79,77,75,Short passing,90,High,Real Sociedad,3,1,home_win
+4625816,2025-09-20,1237,148,1808,18,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,81,79,81,81,Balanced,90,High,Tottenham Hotspur,2,2,draw
+4625820,2025-09-20,985,631,11,5,80,82,80,79,Balanced,65,High,Manchester United,80,80,82,80,Balanced,65,High,Chelsea,2,1,home_win
+4625822,2025-09-20,379,873,19,1799,77,78,77,77,Short passing,30,Deep,West Ham United,79,78,77,80,Short passing,30,Deep,Crystal Palace,1,2,away_win
+4623184,2025-09-20,9644,255,114326,1871,69,71,69,70,Balanced,90,High,Raków Częstochowa,69,69,70,70,Balanced,90,High,Legia Warszawa,1,1,draw
+4642910,2025-09-20,409,122,191,209,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,68,67,71,67,Short passing,90,High,SK Sturm Graz,0,2,away_win
+4624582,2025-09-20,197,941,267,110468,73,75,74,72,Short passing,50,Balanced,Sparta Praha,72,73,71,73,Short passing,90,High,Viktoria Plzeň,2,1,home_win
+4641233,2025-09-21,1184,3948,673,2014,73,72,73,75,Balanced,50,Balanced,KRC Genk,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,1,2,away_win
+4620718,2025-09-21,398,12,46,52,79,80,77,78,Balanced,30,Deep,Lazio,80,77,79,80,Balanced,50,Balanced,Roma,0,1,away_win
+4625814,2025-09-21,11,281,1,10,84,86,84,84,Balanced,65,High,Arsenal,84,82,85,82,Balanced,65,High,Manchester City,1,1,draw
+4634156,2025-09-21,24,89,1824,1831,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,3,4,away_win
+4665074,2025-09-21,265,683,1884,280,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,76,79,76,75,Balanced,90,High,Olympiacos FC,1,1,draw
+4641477,2025-09-21,1090,234,1906,246,73,74,74,72,Balanced,65,High,AZ Alkmaar,75,76,77,74,Short passing,65,High,Feyenoord,3,3,draw
+4635050,2025-09-22,244,583,219,73,79,81,79,79,Balanced,65,High,Olympique de Marseille,84,85,84,85,Balanced,90,High,Paris Saint-Germain,1,0,home_win
+4627525,2025-09-23,58,157,229,674,71,74,70,68,Balanced,90,High,RSC Anderlecht,70,70,70,68,Balanced,30,Deep,KAA Gent,1,0,home_win
+4645540,2025-09-23,368,1050,481,483,75,75,76,75,Counter,50,Balanced,Sevilla FC,79,80,79,77,Short passing,50,Balanced,Villarreal CF,1,2,away_win
+4715936,2025-09-24,419,36,211,326,72,70,71,70,Counter,50,Balanced,Dinamo Zagreb,79,79,79,76,Balanced,90,High,Fenerbahçe SK,3,1,home_win
+4715941,2025-09-24,150,703,449,14,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,2,2,draw
+4715955,2025-09-24,1075,234,1896,246,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,75,76,77,74,Short passing,65,High,Feyenoord,1,0,home_win
+4715997,2025-09-24,60,26,25,896,75,71,74,76,Balanced,50,Balanced,SC Freiburg,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,2,1,home_win
+4716256,2025-09-24,865,122,1516,209,71,71,70,71,Balanced,50,Balanced,FC Midtjylland,68,67,71,67,Short passing,90,High,SK Sturm Graz,2,0,home_win
+4623156,2025-09-24,9644,238,114326,873,69,71,69,70,Balanced,90,High,Raków Częstochowa,70,72,68,70,Balanced,50,Balanced,Lech Poznań,2,2,draw
+4623153,2025-09-24,255,2300,1871,110745,69,69,70,70,Balanced,90,High,Legia Warszawa,69,72,69,69,Balanced,50,Balanced,Jagiellonia Białystok,0,0,draw
+4645537,2025-09-24,13,367,240,480,82,84,81,82,Balanced,65,High,Atlético Madrid,77,73,77,77,Short passing,65,High,Rayo Vallecano,3,2,home_win
+4715950,2025-09-25,405,1025,2,189,80,83,81,80,Balanced,50,Balanced,Aston Villa,76,76,77,74,Balanced,65,High,Bologna,1,0,home_win
+4715990,2025-09-25,452,265,900,1884,70,70,71,68,Counter,50,Balanced,BSC Young Boys,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,1,4,away_win
+4715943,2025-09-25,409,720,191,236,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,77,77,77,76,Balanced,65,High,FC Porto,0,1,away_win
+4715976,2025-09-25,279,941,1874,110468,72,72,71,68,Short passing,50,Balanced,Ferencvárosi Torna Club,72,73,71,73,Short passing,90,High,Viktoria Plzeň,1,1,draw
+4715926,2025-09-25,124,1184,86,673,73,72,73,72,Balanced,90,High,Rangers FC,73,72,73,75,Balanced,50,Balanced,KRC Genk,0,1,away_win
+4635051,2025-09-26,667,244,76,219,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,79,81,79,79,Balanced,65,High,Olympique de Marseille,1,2,away_win
+4620727,2025-09-27,506,800,45,39,80,81,80,80,Balanced,90,High,Juventus,79,79,79,79,Short passing,50,Balanced,Atalanta,1,1,draw
+4645582,2025-09-27,1050,621,483,448,79,80,79,77,Short passing,50,Balanced,Villarreal CF,80,78,81,78,Short passing,65,High,Athletic Club,1,0,home_win
+4645576,2025-09-27,13,418,240,243,82,84,81,82,Balanced,65,High,Atlético Madrid,85,88,85,82,Balanced,90,High,Real Madrid,5,2,home_win
+4625827,2025-09-27,873,31,1799,9,79,78,77,80,Short passing,30,Deep,Crystal Palace,85,85,86,83,Balanced,65,High,Liverpool,2,1,home_win
+4625826,2025-09-27,631,1237,5,1808,80,80,82,80,Balanced,65,High,Chelsea,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,1,3,away_win
+4645577,2025-09-28,131,681,241,457,85,85,85,82,Balanced,65,High,FC Barcelona,77,79,77,75,Short passing,90,High,Real Sociedad,2,1,home_win
+4645580,2025-09-28,367,368,480,481,77,73,77,77,Short passing,65,High,Rayo Vallecano,75,75,76,75,Counter,50,Balanced,Sevilla FC,0,1,away_win
+4625831,2025-09-28,762,11,13,1,81,81,84,80,Short passing,50,Balanced,Newcastle United,84,86,84,84,Balanced,65,High,Arsenal,1,2,away_win
+4623188,2025-09-28,238,2300,873,110745,70,72,68,70,Balanced,50,Balanced,Lech Poznań,69,72,69,69,Balanced,50,Balanced,Jagiellonia Białystok,2,2,draw
+4620729,2025-09-28,5,6195,47,48,81,82,79,78,Short passing,50,Balanced,AC Milan,81,79,82,80,Balanced,65,High,Napoli,2,1,home_win
+4635058,2025-09-28,1082,1041,65,66,76,79,76,76,Balanced,65,High,Lille OSC,76,74,75,76,Balanced,65,High,Olympique Lyonnais,0,1,away_win
+4715003,2025-09-30,631,294,5,234,80,80,82,80,Balanced,65,High,Chelsea,78,79,78,77,Balanced,90,High,SL Benfica,1,0,home_win
+4715031,2025-09-30,800,2282,39,231,79,79,79,79,Short passing,50,Balanced,Atalanta,74,73,76,73,Balanced,90,High,Club Brugge KV,2,1,home_win
+4715117,2025-09-30,141,31,325,9,80,84,80,79,Balanced,65,High,Galatasaray SK,85,85,86,83,Balanced,65,High,Liverpool,1,0,home_win
+4715103,2025-09-30,501,148,918,18,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,81,79,81,81,Balanced,90,High,Tottenham Hotspur,2,2,draw
+4715000,2025-09-30,46,62,44,266,83,86,83,83,Balanced,90,High,Inter,75,74,75,73,Short passing,50,Balanced,SK Slavia Praha,3,0,home_win
+4715023,2025-09-30,13,24,240,1824,82,84,81,82,Balanced,65,High,Atlético Madrid,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,5,1,home_win
+4715009,2025-10-01,16,621,22,448,81,83,80,82,Balanced,65,High,Borussia Dortmund,80,78,81,78,Short passing,65,High,Athletic Club,4,1,home_win
+4715035,2025-10-01,1050,506,483,45,79,80,79,77,Short passing,50,Balanced,Villarreal CF,80,81,80,80,Balanced,90,High,Juventus,2,2,draw
+4715128,2025-10-01,10625,190,113888,819,69,67,69,67,Short passing,50,Balanced,Qarabağ FK,72,73,72,71,Balanced,90,High,FC København,2,0,home_win
+4715124,2025-10-01,3948,762,2014,13,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,81,81,84,80,Short passing,50,Balanced,Newcastle United,0,4,away_win
+4715113,2025-10-01,162,281,69,10,78,77,75,77,Balanced,65,High,AS Monaco,84,82,85,82,Balanced,65,High,Manchester City,2,2,draw
+4715020,2025-10-01,15,383,32,247,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,77,76,80,76,Balanced,65,High,PSV,1,1,draw
+4715016,2025-10-01,11,683,1,280,84,86,84,84,Balanced,65,High,Arsenal,76,79,76,75,Balanced,90,High,Olympiacos FC,2,0,home_win
+4715010,2025-10-01,131,583,241,73,85,85,85,82,Balanced,65,High,FC Barcelona,84,85,84,85,Balanced,90,High,Paris Saint-Germain,1,2,away_win
+4715091,2025-10-01,6195,336,48,237,81,79,82,80,Balanced,65,High,Napoli,79,79,80,77,Balanced,65,High,Sporting CP,2,1,home_win
+4715915,2025-10-02,12,1082,52,65,80,77,79,80,Balanced,50,Balanced,Roma,76,79,76,76,Balanced,65,High,Lille OSC,0,1,away_win
+4715963,2025-10-02,1041,409,66,191,76,74,75,76,Balanced,65,High,Olympique Lyonnais,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,2,0,home_win
+4715980,2025-10-02,371,1075,78,1896,75,74,75,74,Balanced,90,High,Celtic,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,0,2,away_win
+4715927,2025-10-02,234,405,246,2,75,76,77,74,Short passing,65,High,Feyenoord,80,83,81,80,Balanced,50,Balanced,Aston Villa,0,2,away_win
+4715994,2025-10-02,26,79,896,36,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,77,78,77,74,Balanced,90,High,VfB Stuttgart,2,0,home_win
+4716048,2025-10-02,1184,279,673,1874,73,72,73,75,Balanced,50,Balanced,KRC Genk,72,72,71,68,Short passing,50,Balanced,Ferencvárosi Torna Club,0,1,away_win
+4716021,2025-10-02,1025,60,189,25,76,76,77,74,Balanced,65,High,Bologna,75,71,74,76,Balanced,50,Balanced,SC Freiburg,1,1,draw
+4716013,2025-10-02,301,452,100761,900,69,69,70,68,Balanced,30,Deep,FCSB,70,70,71,68,Counter,50,Balanced,BSC Young Boys,0,2,away_win
+4716007,2025-10-02,122,124,209,86,68,67,71,67,Short passing,90,High,SK Sturm Graz,73,72,73,72,Balanced,90,High,Rangers FC,2,1,home_win
+4716005,2025-10-02,703,865,14,1516,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,71,71,70,71,Balanced,50,Balanced,FC Midtjylland,2,3,away_win
+4716097,2025-10-02,238,170,873,254,70,72,68,70,Balanced,50,Balanced,Lech Poznań,69,67,69,70,Balanced,50,Balanced,SK Rapid,4,1,home_win
+4634175,2025-10-04,16,23826,22,112172,81,83,80,82,Balanced,65,High,Borussia Dortmund,78,77,76,80,Counter,65,High,RB Leipzig,1,1,draw
+4634174,2025-10-04,24,27,1824,21,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,84,89,85,82,Balanced,65,High,FC Bayern München,0,3,away_win
+4634173,2025-10-04,15,89,32,1831,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,2,0,home_win
+4645508,2025-10-04,418,1050,243,483,85,88,85,82,Balanced,90,High,Real Madrid,79,80,79,77,Short passing,50,Balanced,Villarreal CF,3,1,home_win
+4625838,2025-10-04,631,31,5,9,80,80,82,80,Balanced,65,High,Chelsea,85,85,86,83,Balanced,65,High,Liverpool,2,1,home_win
+4625834,2025-10-04,11,379,1,19,84,86,84,84,Balanced,65,High,Arsenal,77,78,77,77,Short passing,30,Deep,West Ham United,2,0,home_win
+4641239,2025-10-05,2282,3948,231,2014,74,73,76,73,Balanced,90,High,Club Brugge KV,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,1,0,home_win
+4642922,2025-10-05,409,170,191,254,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,69,67,69,70,Balanced,50,Balanced,SK Rapid,2,1,home_win
+4645514,2025-10-05,681,367,457,480,77,79,77,75,Short passing,90,High,Real Sociedad,77,73,77,77,Short passing,65,High,Rayo Vallecano,0,1,away_win
+4645510,2025-10-05,368,131,481,241,75,75,76,75,Counter,50,Balanced,Sevilla FC,85,85,85,82,Balanced,65,High,FC Barcelona,4,1,home_win
+4665013,2025-10-05,1091,683,393,280,74,75,74,73,Balanced,90,High,PAOK,76,79,76,75,Balanced,90,High,Olympiacos FC,2,1,home_win
+4625842,2025-10-05,762,703,13,14,81,81,84,80,Short passing,50,Balanced,Newcastle United,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,2,0,home_win
+4624607,2025-10-05,197,62,267,266,73,75,74,72,Short passing,50,Balanced,Sparta Praha,75,74,75,73,Short passing,50,Balanced,SK Slavia Praha,1,1,draw
+4648344,2025-10-05,190,865,819,1516,72,73,72,71,Balanced,90,High,FC København,71,71,70,71,Balanced,50,Balanced,FC Midtjylland,1,1,draw
+4620741,2025-10-05,506,5,45,47,80,81,80,80,Balanced,90,High,Juventus,81,82,79,78,Short passing,50,Balanced,AC Milan,0,0,draw
+4648743,2025-10-05,336,1075,237,1896,79,79,80,77,Balanced,65,High,Sporting CP,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,1,1,draw
+4648744,2025-10-05,720,294,236,234,77,77,77,76,Balanced,65,High,FC Porto,78,79,78,77,Balanced,90,High,SL Benfica,0,0,draw
+4620739,2025-10-05,430,12,110374,52,77,79,75,75,Short passing,65,High,Fiorentina,80,77,79,80,Balanced,50,Balanced,Roma,1,2,away_win
+4635068,2025-10-05,1082,583,65,73,76,79,76,76,Balanced,65,High,Lille OSC,84,85,84,85,Balanced,90,High,Paris Saint-Germain,1,1,draw
+4635071,2025-10-17,583,667,73,76,84,85,84,85,Balanced,90,High,Paris Saint-Germain,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,3,3,draw
+4625844,2025-10-18,1237,762,1808,13,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,81,81,84,80,Short passing,50,Balanced,Newcastle United,2,1,home_win
+4625850,2025-10-18,703,631,14,5,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,80,80,82,80,Balanced,65,High,Chelsea,0,3,away_win
+4620755,2025-10-18,12,46,52,44,80,77,79,80,Balanced,50,Balanced,Roma,83,86,83,83,Balanced,90,High,Inter,0,1,away_win
+4645602,2025-10-18,1050,150,483,449,79,80,79,77,Short passing,50,Balanced,Villarreal CF,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,2,2,draw
+4634182,2025-10-18,27,16,21,22,84,89,85,82,Balanced,65,High,FC Bayern München,81,83,80,82,Balanced,65,High,Borussia Dortmund,2,1,home_win
+4642929,2025-10-19,170,413,254,252,69,67,69,70,Balanced,50,Balanced,SK Rapid,68,73,68,68,Balanced,30,Deep,LASK Linz,0,2,away_win
+4620753,2025-10-19,5,430,47,110374,81,82,79,78,Short passing,50,Balanced,AC Milan,77,79,75,75,Short passing,65,High,Fiorentina,2,1,home_win
+4625848,2025-10-19,31,985,9,11,85,85,86,83,Balanced,65,High,Liverpool,80,82,80,79,Balanced,65,High,Manchester United,1,2,away_win
+4625852,2025-10-19,148,405,18,2,81,79,81,81,Balanced,90,High,Tottenham Hotspur,80,83,81,80,Balanced,50,Balanced,Aston Villa,1,2,away_win
+4620747,2025-10-19,800,398,39,46,79,79,79,79,Short passing,50,Balanced,Atalanta,79,80,77,78,Balanced,30,Deep,Lazio,0,0,draw
+4634183,2025-10-19,60,24,25,1824,75,71,74,76,Balanced,50,Balanced,SC Freiburg,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,2,2,draw
+4715018,2025-10-21,15,583,32,73,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,84,85,84,85,Balanced,90,High,Paris Saint-Germain,2,7,away_win
+4715109,2025-10-21,190,16,819,22,72,73,72,71,Balanced,90,High,FC København,81,83,80,82,Balanced,65,High,Borussia Dortmund,2,4,away_win
+4715034,2025-10-21,1050,281,483,10,79,80,79,77,Short passing,50,Balanced,Villarreal CF,84,82,85,82,Balanced,65,High,Manchester City,0,2,away_win
+4715134,2025-10-21,762,294,13,234,81,81,84,80,Short passing,50,Balanced,Newcastle United,78,79,78,77,Balanced,90,High,SL Benfica,3,0,home_win
+4715012,2025-10-21,131,683,241,280,85,85,85,82,Balanced,65,High,FC Barcelona,76,79,76,75,Balanced,90,High,Olympiacos FC,6,1,home_win
+4715062,2025-10-21,383,6195,247,48,77,76,80,76,Balanced,65,High,PSV,81,79,82,80,Balanced,65,High,Napoli,6,2,home_win
+4715121,2025-10-21,3948,46,2014,44,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,83,86,83,83,Balanced,90,High,Inter,0,4,away_win
+4715015,2025-10-21,11,13,1,240,84,86,84,84,Balanced,65,High,Arsenal,82,84,81,82,Balanced,65,High,Atlético Madrid,4,0,home_win
+4714987,2025-10-22,27,2282,21,231,84,89,85,82,Balanced,65,High,FC Bayern München,74,73,76,73,Balanced,90,High,Club Brugge KV,4,0,home_win
+4715057,2025-10-22,162,148,69,18,78,77,75,77,Balanced,65,High,AS Monaco,81,79,81,81,Balanced,90,High,Tottenham Hotspur,0,0,draw
+4715006,2025-10-22,24,31,1824,9,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,85,85,86,83,Balanced,65,High,Liverpool,1,5,away_win
+4715119,2025-10-22,141,501,325,918,80,84,80,79,Balanced,65,High,Galatasaray SK,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,3,1,home_win
+4715038,2025-10-22,336,244,237,219,79,79,80,77,Balanced,65,High,Sporting CP,79,81,79,79,Balanced,65,High,Olympique de Marseille,2,1,home_win
+4715132,2025-10-22,621,10625,448,113888,80,78,81,78,Short passing,65,High,Athletic Club,69,67,69,67,Short passing,50,Balanced,Qarabağ FK,3,1,home_win
+4714979,2025-10-22,418,506,243,45,85,88,85,82,Balanced,90,High,Real Madrid,80,81,80,80,Balanced,90,High,Juventus,1,0,home_win
+4715139,2025-10-22,800,62,39,266,79,79,79,79,Short passing,50,Balanced,Atalanta,75,74,75,73,Short passing,50,Balanced,SK Slavia Praha,0,0,draw
+4716076,2025-10-23,660,255,101059,1871,72,71,73,73,Balanced,50,Balanced,Shakhtar Donetsk,69,69,70,70,Balanced,90,High,Legia Warszawa,1,2,away_win
+4715981,2025-10-23,371,122,78,209,75,74,75,74,Balanced,90,High,Celtic,68,67,71,67,Short passing,90,High,SK Sturm Graz,2,1,home_win
+4716047,2025-10-23,1184,150,673,449,73,72,73,75,Balanced,50,Balanced,KRC Genk,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,0,0,draw
+4716014,2025-10-23,301,1025,100761,189,69,69,70,68,Balanced,30,Deep,FCSB,76,76,77,74,Balanced,65,High,Bologna,1,2,away_win
+4716003,2025-10-23,703,720,14,236,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,77,77,77,76,Balanced,65,High,FC Porto,2,0,home_win
+4715954,2025-10-23,36,79,326,36,79,79,79,76,Balanced,90,High,Fenerbahçe SK,77,78,77,74,Balanced,90,High,VfB Stuttgart,1,0,home_win
+4715916,2025-10-23,12,941,52,110468,80,77,79,80,Balanced,50,Balanced,Roma,72,73,71,73,Short passing,90,High,Viktoria Plzeň,1,2,away_win
+4716113,2025-10-23,667,2300,76,110745,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,69,72,69,69,Balanced,50,Balanced,Jagiellonia Białystok,1,1,draw
+4715965,2025-10-23,1041,26,66,896,76,74,75,76,Balanced,65,High,Olympique Lyonnais,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,2,0,home_win
+4715930,2025-10-23,234,265,246,1884,75,76,77,74,Short passing,65,High,Feyenoord,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,3,1,home_win
+4715932,2025-10-23,1082,1091,65,393,76,79,76,76,Balanced,65,High,Lille OSC,74,75,74,73,Balanced,90,High,PAOK,3,4,away_win
+4715944,2025-10-23,409,279,191,1874,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,72,72,71,68,Short passing,50,Balanced,Ferencvárosi Torna Club,2,3,away_win
+4716082,2025-10-23,170,430,254,110374,69,67,69,70,Balanced,50,Balanced,SK Rapid,77,79,75,75,Short passing,65,High,Fiorentina,0,3,away_win
+4645557,2025-10-24,681,368,457,481,77,79,77,75,Short passing,90,High,Real Sociedad,75,75,76,75,Counter,50,Balanced,Sevilla FC,2,1,home_win
+4620761,2025-10-25,6195,46,48,44,81,79,82,80,Balanced,65,High,Napoli,83,86,83,83,Balanced,90,High,Inter,3,1,home_win
+4625861,2025-10-25,985,1237,11,1808,80,82,80,79,Balanced,65,High,Manchester United,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,4,2,home_win
+4645561,2025-10-26,418,131,243,241,85,88,85,82,Balanced,90,High,Real Madrid,85,85,85,82,Balanced,65,High,FC Barcelona,2,1,home_win
+4620758,2025-10-26,430,1025,110374,189,77,79,75,75,Short passing,65,High,Fiorentina,76,76,77,74,Balanced,65,High,Bologna,2,2,draw
+4620759,2025-10-26,398,506,46,45,79,80,77,78,Balanced,30,Deep,Lazio,80,81,80,80,Balanced,90,High,Juventus,1,0,home_win
+4634191,2025-10-26,15,60,32,25,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,75,71,74,76,Balanced,50,Balanced,SC Freiburg,2,0,home_win
+4635078,2025-10-26,1041,667,66,76,76,74,75,76,Balanced,65,High,Olympique Lyonnais,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,2,1,home_win
+4623859,2025-10-26,255,238,1871,873,69,69,70,70,Balanced,90,High,Legia Warszawa,70,72,68,70,Balanced,50,Balanced,Lech Poznań,0,0,draw
+4641652,2025-10-26,234,383,246,247,75,76,77,74,Short passing,65,High,Feyenoord,77,76,80,76,Balanced,65,High,PSV,2,3,away_win
+4625854,2025-10-26,11,873,1,1799,84,86,84,84,Balanced,65,High,Arsenal,79,78,77,80,Short passing,30,Deep,Crystal Palace,1,0,home_win
+4625855,2025-10-26,405,281,2,10,80,83,81,80,Balanced,50,Balanced,Aston Villa,84,82,85,82,Balanced,65,High,Manchester City,1,0,home_win
+4645560,2025-10-27,150,13,449,240,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,82,84,81,82,Balanced,65,High,Atlético Madrid,0,2,away_win
+4717153,2025-10-28,24,16,1824,22,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,81,83,80,82,Balanced,65,High,Borussia Dortmund,3,5,away_win
+4620767,2025-10-28,800,5,39,47,79,79,79,79,Short passing,50,Balanced,Atalanta,81,82,79,78,Short passing,50,Balanced,AC Milan,1,1,draw
+4740851,2025-10-29,31,873,9,1799,85,85,86,83,Balanced,65,High,Liverpool,79,78,77,80,Short passing,30,Deep,Crystal Palace,0,3,away_win
+4740854,2025-10-29,762,148,13,18,81,81,84,80,Short passing,50,Balanced,Newcastle United,81,79,81,81,Balanced,90,High,Tottenham Hotspur,2,0,home_win
+4740850,2025-10-29,11,1237,1,1808,84,86,84,84,Balanced,65,High,Arsenal,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,2,0,home_win
+4620772,2025-10-29,46,430,44,110374,83,86,83,83,Balanced,90,High,Inter,77,79,75,75,Short passing,65,High,Fiorentina,3,0,home_win
+4625870,2025-11-01,703,985,14,11,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,80,82,80,79,Balanced,65,High,Manchester United,2,2,draw
+4634200,2025-11-01,27,15,21,32,84,89,85,82,Balanced,65,High,FC Bayern München,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,3,0,home_win
+4625868,2025-11-01,31,405,9,2,85,85,86,83,Balanced,65,High,Liverpool,80,83,81,80,Balanced,50,Balanced,Aston Villa,2,0,home_win
+4634202,2025-11-01,23826,79,112172,36,78,77,76,80,Counter,65,High,RB Leipzig,77,78,77,74,Balanced,90,High,VfB Stuttgart,3,1,home_win
+4625872,2025-11-01,148,631,18,5,81,79,81,81,Balanced,90,High,Tottenham Hotspur,80,80,82,80,Balanced,65,High,Chelsea,0,1,away_win
+4645585,2025-11-01,13,368,240,481,82,84,81,82,Balanced,65,High,Atlético Madrid,75,75,76,75,Counter,50,Balanced,Sevilla FC,3,0,home_win
+4645590,2025-11-01,681,621,457,448,77,79,77,75,Short passing,90,High,Real Sociedad,80,78,81,78,Short passing,65,High,Athletic Club,3,2,home_win
+4645593,2025-11-01,1050,367,483,480,79,80,79,77,Short passing,50,Balanced,Villarreal CF,77,73,77,77,Short passing,65,High,Rayo Vallecano,4,0,home_win
+4634205,2025-11-01,89,60,1831,25,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,75,71,74,76,Balanced,50,Balanced,SC Freiburg,0,0,draw
+4620780,2025-11-02,5,12,47,52,81,82,79,78,Short passing,50,Balanced,AC Milan,80,77,79,80,Balanced,50,Balanced,Roma,1,0,home_win
+4712532,2025-11-02,2300,9644,110745,114326,69,72,69,69,Balanced,50,Balanced,Jagiellonia Białystok,69,71,69,70,Balanced,90,High,Raków Częstochowa,1,2,away_win
+4635099,2025-11-02,273,667,74,76,76,74,76,74,Balanced,65,High,Stade Rennais FC,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,4,1,home_win
+4625873,2025-11-02,379,762,19,13,77,78,77,77,Short passing,30,Deep,West Ham United,81,81,84,80,Short passing,50,Balanced,Newcastle United,3,1,home_win
+4648725,2025-11-02,720,1075,236,1896,77,77,77,76,Balanced,65,High,FC Porto,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,2,1,home_win
+4627309,2025-11-02,452,26,900,896,70,70,71,68,Counter,50,Balanced,BSC Young Boys,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,0,0,draw
+4642941,2025-11-02,170,122,254,209,69,67,69,70,Balanced,50,Balanced,SK Rapid,68,67,71,67,Short passing,90,High,SK Sturm Graz,2,1,home_win
+4715037,2025-11-04,683,383,280,247,76,79,76,75,Balanced,90,High,Olympiacos FC,77,76,80,76,Balanced,65,High,PSV,1,1,draw
+4715026,2025-11-04,501,162,918,69,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,78,77,75,77,Balanced,65,High,AS Monaco,0,1,away_win
+4714994,2025-11-04,583,27,73,21,84,85,84,85,Balanced,90,High,Paris Saint-Germain,84,89,85,82,Balanced,65,High,FC Bayern München,1,2,away_win
+4714992,2025-11-04,148,190,18,819,81,79,81,81,Balanced,90,High,Tottenham Hotspur,72,73,72,71,Balanced,90,High,FC København,4,0,home_win
+4714990,2025-11-04,31,418,9,243,85,85,86,83,Balanced,65,High,Liverpool,85,88,85,82,Balanced,90,High,Real Madrid,1,0,home_win
+4715008,2025-11-04,506,336,45,237,80,81,80,80,Balanced,90,High,Juventus,79,79,80,77,Balanced,65,High,Sporting CP,1,1,draw
+4715033,2025-11-04,62,11,266,1,75,74,75,73,Short passing,50,Balanced,SK Slavia Praha,84,86,84,84,Balanced,65,High,Arsenal,0,3,away_win
+4715093,2025-11-04,6195,24,48,1824,81,79,82,80,Balanced,65,High,Napoli,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,0,0,draw
+4715025,2025-11-04,13,3948,240,2014,82,84,81,82,Balanced,65,High,Atlético Madrid,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,3,1,home_win
+4715027,2025-11-05,294,15,234,32,78,79,78,77,Balanced,90,High,SL Benfica,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,0,1,away_win
+4715055,2025-11-05,10625,631,113888,5,69,67,69,67,Short passing,50,Balanced,Qarabağ FK,80,80,82,80,Balanced,65,High,Chelsea,2,2,draw
+4714982,2025-11-05,281,16,10,22,84,82,85,82,Balanced,65,High,Manchester City,81,83,80,82,Balanced,65,High,Borussia Dortmund,4,1,home_win
+4714999,2025-11-05,2282,131,231,241,74,73,76,73,Balanced,90,High,Club Brugge KV,85,85,85,82,Balanced,65,High,FC Barcelona,3,3,draw
+4715143,2025-11-05,762,621,13,448,81,81,84,80,Short passing,50,Balanced,Newcastle United,80,78,81,78,Short passing,65,High,Athletic Club,2,0,home_win
+4715022,2025-11-05,244,800,219,39,79,81,79,79,Balanced,65,High,Olympique de Marseille,79,79,79,79,Short passing,50,Balanced,Atalanta,0,1,away_win
+4715993,2025-11-06,26,301,896,100761,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,69,69,70,68,Balanced,30,Deep,FCSB,3,1,home_win
+4715969,2025-11-06,1091,452,393,900,74,75,74,73,Balanced,90,High,PAOK,70,70,71,68,Counter,50,Balanced,BSC Young Boys,4,0,home_win
+4715940,2025-11-06,150,1041,449,66,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,76,74,75,76,Balanced,65,High,Olympique Lyonnais,2,0,home_win
+4715958,2025-11-06,1075,1184,1896,673,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,73,72,73,75,Balanced,50,Balanced,KRC Genk,3,4,away_win
+4715972,2025-11-06,941,36,110468,326,72,73,71,73,Short passing,90,High,Viktoria Plzeň,79,79,79,76,Balanced,90,High,Fenerbahçe SK,0,0,draw
+4716027,2025-11-06,79,234,36,246,77,78,77,74,Balanced,90,High,VfB Stuttgart,75,76,77,74,Short passing,65,High,Feyenoord,2,0,home_win
+4716255,2025-11-06,865,371,1516,78,71,71,70,71,Balanced,50,Balanced,FC Midtjylland,75,74,75,74,Balanced,90,High,Celtic,3,1,home_win
+4716009,2025-11-06,122,703,209,14,68,67,71,67,Short passing,90,High,SK Sturm Graz,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,0,0,draw
+4716094,2025-11-06,873,1090,1799,1906,79,78,77,80,Short passing,30,Deep,Crystal Palace,73,74,74,72,Balanced,65,High,AZ Alkmaar,3,1,home_win
+4715923,2025-11-06,124,12,86,52,73,72,73,72,Balanced,90,High,Rangers FC,80,77,79,80,Balanced,50,Balanced,Roma,0,2,away_win
+4716100,2025-11-06,367,238,480,873,77,73,77,77,Short passing,65,High,Rayo Vallecano,70,72,68,70,Balanced,50,Balanced,Lech Poznań,3,2,home_win
+4716090,2025-11-06,197,9644,267,114326,73,75,74,72,Short passing,50,Balanced,Sparta Praha,69,71,69,70,Balanced,90,High,Raków Częstochowa,0,0,draw
+4625882,2025-11-08,148,985,18,11,81,79,81,81,Balanced,90,High,Tottenham Hotspur,80,82,80,79,Balanced,65,High,Manchester United,2,2,draw
+4634215,2025-11-08,89,27,1831,21,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,84,89,85,82,Balanced,65,High,FC Bayern München,2,2,draw
+4641215,2025-11-09,157,1184,674,673,70,70,70,68,Balanced,30,Deep,KAA Gent,73,72,73,75,Balanced,50,Balanced,KRC Genk,1,1,draw
+4635113,2025-11-09,667,1082,76,65,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,76,79,76,76,Balanced,65,High,Lille OSC,2,0,home_win
+4641214,2025-11-09,58,2282,229,231,71,74,70,68,Balanced,90,High,RSC Anderlecht,74,73,76,73,Balanced,90,High,Club Brugge KV,1,0,home_win
+4625877,2025-11-09,873,1237,1799,1808,79,78,77,80,Short passing,30,Deep,Crystal Palace,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,0,0,draw
+4642946,2025-11-09,122,409,209,191,68,67,71,67,Short passing,90,High,SK Sturm Graz,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,1,1,draw
+4625879,2025-11-09,281,31,10,9,84,82,85,82,Balanced,65,High,Manchester City,85,85,86,83,Balanced,65,High,Liverpool,3,0,home_win
+4620793,2025-11-09,1025,6195,189,48,76,76,77,74,Balanced,65,High,Bologna,81,79,82,80,Balanced,65,High,Napoli,2,0,home_win
+4645549,2025-11-09,367,418,480,243,77,73,77,77,Short passing,65,High,Rayo Vallecano,85,88,85,82,Balanced,90,High,Real Madrid,0,0,draw
+4665019,2025-11-09,265,1091,1884,393,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,74,75,74,73,Balanced,90,High,PAOK,2,1,home_win
+4620796,2025-11-09,46,398,44,46,83,86,83,83,Balanced,90,High,Inter,79,80,77,78,Balanced,30,Deep,Lazio,2,0,home_win
+4641679,2025-11-09,1090,383,1906,247,73,74,74,72,Balanced,65,High,AZ Alkmaar,77,76,80,76,Balanced,65,High,PSV,1,5,away_win
+4624637,2025-11-09,941,62,110468,266,72,73,71,73,Short passing,90,High,Viktoria Plzeň,75,74,75,73,Short passing,50,Balanced,SK Slavia Praha,3,5,away_win
+4627311,2025-11-09,26,2790,896,10032,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,70,71,68,68,Counter,50,Balanced,FC Lugano,0,1,away_win
+4635106,2025-11-09,1041,583,66,73,76,74,75,76,Balanced,65,High,Olympique Lyonnais,84,85,84,85,Balanced,90,High,Paris Saint-Germain,2,3,away_win
+4635115,2025-11-22,273,162,74,69,76,74,76,74,Balanced,65,High,Stade Rennais FC,78,77,75,77,Balanced,65,High,AS Monaco,4,1,home_win
+4645500,2025-11-22,131,621,241,448,85,85,85,82,Balanced,65,High,FC Barcelona,80,78,81,78,Short passing,65,High,Athletic Club,4,0,home_win
+4634218,2025-11-22,27,60,21,25,84,89,85,82,Balanced,65,High,FC Bayern München,75,71,74,76,Balanced,50,Balanced,SC Freiburg,6,2,home_win
+4634219,2025-11-22,16,79,22,36,81,83,80,82,Balanced,65,High,Borussia Dortmund,77,78,77,74,Balanced,90,High,VfB Stuttgart,3,3,draw
+4625892,2025-11-22,762,281,13,10,81,81,84,80,Short passing,50,Balanced,Newcastle United,84,82,85,82,Balanced,65,High,Manchester City,2,1,home_win
+4620807,2025-11-22,6195,800,48,39,81,79,82,80,Balanced,65,High,Napoli,79,79,79,79,Short passing,50,Balanced,Atalanta,3,1,home_win
+4625890,2025-11-22,31,703,9,14,85,85,86,83,Balanced,65,High,Liverpool,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,0,3,away_win
+4620804,2025-11-22,430,506,110374,45,77,79,75,75,Short passing,65,High,Fiorentina,80,81,80,80,Balanced,90,High,Juventus,1,1,draw
+4642952,2025-11-23,122,413,209,252,68,67,71,67,Short passing,90,High,SK Sturm Graz,68,73,68,68,Balanced,30,Deep,LASK Linz,1,3,away_win
+4620805,2025-11-23,46,5,44,47,83,86,83,83,Balanced,90,High,Inter,81,82,79,78,Short passing,50,Balanced,AC Milan,0,1,away_win
+4625884,2025-11-23,11,148,1,18,84,86,84,84,Balanced,65,High,Arsenal,81,79,81,81,Balanced,90,High,Tottenham Hotspur,4,1,home_win
+4714986,2025-11-25,141,3948,325,2014,80,84,80,79,Balanced,65,High,Galatasaray SK,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,0,1,away_win
+4715122,2025-11-25,16,1050,22,483,81,83,80,82,Balanced,65,High,Borussia Dortmund,79,80,79,77,Short passing,50,Balanced,Villarreal CF,4,0,home_win
+4715021,2025-11-25,244,762,219,13,79,81,79,79,Balanced,65,High,Olympique de Marseille,81,81,84,80,Short passing,50,Balanced,Newcastle United,2,1,home_win
+4715095,2025-11-25,281,15,10,32,84,82,85,82,Balanced,65,High,Manchester City,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,0,2,away_win
+4715030,2025-11-25,62,621,266,448,75,74,75,73,Short passing,50,Balanced,SK Slavia Praha,80,78,81,78,Short passing,65,High,Athletic Club,0,0,draw
+4715028,2025-11-25,501,506,918,45,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,80,81,80,80,Balanced,90,High,Juventus,2,3,away_win
+4715013,2025-11-25,6195,10625,48,113888,81,79,82,80,Balanced,65,High,Napoli,69,67,69,67,Short passing,50,Balanced,Qarabağ FK,2,0,home_win
+4715053,2025-11-25,631,131,5,241,80,80,82,80,Balanced,65,High,Chelsea,85,85,85,82,Balanced,65,High,FC Barcelona,3,0,home_win
+4715125,2025-11-26,13,46,240,44,82,84,81,82,Balanced,65,High,Atlético Madrid,83,86,83,83,Balanced,90,High,Inter,2,1,home_win
+4715005,2025-11-26,24,800,1824,39,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,79,79,79,79,Short passing,50,Balanced,Atalanta,0,3,away_win
+4715060,2025-11-26,583,148,73,18,84,85,84,85,Balanced,90,High,Paris Saint-Germain,81,79,81,81,Balanced,90,High,Tottenham Hotspur,5,3,home_win
+4715114,2025-11-26,336,2282,237,231,79,79,80,77,Balanced,65,High,Sporting CP,74,73,76,73,Balanced,90,High,Club Brugge KV,3,0,home_win
+4715066,2025-11-26,31,383,9,247,85,85,86,83,Balanced,65,High,Liverpool,77,76,80,76,Balanced,65,High,PSV,1,4,away_win
+4715049,2025-11-26,683,418,280,243,76,79,76,75,Balanced,90,High,Olympiacos FC,85,88,85,82,Balanced,90,High,Real Madrid,3,4,away_win
+4715130,2025-11-26,11,27,1,21,84,86,84,84,Balanced,65,High,Arsenal,84,89,85,82,Balanced,65,High,FC Bayern München,3,1,home_win
+4715952,2025-11-27,36,279,326,1874,79,79,79,76,Balanced,90,High,Fenerbahçe SK,72,72,71,68,Short passing,50,Balanced,Ferencvárosi Torna Club,1,1,draw
+4715949,2025-11-27,405,452,2,900,80,83,81,80,Balanced,50,Balanced,Aston Villa,70,70,71,68,Counter,50,Balanced,BSC Young Boys,2,1,home_win
+4715931,2025-11-27,1082,419,65,211,76,79,76,76,Balanced,65,High,Lille OSC,72,70,71,70,Counter,50,Balanced,Dinamo Zagreb,4,0,home_win
+4715917,2025-11-27,12,865,52,1516,80,77,79,80,Balanced,50,Balanced,Roma,71,71,70,71,Balanced,50,Balanced,FC Midtjylland,2,1,home_win
+4716019,2025-11-27,1025,409,189,191,76,76,77,74,Balanced,65,High,Bologna,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,4,1,home_win
+4716033,2025-11-27,265,122,1884,209,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,68,67,71,67,Short passing,90,High,SK Sturm Graz,2,1,home_win
+4715973,2025-11-27,941,60,110468,25,72,73,71,73,Short passing,90,High,Viktoria Plzeň,75,71,74,76,Balanced,50,Balanced,SC Freiburg,0,0,draw
+4716049,2025-11-27,1184,26,673,896,73,72,73,75,Balanced,50,Balanced,KRC Genk,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,2,1,home_win
+4716085,2025-11-27,255,197,1871,267,69,69,70,70,Balanced,90,High,Legia Warszawa,73,75,74,72,Short passing,50,Balanced,Sparta Praha,0,1,away_win
+4715924,2025-11-27,124,1075,86,1896,73,72,73,72,Balanced,90,High,Rangers FC,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,1,1,draw
+4716151,2025-11-27,9644,170,114326,254,69,71,69,70,Balanced,90,High,Raków Częstochowa,69,67,69,70,Balanced,50,Balanced,SK Rapid,4,1,home_win
+4715928,2025-11-27,234,371,246,78,75,76,77,74,Short passing,65,High,Feyenoord,75,74,75,74,Balanced,90,High,Celtic,1,3,away_win
+4716112,2025-11-27,667,873,76,1799,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,79,78,77,80,Short passing,30,Deep,Crystal Palace,2,1,home_win
+4635130,2025-11-29,162,583,69,73,78,77,75,77,Balanced,65,High,AS Monaco,84,85,84,85,Balanced,90,High,Paris Saint-Germain,1,0,home_win
+4634228,2025-11-29,15,16,32,22,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,81,83,80,82,Balanced,65,High,Borussia Dortmund,1,2,away_win
+4620818,2025-11-29,5,398,47,46,81,82,79,78,Short passing,50,Balanced,AC Milan,79,80,77,78,Balanced,30,Deep,Lazio,1,0,home_win
+4625896,2025-11-30,631,11,5,1,80,80,82,80,Balanced,65,High,Chelsea,84,86,84,84,Balanced,65,High,Arsenal,1,1,draw
+4645766,2025-11-30,368,150,481,449,75,75,76,75,Counter,50,Balanced,Sevilla FC,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,0,2,away_win
+4641280,2025-11-30,58,3948,229,2014,71,74,70,68,Balanced,90,High,RSC Anderlecht,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,1,0,home_win
+4645763,2025-11-30,681,1050,457,483,77,79,77,75,Short passing,90,High,Real Sociedad,79,80,79,77,Short passing,50,Balanced,Villarreal CF,2,3,away_win
+4620812,2025-11-30,800,430,39,110374,79,79,79,79,Short passing,50,Balanced,Atalanta,77,79,75,75,Short passing,65,High,Fiorentina,2,0,home_win
+4642958,2025-11-30,413,170,252,254,68,73,68,68,Balanced,30,Deep,LASK Linz,69,67,69,70,Balanced,50,Balanced,SK Rapid,3,0,home_win
+4620821,2025-11-30,12,6195,52,48,80,77,79,80,Balanced,50,Balanced,Roma,81,79,82,80,Balanced,65,High,Napoli,0,1,away_win
+4625900,2025-11-30,703,1237,14,1808,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,0,2,away_win
+4625897,2025-11-30,873,985,1799,11,79,78,77,80,Short passing,30,Deep,Crystal Palace,80,82,80,79,Balanced,65,High,Manchester United,1,2,away_win
+4625903,2025-11-30,379,31,19,9,77,78,77,77,Short passing,30,Deep,West Ham United,85,85,86,83,Balanced,65,High,Liverpool,0,2,away_win
+4647882,2025-12-01,36,141,326,325,79,79,79,76,Balanced,90,High,Fenerbahçe SK,80,84,80,79,Balanced,65,High,Galatasaray SK,1,1,draw
+4761580,2025-12-02,16,15,22,32,81,83,80,82,Balanced,65,High,Borussia Dortmund,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,0,1,away_win
+4625912,2025-12-02,762,148,13,18,81,81,84,80,Short passing,50,Balanced,Newcastle United,81,79,81,81,Balanced,90,High,Tottenham Hotspur,2,2,draw
+4645831,2025-12-02,131,13,241,240,85,85,85,82,Balanced,65,High,FC Barcelona,82,84,81,82,Balanced,65,High,Atlético Madrid,3,1,home_win
+4625906,2025-12-03,1237,405,1808,2,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,80,83,81,80,Balanced,50,Balanced,Aston Villa,3,4,away_win
+4645837,2025-12-03,621,418,448,243,80,78,81,78,Short passing,65,High,Athletic Club,85,88,85,82,Balanced,90,High,Real Madrid,0,3,away_win
+4761581,2025-12-03,89,27,1831,21,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,84,89,85,82,Balanced,65,High,FC Bayern München,2,3,away_win
+4625911,2025-12-04,985,379,11,19,80,82,80,79,Balanced,65,High,Manchester United,77,78,77,77,Short passing,30,Deep,West Ham United,1,1,draw
+4736144,2025-12-04,398,5,46,47,79,80,77,78,Balanced,30,Deep,Lazio,81,82,79,78,Short passing,50,Balanced,AC Milan,1,0,home_win
+4635132,2025-12-05,1082,244,65,219,76,79,76,76,Balanced,65,High,Lille OSC,79,81,79,79,Balanced,65,High,Olympique de Marseille,1,0,home_win
+4648686,2025-12-05,294,336,234,237,78,79,78,77,Balanced,90,High,SL Benfica,79,79,80,77,Balanced,65,High,Sporting CP,1,1,draw
+4634238,2025-12-06,23826,24,112172,1824,78,77,76,80,Counter,65,High,RB Leipzig,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,6,0,home_win
+4641287,2025-12-06,3948,157,2014,674,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,70,70,70,68,Balanced,30,Deep,KAA Gent,1,1,draw
+4634239,2025-12-06,79,27,36,21,77,78,77,74,Balanced,90,High,VfB Stuttgart,84,89,85,82,Balanced,65,High,FC Bayern München,0,5,away_win
+4645779,2025-12-06,621,13,448,240,80,78,81,78,Short passing,65,High,Athletic Club,82,84,81,82,Balanced,65,High,Atlético Madrid,1,0,home_win
+4645772,2025-12-06,150,131,449,241,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,85,85,85,82,Balanced,65,High,FC Barcelona,3,5,away_win
+4635140,2025-12-06,583,273,73,74,84,85,84,85,Balanced,90,High,Paris Saint-Germain,76,74,76,74,Balanced,65,High,Stade Rennais FC,5,0,home_win
+4625914,2025-12-06,405,11,2,1,80,83,81,80,Balanced,50,Balanced,Aston Villa,84,86,84,84,Balanced,65,High,Arsenal,2,1,home_win
+4625916,2025-12-07,1237,379,1808,19,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,77,78,77,77,Short passing,30,Deep,West Ham United,1,1,draw
+4620835,2025-12-07,398,1025,46,189,79,80,77,78,Balanced,30,Deep,Lazio,76,76,77,74,Balanced,65,High,Bologna,1,1,draw
+4620836,2025-12-07,6195,506,48,45,81,79,82,80,Balanced,65,High,Napoli,80,81,80,80,Balanced,90,High,Juventus,2,1,home_win
+4715096,2025-12-09,162,141,69,325,78,77,75,77,Balanced,65,High,AS Monaco,80,84,80,79,Balanced,65,High,Galatasaray SK,1,0,home_win
+4715058,2025-12-09,46,31,44,9,83,86,83,83,Balanced,90,High,Inter,85,85,86,83,Balanced,65,High,Liverpool,0,1,away_win
+4715064,2025-12-09,3948,244,2014,219,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,79,81,79,79,Balanced,65,High,Olympique de Marseille,2,3,away_win
+4715135,2025-12-09,131,24,241,1824,85,85,85,82,Balanced,65,High,FC Barcelona,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,2,1,home_win
+4715092,2025-12-09,27,336,21,237,84,89,85,82,Balanced,65,High,FC Bayern München,79,79,80,77,Balanced,65,High,Sporting CP,3,1,home_win
+4715112,2025-12-09,800,631,39,5,79,79,79,79,Short passing,50,Balanced,Atalanta,80,80,82,80,Balanced,65,High,Chelsea,2,1,home_win
+4714993,2025-12-09,148,62,18,266,81,79,81,81,Balanced,90,High,Tottenham Hotspur,75,74,75,73,Short passing,50,Balanced,SK Slavia Praha,3,0,home_win
+4714988,2025-12-09,383,13,247,240,77,76,80,76,Balanced,65,High,PSV,82,84,81,82,Balanced,65,High,Atlético Madrid,2,3,away_win
+4714996,2025-12-10,1050,190,483,819,79,80,79,77,Short passing,50,Balanced,Villarreal CF,72,73,72,71,Balanced,90,High,FC København,2,3,away_win
+4715136,2025-12-10,16,501,22,918,81,83,80,82,Balanced,65,High,Borussia Dortmund,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,2,2,draw
+4715065,2025-12-10,418,281,243,10,85,88,85,82,Balanced,90,High,Real Madrid,84,82,85,82,Balanced,65,High,Manchester City,1,2,away_win
+4714998,2025-12-10,2282,11,231,1,74,73,76,73,Balanced,90,High,Club Brugge KV,84,86,84,84,Balanced,65,High,Arsenal,0,3,away_win
+4715126,2025-12-10,15,762,32,13,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,81,81,84,80,Short passing,50,Balanced,Newcastle United,2,2,draw
+4715051,2025-12-10,621,583,448,73,80,78,81,78,Short passing,65,High,Athletic Club,84,85,84,85,Balanced,90,High,Paris Saint-Germain,0,0,draw
+4715116,2025-12-10,294,6195,234,48,78,79,78,77,Balanced,90,High,SL Benfica,81,79,82,80,Balanced,65,High,Napoli,2,0,home_win
+4716115,2025-12-11,2300,367,110745,480,69,72,69,69,Balanced,50,Balanced,Jagiellonia Białystok,77,73,77,77,Short passing,65,High,Rayo Vallecano,1,2,away_win
+4716257,2025-12-11,865,1184,1516,673,71,71,70,71,Balanced,50,Balanced,FC Midtjylland,73,72,73,75,Balanced,50,Balanced,KRC Genk,1,0,home_win
+4715935,2025-12-11,419,150,211,449,72,70,71,70,Counter,50,Balanced,Dinamo Zagreb,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,1,3,away_win
+4716032,2025-12-11,265,941,1884,110468,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,72,73,71,73,Short passing,90,High,Viktoria Plzeň,0,0,draw
+4715975,2025-12-11,279,124,1874,86,72,72,71,68,Short passing,50,Balanced,Ferencvárosi Torna Club,73,72,73,72,Balanced,90,High,Rangers FC,2,1,home_win
+4715979,2025-12-11,371,12,78,52,75,74,75,74,Balanced,90,High,Celtic,80,77,79,80,Balanced,50,Balanced,Roma,0,3,away_win
+4715987,2025-12-11,452,1082,900,65,70,70,71,68,Counter,50,Balanced,BSC Young Boys,76,79,76,76,Balanced,65,High,Lille OSC,1,0,home_win
+4715995,2025-12-11,60,409,25,191,75,71,74,76,Balanced,50,Balanced,SC Freiburg,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,1,0,home_win
+4715991,2025-12-11,26,405,896,2,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,80,83,81,80,Balanced,50,Balanced,Aston Villa,1,2,away_win
+4716011,2025-12-11,301,234,100761,246,69,69,70,68,Balanced,30,Deep,FCSB,75,76,77,74,Short passing,65,High,Feyenoord,4,3,home_win
+4634251,2025-12-12,89,23826,1831,112172,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,78,77,76,80,Counter,65,High,RB Leipzig,3,1,home_win
+4625929,2025-12-13,31,1237,9,1808,85,85,86,83,Balanced,65,High,Liverpool,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,2,0,home_win
+4625933,2025-12-14,379,405,19,2,77,78,77,77,Short passing,30,Deep,West Ham United,80,83,81,80,Balanced,50,Balanced,Aston Villa,2,3,away_win
+4625931,2025-12-14,703,148,14,18,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,81,79,81,81,Balanced,90,High,Tottenham Hotspur,3,0,home_win
+4635149,2025-12-14,244,162,219,69,79,81,79,79,Balanced,65,High,Olympique de Marseille,78,77,75,77,Balanced,65,High,AS Monaco,1,0,home_win
+4634248,2025-12-14,60,16,25,22,75,71,74,76,Balanced,50,Balanced,SC Freiburg,81,83,80,82,Balanced,65,High,Borussia Dortmund,1,1,draw
+4625928,2025-12-14,873,281,1799,10,79,78,77,80,Short passing,30,Deep,Crystal Palace,84,82,85,82,Balanced,65,High,Manchester City,0,3,away_win
+4620843,2025-12-14,1025,506,189,45,76,76,77,74,Balanced,65,High,Bologna,80,81,80,80,Balanced,90,High,Juventus,0,1,away_win
+4645782,2025-12-15,367,150,480,449,77,73,77,77,Short passing,65,High,Rayo Vallecano,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,0,0,draw
+4716074,2025-12-18,1090,2300,1906,110745,73,74,74,72,Balanced,65,High,AZ Alkmaar,69,72,69,69,Balanced,50,Balanced,Jagiellonia Białystok,0,0,draw
+4641399,2025-12-18,6195,5,48,47,81,79,82,80,Balanced,65,High,Napoli,81,82,79,78,Short passing,50,Balanced,AC Milan,2,0,home_win
+4641400,2025-12-19,1025,46,189,44,76,76,77,74,Balanced,65,High,Bologna,83,86,83,83,Balanced,90,High,Inter,4,3,home_win
+4645840,2025-12-20,418,368,243,481,85,88,85,82,Balanced,90,High,Real Madrid,75,75,76,75,Counter,50,Balanced,Sevilla FC,2,0,home_win
+4620857,2025-12-20,506,12,45,52,80,81,80,80,Balanced,90,High,Juventus,80,77,79,80,Balanced,50,Balanced,Roma,2,1,home_win
+4625940,2025-12-20,281,379,10,19,84,82,85,82,Balanced,65,High,Manchester City,77,78,77,77,Short passing,30,Deep,West Ham United,3,0,home_win
+4625941,2025-12-20,762,631,13,5,81,81,84,80,Short passing,50,Balanced,Newcastle United,80,80,82,80,Balanced,65,High,Chelsea,2,2,draw
+4625942,2025-12-20,148,31,18,9,81,79,81,81,Balanced,90,High,Tottenham Hotspur,85,85,86,83,Balanced,65,High,Liverpool,1,2,away_win
+4634256,2025-12-20,23826,15,112172,32,78,77,76,80,Counter,65,High,RB Leipzig,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,1,3,away_win
+4627350,2025-12-21,2790,452,10032,900,70,71,68,68,Counter,50,Balanced,FC Lugano,70,70,71,68,Counter,50,Balanced,BSC Young Boys,3,0,home_win
+4641383,2025-12-21,2282,157,231,674,74,73,76,73,Balanced,90,High,Club Brugge KV,70,70,70,68,Balanced,30,Deep,KAA Gent,2,1,home_win
+4625934,2025-12-21,405,985,2,11,80,83,81,80,Balanced,50,Balanced,Aston Villa,80,82,80,79,Balanced,65,High,Manchester United,2,1,home_win
+4645843,2025-12-21,1050,131,483,241,79,80,79,77,Short passing,50,Balanced,Villarreal CF,85,85,85,82,Balanced,65,High,FC Barcelona,0,2,away_win
+4665111,2025-12-21,1091,265,393,1884,74,75,74,73,Balanced,90,High,PAOK,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,2,0,home_win
+4786004,2025-12-22,6195,1025,48,189,81,79,82,80,Balanced,65,High,Napoli,76,76,77,74,Balanced,65,High,Bologna,2,0,home_win
+4769165,2025-12-23,11,873,1,1799,84,86,84,84,Balanced,65,High,Arsenal,79,78,77,80,Short passing,30,Deep,Crystal Palace,9,8,home_win
+4641344,2025-12-26,1184,2282,673,231,73,72,73,75,Balanced,50,Balanced,KRC Genk,74,73,76,73,Balanced,90,High,Club Brugge KV,3,5,away_win
+4625950,2025-12-26,985,762,11,13,80,82,80,79,Balanced,65,High,Manchester United,81,81,84,80,Short passing,50,Balanced,Newcastle United,1,0,home_win
+4625947,2025-12-27,631,405,5,2,80,80,82,80,Balanced,65,High,Chelsea,80,83,81,80,Balanced,50,Balanced,Aston Villa,1,2,away_win
+4625944,2025-12-27,11,1237,1,1808,84,86,84,84,Balanced,65,High,Arsenal,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,2,1,home_win
+4625951,2025-12-27,703,281,14,10,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,84,82,85,82,Balanced,65,High,Manchester City,1,2,away_win
+4648780,2025-12-28,1075,294,1896,234,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,78,79,78,77,Balanced,90,High,SL Benfica,2,2,draw
+4625948,2025-12-28,873,148,1799,18,79,78,77,80,Short passing,30,Deep,Crystal Palace,81,79,81,81,Balanced,90,High,Tottenham Hotspur,0,1,away_win
+4620862,2025-12-28,800,46,39,44,79,79,79,79,Short passing,50,Balanced,Atalanta,83,86,83,83,Balanced,90,High,Inter,0,1,away_win
+4625963,2025-12-30,379,1237,19,1808,77,78,77,77,Short passing,30,Deep,West Ham United,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,2,2,draw
+4625954,2025-12-30,11,405,1,2,84,86,84,84,Balanced,65,High,Arsenal,80,83,81,80,Balanced,50,Balanced,Aston Villa,4,1,home_win
+4635152,2026-01-03,162,1041,69,66,78,77,75,77,Balanced,65,High,AS Monaco,76,74,75,76,Balanced,65,High,Olympique Lyonnais,1,3,away_win
+4625964,2026-01-03,405,703,2,14,80,83,81,80,Balanced,50,Balanced,Aston Villa,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,3,1,home_win
+4649463,2026-01-03,371,124,78,86,75,74,75,74,Balanced,90,High,Celtic,73,72,73,72,Balanced,90,High,Rangers FC,1,3,away_win
+4620872,2026-01-03,800,12,39,52,79,79,79,79,Short passing,50,Balanced,Atalanta,80,77,79,80,Balanced,50,Balanced,Roma,1,0,home_win
+4635153,2026-01-03,1082,273,65,74,76,79,76,76,Balanced,65,High,Lille OSC,76,74,76,74,Balanced,65,High,Stade Rennais FC,0,2,away_win
+4645851,2026-01-04,681,13,457,240,77,79,77,75,Short passing,90,High,Real Sociedad,82,84,81,82,Balanced,65,High,Atlético Madrid,1,1,draw
+4625970,2026-01-04,281,631,10,5,84,82,85,82,Balanced,65,High,Manchester City,80,80,82,80,Balanced,65,High,Chelsea,1,1,draw
+4620877,2026-01-04,46,1025,44,189,83,86,83,83,Balanced,90,High,Inter,76,76,77,74,Balanced,65,High,Bologna,3,1,home_win
+4620879,2026-01-04,398,6195,46,48,79,80,77,78,Balanced,30,Deep,Lazio,81,79,82,80,Balanced,65,High,Napoli,0,2,away_win
+4625971,2026-01-04,762,873,13,1799,81,81,84,80,Short passing,50,Balanced,Newcastle United,79,78,77,80,Short passing,30,Deep,Crystal Palace,2,0,home_win
+4645853,2026-01-04,418,150,243,449,85,88,85,82,Balanced,90,High,Real Madrid,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,5,1,home_win
+4626007,2026-01-06,379,703,19,14,77,78,77,77,Short passing,30,Deep,West Ham United,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,1,2,away_win
+4626005,2026-01-07,281,1237,10,1808,84,82,85,82,Balanced,65,High,Manchester City,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,1,1,draw
+4626002,2026-01-07,873,405,1799,2,79,78,77,80,Short passing,30,Deep,Crystal Palace,80,83,81,80,Balanced,50,Balanced,Aston Villa,0,0,draw
+4790450,2026-01-07,131,621,241,448,85,85,85,82,Balanced,65,High,FC Barcelona,80,78,81,78,Short passing,65,High,Athletic Club,5,0,home_win
+4779999,2026-01-07,294,1075,234,1896,78,79,78,77,Balanced,90,High,SL Benfica,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,1,3,away_win
+4620882,2026-01-07,1025,800,189,39,76,76,77,74,Balanced,65,High,Bologna,79,79,79,79,Short passing,50,Balanced,Atalanta,0,2,away_win
+4620884,2026-01-07,398,430,46,110374,79,80,77,78,Balanced,30,Deep,Lazio,77,79,75,75,Short passing,65,High,Fiorentina,2,2,draw
+4790451,2026-01-08,13,418,240,243,82,84,81,82,Balanced,65,High,Atlético Madrid,85,88,85,82,Balanced,90,High,Real Madrid,1,2,away_win
+4625998,2026-01-08,11,31,1,9,84,86,84,84,Balanced,65,High,Arsenal,85,85,86,83,Balanced,65,High,Liverpool,0,0,draw
+4738246,2026-01-08,583,244,73,219,84,85,84,85,Balanced,90,High,Paris Saint-Germain,79,81,79,79,Balanced,65,High,Olympique de Marseille,6,3,home_win
+4634265,2026-01-09,24,16,1824,22,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,81,83,80,82,Balanced,65,High,Borussia Dortmund,3,3,draw
+4788523,2026-01-10,148,405,18,2,81,79,81,81,Balanced,90,High,Tottenham Hotspur,80,83,81,80,Balanced,50,Balanced,Aston Villa,1,2,away_win
+4634264,2026-01-10,15,79,32,36,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,77,78,77,74,Balanced,90,High,VfB Stuttgart,1,4,away_win
+4800635,2026-01-11,131,418,241,243,85,85,85,82,Balanced,65,High,FC Barcelona,85,88,85,82,Balanced,90,High,Real Madrid,3,2,home_win
+4620896,2026-01-11,46,6195,44,48,83,86,83,83,Balanced,90,High,Inter,81,79,82,80,Balanced,65,High,Napoli,2,2,draw
+4620894,2026-01-11,430,5,110374,47,77,79,75,75,Short passing,65,High,Fiorentina,81,82,79,78,Short passing,50,Balanced,AC Milan,1,1,draw
+4788527,2026-01-11,985,1237,11,1808,80,82,80,79,Balanced,65,High,Manchester United,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,1,2,away_win
+4798808,2026-01-13,762,281,13,10,81,81,84,80,Short passing,50,Balanced,Newcastle United,84,82,85,82,Balanced,65,High,Manchester City,0,2,away_win
+4634275,2026-01-13,79,24,36,1824,77,78,77,74,Balanced,90,High,VfB Stuttgart,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,3,2,home_win
+4798809,2026-01-14,631,11,5,1,80,80,82,80,Balanced,65,High,Chelsea,84,86,84,84,Balanced,65,High,Arsenal,2,3,away_win
+4799312,2026-01-14,683,1091,280,393,76,79,76,75,Balanced,90,High,Olympiacos FC,74,75,74,73,Balanced,90,High,PAOK,0,2,away_win
+4634274,2026-01-14,23826,60,112172,25,78,77,76,80,Counter,65,High,RB Leipzig,75,71,74,76,Balanced,50,Balanced,SC Freiburg,2,0,home_win
+4635166,2026-01-16,583,1082,73,65,84,85,84,85,Balanced,90,High,Paris Saint-Germain,76,79,76,76,Balanced,65,High,Lille OSC,3,0,home_win
+4626016,2026-01-17,148,379,18,19,81,79,81,81,Balanced,90,High,Tottenham Hotspur,77,78,77,77,Short passing,30,Deep,West Ham United,1,2,away_win
+4626014,2026-01-17,703,11,14,1,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,84,86,84,84,Balanced,65,High,Arsenal,0,0,draw
+4626013,2026-01-17,985,281,11,10,80,82,80,79,Balanced,65,High,Manchester United,84,82,85,82,Balanced,65,High,Manchester City,2,0,home_win
+4634282,2026-01-17,23826,27,112172,21,78,77,76,80,Counter,65,High,RB Leipzig,84,89,85,82,Balanced,65,High,FC Bayern München,1,5,away_win
+4645876,2026-01-17,150,1050,449,483,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,79,80,79,77,Short passing,50,Balanced,Villarreal CF,2,0,home_win
+4645874,2026-01-18,681,131,457,241,77,79,77,75,Short passing,90,High,Real Sociedad,85,85,85,82,Balanced,65,High,FC Barcelona,2,1,home_win
+4641321,2026-01-18,157,58,674,229,70,70,70,68,Balanced,30,Deep,KAA Gent,71,74,70,68,Balanced,90,High,RSC Anderlecht,4,2,home_win
+4634284,2026-01-18,79,89,36,1831,77,78,77,74,Balanced,90,High,VfB Stuttgart,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,1,1,draw
+4620902,2026-01-18,1025,430,189,110374,76,76,77,74,Balanced,65,High,Bologna,77,79,75,75,Short passing,65,High,Fiorentina,1,2,away_win
+4715056,2026-01-20,46,11,44,1,83,86,83,83,Balanced,90,High,Inter,84,86,84,84,Balanced,65,High,Arsenal,1,3,away_win
+4715100,2026-01-20,418,162,243,69,85,88,85,82,Balanced,90,High,Real Madrid,78,77,75,77,Balanced,65,High,AS Monaco,6,1,home_win
+4715102,2026-01-20,336,583,237,73,79,79,80,77,Balanced,65,High,Sporting CP,84,85,84,85,Balanced,90,High,Paris Saint-Germain,2,1,home_win
+4715046,2026-01-20,148,16,18,22,81,79,81,81,Balanced,90,High,Tottenham Hotspur,81,83,80,82,Balanced,65,High,Borussia Dortmund,2,0,home_win
+4715039,2026-01-20,683,15,280,32,76,79,76,75,Balanced,90,High,Olympiacos FC,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,2,0,home_win
+4715019,2026-01-20,190,6195,819,48,72,73,72,71,Balanced,90,High,FC København,81,79,82,80,Balanced,65,High,Napoli,1,1,draw
+4715029,2026-01-20,501,281,918,10,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,84,82,85,82,Balanced,65,High,Manchester City,3,1,home_win
+4715110,2026-01-21,10625,24,113888,1824,69,67,69,67,Short passing,50,Balanced,Qarabağ FK,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,3,2,home_win
+4714995,2026-01-21,141,13,325,240,80,84,80,79,Balanced,65,High,Galatasaray SK,82,84,81,82,Balanced,65,High,Atlético Madrid,1,1,draw
+4715011,2026-01-21,506,294,45,234,80,81,80,80,Balanced,90,High,Juventus,78,79,78,77,Balanced,90,High,SL Benfica,2,0,home_win
+4715148,2026-01-21,762,383,13,247,81,81,84,80,Short passing,50,Balanced,Newcastle United,77,76,80,76,Balanced,65,High,PSV,3,0,home_win
+4715024,2026-01-21,244,31,219,9,79,81,79,79,Balanced,65,High,Olympique de Marseille,85,85,86,83,Balanced,65,High,Liverpool,0,3,away_win
+4715108,2026-01-21,800,621,39,448,79,79,79,79,Short passing,50,Balanced,Atalanta,80,78,81,78,Short passing,65,High,Athletic Club,2,3,away_win
+4715036,2026-01-21,62,131,266,241,75,74,75,73,Short passing,50,Balanced,SK Slavia Praha,85,85,85,82,Balanced,65,High,FC Barcelona,2,4,away_win
+4715068,2026-01-21,27,3948,21,2014,84,89,85,82,Balanced,65,High,FC Bayern München,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,2,0,home_win
+4715971,2026-01-22,941,720,110468,236,72,73,71,73,Short passing,90,High,Viktoria Plzeň,77,77,77,76,Balanced,65,High,FC Porto,1,1,draw
+4715988,2026-01-22,452,1041,900,66,70,70,71,68,Counter,50,Balanced,BSC Young Boys,76,74,75,76,Balanced,65,High,Olympique Lyonnais,0,1,away_win
+4715937,2026-01-22,419,301,211,100761,72,70,71,70,Counter,50,Balanced,Dinamo Zagreb,69,69,70,68,Balanced,30,Deep,FCSB,4,1,home_win
+4715951,2026-01-22,36,405,326,2,79,79,79,76,Balanced,90,High,Fenerbahçe SK,80,83,81,80,Balanced,50,Balanced,Aston Villa,0,1,away_win
+4715978,2026-01-22,279,265,1874,1884,72,72,71,68,Short passing,50,Balanced,Ferencvárosi Torna Club,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,1,1,draw
+4715945,2026-01-22,409,26,191,896,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,3,1,home_win
+4715967,2026-01-22,1091,150,393,449,74,75,74,73,Balanced,90,High,PAOK,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,2,0,home_win
+4716020,2026-01-22,1025,371,189,78,76,76,77,74,Balanced,65,High,Bologna,75,74,75,74,Balanced,90,High,Celtic,2,2,draw
+4715929,2026-01-22,234,122,246,209,75,76,77,74,Short passing,65,High,Feyenoord,68,67,71,67,Short passing,90,High,SK Sturm Graz,3,0,home_win
+4715957,2026-01-22,1075,703,1896,14,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,1,0,home_win
+4715918,2026-01-22,12,79,52,36,80,77,79,80,Balanced,50,Balanced,Roma,77,78,77,74,Balanced,90,High,VfB Stuttgart,2,0,home_win
+4645794,2026-01-24,1050,418,483,243,79,80,79,77,Short passing,50,Balanced,Villarreal CF,85,88,85,82,Balanced,90,High,Real Madrid,0,2,away_win
+4634303,2026-01-24,89,16,1831,22,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,81,83,80,82,Balanced,65,High,Borussia Dortmund,0,3,away_win
+4645798,2026-01-24,368,621,481,448,75,75,76,75,Counter,50,Balanced,Sevilla FC,80,78,81,78,Short passing,65,High,Athletic Club,2,1,home_win
+4635168,2026-01-25,1082,667,65,76,76,79,76,76,Balanced,65,High,Lille OSC,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,1,4,away_win
+4626026,2026-01-25,762,405,13,2,81,81,84,80,Short passing,50,Balanced,Newcastle United,80,83,81,80,Balanced,50,Balanced,Aston Villa,0,2,away_win
+4620918,2026-01-25,506,6195,45,48,80,81,80,80,Balanced,90,High,Juventus,81,79,82,80,Balanced,65,High,Napoli,3,0,home_win
+4620920,2026-01-25,12,5,52,47,80,77,79,80,Balanced,50,Balanced,Roma,81,82,79,78,Short passing,50,Balanced,AC Milan,1,1,draw
+4626018,2026-01-25,11,985,1,11,84,86,84,84,Balanced,65,High,Arsenal,80,82,80,79,Balanced,65,High,Manchester United,2,3,away_win
+4626022,2026-01-25,873,631,1799,5,79,78,77,80,Short passing,30,Deep,Crystal Palace,80,80,82,80,Balanced,65,High,Chelsea,1,3,away_win
+4714997,2026-01-28,2282,244,231,219,74,73,76,73,Balanced,90,High,Club Brugge KV,79,81,79,79,Balanced,65,High,Olympique de Marseille,3,0,home_win
+4715014,2026-01-28,162,506,69,45,78,77,75,77,Balanced,65,High,AS Monaco,80,81,80,80,Balanced,90,High,Juventus,0,0,draw
+4715127,2026-01-28,15,1050,32,483,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,79,80,79,77,Short passing,50,Balanced,Villarreal CF,3,0,home_win
+4715138,2026-01-28,131,190,241,819,85,85,85,82,Balanced,65,High,FC Barcelona,72,73,72,71,Balanced,90,High,FC København,4,1,home_win
+4715123,2026-01-28,13,501,240,918,82,84,81,82,Balanced,65,High,Atlético Madrid,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,1,2,away_win
+4715050,2026-01-28,16,46,22,44,81,83,80,82,Balanced,65,High,Borussia Dortmund,83,86,83,83,Balanced,90,High,Inter,0,2,away_win
+4715120,2026-01-28,294,418,234,243,78,79,78,77,Balanced,90,High,SL Benfica,85,88,85,82,Balanced,90,High,Real Madrid,4,2,home_win
+4714989,2026-01-28,383,27,247,21,77,76,80,76,Balanced,65,High,PSV,84,89,85,82,Balanced,65,High,FC Bayern München,1,2,away_win
+4714984,2026-01-28,621,336,448,237,80,78,81,78,Short passing,65,High,Athletic Club,79,79,80,77,Balanced,65,High,Sporting CP,2,3,away_win
+4714981,2026-01-28,6195,631,48,5,81,79,82,80,Balanced,65,High,Napoli,80,80,82,80,Balanced,65,High,Chelsea,2,3,away_win
+4715104,2026-01-28,31,10625,9,113888,85,85,86,83,Balanced,65,High,Liverpool,69,67,69,67,Short passing,50,Balanced,Qarabağ FK,6,0,home_win
+4715059,2026-01-28,583,762,73,13,84,85,84,85,Balanced,90,High,Paris Saint-Germain,81,81,84,80,Short passing,50,Balanced,Newcastle United,1,1,draw
+4715099,2026-01-28,3948,800,2014,39,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,79,79,79,79,Short passing,50,Balanced,Atalanta,1,0,home_win
+4715094,2026-01-28,281,141,10,325,84,82,85,82,Balanced,65,High,Manchester City,80,84,80,79,Balanced,65,High,Galatasaray SK,2,0,home_win
+4715002,2026-01-28,24,148,1824,18,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,81,79,81,81,Balanced,90,High,Tottenham Hotspur,0,2,away_win
+4716254,2026-01-29,865,419,1516,211,71,71,70,71,Balanced,50,Balanced,FC Midtjylland,72,70,71,70,Counter,50,Balanced,Dinamo Zagreb,2,0,home_win
+4716031,2026-01-29,265,12,1884,52,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,80,77,79,80,Balanced,50,Balanced,Roma,1,1,draw
+4716029,2026-01-29,79,452,36,900,77,78,77,74,Balanced,90,High,VfB Stuttgart,70,70,71,68,Counter,50,Balanced,BSC Young Boys,3,2,home_win
+4715964,2026-01-29,1041,1091,66,393,76,74,75,76,Balanced,65,High,Olympique Lyonnais,74,75,74,73,Balanced,90,High,PAOK,4,2,home_win
+4715919,2026-01-29,720,124,236,86,77,77,77,76,Balanced,65,High,FC Porto,73,72,73,72,Balanced,90,High,Rangers FC,3,1,home_win
+4716004,2026-01-29,703,279,14,1874,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,72,72,71,68,Short passing,50,Balanced,Ferencvárosi Torna Club,4,0,home_win
+4715992,2026-01-29,26,941,896,110468,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,72,73,71,73,Short passing,90,High,Viktoria Plzeň,0,1,away_win
+4715933,2026-01-29,1082,60,65,25,76,79,76,76,Balanced,65,High,Lille OSC,75,71,74,76,Balanced,50,Balanced,SC Freiburg,1,0,home_win
+4715947,2026-01-29,405,409,2,191,80,83,81,80,Balanced,50,Balanced,Aston Villa,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,3,2,home_win
+4715939,2026-01-29,150,234,449,246,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,75,76,77,74,Short passing,65,High,Feyenoord,2,1,home_win
+4716012,2026-01-29,301,36,100761,326,69,69,70,68,Balanced,30,Deep,FCSB,79,79,79,76,Balanced,90,High,Fenerbahçe SK,1,1,draw
+4626032,2026-01-31,31,762,9,13,85,85,86,83,Balanced,65,High,Liverpool,81,81,84,80,Short passing,50,Balanced,Newcastle United,4,1,home_win
+4635182,2026-01-31,162,273,69,74,78,77,75,77,Balanced,65,High,AS Monaco,76,74,76,74,Balanced,65,High,Stade Rennais FC,4,0,home_win
+4634306,2026-01-31,24,15,1824,32,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,1,3,away_win
+4620928,2026-01-31,6195,430,48,110374,81,79,82,80,Balanced,65,High,Napoli,77,79,75,75,Short passing,65,High,Fiorentina,2,1,home_win
+4626030,2026-01-31,631,379,5,19,80,80,82,80,Balanced,65,High,Chelsea,77,78,77,77,Short passing,30,Deep,West Ham United,3,2,home_win
+4635179,2026-02-01,667,583,76,73,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,84,85,84,85,Balanced,90,High,Paris Saint-Germain,1,2,away_win
+4635178,2026-02-01,1041,1082,66,65,76,74,75,76,Balanced,65,High,Olympique Lyonnais,76,79,76,76,Balanced,65,High,Lille OSC,1,0,home_win
+4645804,2026-02-01,418,367,243,480,85,88,85,82,Balanced,90,High,Real Madrid,77,73,77,77,Short passing,65,High,Rayo Vallecano,2,1,home_win
+4641311,2026-02-01,3948,2282,2014,231,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,74,73,76,73,Balanced,90,High,Club Brugge KV,1,0,home_win
+4645805,2026-02-01,621,681,448,457,80,78,81,78,Short passing,65,High,Athletic Club,77,79,77,75,Short passing,90,High,Real Sociedad,1,1,draw
+4626034,2026-02-01,703,873,14,1799,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,79,78,77,80,Short passing,30,Deep,Crystal Palace,1,1,draw
+4626036,2026-02-01,148,281,18,10,81,79,81,81,Balanced,90,High,Tottenham Hotspur,84,82,85,82,Balanced,65,High,Manchester City,2,2,draw
+4641616,2026-02-01,383,234,247,246,77,76,80,76,Balanced,65,High,PSV,75,76,77,74,Short passing,65,High,Feyenoord,3,0,home_win
+4634310,2026-02-01,79,60,36,25,77,78,77,74,Balanced,90,High,VfB Stuttgart,75,71,74,76,Balanced,50,Balanced,SC Freiburg,1,0,home_win
+4798810,2026-02-03,11,631,1,5,84,86,84,84,Balanced,65,High,Arsenal,80,80,82,80,Balanced,65,High,Chelsea,1,0,home_win
+4620923,2026-02-03,1025,5,189,47,76,76,77,74,Balanced,65,High,Bologna,81,82,79,78,Short passing,50,Balanced,AC Milan,0,3,away_win
+4798811,2026-02-04,281,762,10,13,84,82,85,82,Balanced,65,High,Manchester City,81,81,84,80,Short passing,50,Balanced,Newcastle United,3,1,home_win
+4804365,2026-02-04,265,1091,1884,393,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,74,75,74,73,Balanced,90,High,PAOK,0,1,away_win
+4808019,2026-02-05,150,13,449,240,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,82,84,81,82,Balanced,65,High,Atlético Madrid,0,5,away_win
+4785785,2026-02-05,800,506,39,45,79,79,79,79,Short passing,50,Balanced,Atalanta,80,81,80,80,Balanced,90,High,Juventus,3,0,home_win
+4634329,2026-02-06,89,24,1831,1824,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,1,1,draw
+4626045,2026-02-07,985,148,11,18,80,82,80,79,Balanced,65,High,Manchester United,81,79,81,81,Balanced,90,High,Tottenham Hotspur,2,0,home_win
+4626040,2026-02-08,1237,873,1808,1799,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,79,78,77,80,Short passing,30,Deep,Crystal Palace,0,1,away_win
+4620943,2026-02-08,506,398,45,46,80,81,80,80,Balanced,90,High,Juventus,79,80,77,78,Balanced,30,Deep,Lazio,2,2,draw
+4626044,2026-02-08,31,281,9,10,85,85,86,83,Balanced,65,High,Liverpool,84,82,85,82,Balanced,65,High,Manchester City,1,2,away_win
+4645818,2026-02-08,13,150,240,449,82,84,81,82,Balanced,65,High,Atlético Madrid,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,0,1,away_win
+4641361,2026-02-08,1184,58,673,229,73,72,73,75,Balanced,50,Balanced,KRC Genk,71,74,70,68,Balanced,90,High,RSC Anderlecht,2,0,home_win
+4665123,2026-02-08,683,265,280,1884,76,79,76,75,Balanced,90,High,Olympiacos FC,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,0,1,away_win
+4648389,2026-02-08,865,190,1516,819,71,71,70,71,Balanced,50,Balanced,FC Midtjylland,72,73,72,71,Balanced,90,High,FC København,2,1,home_win
+4635186,2026-02-08,583,244,73,219,84,85,84,85,Balanced,90,High,Paris Saint-Germain,79,81,79,79,Balanced,65,High,Olympique de Marseille,5,0,home_win
+4648806,2026-02-09,720,336,236,237,77,77,77,76,Balanced,65,High,FC Porto,79,79,80,77,Balanced,65,High,Sporting CP,1,1,draw
+4626057,2026-02-10,379,985,19,11,77,78,77,77,Short passing,30,Deep,West Ham United,80,82,80,79,Balanced,65,High,Manchester United,1,1,draw
+4626056,2026-02-10,148,762,18,13,81,79,81,81,Balanced,90,High,Tottenham Hotspur,81,81,84,80,Short passing,50,Balanced,Newcastle United,1,2,away_win
+4782524,2026-02-11,27,23826,21,112172,84,89,85,82,Balanced,65,High,FC Bayern München,78,77,76,80,Counter,65,High,RB Leipzig,2,0,home_win
+4785784,2026-02-11,1025,398,189,46,76,76,77,74,Balanced,65,High,Bologna,79,80,77,78,Balanced,30,Deep,Lazio,2,5,away_win
+4819275,2026-02-11,621,681,448,457,80,78,81,78,Short passing,65,High,Athletic Club,77,79,77,75,Short passing,90,High,Real Sociedad,0,1,away_win
+4804367,2026-02-11,1091,265,393,1884,74,75,74,73,Balanced,90,High,PAOK,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,2,0,home_win
+4626048,2026-02-11,405,1237,2,1808,80,83,81,80,Balanced,50,Balanced,Aston Villa,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,1,0,home_win
+4819274,2026-02-12,13,131,240,241,82,84,81,82,Balanced,65,High,Atlético Madrid,85,85,85,82,Balanced,65,High,FC Barcelona,4,0,home_win
+4635203,2026-02-13,273,583,74,73,76,74,76,74,Balanced,65,High,Stade Rennais FC,84,85,84,85,Balanced,90,High,Paris Saint-Germain,3,1,home_win
+4645888,2026-02-14,418,681,243,457,85,88,85,82,Balanced,90,High,Real Madrid,77,79,77,75,Short passing,90,High,Real Sociedad,4,1,home_win
+4808368,2026-02-14,405,762,2,13,80,83,81,80,Balanced,50,Balanced,Aston Villa,81,81,84,80,Short passing,50,Balanced,Newcastle United,1,3,away_win
+4620959,2026-02-14,398,800,46,39,79,80,77,78,Balanced,30,Deep,Lazio,79,79,79,79,Short passing,50,Balanced,Atalanta,0,2,away_win
+4620958,2026-02-14,46,506,44,45,83,86,83,83,Balanced,90,High,Inter,80,81,80,80,Balanced,90,High,Juventus,3,2,home_win
+4808369,2026-02-14,31,1237,9,1808,85,85,86,83,Balanced,65,High,Liverpool,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,3,0,home_win
+4635196,2026-02-14,244,667,219,76,79,81,79,79,Balanced,65,High,Olympique de Marseille,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,2,2,draw
+4645881,2026-02-15,367,13,480,240,77,73,77,77,Short passing,65,High,Rayo Vallecano,82,84,81,82,Balanced,65,High,Atlético Madrid,3,0,home_win
+4620960,2026-02-15,6195,12,48,52,81,79,82,80,Balanced,65,High,Napoli,80,77,79,80,Balanced,50,Balanced,Roma,2,2,draw
+4787666,2026-02-15,26,2790,896,10032,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,70,71,68,68,Counter,50,Balanced,FC Lugano,1,1,draw
+4814097,2026-02-17,294,418,234,243,78,79,78,77,Balanced,90,High,SL Benfica,85,88,85,82,Balanced,90,High,Real Madrid,0,1,away_win
+4814095,2026-02-17,162,583,69,73,78,77,75,77,Balanced,65,High,AS Monaco,84,85,84,85,Balanced,90,High,Paris Saint-Germain,2,3,away_win
+4814098,2026-02-17,16,800,22,39,81,83,80,82,Balanced,65,High,Borussia Dortmund,79,79,79,79,Short passing,50,Balanced,Atalanta,2,0,home_win
+4814096,2026-02-17,141,506,325,45,80,84,80,79,Balanced,65,High,Galatasaray SK,80,81,80,80,Balanced,90,High,Juventus,5,2,home_win
+4814099,2026-02-18,10625,762,113888,13,69,67,69,67,Short passing,50,Balanced,Qarabağ FK,81,81,84,80,Short passing,50,Balanced,Newcastle United,1,6,away_win
+4814100,2026-02-18,2282,13,231,240,74,73,76,73,Balanced,90,High,Club Brugge KV,82,84,81,82,Balanced,65,High,Atlético Madrid,3,3,draw
+4814102,2026-02-18,683,15,280,32,76,79,76,75,Balanced,90,High,Olympiacos FC,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,0,2,away_win
+4814101,2026-02-18,501,46,918,44,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,83,86,83,83,Balanced,90,High,Inter,3,1,home_win
+4805889,2026-02-19,265,941,1884,110468,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,72,73,71,73,Short passing,90,High,Viktoria Plzeň,2,2,draw
+4805838,2026-02-19,2300,430,110745,110374,69,72,69,69,Balanced,50,Balanced,Jagiellonia Białystok,77,79,75,75,Short passing,65,High,Fiorentina,0,3,away_win
+4805890,2026-02-19,419,1184,211,673,72,70,71,70,Counter,50,Balanced,Dinamo Zagreb,73,72,73,75,Balanced,50,Balanced,KRC Genk,1,3,away_win
+4805892,2026-02-19,371,79,78,36,75,74,75,74,Balanced,90,High,Celtic,77,78,77,74,Balanced,90,High,VfB Stuttgart,1,4,away_win
+4805893,2026-02-19,36,703,326,14,79,79,79,76,Balanced,90,High,Fenerbahçe SK,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,0,3,away_win
+4634365,2026-02-21,89,15,1831,32,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,1,0,home_win
+4634363,2026-02-21,23826,16,112172,22,78,77,76,80,Counter,65,High,RB Leipzig,81,83,80,82,Balanced,65,High,Borussia Dortmund,2,2,draw
+4626063,2026-02-21,281,762,10,13,84,82,85,82,Balanced,65,High,Manchester City,81,81,84,80,Short passing,50,Balanced,Newcastle United,2,1,home_win
+4645868,2026-02-21,150,367,449,480,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,77,73,77,77,Short passing,65,High,Rayo Vallecano,1,1,draw
+4634360,2026-02-21,27,24,21,1824,84,89,85,82,Balanced,65,High,FC Bayern München,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,3,2,home_win
+4635204,2026-02-22,667,1041,76,66,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,76,74,75,76,Balanced,65,High,Olympique Lyonnais,3,1,home_win
+4624700,2026-02-22,941,197,110468,267,72,73,71,73,Short passing,90,High,Viktoria Plzeň,73,75,74,72,Short passing,50,Balanced,Sparta Praha,0,0,draw
+4626066,2026-02-22,148,11,18,1,81,79,81,81,Balanced,90,High,Tottenham Hotspur,84,86,84,84,Balanced,65,High,Arsenal,1,4,away_win
+4626064,2026-02-22,703,31,14,9,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,85,85,86,83,Balanced,65,High,Liverpool,0,1,away_win
+4642989,2026-02-22,413,409,252,191,68,73,68,68,Balanced,30,Deep,LASK Linz,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,1,5,away_win
+4620965,2026-02-22,800,6195,39,48,79,79,79,79,Short passing,50,Balanced,Atalanta,81,79,82,80,Balanced,65,High,Napoli,2,1,home_win
+4814107,2026-02-24,762,10625,13,113888,81,81,84,80,Short passing,50,Balanced,Newcastle United,69,67,69,67,Short passing,50,Balanced,Qarabağ FK,3,2,home_win
+4814108,2026-02-24,13,2282,240,231,82,84,81,82,Balanced,65,High,Atlético Madrid,74,73,76,73,Balanced,90,High,Club Brugge KV,4,1,home_win
+4814109,2026-02-24,46,501,44,918,83,86,83,83,Balanced,90,High,Inter,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,1,2,away_win
+4814110,2026-02-24,15,683,32,280,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,76,79,76,75,Balanced,90,High,Olympiacos FC,0,0,draw
+4814106,2026-02-25,800,16,39,22,79,79,79,79,Short passing,50,Balanced,Atalanta,81,83,80,82,Balanced,65,High,Borussia Dortmund,4,1,home_win
+4814103,2026-02-25,583,162,73,69,84,85,84,85,Balanced,90,High,Paris Saint-Germain,78,77,75,77,Balanced,65,High,AS Monaco,2,2,draw
+4814104,2026-02-25,506,141,45,325,80,81,80,80,Balanced,90,High,Juventus,80,84,80,79,Balanced,65,High,Galatasaray SK,3,2,home_win
+4814105,2026-02-25,418,294,243,234,85,88,85,82,Balanced,90,High,Real Madrid,78,79,78,77,Balanced,90,High,SL Benfica,2,1,home_win
+4805897,2026-02-26,941,265,110468,1884,72,73,71,73,Short passing,90,High,Viktoria Plzeň,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,4,5,away_win
+4805898,2026-02-26,1184,419,673,211,73,72,73,75,Balanced,50,Balanced,KRC Genk,72,70,71,70,Counter,50,Balanced,Dinamo Zagreb,3,3,draw
+4805846,2026-02-26,430,2300,110374,110745,77,79,75,75,Short passing,65,High,Fiorentina,69,72,69,69,Balanced,50,Balanced,Jagiellonia Białystok,2,4,away_win
+4805900,2026-02-26,79,371,36,78,77,78,77,74,Balanced,90,High,VfB Stuttgart,75,74,75,74,Balanced,90,High,Celtic,0,1,away_win
+4805901,2026-02-26,703,36,14,326,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,79,79,79,76,Balanced,90,High,Fenerbahçe SK,1,2,away_win
+4645824,2026-02-28,131,1050,241,483,85,85,85,82,Balanced,65,High,FC Barcelona,79,80,79,77,Short passing,50,Balanced,Villarreal CF,4,1,home_win
+4626074,2026-02-28,31,379,9,19,85,85,86,83,Balanced,65,High,Liverpool,77,78,77,77,Short passing,30,Deep,West Ham United,5,2,home_win
+4645829,2026-02-28,367,621,480,448,77,73,77,77,Short passing,65,High,Rayo Vallecano,80,78,81,78,Short passing,65,High,Athletic Club,1,1,draw
+4634380,2026-02-28,16,27,22,21,81,83,80,82,Balanced,65,High,Borussia Dortmund,84,89,85,82,Balanced,65,High,FC Bayern München,2,3,away_win
+4645825,2026-03-01,150,368,449,481,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,75,75,76,75,Counter,50,Balanced,Sevilla FC,2,2,draw
+4641296,2026-03-01,1184,157,673,674,73,72,73,75,Balanced,50,Balanced,KRC Genk,70,70,70,68,Balanced,30,Deep,KAA Gent,3,0,home_win
+4626070,2026-03-01,1237,703,1808,14,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,2,1,home_win
+4626068,2026-03-01,11,631,1,5,84,86,84,84,Balanced,65,High,Arsenal,80,80,82,80,Balanced,65,High,Chelsea,2,1,home_win
+4634379,2026-03-01,24,60,1824,25,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,75,71,74,76,Balanced,50,Balanced,SC Freiburg,2,0,home_win
+4624832,2026-03-01,238,9644,873,114326,70,72,68,70,Balanced,50,Balanced,Lech Poznań,69,71,69,70,Balanced,90,High,Raków Częstochowa,4,3,home_win
+4635221,2026-03-01,244,1041,219,66,79,81,79,79,Balanced,65,High,Olympique de Marseille,76,74,75,76,Balanced,65,High,Olympique Lyonnais,3,2,home_win
+4624831,2026-03-01,2300,255,110745,1871,69,72,69,69,Balanced,50,Balanced,Jagiellonia Białystok,69,69,70,70,Balanced,90,High,Legia Warszawa,2,2,draw
+4620980,2026-03-01,12,506,52,45,80,77,79,80,Balanced,50,Balanced,Roma,80,81,80,80,Balanced,90,High,Juventus,3,3,draw
+4649528,2026-03-01,124,371,86,78,73,72,73,72,Balanced,90,High,Rangers FC,75,74,75,74,Balanced,90,High,Celtic,2,2,draw
+4626075,2026-03-01,985,873,11,1799,80,82,80,79,Balanced,65,High,Manchester United,79,78,77,80,Short passing,30,Deep,Crystal Palace,2,1,home_win
+4819283,2026-03-03,131,13,241,240,85,85,85,82,Balanced,65,High,FC Barcelona,82,84,81,82,Balanced,65,High,Atlético Madrid,3,0,home_win
+4626084,2026-03-04,281,703,10,14,84,82,85,82,Balanced,65,High,Manchester City,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,2,2,draw
+4819284,2026-03-04,681,621,457,448,77,79,77,75,Short passing,90,High,Real Sociedad,80,78,81,78,Short passing,65,High,Athletic Club,1,0,home_win
+4626080,2026-03-04,1237,11,1808,1,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,84,86,84,84,Balanced,65,High,Arsenal,0,1,away_win
+4626078,2026-03-04,405,631,2,5,80,83,81,80,Balanced,50,Balanced,Aston Villa,80,80,82,80,Balanced,65,High,Chelsea,1,4,away_win
+4824554,2026-03-04,398,800,46,39,79,80,77,78,Balanced,30,Deep,Lazio,79,79,79,79,Short passing,50,Balanced,Atalanta,2,2,draw
+4626085,2026-03-04,762,985,13,11,81,81,84,80,Short passing,50,Balanced,Newcastle United,80,82,80,79,Balanced,65,High,Manchester United,2,1,home_win
+4626086,2026-03-05,148,873,18,1799,81,79,81,81,Balanced,90,High,Tottenham Hotspur,79,78,77,80,Short passing,30,Deep,Crystal Palace,1,3,away_win
+4635230,2026-03-06,583,162,73,69,84,85,84,85,Balanced,90,High,Paris Saint-Germain,78,77,75,77,Balanced,65,High,AS Monaco,1,3,away_win
+4645953,2026-03-07,13,681,240,457,82,84,81,82,Balanced,65,High,Atlético Madrid,77,79,77,75,Short passing,90,High,Real Sociedad,3,2,home_win
+4641355,2026-03-07,3948,1184,2014,673,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,73,72,73,75,Balanced,50,Balanced,KRC Genk,2,1,home_win
+4827501,2026-03-07,762,281,13,10,81,81,84,80,Short passing,50,Balanced,Newcastle United,84,82,85,82,Balanced,65,High,Manchester City,1,3,away_win
+4645952,2026-03-07,621,131,448,241,80,78,81,78,Short passing,65,High,Athletic Club,85,85,85,82,Balanced,65,High,FC Barcelona,0,1,away_win
+4641581,2026-03-07,383,1090,247,1906,77,76,80,76,Balanced,65,High,PSV,73,74,74,72,Balanced,65,High,AZ Alkmaar,2,1,home_win
+4634388,2026-03-07,60,15,25,32,75,71,74,76,Balanced,50,Balanced,SC Freiburg,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,3,3,draw
+4648851,2026-03-07,1075,336,1896,237,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,79,79,80,77,Balanced,65,High,Sporting CP,2,2,draw
+4643002,2026-03-08,170,409,254,191,69,67,69,70,Balanced,50,Balanced,SK Rapid,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,1,0,home_win
+4620993,2026-03-08,5,46,47,44,81,82,79,78,Short passing,50,Balanced,AC Milan,83,86,83,83,Balanced,90,High,Inter,1,0,home_win
+4624719,2026-03-08,62,197,266,267,75,74,75,73,Short passing,50,Balanced,SK Slavia Praha,73,75,74,72,Short passing,50,Balanced,Sparta Praha,3,1,home_win
+4645951,2026-03-08,368,367,481,480,75,75,76,75,Counter,50,Balanced,Sevilla FC,77,73,77,77,Short passing,65,High,Rayo Vallecano,1,1,draw
+4648852,2026-03-08,294,720,234,236,78,79,78,77,Balanced,90,High,SL Benfica,77,77,77,76,Balanced,65,High,FC Porto,2,2,draw
+4664998,2026-03-08,683,1091,280,393,76,79,76,75,Balanced,90,High,Olympiacos FC,74,75,74,73,Balanced,90,High,PAOK,0,0,draw
+4641354,2026-03-08,2282,58,231,229,74,73,76,73,Balanced,90,High,Club Brugge KV,71,74,70,68,Balanced,90,High,RSC Anderlecht,2,2,draw
+4832715,2026-03-08,124,371,86,78,73,72,73,72,Balanced,90,High,Rangers FC,75,74,75,74,Balanced,90,High,Celtic,2,4,away_win
+4814359,2026-03-10,13,148,240,18,82,84,81,82,Balanced,65,High,Atlético Madrid,81,79,81,81,Balanced,90,High,Tottenham Hotspur,5,2,home_win
+4814355,2026-03-10,141,31,325,9,80,84,80,79,Balanced,65,High,Galatasaray SK,85,85,86,83,Balanced,65,High,Liverpool,1,0,home_win
+4814357,2026-03-10,800,27,39,21,79,79,79,79,Short passing,50,Balanced,Atalanta,84,89,85,82,Balanced,65,High,FC Bayern München,1,6,away_win
+4814358,2026-03-10,762,131,13,241,81,81,84,80,Short passing,50,Balanced,Newcastle United,85,85,85,82,Balanced,65,High,FC Barcelona,1,1,draw
+4814354,2026-03-11,583,631,73,5,84,85,84,85,Balanced,90,High,Paris Saint-Germain,80,80,82,80,Balanced,65,High,Chelsea,5,2,home_win
+4814356,2026-03-11,418,281,243,10,85,88,85,82,Balanced,90,High,Real Madrid,84,82,85,82,Balanced,65,High,Manchester City,3,0,home_win
+4814361,2026-03-11,15,11,32,1,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,84,86,84,84,Balanced,65,High,Arsenal,1,1,draw
+4814360,2026-03-11,501,336,918,237,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,79,79,80,77,Balanced,65,High,Sporting CP,3,0,home_win
+4805859,2026-03-12,238,660,873,101059,70,72,68,70,Balanced,50,Balanced,Lech Poznań,72,71,73,73,Balanced,50,Balanced,Shakhtar Donetsk,1,3,away_win
+4805908,2026-03-12,79,720,36,236,77,78,77,74,Balanced,90,High,VfB Stuttgart,77,77,77,76,Balanced,65,High,FC Porto,1,2,away_win
+4805911,2026-03-12,1082,405,65,2,76,79,76,76,Balanced,65,High,Lille OSC,80,83,81,80,Balanced,50,Balanced,Aston Villa,0,1,away_win
+4805910,2026-03-12,1025,12,189,52,76,76,77,74,Balanced,65,High,Bologna,80,77,79,80,Balanced,50,Balanced,Roma,1,1,draw
+4805904,2026-03-12,279,1075,1874,1896,72,72,71,68,Short passing,50,Balanced,Ferencvárosi Torna Club,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,2,0,home_win
+4805905,2026-03-12,265,150,1884,449,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,1,0,home_win
+4805906,2026-03-12,1184,60,673,25,73,72,73,75,Balanced,50,Balanced,KRC Genk,75,71,74,76,Balanced,50,Balanced,SC Freiburg,1,0,home_win
+4805909,2026-03-12,703,865,14,1516,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,71,71,70,71,Balanced,50,Balanced,FC Midtjylland,0,1,away_win
+4805862,2026-03-12,430,9644,110374,114326,77,79,75,75,Short passing,65,High,Fiorentina,69,71,69,70,Balanced,90,High,Raków Częstochowa,2,1,home_win
+4805860,2026-03-12,1090,197,1906,267,73,74,74,72,Balanced,65,High,AZ Alkmaar,73,75,74,72,Short passing,50,Balanced,Sparta Praha,2,1,home_win
+4620997,2026-03-14,46,800,44,39,83,86,83,83,Balanced,90,High,Inter,79,79,79,79,Short passing,50,Balanced,Atalanta,1,1,draw
+4626097,2026-03-14,379,281,19,10,77,78,77,77,Short passing,30,Deep,West Ham United,84,82,85,82,Balanced,65,High,Manchester City,1,1,draw
+4634405,2026-03-14,15,27,32,21,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,84,89,85,82,Balanced,65,High,FC Bayern München,1,1,draw
+4626091,2026-03-14,631,762,5,13,80,80,82,80,Balanced,65,High,Chelsea,81,81,84,80,Short passing,50,Balanced,Newcastle United,0,1,away_win
+4634410,2026-03-15,79,23826,36,112172,77,78,77,74,Balanced,90,High,VfB Stuttgart,78,77,76,80,Counter,65,High,RB Leipzig,1,0,home_win
+4634408,2026-03-15,60,89,25,1831,75,71,74,76,Balanced,50,Balanced,SC Freiburg,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,0,1,away_win
+4626093,2026-03-15,31,148,9,18,85,85,86,83,Balanced,65,High,Liverpool,81,79,81,81,Balanced,90,High,Tottenham Hotspur,1,1,draw
+4626094,2026-03-15,985,405,11,2,80,82,80,79,Balanced,65,High,Manchester United,80,83,81,80,Balanced,50,Balanced,Aston Villa,3,1,home_win
+4645925,2026-03-15,131,368,241,481,85,85,85,82,Balanced,65,High,FC Barcelona,75,75,76,75,Counter,50,Balanced,Sevilla FC,5,2,home_win
+4839823,2026-03-15,409,170,191,254,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,69,67,69,70,Balanced,50,Balanced,SK Rapid,0,1,away_win
+4620998,2026-03-15,398,5,46,47,79,80,77,78,Balanced,30,Deep,Lazio,81,82,79,78,Short passing,50,Balanced,AC Milan,1,0,home_win
+4635236,2026-03-15,273,1082,74,65,76,74,76,74,Balanced,65,High,Stade Rennais FC,76,79,76,76,Balanced,65,High,Lille OSC,1,2,away_win
+4814369,2026-03-17,11,15,1,32,84,86,84,84,Balanced,65,High,Arsenal,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,2,0,home_win
+4814368,2026-03-17,336,501,237,918,79,79,80,77,Balanced,65,High,Sporting CP,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,5,0,home_win
+4814362,2026-03-17,631,583,5,73,80,80,82,80,Balanced,65,High,Chelsea,84,85,84,85,Balanced,90,High,Paris Saint-Germain,0,3,away_win
+4814364,2026-03-17,281,418,10,243,84,82,85,82,Balanced,65,High,Manchester City,85,88,85,82,Balanced,90,High,Real Madrid,1,2,away_win
+4814363,2026-03-18,31,141,9,325,85,85,86,83,Balanced,65,High,Liverpool,80,84,80,79,Balanced,65,High,Galatasaray SK,4,0,home_win
+4814366,2026-03-18,131,762,241,13,85,85,85,82,Balanced,65,High,FC Barcelona,81,81,84,80,Short passing,50,Balanced,Newcastle United,7,2,home_win
+4814367,2026-03-18,148,13,18,240,81,79,81,81,Balanced,90,High,Tottenham Hotspur,82,84,81,82,Balanced,65,High,Atlético Madrid,3,2,home_win
+4814365,2026-03-18,27,800,21,39,84,89,85,82,Balanced,65,High,FC Bayern München,79,79,79,79,Short passing,50,Balanced,Atalanta,4,1,home_win
+4805912,2026-03-18,1075,279,1896,1874,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,72,72,71,68,Short passing,50,Balanced,Ferencvárosi Torna Club,4,0,home_win
+4805913,2026-03-19,150,265,449,1884,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,74,73,74,73,Counter,50,Balanced,Panathinaikos FC,4,0,home_win
+4805914,2026-03-19,60,1184,25,673,75,71,74,76,Balanced,50,Balanced,SC Freiburg,73,72,73,75,Balanced,50,Balanced,KRC Genk,5,1,home_win
+4805917,2026-03-19,865,703,1516,14,71,71,70,71,Balanced,50,Balanced,FC Midtjylland,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,1,5,away_win
+4805918,2026-03-19,12,1025,52,189,80,77,79,80,Balanced,50,Balanced,Roma,76,76,77,74,Balanced,65,High,Bologna,3,4,away_win
+4805919,2026-03-19,405,1082,2,65,80,83,81,80,Balanced,50,Balanced,Aston Villa,76,79,76,76,Balanced,65,High,Lille OSC,2,0,home_win
+4805870,2026-03-19,9644,430,114326,110374,69,71,69,70,Balanced,90,High,Raków Częstochowa,77,79,75,75,Short passing,65,High,Fiorentina,1,2,away_win
+4805868,2026-03-19,197,1090,267,1906,73,75,74,72,Short passing,50,Balanced,Sparta Praha,73,74,74,72,Balanced,65,High,AZ Alkmaar,0,4,away_win
+4805867,2026-03-19,660,238,101059,873,72,71,73,73,Balanced,50,Balanced,Shakhtar Donetsk,70,72,68,70,Balanced,50,Balanced,Lech Poznań,1,2,away_win
+4805916,2026-03-19,720,79,236,36,77,77,77,76,Balanced,65,High,FC Porto,77,78,77,74,Balanced,90,High,VfB Stuttgart,2,0,home_win
+4645911,2026-03-20,1050,681,483,457,79,80,79,77,Short passing,50,Balanced,Villarreal CF,77,79,77,75,Short passing,90,High,Real Sociedad,3,1,home_win
+4839825,2026-03-20,122,409,209,191,68,67,71,67,Short passing,90,High,SK Sturm Graz,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,1,1,draw
+4626100,2026-03-21,1237,31,1808,9,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,85,85,86,83,Balanced,65,High,Liverpool,2,1,home_win
+4634423,2026-03-21,27,89,21,1831,84,89,85,82,Balanced,65,High,FC Bayern München,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,4,0,home_win
+4645912,2026-03-22,621,150,448,449,80,78,81,78,Short passing,65,High,Athletic Club,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,2,1,home_win
+4645913,2026-03-22,131,367,241,480,85,85,85,82,Balanced,65,High,FC Barcelona,77,73,77,77,Short passing,65,High,Rayo Vallecano,1,0,home_win
+4645909,2026-03-22,418,13,243,240,85,88,85,82,Balanced,90,High,Real Madrid,82,84,81,82,Balanced,65,High,Atlético Madrid,3,2,home_win
+4787643,2026-03-22,452,2790,900,10032,70,70,71,68,Counter,50,Balanced,BSC Young Boys,70,71,68,68,Counter,50,Balanced,FC Lugano,1,1,draw
+4818788,2026-03-22,11,281,1,10,84,86,84,84,Balanced,65,High,Arsenal,84,82,85,82,Balanced,65,High,Manchester City,0,2,away_win
+4839830,2026-03-22,170,413,254,252,69,67,69,70,Balanced,50,Balanced,SK Rapid,68,73,68,68,Balanced,30,Deep,LASK Linz,4,2,home_win
+4626106,2026-03-22,148,703,18,14,81,79,81,81,Balanced,90,High,Tottenham Hotspur,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,0,3,away_win
+4626098,2026-03-22,405,379,2,19,80,83,81,80,Balanced,50,Balanced,Aston Villa,77,78,77,77,Short passing,30,Deep,West Ham United,2,0,home_win
+4635240,2026-03-22,1041,162,66,69,76,74,75,76,Balanced,65,High,Olympique Lyonnais,78,77,75,77,Balanced,65,High,AS Monaco,1,2,away_win
+4635248,2026-03-22,244,1082,219,65,79,81,79,79,Balanced,65,High,Olympique de Marseille,76,79,76,76,Balanced,65,High,Lille OSC,1,2,away_win
+4648869,2026-03-22,1075,720,1896,236,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,77,77,77,76,Balanced,65,High,FC Porto,1,2,away_win
+4621009,2026-03-22,430,46,110374,44,77,79,75,75,Short passing,65,High,Fiorentina,83,86,83,83,Balanced,90,High,Inter,1,1,draw
+4621006,2026-03-22,1025,398,189,46,76,76,77,74,Balanced,65,High,Bologna,79,80,77,78,Balanced,30,Deep,Lazio,0,2,away_win
+4624858,2026-03-22,255,9644,1871,114326,69,69,70,70,Balanced,90,High,Legia Warszawa,69,71,69,70,Balanced,90,High,Raków Częstochowa,1,1,draw
+4624867,2026-04-04,2300,238,110745,873,69,72,69,69,Balanced,50,Balanced,Jagiellonia Białystok,70,72,68,70,Balanced,50,Balanced,Lech Poznań,0,0,draw
+4634445,2026-04-04,79,16,36,22,77,78,77,74,Balanced,90,High,VfB Stuttgart,81,83,80,82,Balanced,65,High,Borussia Dortmund,0,2,away_win
+4645903,2026-04-04,13,131,240,241,82,84,81,82,Balanced,65,High,Atlético Madrid,85,85,85,82,Balanced,65,High,FC Barcelona,1,2,away_win
+4634443,2026-04-04,60,27,25,21,75,71,74,76,Balanced,50,Balanced,SC Freiburg,84,89,85,82,Balanced,65,High,FC Bayern München,2,3,away_win
+4787628,2026-04-04,26,452,896,900,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,70,70,71,68,Counter,50,Balanced,BSC Young Boys,3,3,draw
+4844306,2026-04-04,281,31,10,9,84,82,85,82,Balanced,65,High,Manchester City,85,85,86,83,Balanced,65,High,Liverpool,4,0,home_win
+4635249,2026-04-05,162,244,69,219,78,77,75,77,Balanced,65,High,AS Monaco,79,81,79,79,Balanced,65,High,Olympique de Marseille,2,1,home_win
+4839836,2026-04-05,170,122,254,209,69,67,69,70,Balanced,50,Balanced,SK Rapid,68,67,71,67,Short passing,90,High,SK Sturm Graz,0,2,away_win
+4621016,2026-04-05,46,12,44,52,83,86,83,83,Balanced,90,High,Inter,80,77,79,80,Balanced,50,Balanced,Roma,5,2,home_win
+4621020,2026-04-06,6195,5,48,47,81,79,82,80,Balanced,65,High,Napoli,81,82,79,78,Short passing,50,Balanced,AC Milan,1,0,home_win
+4850165,2026-04-06,2282,58,231,229,74,73,76,73,Balanced,90,High,Club Brugge KV,71,74,70,68,Balanced,90,High,RSC Anderlecht,4,2,home_win
+4814371,2026-04-07,418,27,243,21,85,88,85,82,Balanced,90,High,Real Madrid,84,89,85,82,Balanced,65,High,FC Bayern München,1,2,away_win
+4814373,2026-04-07,336,11,237,1,79,79,80,77,Balanced,65,High,Sporting CP,84,86,84,84,Balanced,65,High,Arsenal,0,1,away_win
+4814372,2026-04-08,131,13,241,240,85,85,85,82,Balanced,65,High,FC Barcelona,82,84,81,82,Balanced,65,High,Atlético Madrid,0,2,away_win
+4805920,2026-04-08,1075,150,1896,449,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,1,1,draw
+4814370,2026-04-08,583,31,73,9,84,85,84,85,Balanced,90,High,Paris Saint-Germain,85,85,86,83,Balanced,65,High,Liverpool,2,0,home_win
+4805875,2026-04-09,660,1090,101059,1906,72,71,73,73,Balanced,50,Balanced,Shakhtar Donetsk,73,74,74,72,Balanced,65,High,AZ Alkmaar,3,0,home_win
+4805876,2026-04-09,873,430,1799,110374,79,78,77,80,Short passing,30,Deep,Crystal Palace,77,79,75,75,Short passing,65,High,Fiorentina,3,0,home_win
+4805922,2026-04-09,720,703,236,14,77,77,77,76,Balanced,65,High,FC Porto,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,1,1,draw
+4805923,2026-04-09,1025,405,189,2,76,76,77,74,Balanced,65,High,Bologna,80,83,81,80,Balanced,50,Balanced,Aston Villa,1,3,away_win
+4839837,2026-04-10,409,413,191,252,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,68,73,68,68,Balanced,30,Deep,LASK Linz,2,3,away_win
+4634459,2026-04-11,16,15,22,32,81,83,80,82,Balanced,65,High,Borussia Dortmund,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,0,1,away_win
+4645947,2026-04-11,368,13,481,240,75,75,76,75,Counter,50,Balanced,Sevilla FC,82,84,81,82,Balanced,65,High,Atlético Madrid,2,1,home_win
+4621025,2026-04-11,800,506,39,45,79,79,79,79,Short passing,50,Balanced,Atalanta,80,81,80,80,Balanced,90,High,Juventus,0,1,away_win
+4624749,2026-04-12,62,941,266,110468,75,74,75,73,Short passing,50,Balanced,SK Slavia Praha,72,73,71,73,Short passing,90,High,Viktoria Plzeň,0,0,draw
+4850145,2026-04-12,58,157,229,674,71,74,70,68,Balanced,90,High,RSC Anderlecht,70,70,70,68,Balanced,30,Deep,KAA Gent,3,1,home_win
+4626115,2026-04-12,703,405,14,2,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,80,83,81,80,Balanced,50,Balanced,Aston Villa,1,1,draw
+4626111,2026-04-12,631,281,5,10,80,80,82,80,Balanced,65,High,Chelsea,84,82,85,82,Balanced,65,High,Manchester City,0,3,away_win
+4626112,2026-04-12,873,762,1799,13,79,78,77,80,Short passing,30,Deep,Crystal Palace,81,81,84,80,Short passing,50,Balanced,Newcastle United,2,1,home_win
+4645941,2026-04-12,621,1050,448,483,80,78,81,78,Short passing,65,High,Athletic Club,79,80,79,77,Short passing,50,Balanced,Villarreal CF,1,2,away_win
+4621029,2026-04-13,430,398,110374,46,77,79,75,75,Short passing,65,High,Fiorentina,79,80,77,78,Balanced,30,Deep,Lazio,1,0,home_win
+4814374,2026-04-14,31,583,9,73,85,85,86,83,Balanced,65,High,Liverpool,84,85,84,85,Balanced,90,High,Paris Saint-Germain,0,2,away_win
+4814376,2026-04-14,13,131,240,241,82,84,81,82,Balanced,65,High,Atlético Madrid,85,85,85,82,Balanced,65,High,FC Barcelona,1,2,away_win
+4814375,2026-04-15,27,418,21,243,84,89,85,82,Balanced,65,High,FC Bayern München,85,88,85,82,Balanced,90,High,Real Madrid,4,3,home_win
+4814377,2026-04-15,11,336,1,237,84,86,84,84,Balanced,65,High,Arsenal,79,79,80,77,Balanced,65,High,Sporting CP,0,0,draw
+4805926,2026-04-16,703,720,14,236,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,77,77,77,76,Balanced,65,High,FC Porto,1,0,home_win
+4805924,2026-04-16,150,1075,449,1896,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,2,4,away_win
+4805880,2026-04-16,430,873,110374,1799,77,79,75,75,Short passing,65,High,Fiorentina,79,78,77,80,Short passing,30,Deep,Crystal Palace,2,1,home_win
+4805879,2026-04-16,1090,660,1906,101059,73,74,74,72,Balanced,65,High,AZ Alkmaar,72,71,73,73,Balanced,50,Balanced,Shakhtar Donetsk,2,2,draw
+4805927,2026-04-16,405,1025,2,189,80,83,81,80,Balanced,50,Balanced,Aston Villa,76,76,77,74,Balanced,65,High,Bologna,4,0,home_win
+4626127,2026-04-18,148,1237,18,1808,81,79,81,81,Balanced,90,High,Tottenham Hotspur,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,2,2,draw
+4842389,2026-04-18,13,681,240,457,82,84,81,82,Balanced,65,High,Atlético Madrid,77,79,77,75,Short passing,90,High,Real Sociedad,5,6,away_win
+4634479,2026-04-18,24,23826,1824,112172,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,78,77,76,80,Counter,65,High,RB Leipzig,1,3,away_win
+4621041,2026-04-18,12,800,52,39,80,77,79,80,Balanced,50,Balanced,Roma,79,79,79,79,Short passing,50,Balanced,Atalanta,1,1,draw
+4621039,2026-04-18,6195,398,48,46,81,79,82,80,Balanced,65,High,Napoli,79,80,77,78,Balanced,30,Deep,Lazio,0,2,away_win
+4626120,2026-04-18,631,985,5,11,80,80,82,80,Balanced,65,High,Chelsea,80,82,80,79,Balanced,65,High,Manchester United,0,1,away_win
+4635275,2026-04-19,583,1041,73,66,84,85,84,85,Balanced,90,High,Paris Saint-Germain,76,74,75,76,Balanced,65,High,Olympique Lyonnais,1,2,away_win
+4635268,2026-04-19,667,273,76,74,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,76,74,76,74,Balanced,65,High,Stade Rennais FC,0,3,away_win
+4634477,2026-04-19,27,79,21,36,84,89,85,82,Balanced,65,High,FC Bayern München,77,78,77,74,Balanced,90,High,VfB Stuttgart,4,2,home_win
+4850139,2026-04-19,3948,2282,2014,231,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,74,73,76,73,Balanced,90,High,Club Brugge KV,2,1,home_win
+4839849,2026-04-19,413,122,252,209,68,73,68,68,Balanced,30,Deep,LASK Linz,68,67,71,67,Short passing,90,High,SK Sturm Graz,1,1,draw
+4621037,2026-04-19,506,1025,45,189,80,81,80,80,Balanced,90,High,Juventus,76,76,77,74,Balanced,65,High,Bologna,2,0,home_win
+4626124,2026-04-19,281,11,10,1,84,82,85,82,Balanced,65,High,Manchester City,84,86,84,84,Balanced,65,High,Arsenal,2,1,home_win
+4648893,2026-04-19,336,294,237,234,79,79,80,77,Balanced,65,High,Sporting CP,78,79,78,77,Balanced,90,High,SL Benfica,1,2,away_win
+4626121,2026-04-20,873,379,1799,19,79,78,77,80,Short passing,30,Deep,Crystal Palace,77,78,77,77,Short passing,30,Deep,West Ham United,0,0,draw
+4626130,2026-04-21,1237,631,1808,5,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,80,80,82,80,Balanced,65,High,Chelsea,3,0,home_win
+4839855,2026-04-22,122,413,209,252,68,67,71,67,Short passing,90,High,SK Sturm Graz,68,73,68,68,Balanced,30,Deep,LASK Linz,1,1,draw
+4824556,2026-04-22,800,398,39,46,79,79,79,79,Short passing,50,Balanced,Atalanta,79,80,77,78,Balanced,30,Deep,Lazio,2,3,away_win
+4830557,2026-04-22,15,27,32,21,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,84,89,85,82,Balanced,65,High,FC Bayern München,0,2,away_win
+4850162,2026-04-22,3948,157,2014,674,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,70,70,70,68,Balanced,30,Deep,KAA Gent,0,0,draw
+4830556,2026-04-23,79,60,36,25,77,78,77,74,Balanced,90,High,VfB Stuttgart,75,71,74,76,Balanced,50,Balanced,SC Freiburg,2,1,home_win
+4634497,2026-04-24,23826,89,112172,1831,78,77,76,80,Counter,65,High,RB Leipzig,75,72,73,75,Counter,30,Deep,1. FC Union Berlin,3,1,home_win
+4645971,2026-04-24,150,418,449,243,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,85,88,85,82,Balanced,90,High,Real Madrid,1,1,draw
+4626128,2026-04-25,11,762,1,13,84,86,84,84,Balanced,65,High,Arsenal,81,81,84,80,Short passing,50,Balanced,Newcastle United,1,0,home_win
+4621045,2026-04-25,1025,12,189,52,76,76,77,74,Balanced,65,High,Bologna,80,77,79,80,Balanced,50,Balanced,Roma,0,2,away_win
+4645975,2026-04-25,13,621,240,448,82,84,81,82,Balanced,65,High,Atlético Madrid,80,78,81,78,Short passing,65,High,Athletic Club,3,2,home_win
+4626133,2026-04-25,31,873,9,1799,85,85,86,83,Balanced,65,High,Liverpool,79,78,77,80,Short passing,30,Deep,Crystal Palace,3,1,home_win
+4621050,2026-04-26,5,506,47,45,81,82,79,78,Short passing,50,Balanced,AC Milan,80,81,80,80,Balanced,90,High,Juventus,0,0,draw
+4850148,2026-04-26,58,3948,229,2014,71,74,70,68,Balanced,90,High,RSC Anderlecht,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,1,3,away_win
+4850146,2026-04-26,157,2282,674,231,70,70,70,68,Balanced,30,Deep,KAA Gent,74,73,76,73,Balanced,90,High,Club Brugge KV,0,2,away_win
+4624893,2026-04-26,238,255,873,1871,70,72,68,70,Balanced,50,Balanced,Lech Poznań,69,69,70,70,Balanced,90,High,Legia Warszawa,4,0,home_win
+4634495,2026-04-26,16,60,22,25,81,83,80,82,Balanced,65,High,Borussia Dortmund,75,71,74,76,Balanced,50,Balanced,SC Freiburg,4,0,home_win
+4839859,2026-04-26,170,409,254,191,69,67,69,70,Balanced,50,Balanced,SK Rapid,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,1,0,home_win
+4645974,2026-04-26,367,681,480,457,77,73,77,77,Short passing,65,High,Rayo Vallecano,77,79,77,75,Short passing,90,High,Real Sociedad,3,3,draw
+4648044,2026-04-26,141,36,325,326,80,84,80,79,Balanced,65,High,Galatasaray SK,79,79,79,76,Balanced,90,High,Fenerbahçe SK,3,0,home_win
+4814378,2026-04-28,583,27,73,21,84,85,84,85,Balanced,90,High,Paris Saint-Germain,84,89,85,82,Balanced,65,High,FC Bayern München,5,4,home_win
+4814379,2026-04-29,13,11,240,1,82,84,81,82,Balanced,65,High,Atlético Madrid,84,86,84,84,Balanced,65,High,Arsenal,1,1,draw
+4805884,2026-04-30,367,667,480,76,77,73,77,77,Short passing,65,High,Rayo Vallecano,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,1,0,home_win
+4805883,2026-04-30,660,873,101059,1799,72,71,73,73,Balanced,50,Balanced,Shakhtar Donetsk,79,78,77,80,Short passing,30,Deep,Crystal Palace,1,3,away_win
+4805928,2026-04-30,1075,60,1896,25,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,75,71,74,76,Balanced,50,Balanced,SC Freiburg,2,1,home_win
+4805929,2026-04-30,703,405,14,2,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,80,83,81,80,Balanced,50,Balanced,Aston Villa,1,0,home_win
+4626146,2026-05-02,762,1237,13,1808,81,81,84,80,Short passing,50,Balanced,Newcastle United,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,3,1,home_win
+4634514,2026-05-02,15,23826,32,112172,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,78,77,76,80,Counter,65,High,RB Leipzig,4,1,home_win
+4856831,2026-05-03,2790,452,10032,900,70,71,68,68,Counter,50,Balanced,FC Lugano,70,70,71,68,Counter,50,Balanced,BSC Young Boys,1,0,home_win
+4626139,2026-05-03,405,148,2,18,80,83,81,80,Balanced,50,Balanced,Aston Villa,81,79,81,81,Balanced,90,High,Tottenham Hotspur,1,2,away_win
+4850154,2026-05-03,58,2282,229,231,71,74,70,68,Balanced,90,High,RSC Anderlecht,74,73,76,73,Balanced,90,High,Club Brugge KV,1,3,away_win
+4635290,2026-05-03,1041,273,66,74,76,74,75,76,Balanced,65,High,Olympique Lyonnais,76,74,76,74,Balanced,65,High,Stade Rennais FC,4,2,home_win
+4626145,2026-05-03,985,31,11,9,80,82,80,79,Balanced,65,High,Manchester United,85,85,86,83,Balanced,65,High,Liverpool,3,2,home_win
+4839867,2026-05-03,409,122,191,209,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,68,67,71,67,Short passing,90,High,SK Sturm Graz,1,1,draw
+4646000,2026-05-04,368,681,481,457,75,75,76,75,Counter,50,Balanced,Sevilla FC,77,79,77,75,Short passing,90,High,Real Sociedad,1,0,home_win
+4621065,2026-05-04,12,430,52,110374,80,77,79,80,Balanced,50,Balanced,Roma,77,79,75,75,Short passing,65,High,Fiorentina,4,0,home_win
+4626142,2026-05-04,631,703,5,14,80,80,82,80,Balanced,65,High,Chelsea,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,1,3,away_win
+4839865,2026-05-04,413,170,252,254,68,73,68,68,Balanced,30,Deep,LASK Linz,69,67,69,70,Balanced,50,Balanced,SK Rapid,3,1,home_win
+4794682,2026-05-04,501,687,918,417,71,70,73,70,Balanced,90,High,FK Bodø/Glimt,68,69,68,67,Balanced,65,High,Molde FK,0,1,away_win
+4814381,2026-05-05,11,13,1,240,84,86,84,84,Balanced,65,High,Arsenal,82,84,81,82,Balanced,65,High,Atlético Madrid,1,0,home_win
+4814380,2026-05-06,27,583,21,73,84,89,85,82,Balanced,65,High,FC Bayern München,84,85,84,85,Balanced,90,High,Paris Saint-Germain,1,1,draw
+4805930,2026-05-07,60,1075,25,1896,75,71,74,76,Balanced,50,Balanced,SC Freiburg,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,3,1,home_win
+4805886,2026-05-07,667,367,76,480,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,77,73,77,77,Short passing,65,High,Rayo Vallecano,0,1,away_win
+4805885,2026-05-07,873,660,1799,101059,79,78,77,80,Short passing,30,Deep,Crystal Palace,72,71,73,73,Balanced,50,Balanced,Shakhtar Donetsk,2,1,home_win
+4805931,2026-05-07,405,703,2,14,80,83,81,80,Balanced,50,Balanced,Aston Villa,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,4,0,home_win
+4634531,2026-05-08,16,24,22,1824,81,83,80,82,Balanced,65,High,Borussia Dortmund,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,3,2,home_win
+4626152,2026-05-09,31,631,9,5,85,85,86,83,Balanced,65,High,Liverpool,80,80,82,80,Balanced,65,High,Chelsea,1,1,draw
+4646016,2026-05-09,681,150,457,449,77,79,77,75,Short passing,90,High,Real Sociedad,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,2,2,draw
+4634534,2026-05-09,79,15,36,32,77,78,77,74,Balanced,90,High,VfB Stuttgart,79,82,79,77,Balanced,50,Balanced,Bayer 04 Leverkusen,3,1,home_win
+4621071,2026-05-09,398,46,46,44,79,80,77,78,Balanced,30,Deep,Lazio,83,86,83,83,Balanced,90,High,Inter,0,3,away_win
+4839873,2026-05-10,413,409,252,191,68,73,68,68,Balanced,30,Deep,LASK Linz,70,69,70,69,Balanced,90,High,FC Red Bull Salzburg,2,1,home_win
+4850156,2026-05-10,157,58,674,229,70,70,70,68,Balanced,30,Deep,KAA Gent,71,74,70,68,Balanced,90,High,RSC Anderlecht,1,1,draw
+4856837,2026-05-10,452,26,900,896,70,70,71,68,Counter,50,Balanced,BSC Young Boys,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,3,0,home_win
+4646012,2026-05-10,131,418,241,243,85,85,85,82,Balanced,65,High,FC Barcelona,85,88,85,82,Balanced,90,High,Real Madrid,2,0,home_win
+4621073,2026-05-10,5,800,47,39,81,82,79,78,Short passing,50,Balanced,AC Milan,79,79,79,79,Short passing,50,Balanced,Atalanta,2,3,away_win
+4626154,2026-05-10,703,762,14,13,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,81,81,84,80,Short passing,50,Balanced,Newcastle United,1,1,draw
+4642439,2026-05-10,234,1090,246,1906,75,76,77,74,Short passing,65,High,Feyenoord,73,74,74,72,Balanced,65,High,AZ Alkmaar,1,1,draw
+4626157,2026-05-10,379,11,19,1,77,78,77,77,Short passing,30,Deep,West Ham United,84,86,84,84,Balanced,65,High,Arsenal,0,1,away_win
+4635302,2026-05-10,162,1082,69,65,78,77,75,77,Balanced,65,High,AS Monaco,76,79,76,76,Balanced,65,High,Lille OSC,0,1,away_win
+4621074,2026-05-11,6195,1025,48,189,81,79,82,80,Balanced,65,High,Napoli,76,76,77,74,Balanced,65,High,Bologna,2,3,away_win
+4648933,2026-05-11,294,1075,234,1896,78,79,78,77,Balanced,90,High,SL Benfica,74,74,75,74,Short passing,65,High,Sporting Clube de Braga,2,2,draw
+4624906,2026-05-13,9644,2300,114326,110745,69,71,69,70,Balanced,90,High,Raków Częstochowa,69,72,69,69,Balanced,50,Balanced,Jagiellonia Białystok,0,2,away_win
+4626104,2026-05-13,281,873,10,1799,84,82,85,82,Balanced,65,High,Manchester City,79,78,77,80,Short passing,30,Deep,Crystal Palace,3,0,home_win
+4645967,2026-05-13,1050,368,483,481,79,80,79,77,Short passing,50,Balanced,Villarreal CF,75,75,76,75,Counter,50,Balanced,Sevilla FC,2,3,away_win
+4626159,2026-05-15,405,31,2,9,80,83,81,80,Balanced,50,Balanced,Aston Villa,85,85,86,83,Balanced,65,High,Liverpool,4,2,home_win
+4634552,2026-05-16,60,23826,25,112172,75,71,74,76,Balanced,50,Balanced,SC Freiburg,78,77,76,80,Counter,65,High,RB Leipzig,4,1,home_win
+4634551,2026-05-16,24,79,1824,36,78,77,78,80,Short passing,65,High,Eintracht Frankfurt,77,78,77,74,Balanced,90,High,VfB Stuttgart,2,2,draw
+4645991,2026-05-17,131,150,241,449,85,85,85,82,Balanced,65,High,FC Barcelona,78,77,79,77,Balanced,50,Balanced,Real Betis Balompié,3,1,home_win
+4621083,2026-05-17,506,430,45,110374,80,81,80,80,Balanced,90,High,Juventus,77,79,75,75,Short passing,65,High,Fiorentina,0,2,away_win
+4621085,2026-05-17,12,398,52,46,80,77,79,80,Balanced,50,Balanced,Roma,79,80,77,78,Balanced,30,Deep,Lazio,2,0,home_win
+4645994,2026-05-17,367,1050,480,483,77,73,77,77,Short passing,65,High,Rayo Vallecano,79,80,79,77,Short passing,50,Balanced,Villarreal CF,2,0,home_win
+4645998,2026-05-17,368,418,481,243,75,75,76,75,Counter,50,Balanced,Sevilla FC,85,88,85,82,Balanced,90,High,Real Madrid,0,1,away_win
+4621078,2026-05-17,800,1025,39,189,79,79,79,79,Short passing,50,Balanced,Atalanta,76,76,77,74,Balanced,65,High,Bologna,0,1,away_win
+4856817,2026-05-17,2790,26,10032,896,70,71,68,68,Counter,50,Balanced,FC Lugano,71,69,72,71,Balanced,50,Balanced,FC Basel 1893,4,0,home_win
+4850160,2026-05-17,2282,3948,231,2014,74,73,76,73,Balanced,90,High,Club Brugge KV,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,5,0,home_win
+4839879,2026-05-17,122,170,209,254,68,67,71,67,Short passing,90,High,SK Sturm Graz,69,67,69,70,Balanced,50,Balanced,SK Rapid,2,0,home_win
+4635310,2026-05-17,667,162,76,69,75,76,74,75,Short passing,65,High,RC Strasbourg Alsace,78,77,75,77,Balanced,65,High,AS Monaco,5,4,home_win
+4635309,2026-05-17,244,273,219,74,79,81,79,79,Balanced,65,High,Olympique de Marseille,76,74,76,74,Balanced,65,High,Stade Rennais FC,3,1,home_win
+4626165,2026-05-17,985,703,11,14,80,82,80,79,Balanced,65,High,Manchester United,79,79,79,79,Balanced,50,Balanced,Nottingham Forest,3,2,home_win
+4626166,2026-05-17,762,379,13,19,81,81,84,80,Short passing,50,Balanced,Newcastle United,77,78,77,77,Short passing,30,Deep,West Ham United,3,1,home_win
+4626162,2026-05-19,631,148,5,18,80,80,82,80,Balanced,65,High,Chelsea,81,79,81,81,Balanced,90,High,Tottenham Hotspur,2,1,home_win
+4850149,2026-05-21,157,3948,674,2014,70,70,70,68,Balanced,30,Deep,KAA Gent,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,0,0,draw
+4621090,2026-05-22,430,800,110374,39,77,79,75,75,Short passing,65,High,Fiorentina,79,79,79,79,Short passing,50,Balanced,Atalanta,1,1,draw
+4621088,2026-05-23,1025,46,189,44,76,76,77,74,Balanced,65,High,Bologna,83,86,83,83,Balanced,90,High,Inter,3,3,draw
+4645985,2026-05-23,418,621,243,448,85,88,85,82,Balanced,90,High,Real Madrid,80,78,81,78,Short passing,65,High,Athletic Club,4,2,home_win
+4626168,2026-05-24,1237,985,1808,11,78,78,78,78,Short passing,65,High,Brighton & Hove Albion,80,82,80,79,Balanced,65,High,Manchester United,0,3,away_win
+4850141,2026-05-24,3948,58,2014,229,74,74,73,75,Balanced,50,Balanced,Union Saint-Gilloise,71,74,70,68,Balanced,90,High,RSC Anderlecht,5,1,home_win
+4626173,2026-05-24,281,405,10,2,84,82,85,82,Balanced,65,High,Manchester City,80,83,81,80,Balanced,50,Balanced,Aston Villa,1,2,away_win
+4645986,2026-05-24,1050,13,483,240,79,80,79,77,Short passing,50,Balanced,Villarreal CF,82,84,81,82,Balanced,65,High,Atlético Madrid,5,1,home_win
+4626170,2026-05-24,873,11,1799,1,79,78,77,80,Short passing,30,Deep,Crystal Palace,84,86,84,84,Balanced,65,High,Arsenal,1,2,away_win
+4850140,2026-05-24,2282,157,231,674,74,73,76,73,Balanced,90,High,Club Brugge KV,70,70,70,68,Balanced,30,Deep,KAA Gent,5,0,home_win

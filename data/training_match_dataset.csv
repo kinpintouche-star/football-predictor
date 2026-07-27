@@ -1,0 +1,874 @@
+match_id,match_date,home_sofifa_team_name,away_sofifa_team_name,home_overall,home_attack,home_midfield,home_defence,home_defensive_line,home_build_up_style_Balanced,home_build_up_style_Counter,home_build_up_style_Short passing,away_overall,away_attack,away_midfield,away_defence,away_defensive_line,away_build_up_style_Balanced,away_build_up_style_Counter,away_build_up_style_Short passing,result
+4506866,2025-07-01,Real Madrid,Juventus,85,88,85,82,90,1,0,0,80,81,80,80,90,1,0,0,home_win
+4506870,2025-07-05,Paris Saint-Germain,FC Bayern München,84,85,84,85,90,1,0,0,84,89,85,82,65,1,0,0,home_win
+4506871,2025-07-05,Real Madrid,Borussia Dortmund,85,88,85,82,90,1,0,0,81,83,80,82,65,1,0,0,home_win
+4506873,2025-07-09,Paris Saint-Germain,Real Madrid,84,85,84,85,90,1,0,0,85,88,85,82,90,1,0,0,home_win
+4506874,2025-07-13,Chelsea,Paris Saint-Germain,80,80,82,80,65,1,0,0,84,85,84,85,90,1,0,0,home_win
+4624298,2025-07-20,Union Saint-Gilloise,Club Brugge KV,74,74,73,75,50,1,0,0,74,73,76,73,90,1,0,0,away_win
+4625710,2025-07-22,Rangers FC,Panathinaikos FC,73,72,73,72,90,1,0,0,74,73,74,73,50,0,1,0,home_win
+4627422,2025-07-27,Club Brugge KV,KRC Genk,74,73,76,73,90,1,0,0,73,72,73,75,50,1,0,0,home_win
+4625727,2025-07-30,Panathinaikos FC,Rangers FC,74,73,74,73,50,0,1,0,73,72,73,72,90,1,0,0,draw
+4683940,2025-07-31,Sporting CP,SL Benfica,79,79,80,77,65,1,0,0,78,79,78,77,90,1,0,0,away_win
+4638183,2025-08-01,LASK Linz,SK Sturm Graz,68,73,68,68,30,1,0,0,68,67,71,67,90,0,0,1,away_win
+4691926,2025-08-05,Rangers FC,Viktoria Plzeň,73,72,73,72,90,1,0,0,72,73,71,73,90,0,0,1,home_win
+4627251,2025-08-06,FC Basel 1893,BSC Young Boys,71,69,72,71,50,1,0,0,70,70,71,68,50,0,1,0,home_win
+4676662,2025-08-06,FC Red Bull Salzburg,Club Brugge KV,70,69,70,69,90,1,0,0,74,73,76,73,90,1,0,0,away_win
+4676659,2025-08-06,Feyenoord,Fenerbahçe SK,75,76,77,74,65,0,0,1,79,79,79,76,90,1,0,0,home_win
+4692614,2025-08-07,Panathinaikos FC,Shakhtar Donetsk,74,73,74,73,50,0,1,0,72,71,73,73,50,1,0,0,draw
+4627485,2025-08-09,KAA Gent,Union Saint-Gilloise,70,70,70,68,30,1,0,0,74,74,73,75,50,1,0,0,away_win
+4703996,2025-08-10,Crystal Palace,Liverpool,79,78,77,80,30,0,0,1,85,85,86,83,65,1,0,0,home_win
+4638193,2025-08-10,SK Sturm Graz,SK Rapid,68,67,71,67,90,0,0,1,69,67,69,70,50,1,0,0,away_win
+4627250,2025-08-10,FC Lugano,FC Basel 1893,70,71,68,68,50,0,1,0,71,69,72,71,50,1,0,0,home_win
+4691930,2025-08-12,Viktoria Plzeň,Rangers FC,72,73,71,73,90,0,0,1,73,72,73,72,90,1,0,0,home_win
+4676665,2025-08-12,Club Brugge KV,FC Red Bull Salzburg,74,73,76,73,90,1,0,0,70,69,70,69,90,1,0,0,home_win
+4676660,2025-08-12,Fenerbahçe SK,Feyenoord,79,79,79,76,90,1,0,0,75,76,77,74,65,0,0,1,home_win
+4625635,2025-08-13,Paris Saint-Germain,Tottenham Hotspur,84,85,84,85,90,1,0,0,81,79,81,81,90,1,0,0,home_win
+4692627,2025-08-14,Shakhtar Donetsk,Panathinaikos FC,72,71,73,73,50,1,0,0,74,73,74,73,50,0,1,0,away_win
+4635006,2025-08-15,Stade Rennais FC,Olympique de Marseille,76,74,76,74,65,1,0,0,79,81,79,79,65,1,0,0,home_win
+4622725,2025-08-16,VfB Stuttgart,FC Bayern München,77,78,77,74,90,1,0,0,84,89,85,82,65,1,0,0,away_win
+4625775,2025-08-16,Aston Villa,Newcastle United,80,83,81,80,50,1,0,0,81,81,84,80,50,0,0,1,draw
+4645613,2025-08-17,Athletic Club,Sevilla FC,80,78,81,78,65,0,0,1,75,75,76,75,50,0,1,0,home_win
+4625781,2025-08-17,Chelsea,Crystal Palace,80,80,82,80,65,1,0,0,79,78,77,80,30,0,0,1,draw
+4625782,2025-08-17,Manchester United,Arsenal,80,82,80,79,65,1,0,0,84,86,84,84,65,1,0,0,away_win
+4697246,2025-08-19,Rangers FC,Club Brugge KV,73,72,73,72,90,1,0,0,74,73,76,73,90,1,0,0,away_win
+4697247,2025-08-19,Ferencvárosi Torna Club,Qarabağ FK,72,72,71,68,50,0,0,1,69,67,69,67,50,0,0,1,away_win
+4697251,2025-08-20,FC Basel 1893,FC København,71,69,72,71,50,1,0,0,72,73,72,71,90,1,0,0,draw
+4697249,2025-08-20,FK Bodø/Glimt,SK Sturm Graz,71,70,73,70,90,1,0,0,68,67,71,67,90,0,0,1,home_win
+4697252,2025-08-20,Fenerbahçe SK,SL Benfica,79,79,79,76,90,1,0,0,78,79,78,77,90,1,0,0,draw
+4705693,2025-08-21,Lech Poznań,KRC Genk,70,72,68,70,50,1,0,0,73,72,73,75,50,1,0,0,away_win
+4632805,2025-08-22,FC Bayern München,RB Leipzig,84,89,85,82,65,1,0,0,78,77,76,80,65,0,1,0,home_win
+4625784,2025-08-22,West Ham United,Chelsea,77,78,77,77,30,0,0,1,80,80,82,80,65,1,0,0,away_win
+4625786,2025-08-23,Manchester City,Tottenham Hotspur,84,82,85,82,65,1,0,0,81,79,81,81,90,1,0,0,away_win
+4642892,2025-08-23,FC Red Bull Salzburg,LASK Linz,70,69,70,69,90,1,0,0,68,73,68,68,30,1,0,0,home_win
+4620691,2025-08-23,Roma,Bologna,80,77,79,80,50,1,0,0,76,76,77,74,65,1,0,0,home_win
+4634126,2025-08-23,1. FC Union Berlin,VfB Stuttgart,75,72,73,75,30,0,1,0,77,78,77,74,90,1,0,0,home_win
+4635016,2025-08-24,Lille OSC,AS Monaco,76,79,76,76,65,1,0,0,78,77,75,77,65,1,0,0,home_win
+4625793,2025-08-24,Crystal Palace,Nottingham Forest,79,78,77,80,30,0,0,1,79,79,79,79,50,1,0,0,draw
+4625785,2025-08-25,Newcastle United,Liverpool,81,81,84,80,50,0,0,1,85,85,86,83,65,1,0,0,away_win
+4645517,2025-08-25,Athletic Club,Rayo Vallecano,80,78,81,78,65,0,0,1,77,73,77,77,65,0,0,1,home_win
+4705682,2025-08-26,SK Sturm Graz,FK Bodø/Glimt,68,67,71,67,90,0,0,1,71,70,73,70,90,1,0,0,home_win
+4705680,2025-08-27,Qarabağ FK,Ferencvárosi Torna Club,69,67,69,67,50,0,0,1,72,72,71,68,50,0,0,1,away_win
+4705686,2025-08-27,Club Brugge KV,Rangers FC,74,73,76,73,90,1,0,0,73,72,73,72,90,1,0,0,home_win
+4705684,2025-08-27,FC København,FC Basel 1893,72,73,72,71,90,1,0,0,71,69,72,71,50,1,0,0,home_win
+4705685,2025-08-27,SL Benfica,Fenerbahçe SK,78,79,78,77,90,1,0,0,79,79,79,76,90,1,0,0,home_win
+4705705,2025-08-28,KRC Genk,Lech Poznań,73,72,73,75,50,1,0,0,70,72,68,70,50,1,0,0,away_win
+4648653,2025-08-30,Sporting CP,FC Porto,79,79,80,77,65,1,0,0,77,77,77,76,65,1,0,0,away_win
+4634137,2025-08-31,Borussia Dortmund,1. FC Union Berlin,81,83,80,82,65,1,0,0,75,72,73,75,30,0,1,0,home_win
+4645534,2025-08-31,Rayo Vallecano,FC Barcelona,77,73,77,77,65,0,0,1,85,85,85,82,65,1,0,0,draw
+4627262,2025-08-31,BSC Young Boys,FC Lugano,70,70,71,68,50,0,1,0,70,71,68,68,50,0,1,0,home_win
+4638809,2025-08-31,Rangers FC,Celtic,73,72,73,72,90,1,0,0,75,74,75,74,90,1,0,0,draw
+4627542,2025-08-31,KAA Gent,Club Brugge KV,70,70,70,68,30,1,0,0,74,73,76,73,90,1,0,0,draw
+4627544,2025-08-31,Union Saint-Gilloise,RSC Anderlecht,74,74,73,75,50,1,0,0,71,74,70,68,90,1,0,0,home_win
+4635025,2025-08-31,AS Monaco,RC Strasbourg Alsace,78,77,75,77,65,1,0,0,75,76,74,75,65,0,0,1,home_win
+4635032,2025-08-31,Olympique Lyonnais,Olympique de Marseille,76,74,75,76,65,1,0,0,79,81,79,79,65,1,0,0,home_win
+4645533,2025-08-31,Real Betis Balompié,Athletic Club,78,77,79,77,50,1,0,0,80,78,81,78,65,0,0,1,away_win
+4625794,2025-08-31,Aston Villa,Crystal Palace,80,83,81,80,50,1,0,0,79,78,77,80,30,0,0,1,away_win
+4625795,2025-08-31,Brighton & Hove Albion,Manchester City,78,78,78,78,65,0,0,1,84,82,85,82,65,1,0,0,home_win
+4625798,2025-08-31,Liverpool,Arsenal,85,85,86,83,65,1,0,0,84,86,84,84,65,1,0,0,home_win
+4625800,2025-08-31,Nottingham Forest,West Ham United,79,79,79,79,50,1,0,0,77,78,77,77,30,0,0,1,away_win
+4634147,2025-09-12,Bayer 04 Leverkusen,Eintracht Frankfurt,79,82,79,77,50,1,0,0,78,77,78,80,65,0,0,1,home_win
+4645565,2025-09-13,Real Sociedad,Real Madrid,77,79,77,75,90,0,0,1,85,88,85,82,90,1,0,0,away_win
+4634148,2025-09-13,SC Freiburg,VfB Stuttgart,75,71,74,76,50,1,0,0,77,78,77,74,90,1,0,0,home_win
+4620707,2025-09-13,Fiorentina,Napoli,77,79,75,75,65,0,0,1,81,79,82,80,65,1,0,0,away_win
+4645566,2025-09-13,Atlético Madrid,Villarreal CF,82,84,81,82,65,1,0,0,79,80,79,77,50,0,0,1,home_win
+4625804,2025-09-13,Arsenal,Nottingham Forest,84,86,84,84,65,1,0,0,79,79,79,79,50,1,0,0,home_win
+4620708,2025-09-13,Juventus,Inter,80,81,80,80,90,1,0,0,83,86,83,83,90,1,0,0,home_win
+4625813,2025-09-13,West Ham United,Tottenham Hotspur,77,78,77,77,30,0,0,1,81,79,81,81,90,1,0,0,away_win
+4627572,2025-09-14,RSC Anderlecht,KRC Genk,71,74,70,68,90,1,0,0,73,72,73,75,50,1,0,0,draw
+4635041,2025-09-14,Stade Rennais FC,Olympique Lyonnais,76,74,76,74,65,1,0,0,76,74,75,76,65,1,0,0,home_win
+4620709,2025-09-14,AC Milan,Bologna,81,82,79,78,50,0,0,1,76,76,77,74,65,1,0,0,home_win
+4625811,2025-09-14,Manchester City,Manchester United,84,82,85,82,65,1,0,0,80,82,80,79,65,1,0,0,home_win
+4716845,2025-09-16,Tottenham Hotspur,Villarreal CF,81,79,81,81,90,1,0,0,79,80,79,77,50,0,0,1,home_win
+4716844,2025-09-16,SL Benfica,Qarabağ FK,78,79,78,77,90,1,0,0,69,67,69,67,50,0,0,1,away_win
+4716774,2025-09-16,Juventus,Borussia Dortmund,80,81,80,80,90,1,0,0,81,83,80,82,65,1,0,0,draw
+4716843,2025-09-16,Real Madrid,Olympique de Marseille,85,88,85,82,90,1,0,0,79,81,79,79,65,1,0,0,home_win
+4716779,2025-09-16,PSV,Union Saint-Gilloise,77,76,80,76,65,1,0,0,74,74,73,75,50,1,0,0,away_win
+4716778,2025-09-16,Athletic Club,Arsenal,80,78,81,78,65,0,0,1,84,86,84,84,65,1,0,0,away_win
+4717479,2025-09-17,Liverpool,Atlético Madrid,85,85,86,83,65,1,0,0,82,84,81,82,65,1,0,0,home_win
+4716847,2025-09-17,SK Slavia Praha,FK Bodø/Glimt,75,74,75,73,50,0,0,1,71,70,73,70,90,1,0,0,draw
+4717478,2025-09-17,FC Bayern München,Chelsea,84,89,85,82,65,1,0,0,80,80,82,80,65,1,0,0,home_win
+4716777,2025-09-17,Paris Saint-Germain,Atalanta,84,85,84,85,90,1,0,0,79,79,79,79,50,0,0,1,home_win
+4716776,2025-09-18,Manchester City,Napoli,84,82,85,82,65,1,0,0,81,79,82,80,65,1,0,0,home_win
+4717481,2025-09-18,FC København,Bayer 04 Leverkusen,72,73,72,71,90,1,0,0,79,82,79,77,50,1,0,0,draw
+4717480,2025-09-18,Club Brugge KV,AS Monaco,74,73,76,73,90,1,0,0,78,77,75,77,65,1,0,0,home_win
+4717482,2025-09-18,Eintracht Frankfurt,Galatasaray SK,78,77,78,80,65,0,0,1,80,84,80,79,65,1,0,0,home_win
+4717484,2025-09-18,Newcastle United,FC Barcelona,81,81,84,80,50,0,0,1,85,85,85,82,65,1,0,0,away_win
+4645487,2025-09-19,Real Betis Balompié,Real Sociedad,78,77,79,77,50,1,0,0,77,79,77,75,90,0,0,1,home_win
+4625816,2025-09-20,Brighton & Hove Albion,Tottenham Hotspur,78,78,78,78,65,0,0,1,81,79,81,81,90,1,0,0,draw
+4625820,2025-09-20,Manchester United,Chelsea,80,82,80,79,65,1,0,0,80,80,82,80,65,1,0,0,home_win
+4625822,2025-09-20,West Ham United,Crystal Palace,77,78,77,77,30,0,0,1,79,78,77,80,30,0,0,1,away_win
+4623184,2025-09-20,Raków Częstochowa,Legia Warszawa,69,71,69,70,90,1,0,0,69,69,70,70,90,1,0,0,draw
+4642910,2025-09-20,FC Red Bull Salzburg,SK Sturm Graz,70,69,70,69,90,1,0,0,68,67,71,67,90,0,0,1,away_win
+4624582,2025-09-20,Sparta Praha,Viktoria Plzeň,73,75,74,72,50,0,0,1,72,73,71,73,90,0,0,1,home_win
+4641233,2025-09-21,KRC Genk,Union Saint-Gilloise,73,72,73,75,50,1,0,0,74,74,73,75,50,1,0,0,away_win
+4620718,2025-09-21,Lazio,Roma,79,80,77,78,30,1,0,0,80,77,79,80,50,1,0,0,away_win
+4625814,2025-09-21,Arsenal,Manchester City,84,86,84,84,65,1,0,0,84,82,85,82,65,1,0,0,draw
+4634156,2025-09-21,Eintracht Frankfurt,1. FC Union Berlin,78,77,78,80,65,0,0,1,75,72,73,75,30,0,1,0,away_win
+4665074,2025-09-21,Panathinaikos FC,Olympiacos FC,74,73,74,73,50,0,1,0,76,79,76,75,90,1,0,0,draw
+4641477,2025-09-21,AZ Alkmaar,Feyenoord,73,74,74,72,65,1,0,0,75,76,77,74,65,0,0,1,draw
+4635050,2025-09-22,Olympique de Marseille,Paris Saint-Germain,79,81,79,79,65,1,0,0,84,85,84,85,90,1,0,0,home_win
+4627525,2025-09-23,RSC Anderlecht,KAA Gent,71,74,70,68,90,1,0,0,70,70,70,68,30,1,0,0,home_win
+4645540,2025-09-23,Sevilla FC,Villarreal CF,75,75,76,75,50,0,1,0,79,80,79,77,50,0,0,1,away_win
+4715936,2025-09-24,Dinamo Zagreb,Fenerbahçe SK,72,70,71,70,50,0,1,0,79,79,79,76,90,1,0,0,home_win
+4715941,2025-09-24,Real Betis Balompié,Nottingham Forest,78,77,79,77,50,1,0,0,79,79,79,79,50,1,0,0,draw
+4715955,2025-09-24,Sporting Clube de Braga,Feyenoord,74,74,75,74,65,0,0,1,75,76,77,74,65,0,0,1,home_win
+4715997,2025-09-24,SC Freiburg,FC Basel 1893,75,71,74,76,50,1,0,0,71,69,72,71,50,1,0,0,home_win
+4716256,2025-09-24,FC Midtjylland,SK Sturm Graz,71,71,70,71,50,1,0,0,68,67,71,67,90,0,0,1,home_win
+4623156,2025-09-24,Raków Częstochowa,Lech Poznań,69,71,69,70,90,1,0,0,70,72,68,70,50,1,0,0,draw
+4623153,2025-09-24,Legia Warszawa,Jagiellonia Białystok,69,69,70,70,90,1,0,0,69,72,69,69,50,1,0,0,draw
+4645537,2025-09-24,Atlético Madrid,Rayo Vallecano,82,84,81,82,65,1,0,0,77,73,77,77,65,0,0,1,home_win
+4715950,2025-09-25,Aston Villa,Bologna,80,83,81,80,50,1,0,0,76,76,77,74,65,1,0,0,home_win
+4715990,2025-09-25,BSC Young Boys,Panathinaikos FC,70,70,71,68,50,0,1,0,74,73,74,73,50,0,1,0,away_win
+4715943,2025-09-25,FC Red Bull Salzburg,FC Porto,70,69,70,69,90,1,0,0,77,77,77,76,65,1,0,0,away_win
+4715976,2025-09-25,Ferencvárosi Torna Club,Viktoria Plzeň,72,72,71,68,50,0,0,1,72,73,71,73,90,0,0,1,draw
+4715926,2025-09-25,Rangers FC,KRC Genk,73,72,73,72,90,1,0,0,73,72,73,75,50,1,0,0,away_win
+4635051,2025-09-26,RC Strasbourg Alsace,Olympique de Marseille,75,76,74,75,65,0,0,1,79,81,79,79,65,1,0,0,away_win
+4620727,2025-09-27,Juventus,Atalanta,80,81,80,80,90,1,0,0,79,79,79,79,50,0,0,1,draw
+4645582,2025-09-27,Villarreal CF,Athletic Club,79,80,79,77,50,0,0,1,80,78,81,78,65,0,0,1,home_win
+4645576,2025-09-27,Atlético Madrid,Real Madrid,82,84,81,82,65,1,0,0,85,88,85,82,90,1,0,0,home_win
+4625827,2025-09-27,Crystal Palace,Liverpool,79,78,77,80,30,0,0,1,85,85,86,83,65,1,0,0,home_win
+4625826,2025-09-27,Chelsea,Brighton & Hove Albion,80,80,82,80,65,1,0,0,78,78,78,78,65,0,0,1,away_win
+4645577,2025-09-28,FC Barcelona,Real Sociedad,85,85,85,82,65,1,0,0,77,79,77,75,90,0,0,1,home_win
+4645580,2025-09-28,Rayo Vallecano,Sevilla FC,77,73,77,77,65,0,0,1,75,75,76,75,50,0,1,0,away_win
+4625831,2025-09-28,Newcastle United,Arsenal,81,81,84,80,50,0,0,1,84,86,84,84,65,1,0,0,away_win
+4623188,2025-09-28,Lech Poznań,Jagiellonia Białystok,70,72,68,70,50,1,0,0,69,72,69,69,50,1,0,0,draw
+4620729,2025-09-28,AC Milan,Napoli,81,82,79,78,50,0,0,1,81,79,82,80,65,1,0,0,home_win
+4635058,2025-09-28,Lille OSC,Olympique Lyonnais,76,79,76,76,65,1,0,0,76,74,75,76,65,1,0,0,away_win
+4715003,2025-09-30,Chelsea,SL Benfica,80,80,82,80,65,1,0,0,78,79,78,77,90,1,0,0,home_win
+4715031,2025-09-30,Atalanta,Club Brugge KV,79,79,79,79,50,0,0,1,74,73,76,73,90,1,0,0,home_win
+4715117,2025-09-30,Galatasaray SK,Liverpool,80,84,80,79,65,1,0,0,85,85,86,83,65,1,0,0,home_win
+4715103,2025-09-30,FK Bodø/Glimt,Tottenham Hotspur,71,70,73,70,90,1,0,0,81,79,81,81,90,1,0,0,draw
+4715000,2025-09-30,Inter,SK Slavia Praha,83,86,83,83,90,1,0,0,75,74,75,73,50,0,0,1,home_win
+4715023,2025-09-30,Atlético Madrid,Eintracht Frankfurt,82,84,81,82,65,1,0,0,78,77,78,80,65,0,0,1,home_win
+4715009,2025-10-01,Borussia Dortmund,Athletic Club,81,83,80,82,65,1,0,0,80,78,81,78,65,0,0,1,home_win
+4715035,2025-10-01,Villarreal CF,Juventus,79,80,79,77,50,0,0,1,80,81,80,80,90,1,0,0,draw
+4715128,2025-10-01,Qarabağ FK,FC København,69,67,69,67,50,0,0,1,72,73,72,71,90,1,0,0,home_win
+4715124,2025-10-01,Union Saint-Gilloise,Newcastle United,74,74,73,75,50,1,0,0,81,81,84,80,50,0,0,1,away_win
+4715113,2025-10-01,AS Monaco,Manchester City,78,77,75,77,65,1,0,0,84,82,85,82,65,1,0,0,draw
+4715020,2025-10-01,Bayer 04 Leverkusen,PSV,79,82,79,77,50,1,0,0,77,76,80,76,65,1,0,0,draw
+4715016,2025-10-01,Arsenal,Olympiacos FC,84,86,84,84,65,1,0,0,76,79,76,75,90,1,0,0,home_win
+4715010,2025-10-01,FC Barcelona,Paris Saint-Germain,85,85,85,82,65,1,0,0,84,85,84,85,90,1,0,0,away_win
+4715091,2025-10-01,Napoli,Sporting CP,81,79,82,80,65,1,0,0,79,79,80,77,65,1,0,0,home_win
+4715915,2025-10-02,Roma,Lille OSC,80,77,79,80,50,1,0,0,76,79,76,76,65,1,0,0,away_win
+4715963,2025-10-02,Olympique Lyonnais,FC Red Bull Salzburg,76,74,75,76,65,1,0,0,70,69,70,69,90,1,0,0,home_win
+4715980,2025-10-02,Celtic,Sporting Clube de Braga,75,74,75,74,90,1,0,0,74,74,75,74,65,0,0,1,away_win
+4715927,2025-10-02,Feyenoord,Aston Villa,75,76,77,74,65,0,0,1,80,83,81,80,50,1,0,0,away_win
+4715994,2025-10-02,FC Basel 1893,VfB Stuttgart,71,69,72,71,50,1,0,0,77,78,77,74,90,1,0,0,home_win
+4716048,2025-10-02,KRC Genk,Ferencvárosi Torna Club,73,72,73,75,50,1,0,0,72,72,71,68,50,0,0,1,away_win
+4716021,2025-10-02,Bologna,SC Freiburg,76,76,77,74,65,1,0,0,75,71,74,76,50,1,0,0,draw
+4716013,2025-10-02,FCSB,BSC Young Boys,69,69,70,68,30,1,0,0,70,70,71,68,50,0,1,0,away_win
+4716007,2025-10-02,SK Sturm Graz,Rangers FC,68,67,71,67,90,0,0,1,73,72,73,72,90,1,0,0,home_win
+4716005,2025-10-02,Nottingham Forest,FC Midtjylland,79,79,79,79,50,1,0,0,71,71,70,71,50,1,0,0,away_win
+4716097,2025-10-02,Lech Poznań,SK Rapid,70,72,68,70,50,1,0,0,69,67,69,70,50,1,0,0,home_win
+4634175,2025-10-04,Borussia Dortmund,RB Leipzig,81,83,80,82,65,1,0,0,78,77,76,80,65,0,1,0,draw
+4634174,2025-10-04,Eintracht Frankfurt,FC Bayern München,78,77,78,80,65,0,0,1,84,89,85,82,65,1,0,0,away_win
+4634173,2025-10-04,Bayer 04 Leverkusen,1. FC Union Berlin,79,82,79,77,50,1,0,0,75,72,73,75,30,0,1,0,home_win
+4645508,2025-10-04,Real Madrid,Villarreal CF,85,88,85,82,90,1,0,0,79,80,79,77,50,0,0,1,home_win
+4625838,2025-10-04,Chelsea,Liverpool,80,80,82,80,65,1,0,0,85,85,86,83,65,1,0,0,home_win
+4625834,2025-10-04,Arsenal,West Ham United,84,86,84,84,65,1,0,0,77,78,77,77,30,0,0,1,home_win
+4641239,2025-10-05,Club Brugge KV,Union Saint-Gilloise,74,73,76,73,90,1,0,0,74,74,73,75,50,1,0,0,home_win
+4642922,2025-10-05,FC Red Bull Salzburg,SK Rapid,70,69,70,69,90,1,0,0,69,67,69,70,50,1,0,0,home_win
+4645514,2025-10-05,Real Sociedad,Rayo Vallecano,77,79,77,75,90,0,0,1,77,73,77,77,65,0,0,1,away_win
+4645510,2025-10-05,Sevilla FC,FC Barcelona,75,75,76,75,50,0,1,0,85,85,85,82,65,1,0,0,home_win
+4665013,2025-10-05,PAOK,Olympiacos FC,74,75,74,73,90,1,0,0,76,79,76,75,90,1,0,0,home_win
+4625842,2025-10-05,Newcastle United,Nottingham Forest,81,81,84,80,50,0,0,1,79,79,79,79,50,1,0,0,home_win
+4624607,2025-10-05,Sparta Praha,SK Slavia Praha,73,75,74,72,50,0,0,1,75,74,75,73,50,0,0,1,draw
+4648344,2025-10-05,FC København,FC Midtjylland,72,73,72,71,90,1,0,0,71,71,70,71,50,1,0,0,draw
+4620741,2025-10-05,Juventus,AC Milan,80,81,80,80,90,1,0,0,81,82,79,78,50,0,0,1,draw
+4648743,2025-10-05,Sporting CP,Sporting Clube de Braga,79,79,80,77,65,1,0,0,74,74,75,74,65,0,0,1,draw
+4648744,2025-10-05,FC Porto,SL Benfica,77,77,77,76,65,1,0,0,78,79,78,77,90,1,0,0,draw
+4620739,2025-10-05,Fiorentina,Roma,77,79,75,75,65,0,0,1,80,77,79,80,50,1,0,0,away_win
+4635068,2025-10-05,Lille OSC,Paris Saint-Germain,76,79,76,76,65,1,0,0,84,85,84,85,90,1,0,0,draw
+4635071,2025-10-17,Paris Saint-Germain,RC Strasbourg Alsace,84,85,84,85,90,1,0,0,75,76,74,75,65,0,0,1,draw
+4625844,2025-10-18,Brighton & Hove Albion,Newcastle United,78,78,78,78,65,0,0,1,81,81,84,80,50,0,0,1,home_win
+4625850,2025-10-18,Nottingham Forest,Chelsea,79,79,79,79,50,1,0,0,80,80,82,80,65,1,0,0,away_win
+4620755,2025-10-18,Roma,Inter,80,77,79,80,50,1,0,0,83,86,83,83,90,1,0,0,away_win
+4645602,2025-10-18,Villarreal CF,Real Betis Balompié,79,80,79,77,50,0,0,1,78,77,79,77,50,1,0,0,draw
+4634182,2025-10-18,FC Bayern München,Borussia Dortmund,84,89,85,82,65,1,0,0,81,83,80,82,65,1,0,0,home_win
+4642929,2025-10-19,SK Rapid,LASK Linz,69,67,69,70,50,1,0,0,68,73,68,68,30,1,0,0,away_win
+4620753,2025-10-19,AC Milan,Fiorentina,81,82,79,78,50,0,0,1,77,79,75,75,65,0,0,1,home_win
+4625848,2025-10-19,Liverpool,Manchester United,85,85,86,83,65,1,0,0,80,82,80,79,65,1,0,0,away_win
+4625852,2025-10-19,Tottenham Hotspur,Aston Villa,81,79,81,81,90,1,0,0,80,83,81,80,50,1,0,0,away_win
+4620747,2025-10-19,Atalanta,Lazio,79,79,79,79,50,0,0,1,79,80,77,78,30,1,0,0,draw
+4634183,2025-10-19,SC Freiburg,Eintracht Frankfurt,75,71,74,76,50,1,0,0,78,77,78,80,65,0,0,1,draw
+4715018,2025-10-21,Bayer 04 Leverkusen,Paris Saint-Germain,79,82,79,77,50,1,0,0,84,85,84,85,90,1,0,0,away_win
+4715109,2025-10-21,FC København,Borussia Dortmund,72,73,72,71,90,1,0,0,81,83,80,82,65,1,0,0,away_win
+4715034,2025-10-21,Villarreal CF,Manchester City,79,80,79,77,50,0,0,1,84,82,85,82,65,1,0,0,away_win
+4715134,2025-10-21,Newcastle United,SL Benfica,81,81,84,80,50,0,0,1,78,79,78,77,90,1,0,0,home_win
+4715012,2025-10-21,FC Barcelona,Olympiacos FC,85,85,85,82,65,1,0,0,76,79,76,75,90,1,0,0,home_win
+4715062,2025-10-21,PSV,Napoli,77,76,80,76,65,1,0,0,81,79,82,80,65,1,0,0,home_win
+4715121,2025-10-21,Union Saint-Gilloise,Inter,74,74,73,75,50,1,0,0,83,86,83,83,90,1,0,0,away_win
+4715015,2025-10-21,Arsenal,Atlético Madrid,84,86,84,84,65,1,0,0,82,84,81,82,65,1,0,0,home_win
+4714987,2025-10-22,FC Bayern München,Club Brugge KV,84,89,85,82,65,1,0,0,74,73,76,73,90,1,0,0,home_win
+4715057,2025-10-22,AS Monaco,Tottenham Hotspur,78,77,75,77,65,1,0,0,81,79,81,81,90,1,0,0,draw
+4715006,2025-10-22,Eintracht Frankfurt,Liverpool,78,77,78,80,65,0,0,1,85,85,86,83,65,1,0,0,away_win
+4715119,2025-10-22,Galatasaray SK,FK Bodø/Glimt,80,84,80,79,65,1,0,0,71,70,73,70,90,1,0,0,home_win
+4715038,2025-10-22,Sporting CP,Olympique de Marseille,79,79,80,77,65,1,0,0,79,81,79,79,65,1,0,0,home_win
+4715132,2025-10-22,Athletic Club,Qarabağ FK,80,78,81,78,65,0,0,1,69,67,69,67,50,0,0,1,home_win
+4714979,2025-10-22,Real Madrid,Juventus,85,88,85,82,90,1,0,0,80,81,80,80,90,1,0,0,home_win
+4715139,2025-10-22,Atalanta,SK Slavia Praha,79,79,79,79,50,0,0,1,75,74,75,73,50,0,0,1,draw
+4716076,2025-10-23,Shakhtar Donetsk,Legia Warszawa,72,71,73,73,50,1,0,0,69,69,70,70,90,1,0,0,away_win
+4715981,2025-10-23,Celtic,SK Sturm Graz,75,74,75,74,90,1,0,0,68,67,71,67,90,0,0,1,home_win
+4716047,2025-10-23,KRC Genk,Real Betis Balompié,73,72,73,75,50,1,0,0,78,77,79,77,50,1,0,0,draw
+4716014,2025-10-23,FCSB,Bologna,69,69,70,68,30,1,0,0,76,76,77,74,65,1,0,0,away_win
+4716003,2025-10-23,Nottingham Forest,FC Porto,79,79,79,79,50,1,0,0,77,77,77,76,65,1,0,0,home_win
+4715954,2025-10-23,Fenerbahçe SK,VfB Stuttgart,79,79,79,76,90,1,0,0,77,78,77,74,90,1,0,0,home_win
+4715916,2025-10-23,Roma,Viktoria Plzeň,80,77,79,80,50,1,0,0,72,73,71,73,90,0,0,1,away_win
+4716113,2025-10-23,RC Strasbourg Alsace,Jagiellonia Białystok,75,76,74,75,65,0,0,1,69,72,69,69,50,1,0,0,draw
+4715965,2025-10-23,Olympique Lyonnais,FC Basel 1893,76,74,75,76,65,1,0,0,71,69,72,71,50,1,0,0,home_win
+4715930,2025-10-23,Feyenoord,Panathinaikos FC,75,76,77,74,65,0,0,1,74,73,74,73,50,0,1,0,home_win
+4715932,2025-10-23,Lille OSC,PAOK,76,79,76,76,65,1,0,0,74,75,74,73,90,1,0,0,away_win
+4715944,2025-10-23,FC Red Bull Salzburg,Ferencvárosi Torna Club,70,69,70,69,90,1,0,0,72,72,71,68,50,0,0,1,away_win
+4716082,2025-10-23,SK Rapid,Fiorentina,69,67,69,70,50,1,0,0,77,79,75,75,65,0,0,1,away_win
+4645557,2025-10-24,Real Sociedad,Sevilla FC,77,79,77,75,90,0,0,1,75,75,76,75,50,0,1,0,home_win
+4620761,2025-10-25,Napoli,Inter,81,79,82,80,65,1,0,0,83,86,83,83,90,1,0,0,home_win
+4625861,2025-10-25,Manchester United,Brighton & Hove Albion,80,82,80,79,65,1,0,0,78,78,78,78,65,0,0,1,home_win
+4645561,2025-10-26,Real Madrid,FC Barcelona,85,88,85,82,90,1,0,0,85,85,85,82,65,1,0,0,home_win
+4620758,2025-10-26,Fiorentina,Bologna,77,79,75,75,65,0,0,1,76,76,77,74,65,1,0,0,draw
+4620759,2025-10-26,Lazio,Juventus,79,80,77,78,30,1,0,0,80,81,80,80,90,1,0,0,home_win
+4634191,2025-10-26,Bayer 04 Leverkusen,SC Freiburg,79,82,79,77,50,1,0,0,75,71,74,76,50,1,0,0,home_win
+4635078,2025-10-26,Olympique Lyonnais,RC Strasbourg Alsace,76,74,75,76,65,1,0,0,75,76,74,75,65,0,0,1,home_win
+4623859,2025-10-26,Legia Warszawa,Lech Poznań,69,69,70,70,90,1,0,0,70,72,68,70,50,1,0,0,draw
+4641652,2025-10-26,Feyenoord,PSV,75,76,77,74,65,0,0,1,77,76,80,76,65,1,0,0,away_win
+4625854,2025-10-26,Arsenal,Crystal Palace,84,86,84,84,65,1,0,0,79,78,77,80,30,0,0,1,home_win
+4625855,2025-10-26,Aston Villa,Manchester City,80,83,81,80,50,1,0,0,84,82,85,82,65,1,0,0,home_win
+4645560,2025-10-27,Real Betis Balompié,Atlético Madrid,78,77,79,77,50,1,0,0,82,84,81,82,65,1,0,0,away_win
+4717153,2025-10-28,Eintracht Frankfurt,Borussia Dortmund,78,77,78,80,65,0,0,1,81,83,80,82,65,1,0,0,away_win
+4620767,2025-10-28,Atalanta,AC Milan,79,79,79,79,50,0,0,1,81,82,79,78,50,0,0,1,draw
+4740851,2025-10-29,Liverpool,Crystal Palace,85,85,86,83,65,1,0,0,79,78,77,80,30,0,0,1,away_win
+4740854,2025-10-29,Newcastle United,Tottenham Hotspur,81,81,84,80,50,0,0,1,81,79,81,81,90,1,0,0,home_win
+4740850,2025-10-29,Arsenal,Brighton & Hove Albion,84,86,84,84,65,1,0,0,78,78,78,78,65,0,0,1,home_win
+4620772,2025-10-29,Inter,Fiorentina,83,86,83,83,90,1,0,0,77,79,75,75,65,0,0,1,home_win
+4625870,2025-11-01,Nottingham Forest,Manchester United,79,79,79,79,50,1,0,0,80,82,80,79,65,1,0,0,draw
+4634200,2025-11-01,FC Bayern München,Bayer 04 Leverkusen,84,89,85,82,65,1,0,0,79,82,79,77,50,1,0,0,home_win
+4625868,2025-11-01,Liverpool,Aston Villa,85,85,86,83,65,1,0,0,80,83,81,80,50,1,0,0,home_win
+4634202,2025-11-01,RB Leipzig,VfB Stuttgart,78,77,76,80,65,0,1,0,77,78,77,74,90,1,0,0,home_win
+4625872,2025-11-01,Tottenham Hotspur,Chelsea,81,79,81,81,90,1,0,0,80,80,82,80,65,1,0,0,away_win
+4645585,2025-11-01,Atlético Madrid,Sevilla FC,82,84,81,82,65,1,0,0,75,75,76,75,50,0,1,0,home_win
+4645590,2025-11-01,Real Sociedad,Athletic Club,77,79,77,75,90,0,0,1,80,78,81,78,65,0,0,1,home_win
+4645593,2025-11-01,Villarreal CF,Rayo Vallecano,79,80,79,77,50,0,0,1,77,73,77,77,65,0,0,1,home_win
+4634205,2025-11-01,1. FC Union Berlin,SC Freiburg,75,72,73,75,30,0,1,0,75,71,74,76,50,1,0,0,draw
+4620780,2025-11-02,AC Milan,Roma,81,82,79,78,50,0,0,1,80,77,79,80,50,1,0,0,home_win
+4712532,2025-11-02,Jagiellonia Białystok,Raków Częstochowa,69,72,69,69,50,1,0,0,69,71,69,70,90,1,0,0,away_win
+4635099,2025-11-02,Stade Rennais FC,RC Strasbourg Alsace,76,74,76,74,65,1,0,0,75,76,74,75,65,0,0,1,home_win
+4625873,2025-11-02,West Ham United,Newcastle United,77,78,77,77,30,0,0,1,81,81,84,80,50,0,0,1,home_win
+4648725,2025-11-02,FC Porto,Sporting Clube de Braga,77,77,77,76,65,1,0,0,74,74,75,74,65,0,0,1,home_win
+4627309,2025-11-02,BSC Young Boys,FC Basel 1893,70,70,71,68,50,0,1,0,71,69,72,71,50,1,0,0,draw
+4642941,2025-11-02,SK Rapid,SK Sturm Graz,69,67,69,70,50,1,0,0,68,67,71,67,90,0,0,1,home_win
+4715037,2025-11-04,Olympiacos FC,PSV,76,79,76,75,90,1,0,0,77,76,80,76,65,1,0,0,draw
+4715026,2025-11-04,FK Bodø/Glimt,AS Monaco,71,70,73,70,90,1,0,0,78,77,75,77,65,1,0,0,away_win
+4714994,2025-11-04,Paris Saint-Germain,FC Bayern München,84,85,84,85,90,1,0,0,84,89,85,82,65,1,0,0,away_win
+4714992,2025-11-04,Tottenham Hotspur,FC København,81,79,81,81,90,1,0,0,72,73,72,71,90,1,0,0,home_win
+4714990,2025-11-04,Liverpool,Real Madrid,85,85,86,83,65,1,0,0,85,88,85,82,90,1,0,0,home_win
+4715008,2025-11-04,Juventus,Sporting CP,80,81,80,80,90,1,0,0,79,79,80,77,65,1,0,0,draw
+4715033,2025-11-04,SK Slavia Praha,Arsenal,75,74,75,73,50,0,0,1,84,86,84,84,65,1,0,0,away_win
+4715093,2025-11-04,Napoli,Eintracht Frankfurt,81,79,82,80,65,1,0,0,78,77,78,80,65,0,0,1,draw
+4715025,2025-11-04,Atlético Madrid,Union Saint-Gilloise,82,84,81,82,65,1,0,0,74,74,73,75,50,1,0,0,home_win
+4715027,2025-11-05,SL Benfica,Bayer 04 Leverkusen,78,79,78,77,90,1,0,0,79,82,79,77,50,1,0,0,away_win
+4715055,2025-11-05,Qarabağ FK,Chelsea,69,67,69,67,50,0,0,1,80,80,82,80,65,1,0,0,draw
+4714982,2025-11-05,Manchester City,Borussia Dortmund,84,82,85,82,65,1,0,0,81,83,80,82,65,1,0,0,home_win
+4714999,2025-11-05,Club Brugge KV,FC Barcelona,74,73,76,73,90,1,0,0,85,85,85,82,65,1,0,0,draw
+4715143,2025-11-05,Newcastle United,Athletic Club,81,81,84,80,50,0,0,1,80,78,81,78,65,0,0,1,home_win
+4715022,2025-11-05,Olympique de Marseille,Atalanta,79,81,79,79,65,1,0,0,79,79,79,79,50,0,0,1,away_win
+4715993,2025-11-06,FC Basel 1893,FCSB,71,69,72,71,50,1,0,0,69,69,70,68,30,1,0,0,home_win
+4715969,2025-11-06,PAOK,BSC Young Boys,74,75,74,73,90,1,0,0,70,70,71,68,50,0,1,0,home_win
+4715940,2025-11-06,Real Betis Balompié,Olympique Lyonnais,78,77,79,77,50,1,0,0,76,74,75,76,65,1,0,0,home_win
+4715958,2025-11-06,Sporting Clube de Braga,KRC Genk,74,74,75,74,65,0,0,1,73,72,73,75,50,1,0,0,away_win
+4715972,2025-11-06,Viktoria Plzeň,Fenerbahçe SK,72,73,71,73,90,0,0,1,79,79,79,76,90,1,0,0,draw
+4716027,2025-11-06,VfB Stuttgart,Feyenoord,77,78,77,74,90,1,0,0,75,76,77,74,65,0,0,1,home_win
+4716255,2025-11-06,FC Midtjylland,Celtic,71,71,70,71,50,1,0,0,75,74,75,74,90,1,0,0,home_win
+4716009,2025-11-06,SK Sturm Graz,Nottingham Forest,68,67,71,67,90,0,0,1,79,79,79,79,50,1,0,0,draw
+4716094,2025-11-06,Crystal Palace,AZ Alkmaar,79,78,77,80,30,0,0,1,73,74,74,72,65,1,0,0,home_win
+4715923,2025-11-06,Rangers FC,Roma,73,72,73,72,90,1,0,0,80,77,79,80,50,1,0,0,away_win
+4716100,2025-11-06,Rayo Vallecano,Lech Poznań,77,73,77,77,65,0,0,1,70,72,68,70,50,1,0,0,home_win
+4716090,2025-11-06,Sparta Praha,Raków Częstochowa,73,75,74,72,50,0,0,1,69,71,69,70,90,1,0,0,draw
+4625882,2025-11-08,Tottenham Hotspur,Manchester United,81,79,81,81,90,1,0,0,80,82,80,79,65,1,0,0,draw
+4634215,2025-11-08,1. FC Union Berlin,FC Bayern München,75,72,73,75,30,0,1,0,84,89,85,82,65,1,0,0,draw
+4641215,2025-11-09,KAA Gent,KRC Genk,70,70,70,68,30,1,0,0,73,72,73,75,50,1,0,0,draw
+4635113,2025-11-09,RC Strasbourg Alsace,Lille OSC,75,76,74,75,65,0,0,1,76,79,76,76,65,1,0,0,home_win
+4641214,2025-11-09,RSC Anderlecht,Club Brugge KV,71,74,70,68,90,1,0,0,74,73,76,73,90,1,0,0,home_win
+4625877,2025-11-09,Crystal Palace,Brighton & Hove Albion,79,78,77,80,30,0,0,1,78,78,78,78,65,0,0,1,draw
+4642946,2025-11-09,SK Sturm Graz,FC Red Bull Salzburg,68,67,71,67,90,0,0,1,70,69,70,69,90,1,0,0,draw
+4625879,2025-11-09,Manchester City,Liverpool,84,82,85,82,65,1,0,0,85,85,86,83,65,1,0,0,home_win
+4620793,2025-11-09,Bologna,Napoli,76,76,77,74,65,1,0,0,81,79,82,80,65,1,0,0,home_win
+4645549,2025-11-09,Rayo Vallecano,Real Madrid,77,73,77,77,65,0,0,1,85,88,85,82,90,1,0,0,draw
+4665019,2025-11-09,Panathinaikos FC,PAOK,74,73,74,73,50,0,1,0,74,75,74,73,90,1,0,0,home_win
+4620796,2025-11-09,Inter,Lazio,83,86,83,83,90,1,0,0,79,80,77,78,30,1,0,0,home_win
+4641679,2025-11-09,AZ Alkmaar,PSV,73,74,74,72,65,1,0,0,77,76,80,76,65,1,0,0,away_win
+4624637,2025-11-09,Viktoria Plzeň,SK Slavia Praha,72,73,71,73,90,0,0,1,75,74,75,73,50,0,0,1,away_win
+4627311,2025-11-09,FC Basel 1893,FC Lugano,71,69,72,71,50,1,0,0,70,71,68,68,50,0,1,0,away_win
+4635106,2025-11-09,Olympique Lyonnais,Paris Saint-Germain,76,74,75,76,65,1,0,0,84,85,84,85,90,1,0,0,away_win
+4635115,2025-11-22,Stade Rennais FC,AS Monaco,76,74,76,74,65,1,0,0,78,77,75,77,65,1,0,0,home_win
+4645500,2025-11-22,FC Barcelona,Athletic Club,85,85,85,82,65,1,0,0,80,78,81,78,65,0,0,1,home_win
+4634218,2025-11-22,FC Bayern München,SC Freiburg,84,89,85,82,65,1,0,0,75,71,74,76,50,1,0,0,home_win
+4634219,2025-11-22,Borussia Dortmund,VfB Stuttgart,81,83,80,82,65,1,0,0,77,78,77,74,90,1,0,0,draw
+4625892,2025-11-22,Newcastle United,Manchester City,81,81,84,80,50,0,0,1,84,82,85,82,65,1,0,0,home_win
+4620807,2025-11-22,Napoli,Atalanta,81,79,82,80,65,1,0,0,79,79,79,79,50,0,0,1,home_win
+4625890,2025-11-22,Liverpool,Nottingham Forest,85,85,86,83,65,1,0,0,79,79,79,79,50,1,0,0,away_win
+4620804,2025-11-22,Fiorentina,Juventus,77,79,75,75,65,0,0,1,80,81,80,80,90,1,0,0,draw
+4642952,2025-11-23,SK Sturm Graz,LASK Linz,68,67,71,67,90,0,0,1,68,73,68,68,30,1,0,0,away_win
+4620805,2025-11-23,Inter,AC Milan,83,86,83,83,90,1,0,0,81,82,79,78,50,0,0,1,away_win
+4625884,2025-11-23,Arsenal,Tottenham Hotspur,84,86,84,84,65,1,0,0,81,79,81,81,90,1,0,0,home_win
+4714986,2025-11-25,Galatasaray SK,Union Saint-Gilloise,80,84,80,79,65,1,0,0,74,74,73,75,50,1,0,0,away_win
+4715122,2025-11-25,Borussia Dortmund,Villarreal CF,81,83,80,82,65,1,0,0,79,80,79,77,50,0,0,1,home_win
+4715021,2025-11-25,Olympique de Marseille,Newcastle United,79,81,79,79,65,1,0,0,81,81,84,80,50,0,0,1,home_win
+4715095,2025-11-25,Manchester City,Bayer 04 Leverkusen,84,82,85,82,65,1,0,0,79,82,79,77,50,1,0,0,away_win
+4715030,2025-11-25,SK Slavia Praha,Athletic Club,75,74,75,73,50,0,0,1,80,78,81,78,65,0,0,1,draw
+4715028,2025-11-25,FK Bodø/Glimt,Juventus,71,70,73,70,90,1,0,0,80,81,80,80,90,1,0,0,away_win
+4715013,2025-11-25,Napoli,Qarabağ FK,81,79,82,80,65,1,0,0,69,67,69,67,50,0,0,1,home_win
+4715053,2025-11-25,Chelsea,FC Barcelona,80,80,82,80,65,1,0,0,85,85,85,82,65,1,0,0,home_win
+4715125,2025-11-26,Atlético Madrid,Inter,82,84,81,82,65,1,0,0,83,86,83,83,90,1,0,0,home_win
+4715005,2025-11-26,Eintracht Frankfurt,Atalanta,78,77,78,80,65,0,0,1,79,79,79,79,50,0,0,1,away_win
+4715060,2025-11-26,Paris Saint-Germain,Tottenham Hotspur,84,85,84,85,90,1,0,0,81,79,81,81,90,1,0,0,home_win
+4715114,2025-11-26,Sporting CP,Club Brugge KV,79,79,80,77,65,1,0,0,74,73,76,73,90,1,0,0,home_win
+4715066,2025-11-26,Liverpool,PSV,85,85,86,83,65,1,0,0,77,76,80,76,65,1,0,0,away_win
+4715049,2025-11-26,Olympiacos FC,Real Madrid,76,79,76,75,90,1,0,0,85,88,85,82,90,1,0,0,away_win
+4715130,2025-11-26,Arsenal,FC Bayern München,84,86,84,84,65,1,0,0,84,89,85,82,65,1,0,0,home_win
+4715952,2025-11-27,Fenerbahçe SK,Ferencvárosi Torna Club,79,79,79,76,90,1,0,0,72,72,71,68,50,0,0,1,draw
+4715949,2025-11-27,Aston Villa,BSC Young Boys,80,83,81,80,50,1,0,0,70,70,71,68,50,0,1,0,home_win
+4715931,2025-11-27,Lille OSC,Dinamo Zagreb,76,79,76,76,65,1,0,0,72,70,71,70,50,0,1,0,home_win
+4715917,2025-11-27,Roma,FC Midtjylland,80,77,79,80,50,1,0,0,71,71,70,71,50,1,0,0,home_win
+4716019,2025-11-27,Bologna,FC Red Bull Salzburg,76,76,77,74,65,1,0,0,70,69,70,69,90,1,0,0,home_win
+4716033,2025-11-27,Panathinaikos FC,SK Sturm Graz,74,73,74,73,50,0,1,0,68,67,71,67,90,0,0,1,home_win
+4715973,2025-11-27,Viktoria Plzeň,SC Freiburg,72,73,71,73,90,0,0,1,75,71,74,76,50,1,0,0,draw
+4716049,2025-11-27,KRC Genk,FC Basel 1893,73,72,73,75,50,1,0,0,71,69,72,71,50,1,0,0,home_win
+4716085,2025-11-27,Legia Warszawa,Sparta Praha,69,69,70,70,90,1,0,0,73,75,74,72,50,0,0,1,away_win
+4715924,2025-11-27,Rangers FC,Sporting Clube de Braga,73,72,73,72,90,1,0,0,74,74,75,74,65,0,0,1,draw
+4716151,2025-11-27,Raków Częstochowa,SK Rapid,69,71,69,70,90,1,0,0,69,67,69,70,50,1,0,0,home_win
+4715928,2025-11-27,Feyenoord,Celtic,75,76,77,74,65,0,0,1,75,74,75,74,90,1,0,0,away_win
+4716112,2025-11-27,RC Strasbourg Alsace,Crystal Palace,75,76,74,75,65,0,0,1,79,78,77,80,30,0,0,1,home_win
+4635130,2025-11-29,AS Monaco,Paris Saint-Germain,78,77,75,77,65,1,0,0,84,85,84,85,90,1,0,0,home_win
+4634228,2025-11-29,Bayer 04 Leverkusen,Borussia Dortmund,79,82,79,77,50,1,0,0,81,83,80,82,65,1,0,0,away_win
+4620818,2025-11-29,AC Milan,Lazio,81,82,79,78,50,0,0,1,79,80,77,78,30,1,0,0,home_win
+4625896,2025-11-30,Chelsea,Arsenal,80,80,82,80,65,1,0,0,84,86,84,84,65,1,0,0,draw
+4645766,2025-11-30,Sevilla FC,Real Betis Balompié,75,75,76,75,50,0,1,0,78,77,79,77,50,1,0,0,away_win
+4641280,2025-11-30,RSC Anderlecht,Union Saint-Gilloise,71,74,70,68,90,1,0,0,74,74,73,75,50,1,0,0,home_win
+4645763,2025-11-30,Real Sociedad,Villarreal CF,77,79,77,75,90,0,0,1,79,80,79,77,50,0,0,1,away_win
+4620812,2025-11-30,Atalanta,Fiorentina,79,79,79,79,50,0,0,1,77,79,75,75,65,0,0,1,home_win
+4642958,2025-11-30,LASK Linz,SK Rapid,68,73,68,68,30,1,0,0,69,67,69,70,50,1,0,0,home_win
+4620821,2025-11-30,Roma,Napoli,80,77,79,80,50,1,0,0,81,79,82,80,65,1,0,0,away_win
+4625900,2025-11-30,Nottingham Forest,Brighton & Hove Albion,79,79,79,79,50,1,0,0,78,78,78,78,65,0,0,1,away_win
+4625897,2025-11-30,Crystal Palace,Manchester United,79,78,77,80,30,0,0,1,80,82,80,79,65,1,0,0,away_win
+4625903,2025-11-30,West Ham United,Liverpool,77,78,77,77,30,0,0,1,85,85,86,83,65,1,0,0,away_win
+4647882,2025-12-01,Fenerbahçe SK,Galatasaray SK,79,79,79,76,90,1,0,0,80,84,80,79,65,1,0,0,draw
+4761580,2025-12-02,Borussia Dortmund,Bayer 04 Leverkusen,81,83,80,82,65,1,0,0,79,82,79,77,50,1,0,0,away_win
+4625912,2025-12-02,Newcastle United,Tottenham Hotspur,81,81,84,80,50,0,0,1,81,79,81,81,90,1,0,0,draw
+4645831,2025-12-02,FC Barcelona,Atlético Madrid,85,85,85,82,65,1,0,0,82,84,81,82,65,1,0,0,home_win
+4625906,2025-12-03,Brighton & Hove Albion,Aston Villa,78,78,78,78,65,0,0,1,80,83,81,80,50,1,0,0,away_win
+4645837,2025-12-03,Athletic Club,Real Madrid,80,78,81,78,65,0,0,1,85,88,85,82,90,1,0,0,away_win
+4761581,2025-12-03,1. FC Union Berlin,FC Bayern München,75,72,73,75,30,0,1,0,84,89,85,82,65,1,0,0,away_win
+4625911,2025-12-04,Manchester United,West Ham United,80,82,80,79,65,1,0,0,77,78,77,77,30,0,0,1,draw
+4736144,2025-12-04,Lazio,AC Milan,79,80,77,78,30,1,0,0,81,82,79,78,50,0,0,1,home_win
+4635132,2025-12-05,Lille OSC,Olympique de Marseille,76,79,76,76,65,1,0,0,79,81,79,79,65,1,0,0,home_win
+4648686,2025-12-05,SL Benfica,Sporting CP,78,79,78,77,90,1,0,0,79,79,80,77,65,1,0,0,draw
+4634238,2025-12-06,RB Leipzig,Eintracht Frankfurt,78,77,76,80,65,0,1,0,78,77,78,80,65,0,0,1,home_win
+4641287,2025-12-06,Union Saint-Gilloise,KAA Gent,74,74,73,75,50,1,0,0,70,70,70,68,30,1,0,0,draw
+4634239,2025-12-06,VfB Stuttgart,FC Bayern München,77,78,77,74,90,1,0,0,84,89,85,82,65,1,0,0,away_win
+4645779,2025-12-06,Athletic Club,Atlético Madrid,80,78,81,78,65,0,0,1,82,84,81,82,65,1,0,0,home_win
+4645772,2025-12-06,Real Betis Balompié,FC Barcelona,78,77,79,77,50,1,0,0,85,85,85,82,65,1,0,0,away_win
+4635140,2025-12-06,Paris Saint-Germain,Stade Rennais FC,84,85,84,85,90,1,0,0,76,74,76,74,65,1,0,0,home_win
+4625914,2025-12-06,Aston Villa,Arsenal,80,83,81,80,50,1,0,0,84,86,84,84,65,1,0,0,home_win
+4625916,2025-12-07,Brighton & Hove Albion,West Ham United,78,78,78,78,65,0,0,1,77,78,77,77,30,0,0,1,draw
+4620835,2025-12-07,Lazio,Bologna,79,80,77,78,30,1,0,0,76,76,77,74,65,1,0,0,draw
+4620836,2025-12-07,Napoli,Juventus,81,79,82,80,65,1,0,0,80,81,80,80,90,1,0,0,home_win
+4715096,2025-12-09,AS Monaco,Galatasaray SK,78,77,75,77,65,1,0,0,80,84,80,79,65,1,0,0,home_win
+4715058,2025-12-09,Inter,Liverpool,83,86,83,83,90,1,0,0,85,85,86,83,65,1,0,0,away_win
+4715064,2025-12-09,Union Saint-Gilloise,Olympique de Marseille,74,74,73,75,50,1,0,0,79,81,79,79,65,1,0,0,away_win
+4715135,2025-12-09,FC Barcelona,Eintracht Frankfurt,85,85,85,82,65,1,0,0,78,77,78,80,65,0,0,1,home_win
+4715092,2025-12-09,FC Bayern München,Sporting CP,84,89,85,82,65,1,0,0,79,79,80,77,65,1,0,0,home_win
+4715112,2025-12-09,Atalanta,Chelsea,79,79,79,79,50,0,0,1,80,80,82,80,65,1,0,0,home_win
+4714993,2025-12-09,Tottenham Hotspur,SK Slavia Praha,81,79,81,81,90,1,0,0,75,74,75,73,50,0,0,1,home_win
+4714988,2025-12-09,PSV,Atlético Madrid,77,76,80,76,65,1,0,0,82,84,81,82,65,1,0,0,away_win
+4714996,2025-12-10,Villarreal CF,FC København,79,80,79,77,50,0,0,1,72,73,72,71,90,1,0,0,away_win
+4715136,2025-12-10,Borussia Dortmund,FK Bodø/Glimt,81,83,80,82,65,1,0,0,71,70,73,70,90,1,0,0,draw
+4715065,2025-12-10,Real Madrid,Manchester City,85,88,85,82,90,1,0,0,84,82,85,82,65,1,0,0,away_win
+4714998,2025-12-10,Club Brugge KV,Arsenal,74,73,76,73,90,1,0,0,84,86,84,84,65,1,0,0,away_win
+4715126,2025-12-10,Bayer 04 Leverkusen,Newcastle United,79,82,79,77,50,1,0,0,81,81,84,80,50,0,0,1,draw
+4715051,2025-12-10,Athletic Club,Paris Saint-Germain,80,78,81,78,65,0,0,1,84,85,84,85,90,1,0,0,draw
+4715116,2025-12-10,SL Benfica,Napoli,78,79,78,77,90,1,0,0,81,79,82,80,65,1,0,0,home_win
+4716115,2025-12-11,Jagiellonia Białystok,Rayo Vallecano,69,72,69,69,50,1,0,0,77,73,77,77,65,0,0,1,away_win
+4716257,2025-12-11,FC Midtjylland,KRC Genk,71,71,70,71,50,1,0,0,73,72,73,75,50,1,0,0,home_win
+4715935,2025-12-11,Dinamo Zagreb,Real Betis Balompié,72,70,71,70,50,0,1,0,78,77,79,77,50,1,0,0,away_win
+4716032,2025-12-11,Panathinaikos FC,Viktoria Plzeň,74,73,74,73,50,0,1,0,72,73,71,73,90,0,0,1,draw
+4715975,2025-12-11,Ferencvárosi Torna Club,Rangers FC,72,72,71,68,50,0,0,1,73,72,73,72,90,1,0,0,home_win
+4715979,2025-12-11,Celtic,Roma,75,74,75,74,90,1,0,0,80,77,79,80,50,1,0,0,away_win
+4715987,2025-12-11,BSC Young Boys,Lille OSC,70,70,71,68,50,0,1,0,76,79,76,76,65,1,0,0,home_win
+4715995,2025-12-11,SC Freiburg,FC Red Bull Salzburg,75,71,74,76,50,1,0,0,70,69,70,69,90,1,0,0,home_win
+4715991,2025-12-11,FC Basel 1893,Aston Villa,71,69,72,71,50,1,0,0,80,83,81,80,50,1,0,0,away_win
+4716011,2025-12-11,FCSB,Feyenoord,69,69,70,68,30,1,0,0,75,76,77,74,65,0,0,1,home_win
+4634251,2025-12-12,1. FC Union Berlin,RB Leipzig,75,72,73,75,30,0,1,0,78,77,76,80,65,0,1,0,home_win
+4625929,2025-12-13,Liverpool,Brighton & Hove Albion,85,85,86,83,65,1,0,0,78,78,78,78,65,0,0,1,home_win
+4625933,2025-12-14,West Ham United,Aston Villa,77,78,77,77,30,0,0,1,80,83,81,80,50,1,0,0,away_win
+4625931,2025-12-14,Nottingham Forest,Tottenham Hotspur,79,79,79,79,50,1,0,0,81,79,81,81,90,1,0,0,home_win
+4635149,2025-12-14,Olympique de Marseille,AS Monaco,79,81,79,79,65,1,0,0,78,77,75,77,65,1,0,0,home_win
+4634248,2025-12-14,SC Freiburg,Borussia Dortmund,75,71,74,76,50,1,0,0,81,83,80,82,65,1,0,0,draw
+4625928,2025-12-14,Crystal Palace,Manchester City,79,78,77,80,30,0,0,1,84,82,85,82,65,1,0,0,away_win
+4620843,2025-12-14,Bologna,Juventus,76,76,77,74,65,1,0,0,80,81,80,80,90,1,0,0,away_win
+4645782,2025-12-15,Rayo Vallecano,Real Betis Balompié,77,73,77,77,65,0,0,1,78,77,79,77,50,1,0,0,draw
+4716074,2025-12-18,AZ Alkmaar,Jagiellonia Białystok,73,74,74,72,65,1,0,0,69,72,69,69,50,1,0,0,draw
+4641399,2025-12-18,Napoli,AC Milan,81,79,82,80,65,1,0,0,81,82,79,78,50,0,0,1,home_win
+4641400,2025-12-19,Bologna,Inter,76,76,77,74,65,1,0,0,83,86,83,83,90,1,0,0,home_win
+4645840,2025-12-20,Real Madrid,Sevilla FC,85,88,85,82,90,1,0,0,75,75,76,75,50,0,1,0,home_win
+4620857,2025-12-20,Juventus,Roma,80,81,80,80,90,1,0,0,80,77,79,80,50,1,0,0,home_win
+4625940,2025-12-20,Manchester City,West Ham United,84,82,85,82,65,1,0,0,77,78,77,77,30,0,0,1,home_win
+4625941,2025-12-20,Newcastle United,Chelsea,81,81,84,80,50,0,0,1,80,80,82,80,65,1,0,0,draw
+4625942,2025-12-20,Tottenham Hotspur,Liverpool,81,79,81,81,90,1,0,0,85,85,86,83,65,1,0,0,away_win
+4634256,2025-12-20,RB Leipzig,Bayer 04 Leverkusen,78,77,76,80,65,0,1,0,79,82,79,77,50,1,0,0,away_win
+4627350,2025-12-21,FC Lugano,BSC Young Boys,70,71,68,68,50,0,1,0,70,70,71,68,50,0,1,0,home_win
+4641383,2025-12-21,Club Brugge KV,KAA Gent,74,73,76,73,90,1,0,0,70,70,70,68,30,1,0,0,home_win
+4625934,2025-12-21,Aston Villa,Manchester United,80,83,81,80,50,1,0,0,80,82,80,79,65,1,0,0,home_win
+4645843,2025-12-21,Villarreal CF,FC Barcelona,79,80,79,77,50,0,0,1,85,85,85,82,65,1,0,0,away_win
+4665111,2025-12-21,PAOK,Panathinaikos FC,74,75,74,73,90,1,0,0,74,73,74,73,50,0,1,0,home_win
+4786004,2025-12-22,Napoli,Bologna,81,79,82,80,65,1,0,0,76,76,77,74,65,1,0,0,home_win
+4769165,2025-12-23,Arsenal,Crystal Palace,84,86,84,84,65,1,0,0,79,78,77,80,30,0,0,1,home_win
+4641344,2025-12-26,KRC Genk,Club Brugge KV,73,72,73,75,50,1,0,0,74,73,76,73,90,1,0,0,away_win
+4625950,2025-12-26,Manchester United,Newcastle United,80,82,80,79,65,1,0,0,81,81,84,80,50,0,0,1,home_win
+4625947,2025-12-27,Chelsea,Aston Villa,80,80,82,80,65,1,0,0,80,83,81,80,50,1,0,0,away_win
+4625944,2025-12-27,Arsenal,Brighton & Hove Albion,84,86,84,84,65,1,0,0,78,78,78,78,65,0,0,1,home_win
+4625951,2025-12-27,Nottingham Forest,Manchester City,79,79,79,79,50,1,0,0,84,82,85,82,65,1,0,0,away_win
+4648780,2025-12-28,Sporting Clube de Braga,SL Benfica,74,74,75,74,65,0,0,1,78,79,78,77,90,1,0,0,draw
+4625948,2025-12-28,Crystal Palace,Tottenham Hotspur,79,78,77,80,30,0,0,1,81,79,81,81,90,1,0,0,away_win
+4620862,2025-12-28,Atalanta,Inter,79,79,79,79,50,0,0,1,83,86,83,83,90,1,0,0,away_win
+4625963,2025-12-30,West Ham United,Brighton & Hove Albion,77,78,77,77,30,0,0,1,78,78,78,78,65,0,0,1,draw
+4625954,2025-12-30,Arsenal,Aston Villa,84,86,84,84,65,1,0,0,80,83,81,80,50,1,0,0,home_win
+4635152,2026-01-03,AS Monaco,Olympique Lyonnais,78,77,75,77,65,1,0,0,76,74,75,76,65,1,0,0,away_win
+4625964,2026-01-03,Aston Villa,Nottingham Forest,80,83,81,80,50,1,0,0,79,79,79,79,50,1,0,0,home_win
+4649463,2026-01-03,Celtic,Rangers FC,75,74,75,74,90,1,0,0,73,72,73,72,90,1,0,0,away_win
+4620872,2026-01-03,Atalanta,Roma,79,79,79,79,50,0,0,1,80,77,79,80,50,1,0,0,home_win
+4635153,2026-01-03,Lille OSC,Stade Rennais FC,76,79,76,76,65,1,0,0,76,74,76,74,65,1,0,0,away_win
+4645851,2026-01-04,Real Sociedad,Atlético Madrid,77,79,77,75,90,0,0,1,82,84,81,82,65,1,0,0,draw
+4625970,2026-01-04,Manchester City,Chelsea,84,82,85,82,65,1,0,0,80,80,82,80,65,1,0,0,draw
+4620877,2026-01-04,Inter,Bologna,83,86,83,83,90,1,0,0,76,76,77,74,65,1,0,0,home_win
+4620879,2026-01-04,Lazio,Napoli,79,80,77,78,30,1,0,0,81,79,82,80,65,1,0,0,away_win
+4625971,2026-01-04,Newcastle United,Crystal Palace,81,81,84,80,50,0,0,1,79,78,77,80,30,0,0,1,home_win
+4645853,2026-01-04,Real Madrid,Real Betis Balompié,85,88,85,82,90,1,0,0,78,77,79,77,50,1,0,0,home_win
+4626007,2026-01-06,West Ham United,Nottingham Forest,77,78,77,77,30,0,0,1,79,79,79,79,50,1,0,0,away_win
+4626005,2026-01-07,Manchester City,Brighton & Hove Albion,84,82,85,82,65,1,0,0,78,78,78,78,65,0,0,1,draw
+4626002,2026-01-07,Crystal Palace,Aston Villa,79,78,77,80,30,0,0,1,80,83,81,80,50,1,0,0,draw
+4790450,2026-01-07,FC Barcelona,Athletic Club,85,85,85,82,65,1,0,0,80,78,81,78,65,0,0,1,home_win
+4779999,2026-01-07,SL Benfica,Sporting Clube de Braga,78,79,78,77,90,1,0,0,74,74,75,74,65,0,0,1,away_win
+4620882,2026-01-07,Bologna,Atalanta,76,76,77,74,65,1,0,0,79,79,79,79,50,0,0,1,away_win
+4620884,2026-01-07,Lazio,Fiorentina,79,80,77,78,30,1,0,0,77,79,75,75,65,0,0,1,draw
+4790451,2026-01-08,Atlético Madrid,Real Madrid,82,84,81,82,65,1,0,0,85,88,85,82,90,1,0,0,away_win
+4625998,2026-01-08,Arsenal,Liverpool,84,86,84,84,65,1,0,0,85,85,86,83,65,1,0,0,draw
+4738246,2026-01-08,Paris Saint-Germain,Olympique de Marseille,84,85,84,85,90,1,0,0,79,81,79,79,65,1,0,0,home_win
+4634265,2026-01-09,Eintracht Frankfurt,Borussia Dortmund,78,77,78,80,65,0,0,1,81,83,80,82,65,1,0,0,draw
+4788523,2026-01-10,Tottenham Hotspur,Aston Villa,81,79,81,81,90,1,0,0,80,83,81,80,50,1,0,0,away_win
+4634264,2026-01-10,Bayer 04 Leverkusen,VfB Stuttgart,79,82,79,77,50,1,0,0,77,78,77,74,90,1,0,0,away_win
+4800635,2026-01-11,FC Barcelona,Real Madrid,85,85,85,82,65,1,0,0,85,88,85,82,90,1,0,0,home_win
+4620896,2026-01-11,Inter,Napoli,83,86,83,83,90,1,0,0,81,79,82,80,65,1,0,0,draw
+4620894,2026-01-11,Fiorentina,AC Milan,77,79,75,75,65,0,0,1,81,82,79,78,50,0,0,1,draw
+4788527,2026-01-11,Manchester United,Brighton & Hove Albion,80,82,80,79,65,1,0,0,78,78,78,78,65,0,0,1,away_win
+4798808,2026-01-13,Newcastle United,Manchester City,81,81,84,80,50,0,0,1,84,82,85,82,65,1,0,0,away_win
+4634275,2026-01-13,VfB Stuttgart,Eintracht Frankfurt,77,78,77,74,90,1,0,0,78,77,78,80,65,0,0,1,home_win
+4798809,2026-01-14,Chelsea,Arsenal,80,80,82,80,65,1,0,0,84,86,84,84,65,1,0,0,away_win
+4799312,2026-01-14,Olympiacos FC,PAOK,76,79,76,75,90,1,0,0,74,75,74,73,90,1,0,0,away_win
+4634274,2026-01-14,RB Leipzig,SC Freiburg,78,77,76,80,65,0,1,0,75,71,74,76,50,1,0,0,home_win
+4635166,2026-01-16,Paris Saint-Germain,Lille OSC,84,85,84,85,90,1,0,0,76,79,76,76,65,1,0,0,home_win
+4626016,2026-01-17,Tottenham Hotspur,West Ham United,81,79,81,81,90,1,0,0,77,78,77,77,30,0,0,1,away_win
+4626014,2026-01-17,Nottingham Forest,Arsenal,79,79,79,79,50,1,0,0,84,86,84,84,65,1,0,0,draw
+4626013,2026-01-17,Manchester United,Manchester City,80,82,80,79,65,1,0,0,84,82,85,82,65,1,0,0,home_win
+4634282,2026-01-17,RB Leipzig,FC Bayern München,78,77,76,80,65,0,1,0,84,89,85,82,65,1,0,0,away_win
+4645876,2026-01-17,Real Betis Balompié,Villarreal CF,78,77,79,77,50,1,0,0,79,80,79,77,50,0,0,1,home_win
+4645874,2026-01-18,Real Sociedad,FC Barcelona,77,79,77,75,90,0,0,1,85,85,85,82,65,1,0,0,home_win
+4641321,2026-01-18,KAA Gent,RSC Anderlecht,70,70,70,68,30,1,0,0,71,74,70,68,90,1,0,0,home_win
+4634284,2026-01-18,VfB Stuttgart,1. FC Union Berlin,77,78,77,74,90,1,0,0,75,72,73,75,30,0,1,0,draw
+4620902,2026-01-18,Bologna,Fiorentina,76,76,77,74,65,1,0,0,77,79,75,75,65,0,0,1,away_win
+4715056,2026-01-20,Inter,Arsenal,83,86,83,83,90,1,0,0,84,86,84,84,65,1,0,0,away_win
+4715100,2026-01-20,Real Madrid,AS Monaco,85,88,85,82,90,1,0,0,78,77,75,77,65,1,0,0,home_win
+4715102,2026-01-20,Sporting CP,Paris Saint-Germain,79,79,80,77,65,1,0,0,84,85,84,85,90,1,0,0,home_win
+4715046,2026-01-20,Tottenham Hotspur,Borussia Dortmund,81,79,81,81,90,1,0,0,81,83,80,82,65,1,0,0,home_win
+4715039,2026-01-20,Olympiacos FC,Bayer 04 Leverkusen,76,79,76,75,90,1,0,0,79,82,79,77,50,1,0,0,home_win
+4715019,2026-01-20,FC København,Napoli,72,73,72,71,90,1,0,0,81,79,82,80,65,1,0,0,draw
+4715029,2026-01-20,FK Bodø/Glimt,Manchester City,71,70,73,70,90,1,0,0,84,82,85,82,65,1,0,0,home_win
+4715110,2026-01-21,Qarabağ FK,Eintracht Frankfurt,69,67,69,67,50,0,0,1,78,77,78,80,65,0,0,1,home_win
+4714995,2026-01-21,Galatasaray SK,Atlético Madrid,80,84,80,79,65,1,0,0,82,84,81,82,65,1,0,0,draw
+4715011,2026-01-21,Juventus,SL Benfica,80,81,80,80,90,1,0,0,78,79,78,77,90,1,0,0,home_win
+4715148,2026-01-21,Newcastle United,PSV,81,81,84,80,50,0,0,1,77,76,80,76,65,1,0,0,home_win
+4715024,2026-01-21,Olympique de Marseille,Liverpool,79,81,79,79,65,1,0,0,85,85,86,83,65,1,0,0,away_win
+4715108,2026-01-21,Atalanta,Athletic Club,79,79,79,79,50,0,0,1,80,78,81,78,65,0,0,1,away_win
+4715036,2026-01-21,SK Slavia Praha,FC Barcelona,75,74,75,73,50,0,0,1,85,85,85,82,65,1,0,0,away_win
+4715068,2026-01-21,FC Bayern München,Union Saint-Gilloise,84,89,85,82,65,1,0,0,74,74,73,75,50,1,0,0,home_win
+4715971,2026-01-22,Viktoria Plzeň,FC Porto,72,73,71,73,90,0,0,1,77,77,77,76,65,1,0,0,draw
+4715988,2026-01-22,BSC Young Boys,Olympique Lyonnais,70,70,71,68,50,0,1,0,76,74,75,76,65,1,0,0,away_win
+4715937,2026-01-22,Dinamo Zagreb,FCSB,72,70,71,70,50,0,1,0,69,69,70,68,30,1,0,0,home_win
+4715951,2026-01-22,Fenerbahçe SK,Aston Villa,79,79,79,76,90,1,0,0,80,83,81,80,50,1,0,0,away_win
+4715978,2026-01-22,Ferencvárosi Torna Club,Panathinaikos FC,72,72,71,68,50,0,0,1,74,73,74,73,50,0,1,0,draw
+4715945,2026-01-22,FC Red Bull Salzburg,FC Basel 1893,70,69,70,69,90,1,0,0,71,69,72,71,50,1,0,0,home_win
+4715967,2026-01-22,PAOK,Real Betis Balompié,74,75,74,73,90,1,0,0,78,77,79,77,50,1,0,0,home_win
+4716020,2026-01-22,Bologna,Celtic,76,76,77,74,65,1,0,0,75,74,75,74,90,1,0,0,draw
+4715929,2026-01-22,Feyenoord,SK Sturm Graz,75,76,77,74,65,0,0,1,68,67,71,67,90,0,0,1,home_win
+4715957,2026-01-22,Sporting Clube de Braga,Nottingham Forest,74,74,75,74,65,0,0,1,79,79,79,79,50,1,0,0,home_win
+4715918,2026-01-22,Roma,VfB Stuttgart,80,77,79,80,50,1,0,0,77,78,77,74,90,1,0,0,home_win
+4645794,2026-01-24,Villarreal CF,Real Madrid,79,80,79,77,50,0,0,1,85,88,85,82,90,1,0,0,away_win
+4634303,2026-01-24,1. FC Union Berlin,Borussia Dortmund,75,72,73,75,30,0,1,0,81,83,80,82,65,1,0,0,away_win
+4645798,2026-01-24,Sevilla FC,Athletic Club,75,75,76,75,50,0,1,0,80,78,81,78,65,0,0,1,home_win
+4635168,2026-01-25,Lille OSC,RC Strasbourg Alsace,76,79,76,76,65,1,0,0,75,76,74,75,65,0,0,1,away_win
+4626026,2026-01-25,Newcastle United,Aston Villa,81,81,84,80,50,0,0,1,80,83,81,80,50,1,0,0,away_win
+4620918,2026-01-25,Juventus,Napoli,80,81,80,80,90,1,0,0,81,79,82,80,65,1,0,0,home_win
+4620920,2026-01-25,Roma,AC Milan,80,77,79,80,50,1,0,0,81,82,79,78,50,0,0,1,draw
+4626018,2026-01-25,Arsenal,Manchester United,84,86,84,84,65,1,0,0,80,82,80,79,65,1,0,0,away_win
+4626022,2026-01-25,Crystal Palace,Chelsea,79,78,77,80,30,0,0,1,80,80,82,80,65,1,0,0,away_win
+4714997,2026-01-28,Club Brugge KV,Olympique de Marseille,74,73,76,73,90,1,0,0,79,81,79,79,65,1,0,0,home_win
+4715014,2026-01-28,AS Monaco,Juventus,78,77,75,77,65,1,0,0,80,81,80,80,90,1,0,0,draw
+4715127,2026-01-28,Bayer 04 Leverkusen,Villarreal CF,79,82,79,77,50,1,0,0,79,80,79,77,50,0,0,1,home_win
+4715138,2026-01-28,FC Barcelona,FC København,85,85,85,82,65,1,0,0,72,73,72,71,90,1,0,0,home_win
+4715123,2026-01-28,Atlético Madrid,FK Bodø/Glimt,82,84,81,82,65,1,0,0,71,70,73,70,90,1,0,0,away_win
+4715050,2026-01-28,Borussia Dortmund,Inter,81,83,80,82,65,1,0,0,83,86,83,83,90,1,0,0,away_win
+4715120,2026-01-28,SL Benfica,Real Madrid,78,79,78,77,90,1,0,0,85,88,85,82,90,1,0,0,home_win
+4714989,2026-01-28,PSV,FC Bayern München,77,76,80,76,65,1,0,0,84,89,85,82,65,1,0,0,away_win
+4714984,2026-01-28,Athletic Club,Sporting CP,80,78,81,78,65,0,0,1,79,79,80,77,65,1,0,0,away_win
+4714981,2026-01-28,Napoli,Chelsea,81,79,82,80,65,1,0,0,80,80,82,80,65,1,0,0,away_win
+4715104,2026-01-28,Liverpool,Qarabağ FK,85,85,86,83,65,1,0,0,69,67,69,67,50,0,0,1,home_win
+4715059,2026-01-28,Paris Saint-Germain,Newcastle United,84,85,84,85,90,1,0,0,81,81,84,80,50,0,0,1,draw
+4715099,2026-01-28,Union Saint-Gilloise,Atalanta,74,74,73,75,50,1,0,0,79,79,79,79,50,0,0,1,home_win
+4715094,2026-01-28,Manchester City,Galatasaray SK,84,82,85,82,65,1,0,0,80,84,80,79,65,1,0,0,home_win
+4715002,2026-01-28,Eintracht Frankfurt,Tottenham Hotspur,78,77,78,80,65,0,0,1,81,79,81,81,90,1,0,0,away_win
+4716254,2026-01-29,FC Midtjylland,Dinamo Zagreb,71,71,70,71,50,1,0,0,72,70,71,70,50,0,1,0,home_win
+4716031,2026-01-29,Panathinaikos FC,Roma,74,73,74,73,50,0,1,0,80,77,79,80,50,1,0,0,draw
+4716029,2026-01-29,VfB Stuttgart,BSC Young Boys,77,78,77,74,90,1,0,0,70,70,71,68,50,0,1,0,home_win
+4715964,2026-01-29,Olympique Lyonnais,PAOK,76,74,75,76,65,1,0,0,74,75,74,73,90,1,0,0,home_win
+4715919,2026-01-29,FC Porto,Rangers FC,77,77,77,76,65,1,0,0,73,72,73,72,90,1,0,0,home_win
+4716004,2026-01-29,Nottingham Forest,Ferencvárosi Torna Club,79,79,79,79,50,1,0,0,72,72,71,68,50,0,0,1,home_win
+4715992,2026-01-29,FC Basel 1893,Viktoria Plzeň,71,69,72,71,50,1,0,0,72,73,71,73,90,0,0,1,away_win
+4715933,2026-01-29,Lille OSC,SC Freiburg,76,79,76,76,65,1,0,0,75,71,74,76,50,1,0,0,home_win
+4715947,2026-01-29,Aston Villa,FC Red Bull Salzburg,80,83,81,80,50,1,0,0,70,69,70,69,90,1,0,0,home_win
+4715939,2026-01-29,Real Betis Balompié,Feyenoord,78,77,79,77,50,1,0,0,75,76,77,74,65,0,0,1,home_win
+4716012,2026-01-29,FCSB,Fenerbahçe SK,69,69,70,68,30,1,0,0,79,79,79,76,90,1,0,0,draw
+4626032,2026-01-31,Liverpool,Newcastle United,85,85,86,83,65,1,0,0,81,81,84,80,50,0,0,1,home_win
+4635182,2026-01-31,AS Monaco,Stade Rennais FC,78,77,75,77,65,1,0,0,76,74,76,74,65,1,0,0,home_win
+4634306,2026-01-31,Eintracht Frankfurt,Bayer 04 Leverkusen,78,77,78,80,65,0,0,1,79,82,79,77,50,1,0,0,away_win
+4620928,2026-01-31,Napoli,Fiorentina,81,79,82,80,65,1,0,0,77,79,75,75,65,0,0,1,home_win
+4626030,2026-01-31,Chelsea,West Ham United,80,80,82,80,65,1,0,0,77,78,77,77,30,0,0,1,home_win
+4635179,2026-02-01,RC Strasbourg Alsace,Paris Saint-Germain,75,76,74,75,65,0,0,1,84,85,84,85,90,1,0,0,away_win
+4635178,2026-02-01,Olympique Lyonnais,Lille OSC,76,74,75,76,65,1,0,0,76,79,76,76,65,1,0,0,home_win
+4645804,2026-02-01,Real Madrid,Rayo Vallecano,85,88,85,82,90,1,0,0,77,73,77,77,65,0,0,1,home_win
+4641311,2026-02-01,Union Saint-Gilloise,Club Brugge KV,74,74,73,75,50,1,0,0,74,73,76,73,90,1,0,0,home_win
+4645805,2026-02-01,Athletic Club,Real Sociedad,80,78,81,78,65,0,0,1,77,79,77,75,90,0,0,1,draw
+4626034,2026-02-01,Nottingham Forest,Crystal Palace,79,79,79,79,50,1,0,0,79,78,77,80,30,0,0,1,draw
+4626036,2026-02-01,Tottenham Hotspur,Manchester City,81,79,81,81,90,1,0,0,84,82,85,82,65,1,0,0,draw
+4641616,2026-02-01,PSV,Feyenoord,77,76,80,76,65,1,0,0,75,76,77,74,65,0,0,1,home_win
+4634310,2026-02-01,VfB Stuttgart,SC Freiburg,77,78,77,74,90,1,0,0,75,71,74,76,50,1,0,0,home_win
+4798810,2026-02-03,Arsenal,Chelsea,84,86,84,84,65,1,0,0,80,80,82,80,65,1,0,0,home_win
+4620923,2026-02-03,Bologna,AC Milan,76,76,77,74,65,1,0,0,81,82,79,78,50,0,0,1,away_win
+4798811,2026-02-04,Manchester City,Newcastle United,84,82,85,82,65,1,0,0,81,81,84,80,50,0,0,1,home_win
+4804365,2026-02-04,Panathinaikos FC,PAOK,74,73,74,73,50,0,1,0,74,75,74,73,90,1,0,0,away_win
+4808019,2026-02-05,Real Betis Balompié,Atlético Madrid,78,77,79,77,50,1,0,0,82,84,81,82,65,1,0,0,away_win
+4785785,2026-02-05,Atalanta,Juventus,79,79,79,79,50,0,0,1,80,81,80,80,90,1,0,0,home_win
+4634329,2026-02-06,1. FC Union Berlin,Eintracht Frankfurt,75,72,73,75,30,0,1,0,78,77,78,80,65,0,0,1,draw
+4626045,2026-02-07,Manchester United,Tottenham Hotspur,80,82,80,79,65,1,0,0,81,79,81,81,90,1,0,0,home_win
+4626040,2026-02-08,Brighton & Hove Albion,Crystal Palace,78,78,78,78,65,0,0,1,79,78,77,80,30,0,0,1,away_win
+4620943,2026-02-08,Juventus,Lazio,80,81,80,80,90,1,0,0,79,80,77,78,30,1,0,0,draw
+4626044,2026-02-08,Liverpool,Manchester City,85,85,86,83,65,1,0,0,84,82,85,82,65,1,0,0,away_win
+4645818,2026-02-08,Atlético Madrid,Real Betis Balompié,82,84,81,82,65,1,0,0,78,77,79,77,50,1,0,0,away_win
+4641361,2026-02-08,KRC Genk,RSC Anderlecht,73,72,73,75,50,1,0,0,71,74,70,68,90,1,0,0,home_win
+4665123,2026-02-08,Olympiacos FC,Panathinaikos FC,76,79,76,75,90,1,0,0,74,73,74,73,50,0,1,0,away_win
+4648389,2026-02-08,FC Midtjylland,FC København,71,71,70,71,50,1,0,0,72,73,72,71,90,1,0,0,home_win
+4635186,2026-02-08,Paris Saint-Germain,Olympique de Marseille,84,85,84,85,90,1,0,0,79,81,79,79,65,1,0,0,home_win
+4648806,2026-02-09,FC Porto,Sporting CP,77,77,77,76,65,1,0,0,79,79,80,77,65,1,0,0,draw
+4626057,2026-02-10,West Ham United,Manchester United,77,78,77,77,30,0,0,1,80,82,80,79,65,1,0,0,draw
+4626056,2026-02-10,Tottenham Hotspur,Newcastle United,81,79,81,81,90,1,0,0,81,81,84,80,50,0,0,1,away_win
+4782524,2026-02-11,FC Bayern München,RB Leipzig,84,89,85,82,65,1,0,0,78,77,76,80,65,0,1,0,home_win
+4785784,2026-02-11,Bologna,Lazio,76,76,77,74,65,1,0,0,79,80,77,78,30,1,0,0,away_win
+4819275,2026-02-11,Athletic Club,Real Sociedad,80,78,81,78,65,0,0,1,77,79,77,75,90,0,0,1,away_win
+4804367,2026-02-11,PAOK,Panathinaikos FC,74,75,74,73,90,1,0,0,74,73,74,73,50,0,1,0,home_win
+4626048,2026-02-11,Aston Villa,Brighton & Hove Albion,80,83,81,80,50,1,0,0,78,78,78,78,65,0,0,1,home_win
+4819274,2026-02-12,Atlético Madrid,FC Barcelona,82,84,81,82,65,1,0,0,85,85,85,82,65,1,0,0,home_win
+4635203,2026-02-13,Stade Rennais FC,Paris Saint-Germain,76,74,76,74,65,1,0,0,84,85,84,85,90,1,0,0,home_win
+4645888,2026-02-14,Real Madrid,Real Sociedad,85,88,85,82,90,1,0,0,77,79,77,75,90,0,0,1,home_win
+4808368,2026-02-14,Aston Villa,Newcastle United,80,83,81,80,50,1,0,0,81,81,84,80,50,0,0,1,away_win
+4620959,2026-02-14,Lazio,Atalanta,79,80,77,78,30,1,0,0,79,79,79,79,50,0,0,1,away_win
+4620958,2026-02-14,Inter,Juventus,83,86,83,83,90,1,0,0,80,81,80,80,90,1,0,0,home_win
+4808369,2026-02-14,Liverpool,Brighton & Hove Albion,85,85,86,83,65,1,0,0,78,78,78,78,65,0,0,1,home_win
+4635196,2026-02-14,Olympique de Marseille,RC Strasbourg Alsace,79,81,79,79,65,1,0,0,75,76,74,75,65,0,0,1,draw
+4645881,2026-02-15,Rayo Vallecano,Atlético Madrid,77,73,77,77,65,0,0,1,82,84,81,82,65,1,0,0,home_win
+4620960,2026-02-15,Napoli,Roma,81,79,82,80,65,1,0,0,80,77,79,80,50,1,0,0,draw
+4787666,2026-02-15,FC Basel 1893,FC Lugano,71,69,72,71,50,1,0,0,70,71,68,68,50,0,1,0,draw
+4814097,2026-02-17,SL Benfica,Real Madrid,78,79,78,77,90,1,0,0,85,88,85,82,90,1,0,0,away_win
+4814095,2026-02-17,AS Monaco,Paris Saint-Germain,78,77,75,77,65,1,0,0,84,85,84,85,90,1,0,0,away_win
+4814098,2026-02-17,Borussia Dortmund,Atalanta,81,83,80,82,65,1,0,0,79,79,79,79,50,0,0,1,home_win
+4814096,2026-02-17,Galatasaray SK,Juventus,80,84,80,79,65,1,0,0,80,81,80,80,90,1,0,0,home_win
+4814099,2026-02-18,Qarabağ FK,Newcastle United,69,67,69,67,50,0,0,1,81,81,84,80,50,0,0,1,away_win
+4814100,2026-02-18,Club Brugge KV,Atlético Madrid,74,73,76,73,90,1,0,0,82,84,81,82,65,1,0,0,draw
+4814102,2026-02-18,Olympiacos FC,Bayer 04 Leverkusen,76,79,76,75,90,1,0,0,79,82,79,77,50,1,0,0,away_win
+4814101,2026-02-18,FK Bodø/Glimt,Inter,71,70,73,70,90,1,0,0,83,86,83,83,90,1,0,0,home_win
+4805889,2026-02-19,Panathinaikos FC,Viktoria Plzeň,74,73,74,73,50,0,1,0,72,73,71,73,90,0,0,1,draw
+4805838,2026-02-19,Jagiellonia Białystok,Fiorentina,69,72,69,69,50,1,0,0,77,79,75,75,65,0,0,1,away_win
+4805890,2026-02-19,Dinamo Zagreb,KRC Genk,72,70,71,70,50,0,1,0,73,72,73,75,50,1,0,0,away_win
+4805892,2026-02-19,Celtic,VfB Stuttgart,75,74,75,74,90,1,0,0,77,78,77,74,90,1,0,0,away_win
+4805893,2026-02-19,Fenerbahçe SK,Nottingham Forest,79,79,79,76,90,1,0,0,79,79,79,79,50,1,0,0,away_win
+4634365,2026-02-21,1. FC Union Berlin,Bayer 04 Leverkusen,75,72,73,75,30,0,1,0,79,82,79,77,50,1,0,0,home_win
+4634363,2026-02-21,RB Leipzig,Borussia Dortmund,78,77,76,80,65,0,1,0,81,83,80,82,65,1,0,0,draw
+4626063,2026-02-21,Manchester City,Newcastle United,84,82,85,82,65,1,0,0,81,81,84,80,50,0,0,1,home_win
+4645868,2026-02-21,Real Betis Balompié,Rayo Vallecano,78,77,79,77,50,1,0,0,77,73,77,77,65,0,0,1,draw
+4634360,2026-02-21,FC Bayern München,Eintracht Frankfurt,84,89,85,82,65,1,0,0,78,77,78,80,65,0,0,1,home_win
+4635204,2026-02-22,RC Strasbourg Alsace,Olympique Lyonnais,75,76,74,75,65,0,0,1,76,74,75,76,65,1,0,0,home_win
+4624700,2026-02-22,Viktoria Plzeň,Sparta Praha,72,73,71,73,90,0,0,1,73,75,74,72,50,0,0,1,draw
+4626066,2026-02-22,Tottenham Hotspur,Arsenal,81,79,81,81,90,1,0,0,84,86,84,84,65,1,0,0,away_win
+4626064,2026-02-22,Nottingham Forest,Liverpool,79,79,79,79,50,1,0,0,85,85,86,83,65,1,0,0,away_win
+4642989,2026-02-22,LASK Linz,FC Red Bull Salzburg,68,73,68,68,30,1,0,0,70,69,70,69,90,1,0,0,away_win
+4620965,2026-02-22,Atalanta,Napoli,79,79,79,79,50,0,0,1,81,79,82,80,65,1,0,0,home_win
+4814107,2026-02-24,Newcastle United,Qarabağ FK,81,81,84,80,50,0,0,1,69,67,69,67,50,0,0,1,home_win
+4814108,2026-02-24,Atlético Madrid,Club Brugge KV,82,84,81,82,65,1,0,0,74,73,76,73,90,1,0,0,home_win
+4814109,2026-02-24,Inter,FK Bodø/Glimt,83,86,83,83,90,1,0,0,71,70,73,70,90,1,0,0,away_win
+4814110,2026-02-24,Bayer 04 Leverkusen,Olympiacos FC,79,82,79,77,50,1,0,0,76,79,76,75,90,1,0,0,draw
+4814106,2026-02-25,Atalanta,Borussia Dortmund,79,79,79,79,50,0,0,1,81,83,80,82,65,1,0,0,home_win
+4814103,2026-02-25,Paris Saint-Germain,AS Monaco,84,85,84,85,90,1,0,0,78,77,75,77,65,1,0,0,draw
+4814104,2026-02-25,Juventus,Galatasaray SK,80,81,80,80,90,1,0,0,80,84,80,79,65,1,0,0,home_win
+4814105,2026-02-25,Real Madrid,SL Benfica,85,88,85,82,90,1,0,0,78,79,78,77,90,1,0,0,home_win
+4805897,2026-02-26,Viktoria Plzeň,Panathinaikos FC,72,73,71,73,90,0,0,1,74,73,74,73,50,0,1,0,away_win
+4805898,2026-02-26,KRC Genk,Dinamo Zagreb,73,72,73,75,50,1,0,0,72,70,71,70,50,0,1,0,draw
+4805846,2026-02-26,Fiorentina,Jagiellonia Białystok,77,79,75,75,65,0,0,1,69,72,69,69,50,1,0,0,away_win
+4805900,2026-02-26,VfB Stuttgart,Celtic,77,78,77,74,90,1,0,0,75,74,75,74,90,1,0,0,away_win
+4805901,2026-02-26,Nottingham Forest,Fenerbahçe SK,79,79,79,79,50,1,0,0,79,79,79,76,90,1,0,0,away_win
+4645824,2026-02-28,FC Barcelona,Villarreal CF,85,85,85,82,65,1,0,0,79,80,79,77,50,0,0,1,home_win
+4626074,2026-02-28,Liverpool,West Ham United,85,85,86,83,65,1,0,0,77,78,77,77,30,0,0,1,home_win
+4645829,2026-02-28,Rayo Vallecano,Athletic Club,77,73,77,77,65,0,0,1,80,78,81,78,65,0,0,1,draw
+4634380,2026-02-28,Borussia Dortmund,FC Bayern München,81,83,80,82,65,1,0,0,84,89,85,82,65,1,0,0,away_win
+4645825,2026-03-01,Real Betis Balompié,Sevilla FC,78,77,79,77,50,1,0,0,75,75,76,75,50,0,1,0,draw
+4641296,2026-03-01,KRC Genk,KAA Gent,73,72,73,75,50,1,0,0,70,70,70,68,30,1,0,0,home_win
+4626070,2026-03-01,Brighton & Hove Albion,Nottingham Forest,78,78,78,78,65,0,0,1,79,79,79,79,50,1,0,0,home_win
+4626068,2026-03-01,Arsenal,Chelsea,84,86,84,84,65,1,0,0,80,80,82,80,65,1,0,0,home_win
+4634379,2026-03-01,Eintracht Frankfurt,SC Freiburg,78,77,78,80,65,0,0,1,75,71,74,76,50,1,0,0,home_win
+4624832,2026-03-01,Lech Poznań,Raków Częstochowa,70,72,68,70,50,1,0,0,69,71,69,70,90,1,0,0,home_win
+4635221,2026-03-01,Olympique de Marseille,Olympique Lyonnais,79,81,79,79,65,1,0,0,76,74,75,76,65,1,0,0,home_win
+4624831,2026-03-01,Jagiellonia Białystok,Legia Warszawa,69,72,69,69,50,1,0,0,69,69,70,70,90,1,0,0,draw
+4620980,2026-03-01,Roma,Juventus,80,77,79,80,50,1,0,0,80,81,80,80,90,1,0,0,draw
+4649528,2026-03-01,Rangers FC,Celtic,73,72,73,72,90,1,0,0,75,74,75,74,90,1,0,0,draw
+4626075,2026-03-01,Manchester United,Crystal Palace,80,82,80,79,65,1,0,0,79,78,77,80,30,0,0,1,home_win
+4819283,2026-03-03,FC Barcelona,Atlético Madrid,85,85,85,82,65,1,0,0,82,84,81,82,65,1,0,0,home_win
+4626084,2026-03-04,Manchester City,Nottingham Forest,84,82,85,82,65,1,0,0,79,79,79,79,50,1,0,0,draw
+4819284,2026-03-04,Real Sociedad,Athletic Club,77,79,77,75,90,0,0,1,80,78,81,78,65,0,0,1,home_win
+4626080,2026-03-04,Brighton & Hove Albion,Arsenal,78,78,78,78,65,0,0,1,84,86,84,84,65,1,0,0,away_win
+4626078,2026-03-04,Aston Villa,Chelsea,80,83,81,80,50,1,0,0,80,80,82,80,65,1,0,0,away_win
+4824554,2026-03-04,Lazio,Atalanta,79,80,77,78,30,1,0,0,79,79,79,79,50,0,0,1,draw
+4626085,2026-03-04,Newcastle United,Manchester United,81,81,84,80,50,0,0,1,80,82,80,79,65,1,0,0,home_win
+4626086,2026-03-05,Tottenham Hotspur,Crystal Palace,81,79,81,81,90,1,0,0,79,78,77,80,30,0,0,1,away_win
+4635230,2026-03-06,Paris Saint-Germain,AS Monaco,84,85,84,85,90,1,0,0,78,77,75,77,65,1,0,0,away_win
+4645953,2026-03-07,Atlético Madrid,Real Sociedad,82,84,81,82,65,1,0,0,77,79,77,75,90,0,0,1,home_win
+4641355,2026-03-07,Union Saint-Gilloise,KRC Genk,74,74,73,75,50,1,0,0,73,72,73,75,50,1,0,0,home_win
+4827501,2026-03-07,Newcastle United,Manchester City,81,81,84,80,50,0,0,1,84,82,85,82,65,1,0,0,away_win
+4645952,2026-03-07,Athletic Club,FC Barcelona,80,78,81,78,65,0,0,1,85,85,85,82,65,1,0,0,away_win
+4641581,2026-03-07,PSV,AZ Alkmaar,77,76,80,76,65,1,0,0,73,74,74,72,65,1,0,0,home_win
+4634388,2026-03-07,SC Freiburg,Bayer 04 Leverkusen,75,71,74,76,50,1,0,0,79,82,79,77,50,1,0,0,draw
+4648851,2026-03-07,Sporting Clube de Braga,Sporting CP,74,74,75,74,65,0,0,1,79,79,80,77,65,1,0,0,draw
+4643002,2026-03-08,SK Rapid,FC Red Bull Salzburg,69,67,69,70,50,1,0,0,70,69,70,69,90,1,0,0,home_win
+4620993,2026-03-08,AC Milan,Inter,81,82,79,78,50,0,0,1,83,86,83,83,90,1,0,0,home_win
+4624719,2026-03-08,SK Slavia Praha,Sparta Praha,75,74,75,73,50,0,0,1,73,75,74,72,50,0,0,1,home_win
+4645951,2026-03-08,Sevilla FC,Rayo Vallecano,75,75,76,75,50,0,1,0,77,73,77,77,65,0,0,1,draw
+4648852,2026-03-08,SL Benfica,FC Porto,78,79,78,77,90,1,0,0,77,77,77,76,65,1,0,0,draw
+4664998,2026-03-08,Olympiacos FC,PAOK,76,79,76,75,90,1,0,0,74,75,74,73,90,1,0,0,draw
+4641354,2026-03-08,Club Brugge KV,RSC Anderlecht,74,73,76,73,90,1,0,0,71,74,70,68,90,1,0,0,draw
+4832715,2026-03-08,Rangers FC,Celtic,73,72,73,72,90,1,0,0,75,74,75,74,90,1,0,0,away_win
+4814359,2026-03-10,Atlético Madrid,Tottenham Hotspur,82,84,81,82,65,1,0,0,81,79,81,81,90,1,0,0,home_win
+4814355,2026-03-10,Galatasaray SK,Liverpool,80,84,80,79,65,1,0,0,85,85,86,83,65,1,0,0,home_win
+4814357,2026-03-10,Atalanta,FC Bayern München,79,79,79,79,50,0,0,1,84,89,85,82,65,1,0,0,away_win
+4814358,2026-03-10,Newcastle United,FC Barcelona,81,81,84,80,50,0,0,1,85,85,85,82,65,1,0,0,draw
+4814354,2026-03-11,Paris Saint-Germain,Chelsea,84,85,84,85,90,1,0,0,80,80,82,80,65,1,0,0,home_win
+4814356,2026-03-11,Real Madrid,Manchester City,85,88,85,82,90,1,0,0,84,82,85,82,65,1,0,0,home_win
+4814361,2026-03-11,Bayer 04 Leverkusen,Arsenal,79,82,79,77,50,1,0,0,84,86,84,84,65,1,0,0,draw
+4814360,2026-03-11,FK Bodø/Glimt,Sporting CP,71,70,73,70,90,1,0,0,79,79,80,77,65,1,0,0,home_win
+4805859,2026-03-12,Lech Poznań,Shakhtar Donetsk,70,72,68,70,50,1,0,0,72,71,73,73,50,1,0,0,away_win
+4805908,2026-03-12,VfB Stuttgart,FC Porto,77,78,77,74,90,1,0,0,77,77,77,76,65,1,0,0,away_win
+4805911,2026-03-12,Lille OSC,Aston Villa,76,79,76,76,65,1,0,0,80,83,81,80,50,1,0,0,away_win
+4805910,2026-03-12,Bologna,Roma,76,76,77,74,65,1,0,0,80,77,79,80,50,1,0,0,draw
+4805904,2026-03-12,Ferencvárosi Torna Club,Sporting Clube de Braga,72,72,71,68,50,0,0,1,74,74,75,74,65,0,0,1,home_win
+4805905,2026-03-12,Panathinaikos FC,Real Betis Balompié,74,73,74,73,50,0,1,0,78,77,79,77,50,1,0,0,home_win
+4805906,2026-03-12,KRC Genk,SC Freiburg,73,72,73,75,50,1,0,0,75,71,74,76,50,1,0,0,home_win
+4805909,2026-03-12,Nottingham Forest,FC Midtjylland,79,79,79,79,50,1,0,0,71,71,70,71,50,1,0,0,away_win
+4805862,2026-03-12,Fiorentina,Raków Częstochowa,77,79,75,75,65,0,0,1,69,71,69,70,90,1,0,0,home_win
+4805860,2026-03-12,AZ Alkmaar,Sparta Praha,73,74,74,72,65,1,0,0,73,75,74,72,50,0,0,1,home_win
+4620997,2026-03-14,Inter,Atalanta,83,86,83,83,90,1,0,0,79,79,79,79,50,0,0,1,draw
+4626097,2026-03-14,West Ham United,Manchester City,77,78,77,77,30,0,0,1,84,82,85,82,65,1,0,0,draw
+4634405,2026-03-14,Bayer 04 Leverkusen,FC Bayern München,79,82,79,77,50,1,0,0,84,89,85,82,65,1,0,0,draw
+4626091,2026-03-14,Chelsea,Newcastle United,80,80,82,80,65,1,0,0,81,81,84,80,50,0,0,1,away_win
+4634410,2026-03-15,VfB Stuttgart,RB Leipzig,77,78,77,74,90,1,0,0,78,77,76,80,65,0,1,0,home_win
+4634408,2026-03-15,SC Freiburg,1. FC Union Berlin,75,71,74,76,50,1,0,0,75,72,73,75,30,0,1,0,away_win
+4626093,2026-03-15,Liverpool,Tottenham Hotspur,85,85,86,83,65,1,0,0,81,79,81,81,90,1,0,0,draw
+4626094,2026-03-15,Manchester United,Aston Villa,80,82,80,79,65,1,0,0,80,83,81,80,50,1,0,0,home_win
+4645925,2026-03-15,FC Barcelona,Sevilla FC,85,85,85,82,65,1,0,0,75,75,76,75,50,0,1,0,home_win
+4839823,2026-03-15,FC Red Bull Salzburg,SK Rapid,70,69,70,69,90,1,0,0,69,67,69,70,50,1,0,0,away_win
+4620998,2026-03-15,Lazio,AC Milan,79,80,77,78,30,1,0,0,81,82,79,78,50,0,0,1,home_win
+4635236,2026-03-15,Stade Rennais FC,Lille OSC,76,74,76,74,65,1,0,0,76,79,76,76,65,1,0,0,away_win
+4814369,2026-03-17,Arsenal,Bayer 04 Leverkusen,84,86,84,84,65,1,0,0,79,82,79,77,50,1,0,0,home_win
+4814368,2026-03-17,Sporting CP,FK Bodø/Glimt,79,79,80,77,65,1,0,0,71,70,73,70,90,1,0,0,home_win
+4814362,2026-03-17,Chelsea,Paris Saint-Germain,80,80,82,80,65,1,0,0,84,85,84,85,90,1,0,0,away_win
+4814364,2026-03-17,Manchester City,Real Madrid,84,82,85,82,65,1,0,0,85,88,85,82,90,1,0,0,away_win
+4814363,2026-03-18,Liverpool,Galatasaray SK,85,85,86,83,65,1,0,0,80,84,80,79,65,1,0,0,home_win
+4814366,2026-03-18,FC Barcelona,Newcastle United,85,85,85,82,65,1,0,0,81,81,84,80,50,0,0,1,home_win
+4814367,2026-03-18,Tottenham Hotspur,Atlético Madrid,81,79,81,81,90,1,0,0,82,84,81,82,65,1,0,0,home_win
+4814365,2026-03-18,FC Bayern München,Atalanta,84,89,85,82,65,1,0,0,79,79,79,79,50,0,0,1,home_win
+4805912,2026-03-18,Sporting Clube de Braga,Ferencvárosi Torna Club,74,74,75,74,65,0,0,1,72,72,71,68,50,0,0,1,home_win
+4805913,2026-03-19,Real Betis Balompié,Panathinaikos FC,78,77,79,77,50,1,0,0,74,73,74,73,50,0,1,0,home_win
+4805914,2026-03-19,SC Freiburg,KRC Genk,75,71,74,76,50,1,0,0,73,72,73,75,50,1,0,0,home_win
+4805917,2026-03-19,FC Midtjylland,Nottingham Forest,71,71,70,71,50,1,0,0,79,79,79,79,50,1,0,0,away_win
+4805918,2026-03-19,Roma,Bologna,80,77,79,80,50,1,0,0,76,76,77,74,65,1,0,0,away_win
+4805919,2026-03-19,Aston Villa,Lille OSC,80,83,81,80,50,1,0,0,76,79,76,76,65,1,0,0,home_win
+4805870,2026-03-19,Raków Częstochowa,Fiorentina,69,71,69,70,90,1,0,0,77,79,75,75,65,0,0,1,away_win
+4805868,2026-03-19,Sparta Praha,AZ Alkmaar,73,75,74,72,50,0,0,1,73,74,74,72,65,1,0,0,away_win
+4805867,2026-03-19,Shakhtar Donetsk,Lech Poznań,72,71,73,73,50,1,0,0,70,72,68,70,50,1,0,0,away_win
+4805916,2026-03-19,FC Porto,VfB Stuttgart,77,77,77,76,65,1,0,0,77,78,77,74,90,1,0,0,home_win
+4645911,2026-03-20,Villarreal CF,Real Sociedad,79,80,79,77,50,0,0,1,77,79,77,75,90,0,0,1,home_win
+4839825,2026-03-20,SK Sturm Graz,FC Red Bull Salzburg,68,67,71,67,90,0,0,1,70,69,70,69,90,1,0,0,draw
+4626100,2026-03-21,Brighton & Hove Albion,Liverpool,78,78,78,78,65,0,0,1,85,85,86,83,65,1,0,0,home_win
+4634423,2026-03-21,FC Bayern München,1. FC Union Berlin,84,89,85,82,65,1,0,0,75,72,73,75,30,0,1,0,home_win
+4645912,2026-03-22,Athletic Club,Real Betis Balompié,80,78,81,78,65,0,0,1,78,77,79,77,50,1,0,0,home_win
+4645913,2026-03-22,FC Barcelona,Rayo Vallecano,85,85,85,82,65,1,0,0,77,73,77,77,65,0,0,1,home_win
+4645909,2026-03-22,Real Madrid,Atlético Madrid,85,88,85,82,90,1,0,0,82,84,81,82,65,1,0,0,home_win
+4787643,2026-03-22,BSC Young Boys,FC Lugano,70,70,71,68,50,0,1,0,70,71,68,68,50,0,1,0,draw
+4818788,2026-03-22,Arsenal,Manchester City,84,86,84,84,65,1,0,0,84,82,85,82,65,1,0,0,away_win
+4839830,2026-03-22,SK Rapid,LASK Linz,69,67,69,70,50,1,0,0,68,73,68,68,30,1,0,0,home_win
+4626106,2026-03-22,Tottenham Hotspur,Nottingham Forest,81,79,81,81,90,1,0,0,79,79,79,79,50,1,0,0,away_win
+4626098,2026-03-22,Aston Villa,West Ham United,80,83,81,80,50,1,0,0,77,78,77,77,30,0,0,1,home_win
+4635240,2026-03-22,Olympique Lyonnais,AS Monaco,76,74,75,76,65,1,0,0,78,77,75,77,65,1,0,0,away_win
+4635248,2026-03-22,Olympique de Marseille,Lille OSC,79,81,79,79,65,1,0,0,76,79,76,76,65,1,0,0,away_win
+4648869,2026-03-22,Sporting Clube de Braga,FC Porto,74,74,75,74,65,0,0,1,77,77,77,76,65,1,0,0,away_win
+4621009,2026-03-22,Fiorentina,Inter,77,79,75,75,65,0,0,1,83,86,83,83,90,1,0,0,draw
+4621006,2026-03-22,Bologna,Lazio,76,76,77,74,65,1,0,0,79,80,77,78,30,1,0,0,away_win
+4624858,2026-03-22,Legia Warszawa,Raków Częstochowa,69,69,70,70,90,1,0,0,69,71,69,70,90,1,0,0,draw
+4624867,2026-04-04,Jagiellonia Białystok,Lech Poznań,69,72,69,69,50,1,0,0,70,72,68,70,50,1,0,0,draw
+4634445,2026-04-04,VfB Stuttgart,Borussia Dortmund,77,78,77,74,90,1,0,0,81,83,80,82,65,1,0,0,away_win
+4645903,2026-04-04,Atlético Madrid,FC Barcelona,82,84,81,82,65,1,0,0,85,85,85,82,65,1,0,0,away_win
+4634443,2026-04-04,SC Freiburg,FC Bayern München,75,71,74,76,50,1,0,0,84,89,85,82,65,1,0,0,away_win
+4787628,2026-04-04,FC Basel 1893,BSC Young Boys,71,69,72,71,50,1,0,0,70,70,71,68,50,0,1,0,draw
+4844306,2026-04-04,Manchester City,Liverpool,84,82,85,82,65,1,0,0,85,85,86,83,65,1,0,0,home_win
+4635249,2026-04-05,AS Monaco,Olympique de Marseille,78,77,75,77,65,1,0,0,79,81,79,79,65,1,0,0,home_win
+4839836,2026-04-05,SK Rapid,SK Sturm Graz,69,67,69,70,50,1,0,0,68,67,71,67,90,0,0,1,away_win
+4621016,2026-04-05,Inter,Roma,83,86,83,83,90,1,0,0,80,77,79,80,50,1,0,0,home_win
+4621020,2026-04-06,Napoli,AC Milan,81,79,82,80,65,1,0,0,81,82,79,78,50,0,0,1,home_win
+4850165,2026-04-06,Club Brugge KV,RSC Anderlecht,74,73,76,73,90,1,0,0,71,74,70,68,90,1,0,0,home_win
+4814371,2026-04-07,Real Madrid,FC Bayern München,85,88,85,82,90,1,0,0,84,89,85,82,65,1,0,0,away_win
+4814373,2026-04-07,Sporting CP,Arsenal,79,79,80,77,65,1,0,0,84,86,84,84,65,1,0,0,away_win
+4814372,2026-04-08,FC Barcelona,Atlético Madrid,85,85,85,82,65,1,0,0,82,84,81,82,65,1,0,0,away_win
+4805920,2026-04-08,Sporting Clube de Braga,Real Betis Balompié,74,74,75,74,65,0,0,1,78,77,79,77,50,1,0,0,draw
+4814370,2026-04-08,Paris Saint-Germain,Liverpool,84,85,84,85,90,1,0,0,85,85,86,83,65,1,0,0,home_win
+4805875,2026-04-09,Shakhtar Donetsk,AZ Alkmaar,72,71,73,73,50,1,0,0,73,74,74,72,65,1,0,0,home_win
+4805876,2026-04-09,Crystal Palace,Fiorentina,79,78,77,80,30,0,0,1,77,79,75,75,65,0,0,1,home_win
+4805922,2026-04-09,FC Porto,Nottingham Forest,77,77,77,76,65,1,0,0,79,79,79,79,50,1,0,0,draw
+4805923,2026-04-09,Bologna,Aston Villa,76,76,77,74,65,1,0,0,80,83,81,80,50,1,0,0,away_win
+4839837,2026-04-10,FC Red Bull Salzburg,LASK Linz,70,69,70,69,90,1,0,0,68,73,68,68,30,1,0,0,away_win
+4634459,2026-04-11,Borussia Dortmund,Bayer 04 Leverkusen,81,83,80,82,65,1,0,0,79,82,79,77,50,1,0,0,away_win
+4645947,2026-04-11,Sevilla FC,Atlético Madrid,75,75,76,75,50,0,1,0,82,84,81,82,65,1,0,0,home_win
+4621025,2026-04-11,Atalanta,Juventus,79,79,79,79,50,0,0,1,80,81,80,80,90,1,0,0,away_win
+4624749,2026-04-12,SK Slavia Praha,Viktoria Plzeň,75,74,75,73,50,0,0,1,72,73,71,73,90,0,0,1,draw
+4850145,2026-04-12,RSC Anderlecht,KAA Gent,71,74,70,68,90,1,0,0,70,70,70,68,30,1,0,0,home_win
+4626115,2026-04-12,Nottingham Forest,Aston Villa,79,79,79,79,50,1,0,0,80,83,81,80,50,1,0,0,draw
+4626111,2026-04-12,Chelsea,Manchester City,80,80,82,80,65,1,0,0,84,82,85,82,65,1,0,0,away_win
+4626112,2026-04-12,Crystal Palace,Newcastle United,79,78,77,80,30,0,0,1,81,81,84,80,50,0,0,1,home_win
+4645941,2026-04-12,Athletic Club,Villarreal CF,80,78,81,78,65,0,0,1,79,80,79,77,50,0,0,1,away_win
+4621029,2026-04-13,Fiorentina,Lazio,77,79,75,75,65,0,0,1,79,80,77,78,30,1,0,0,home_win
+4814374,2026-04-14,Liverpool,Paris Saint-Germain,85,85,86,83,65,1,0,0,84,85,84,85,90,1,0,0,away_win
+4814376,2026-04-14,Atlético Madrid,FC Barcelona,82,84,81,82,65,1,0,0,85,85,85,82,65,1,0,0,away_win
+4814375,2026-04-15,FC Bayern München,Real Madrid,84,89,85,82,65,1,0,0,85,88,85,82,90,1,0,0,home_win
+4814377,2026-04-15,Arsenal,Sporting CP,84,86,84,84,65,1,0,0,79,79,80,77,65,1,0,0,draw
+4805926,2026-04-16,Nottingham Forest,FC Porto,79,79,79,79,50,1,0,0,77,77,77,76,65,1,0,0,home_win
+4805924,2026-04-16,Real Betis Balompié,Sporting Clube de Braga,78,77,79,77,50,1,0,0,74,74,75,74,65,0,0,1,away_win
+4805880,2026-04-16,Fiorentina,Crystal Palace,77,79,75,75,65,0,0,1,79,78,77,80,30,0,0,1,home_win
+4805879,2026-04-16,AZ Alkmaar,Shakhtar Donetsk,73,74,74,72,65,1,0,0,72,71,73,73,50,1,0,0,draw
+4805927,2026-04-16,Aston Villa,Bologna,80,83,81,80,50,1,0,0,76,76,77,74,65,1,0,0,home_win
+4626127,2026-04-18,Tottenham Hotspur,Brighton & Hove Albion,81,79,81,81,90,1,0,0,78,78,78,78,65,0,0,1,draw
+4842389,2026-04-18,Atlético Madrid,Real Sociedad,82,84,81,82,65,1,0,0,77,79,77,75,90,0,0,1,away_win
+4634479,2026-04-18,Eintracht Frankfurt,RB Leipzig,78,77,78,80,65,0,0,1,78,77,76,80,65,0,1,0,away_win
+4621041,2026-04-18,Roma,Atalanta,80,77,79,80,50,1,0,0,79,79,79,79,50,0,0,1,draw
+4621039,2026-04-18,Napoli,Lazio,81,79,82,80,65,1,0,0,79,80,77,78,30,1,0,0,away_win
+4626120,2026-04-18,Chelsea,Manchester United,80,80,82,80,65,1,0,0,80,82,80,79,65,1,0,0,away_win
+4635275,2026-04-19,Paris Saint-Germain,Olympique Lyonnais,84,85,84,85,90,1,0,0,76,74,75,76,65,1,0,0,away_win
+4635268,2026-04-19,RC Strasbourg Alsace,Stade Rennais FC,75,76,74,75,65,0,0,1,76,74,76,74,65,1,0,0,away_win
+4634477,2026-04-19,FC Bayern München,VfB Stuttgart,84,89,85,82,65,1,0,0,77,78,77,74,90,1,0,0,home_win
+4850139,2026-04-19,Union Saint-Gilloise,Club Brugge KV,74,74,73,75,50,1,0,0,74,73,76,73,90,1,0,0,home_win
+4839849,2026-04-19,LASK Linz,SK Sturm Graz,68,73,68,68,30,1,0,0,68,67,71,67,90,0,0,1,draw
+4621037,2026-04-19,Juventus,Bologna,80,81,80,80,90,1,0,0,76,76,77,74,65,1,0,0,home_win
+4626124,2026-04-19,Manchester City,Arsenal,84,82,85,82,65,1,0,0,84,86,84,84,65,1,0,0,home_win
+4648893,2026-04-19,Sporting CP,SL Benfica,79,79,80,77,65,1,0,0,78,79,78,77,90,1,0,0,away_win
+4626121,2026-04-20,Crystal Palace,West Ham United,79,78,77,80,30,0,0,1,77,78,77,77,30,0,0,1,draw
+4626130,2026-04-21,Brighton & Hove Albion,Chelsea,78,78,78,78,65,0,0,1,80,80,82,80,65,1,0,0,home_win
+4839855,2026-04-22,SK Sturm Graz,LASK Linz,68,67,71,67,90,0,0,1,68,73,68,68,30,1,0,0,draw
+4824556,2026-04-22,Atalanta,Lazio,79,79,79,79,50,0,0,1,79,80,77,78,30,1,0,0,away_win
+4830557,2026-04-22,Bayer 04 Leverkusen,FC Bayern München,79,82,79,77,50,1,0,0,84,89,85,82,65,1,0,0,away_win
+4850162,2026-04-22,Union Saint-Gilloise,KAA Gent,74,74,73,75,50,1,0,0,70,70,70,68,30,1,0,0,draw
+4830556,2026-04-23,VfB Stuttgart,SC Freiburg,77,78,77,74,90,1,0,0,75,71,74,76,50,1,0,0,home_win
+4634497,2026-04-24,RB Leipzig,1. FC Union Berlin,78,77,76,80,65,0,1,0,75,72,73,75,30,0,1,0,home_win
+4645971,2026-04-24,Real Betis Balompié,Real Madrid,78,77,79,77,50,1,0,0,85,88,85,82,90,1,0,0,draw
+4626128,2026-04-25,Arsenal,Newcastle United,84,86,84,84,65,1,0,0,81,81,84,80,50,0,0,1,home_win
+4621045,2026-04-25,Bologna,Roma,76,76,77,74,65,1,0,0,80,77,79,80,50,1,0,0,away_win
+4645975,2026-04-25,Atlético Madrid,Athletic Club,82,84,81,82,65,1,0,0,80,78,81,78,65,0,0,1,home_win
+4626133,2026-04-25,Liverpool,Crystal Palace,85,85,86,83,65,1,0,0,79,78,77,80,30,0,0,1,home_win
+4621050,2026-04-26,AC Milan,Juventus,81,82,79,78,50,0,0,1,80,81,80,80,90,1,0,0,draw
+4850148,2026-04-26,RSC Anderlecht,Union Saint-Gilloise,71,74,70,68,90,1,0,0,74,74,73,75,50,1,0,0,away_win
+4850146,2026-04-26,KAA Gent,Club Brugge KV,70,70,70,68,30,1,0,0,74,73,76,73,90,1,0,0,away_win
+4624893,2026-04-26,Lech Poznań,Legia Warszawa,70,72,68,70,50,1,0,0,69,69,70,70,90,1,0,0,home_win
+4634495,2026-04-26,Borussia Dortmund,SC Freiburg,81,83,80,82,65,1,0,0,75,71,74,76,50,1,0,0,home_win
+4839859,2026-04-26,SK Rapid,FC Red Bull Salzburg,69,67,69,70,50,1,0,0,70,69,70,69,90,1,0,0,home_win
+4645974,2026-04-26,Rayo Vallecano,Real Sociedad,77,73,77,77,65,0,0,1,77,79,77,75,90,0,0,1,draw
+4648044,2026-04-26,Galatasaray SK,Fenerbahçe SK,80,84,80,79,65,1,0,0,79,79,79,76,90,1,0,0,home_win
+4814378,2026-04-28,Paris Saint-Germain,FC Bayern München,84,85,84,85,90,1,0,0,84,89,85,82,65,1,0,0,home_win
+4814379,2026-04-29,Atlético Madrid,Arsenal,82,84,81,82,65,1,0,0,84,86,84,84,65,1,0,0,draw
+4805884,2026-04-30,Rayo Vallecano,RC Strasbourg Alsace,77,73,77,77,65,0,0,1,75,76,74,75,65,0,0,1,home_win
+4805883,2026-04-30,Shakhtar Donetsk,Crystal Palace,72,71,73,73,50,1,0,0,79,78,77,80,30,0,0,1,away_win
+4805928,2026-04-30,Sporting Clube de Braga,SC Freiburg,74,74,75,74,65,0,0,1,75,71,74,76,50,1,0,0,home_win
+4805929,2026-04-30,Nottingham Forest,Aston Villa,79,79,79,79,50,1,0,0,80,83,81,80,50,1,0,0,home_win
+4626146,2026-05-02,Newcastle United,Brighton & Hove Albion,81,81,84,80,50,0,0,1,78,78,78,78,65,0,0,1,home_win
+4634514,2026-05-02,Bayer 04 Leverkusen,RB Leipzig,79,82,79,77,50,1,0,0,78,77,76,80,65,0,1,0,home_win
+4856831,2026-05-03,FC Lugano,BSC Young Boys,70,71,68,68,50,0,1,0,70,70,71,68,50,0,1,0,home_win
+4626139,2026-05-03,Aston Villa,Tottenham Hotspur,80,83,81,80,50,1,0,0,81,79,81,81,90,1,0,0,away_win
+4850154,2026-05-03,RSC Anderlecht,Club Brugge KV,71,74,70,68,90,1,0,0,74,73,76,73,90,1,0,0,away_win
+4635290,2026-05-03,Olympique Lyonnais,Stade Rennais FC,76,74,75,76,65,1,0,0,76,74,76,74,65,1,0,0,home_win
+4626145,2026-05-03,Manchester United,Liverpool,80,82,80,79,65,1,0,0,85,85,86,83,65,1,0,0,home_win
+4839867,2026-05-03,FC Red Bull Salzburg,SK Sturm Graz,70,69,70,69,90,1,0,0,68,67,71,67,90,0,0,1,draw
+4646000,2026-05-04,Sevilla FC,Real Sociedad,75,75,76,75,50,0,1,0,77,79,77,75,90,0,0,1,home_win
+4621065,2026-05-04,Roma,Fiorentina,80,77,79,80,50,1,0,0,77,79,75,75,65,0,0,1,home_win
+4626142,2026-05-04,Chelsea,Nottingham Forest,80,80,82,80,65,1,0,0,79,79,79,79,50,1,0,0,away_win
+4839865,2026-05-04,LASK Linz,SK Rapid,68,73,68,68,30,1,0,0,69,67,69,70,50,1,0,0,home_win
+4794682,2026-05-04,FK Bodø/Glimt,Molde FK,71,70,73,70,90,1,0,0,68,69,68,67,65,1,0,0,away_win
+4814381,2026-05-05,Arsenal,Atlético Madrid,84,86,84,84,65,1,0,0,82,84,81,82,65,1,0,0,home_win
+4814380,2026-05-06,FC Bayern München,Paris Saint-Germain,84,89,85,82,65,1,0,0,84,85,84,85,90,1,0,0,draw
+4805930,2026-05-07,SC Freiburg,Sporting Clube de Braga,75,71,74,76,50,1,0,0,74,74,75,74,65,0,0,1,home_win
+4805886,2026-05-07,RC Strasbourg Alsace,Rayo Vallecano,75,76,74,75,65,0,0,1,77,73,77,77,65,0,0,1,away_win
+4805885,2026-05-07,Crystal Palace,Shakhtar Donetsk,79,78,77,80,30,0,0,1,72,71,73,73,50,1,0,0,home_win
+4805931,2026-05-07,Aston Villa,Nottingham Forest,80,83,81,80,50,1,0,0,79,79,79,79,50,1,0,0,home_win
+4634531,2026-05-08,Borussia Dortmund,Eintracht Frankfurt,81,83,80,82,65,1,0,0,78,77,78,80,65,0,0,1,home_win
+4626152,2026-05-09,Liverpool,Chelsea,85,85,86,83,65,1,0,0,80,80,82,80,65,1,0,0,draw
+4646016,2026-05-09,Real Sociedad,Real Betis Balompié,77,79,77,75,90,0,0,1,78,77,79,77,50,1,0,0,draw
+4634534,2026-05-09,VfB Stuttgart,Bayer 04 Leverkusen,77,78,77,74,90,1,0,0,79,82,79,77,50,1,0,0,home_win
+4621071,2026-05-09,Lazio,Inter,79,80,77,78,30,1,0,0,83,86,83,83,90,1,0,0,away_win
+4839873,2026-05-10,LASK Linz,FC Red Bull Salzburg,68,73,68,68,30,1,0,0,70,69,70,69,90,1,0,0,home_win
+4850156,2026-05-10,KAA Gent,RSC Anderlecht,70,70,70,68,30,1,0,0,71,74,70,68,90,1,0,0,draw
+4856837,2026-05-10,BSC Young Boys,FC Basel 1893,70,70,71,68,50,0,1,0,71,69,72,71,50,1,0,0,home_win
+4646012,2026-05-10,FC Barcelona,Real Madrid,85,85,85,82,65,1,0,0,85,88,85,82,90,1,0,0,home_win
+4621073,2026-05-10,AC Milan,Atalanta,81,82,79,78,50,0,0,1,79,79,79,79,50,0,0,1,away_win
+4626154,2026-05-10,Nottingham Forest,Newcastle United,79,79,79,79,50,1,0,0,81,81,84,80,50,0,0,1,draw
+4642439,2026-05-10,Feyenoord,AZ Alkmaar,75,76,77,74,65,0,0,1,73,74,74,72,65,1,0,0,draw
+4626157,2026-05-10,West Ham United,Arsenal,77,78,77,77,30,0,0,1,84,86,84,84,65,1,0,0,away_win
+4635302,2026-05-10,AS Monaco,Lille OSC,78,77,75,77,65,1,0,0,76,79,76,76,65,1,0,0,away_win
+4621074,2026-05-11,Napoli,Bologna,81,79,82,80,65,1,0,0,76,76,77,74,65,1,0,0,away_win
+4648933,2026-05-11,SL Benfica,Sporting Clube de Braga,78,79,78,77,90,1,0,0,74,74,75,74,65,0,0,1,draw
+4624906,2026-05-13,Raków Częstochowa,Jagiellonia Białystok,69,71,69,70,90,1,0,0,69,72,69,69,50,1,0,0,away_win
+4626104,2026-05-13,Manchester City,Crystal Palace,84,82,85,82,65,1,0,0,79,78,77,80,30,0,0,1,home_win
+4645967,2026-05-13,Villarreal CF,Sevilla FC,79,80,79,77,50,0,0,1,75,75,76,75,50,0,1,0,away_win
+4626159,2026-05-15,Aston Villa,Liverpool,80,83,81,80,50,1,0,0,85,85,86,83,65,1,0,0,home_win
+4634552,2026-05-16,SC Freiburg,RB Leipzig,75,71,74,76,50,1,0,0,78,77,76,80,65,0,1,0,home_win
+4634551,2026-05-16,Eintracht Frankfurt,VfB Stuttgart,78,77,78,80,65,0,0,1,77,78,77,74,90,1,0,0,draw
+4645991,2026-05-17,FC Barcelona,Real Betis Balompié,85,85,85,82,65,1,0,0,78,77,79,77,50,1,0,0,home_win
+4621083,2026-05-17,Juventus,Fiorentina,80,81,80,80,90,1,0,0,77,79,75,75,65,0,0,1,away_win
+4621085,2026-05-17,Roma,Lazio,80,77,79,80,50,1,0,0,79,80,77,78,30,1,0,0,home_win
+4645994,2026-05-17,Rayo Vallecano,Villarreal CF,77,73,77,77,65,0,0,1,79,80,79,77,50,0,0,1,home_win
+4645998,2026-05-17,Sevilla FC,Real Madrid,75,75,76,75,50,0,1,0,85,88,85,82,90,1,0,0,away_win
+4621078,2026-05-17,Atalanta,Bologna,79,79,79,79,50,0,0,1,76,76,77,74,65,1,0,0,away_win
+4856817,2026-05-17,FC Lugano,FC Basel 1893,70,71,68,68,50,0,1,0,71,69,72,71,50,1,0,0,home_win
+4850160,2026-05-17,Club Brugge KV,Union Saint-Gilloise,74,73,76,73,90,1,0,0,74,74,73,75,50,1,0,0,home_win
+4839879,2026-05-17,SK Sturm Graz,SK Rapid,68,67,71,67,90,0,0,1,69,67,69,70,50,1,0,0,home_win
+4635310,2026-05-17,RC Strasbourg Alsace,AS Monaco,75,76,74,75,65,0,0,1,78,77,75,77,65,1,0,0,home_win
+4635309,2026-05-17,Olympique de Marseille,Stade Rennais FC,79,81,79,79,65,1,0,0,76,74,76,74,65,1,0,0,home_win
+4626165,2026-05-17,Manchester United,Nottingham Forest,80,82,80,79,65,1,0,0,79,79,79,79,50,1,0,0,home_win
+4626166,2026-05-17,Newcastle United,West Ham United,81,81,84,80,50,0,0,1,77,78,77,77,30,0,0,1,home_win
+4626162,2026-05-19,Chelsea,Tottenham Hotspur,80,80,82,80,65,1,0,0,81,79,81,81,90,1,0,0,home_win
+4850149,2026-05-21,KAA Gent,Union Saint-Gilloise,70,70,70,68,30,1,0,0,74,74,73,75,50,1,0,0,draw
+4621090,2026-05-22,Fiorentina,Atalanta,77,79,75,75,65,0,0,1,79,79,79,79,50,0,0,1,draw
+4621088,2026-05-23,Bologna,Inter,76,76,77,74,65,1,0,0,83,86,83,83,90,1,0,0,draw
+4645985,2026-05-23,Real Madrid,Athletic Club,85,88,85,82,90,1,0,0,80,78,81,78,65,0,0,1,home_win
+4626168,2026-05-24,Brighton & Hove Albion,Manchester United,78,78,78,78,65,0,0,1,80,82,80,79,65,1,0,0,away_win
+4850141,2026-05-24,Union Saint-Gilloise,RSC Anderlecht,74,74,73,75,50,1,0,0,71,74,70,68,90,1,0,0,home_win
+4626173,2026-05-24,Manchester City,Aston Villa,84,82,85,82,65,1,0,0,80,83,81,80,50,1,0,0,away_win
+4645986,2026-05-24,Villarreal CF,Atlético Madrid,79,80,79,77,50,0,0,1,82,84,81,82,65,1,0,0,home_win
+4626170,2026-05-24,Crystal Palace,Arsenal,79,78,77,80,30,0,0,1,84,86,84,84,65,1,0,0,away_win
+4850140,2026-05-24,Club Brugge KV,KAA Gent,74,73,76,73,90,1,0,0,70,70,70,68,30,1,0,0,home_win
