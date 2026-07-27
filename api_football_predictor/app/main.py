@@ -47,12 +47,93 @@ def search_teams(search: str):
 
 # Fetch des données suivantes :
 # Pour une équipe donnée ( recherche par id )
-# On renvoie le nom de l'équipe, compo (4 4 2...) d'après le dernier match joué ( match, et lineups du match)
-# et les joueurs
-# Pour chaque joueur ( lineup + player ):
-# Son nom, sa note globale, son id, son poste
+# On renvoie le nom de l'équipe et son effectif de la saison en cours,
+# trié de la meilleure note à la moins bonne.
+#
+# L'effectif est reconstruit à partir des compositions ( lineup ) de la saison,
+# et non depuis player.club_name : cette colonne vient d'un export SoFIFA figé
+# qui contient des joueurs retraités, rate des joueurs alignés récemment,
+# et est vide pour 8 des 99 équipes.
+#
+# Début de saison = 1er juillet précédant le dernier match connu de l'équipe,
+# ce qui évite de figer une date en dur dans le code.
+SEASON_START = """
+    SELECT make_date(
+        CASE
+            WHEN EXTRACT(MONTH FROM MAX(m.match_date)) < 7
+            THEN EXTRACT(YEAR FROM MAX(m.match_date))::int - 1
+            ELSE EXTRACT(YEAR FROM MAX(m.match_date))::int
+        END,
+        7,
+        1
+    ) AS season_start
+    FROM "public"."lineup" l
+    JOIN "public"."match" m ON m.match_id = l.match_id
+    WHERE l.team_id = :team_id
+"""
+
+
+def fetch_team_name(connection, team_id: int) -> str:
+    query = text(
+        """
+        SELECT team_name FROM "public"."team" WHERE team_id = :team_id
+        """
+    )
+
+    row = connection.execute(query, {"team_id": team_id}).mappings().first()
+
+    if not row:
+        raise HTTPException(status_code=404, detail="Team not found")
+
+    return row["team_name"]
+
+
 @app.get("/team/{team_id}")
 def get_team(team_id: int):
+
+    query = text(
+        f"""
+        WITH season AS ({SEASON_START})
+        SELECT DISTINCT
+            p.player_id,
+            p.player_name,
+            p.best_position,
+            p.overall_rating AS global_note
+        FROM "public"."lineup" l
+        JOIN "public"."match" m ON m.match_id = l.match_id
+        JOIN "public"."player" p ON p.player_id = l.player_id
+        CROSS JOIN season
+        WHERE l.team_id = :team_id
+          AND m.match_date >= season.season_start
+        ORDER BY global_note DESC NULLS LAST, p.player_name
+        """
+    )
+
+    with get_engine().connect() as connection:
+        team_name = fetch_team_name(connection, team_id)
+        rows = connection.execute(query, {"team_id": team_id}).mappings().all()
+
+    return {
+        "team": {
+            "team_id": team_id,
+            "team_name": team_name,
+        },
+        "players": [
+            {
+                "player_id": row["player_id"],
+                "player_name": row["player_name"],
+                "global_note": row["global_note"],
+                "position": row["best_position"],
+            }
+            for row in rows
+        ],
+    }
+
+
+# Composition du dernier match joué : la formation ( 4-4-2... ), les titulaires
+# et les remplaçants.
+@app.get("/team/{team_id}/lineup")
+def get_team_lineup(team_id: int):
 
     query = text(
         """
@@ -94,7 +175,7 @@ def get_team(team_id: int):
         rows = connection.execute(query, {"team_id": team_id}).mappings().all()
 
     if not rows:
-        raise HTTPException(status_code=404, detail="Team not found")
+        raise HTTPException(status_code=404, detail="Lineup not found")
 
     first_row = rows[0]
 
