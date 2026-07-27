@@ -25,6 +25,7 @@ if not API_BASE_URL:
     API_BASE_URL = "http://127.0.0.1:8000"
 
 PAGE_TEAM = "team"
+PAGE_LINEUP = "lineup"
 PAGE_PLAYER = "player"
 
 
@@ -51,6 +52,12 @@ def get_team(team_id: int):
     return response.json()
 
 
+def get_team_lineup(team_id: int):
+    response = requests.get(f"{API_BASE_URL}/team/{team_id}/lineup")
+    response.raise_for_status()
+    return response.json()
+
+
 def get_player(player_id: int):
     response = requests.get(f"{API_BASE_URL}/player/{player_id}")
     response.raise_for_status()
@@ -68,6 +75,7 @@ def set_page(page_name: str):
 
 def go_to_player_page(player: dict):
     st.session_state["selected_player"] = player
+    st.session_state["player_origin"] = st.session_state.get("page", PAGE_TEAM)
     set_page(PAGE_PLAYER)
 
 
@@ -75,19 +83,21 @@ def go_to_player_page(player: dict):
 # Composants d'affichage
 # -----------------------------------------------------------------------------
 
-def show_team_header(team: dict):
+def show_team_header(team: dict, subtitle: str = ""):
+    subtitle_html = f"<p>{subtitle}</p>" if subtitle else ""
+
     st.markdown(
         f"""
         <div style="text-align:center; margin: 2rem 0;">
             <h2>{team["team_name"]}</h2>
-            <p>Formation : {team["formation"]}</p>
+            {subtitle_html}
         </div>
         """,
         unsafe_allow_html=True,
     )
 
 
-def show_players_block(title: str, players: list[dict]):
+def show_players_block(title: str, players: list[dict], key_prefix: str):
     st.subheader(title)
 
     if not players:
@@ -101,10 +111,11 @@ def show_players_block(title: str, players: list[dict]):
 
     for player in players:
         columns = st.columns([4, 3, 2])
-        if columns[0].button(player["player_name"], key=f"player_{player['player_id']}"):
+        button_key = f"{key_prefix}_player_{player['player_id']}"
+        if columns[0].button(player["player_name"], key=button_key):
             go_to_player_page(player)
         columns[1].write(player["position"])
-        columns[2].write(player["global_note"])
+        columns[2].write(format_note(player["global_note"]))
 
 
 def format_note(value):
@@ -221,6 +232,7 @@ def show_team_page():
     )
 
     if selected_team and st.button("Valider"):
+        st.session_state["team_id"] = selected_team["id"]
         st.session_state["team_data"] = get_team(selected_team["id"])
 
     team_data = st.session_state.get("team_data")
@@ -229,12 +241,36 @@ def show_team_page():
 
     team = team_data["team"]
     players = team_data["players"]
+
+    show_team_header(team, f"Effectif de la saison - {len(players)} joueurs")
+
+    if st.button("Voir la dernière composition"):
+        set_page(PAGE_LINEUP)
+
+    show_players_block("Effectif", players, key_prefix="squad")
+
+
+# -----------------------------------------------------------------------------
+# Page composition du dernier match
+# -----------------------------------------------------------------------------
+
+def show_lineup_page():
+    if st.button("Retour à l'effectif"):
+        set_page(PAGE_TEAM)
+
+    lineup_data = get_team_lineup(st.session_state["team_id"])
+
+    team = lineup_data["team"]
+    players = lineup_data["players"]
     starters = [player for player in players if player["is_starting_match"]]
     substitutes = [player for player in players if not player["is_starting_match"]]
 
-    show_team_header(team)
-    show_players_block("Titulaires", starters)
-    show_players_block("Remplaçants", substitutes)
+    show_team_header(
+        team,
+        f"Dernier match joué le {team['match_date']} - formation {team['formation']}",
+    )
+    show_players_block("Titulaires", starters, key_prefix="starter")
+    show_players_block("Remplaçants", substitutes, key_prefix="sub")
 
 
 # -----------------------------------------------------------------------------
@@ -245,7 +281,7 @@ def show_player_page():
     selected_player = st.session_state["selected_player"]
 
     if st.button("Retour"):
-        set_page(PAGE_TEAM)
+        set_page(st.session_state.get("player_origin", PAGE_TEAM))
 
     player = get_player(selected_player["player_id"])["player"]
 
@@ -268,6 +304,7 @@ def show_player_page():
 
 ROUTES = {
     PAGE_TEAM: show_team_page,
+    PAGE_LINEUP: show_lineup_page,
     PAGE_PLAYER: show_player_page,
 }
 
