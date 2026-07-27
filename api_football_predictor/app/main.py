@@ -117,3 +117,64 @@ def get_team(team_id: int):
             for row in rows
         ],
     }
+
+
+# Fetch des données suivantes :
+# Pour un joueur donné ( recherche par id )
+# On renvoie ses infos principales et ses statistiques Sofifa détaillées
+@app.get("/player/{player_id}")
+def get_player(player_id: int):
+
+    query = text(
+        """
+        SELECT
+            player_id,
+            player_name,
+            best_position,
+            overall_rating AS global_note,
+            crossing,
+            finishing,
+            heading_accuracy,
+            short_passing,
+            volleys,
+            dribbling,
+            curve,
+            fk_accuracy,
+            long_passing,
+            ball_control,
+            acceleration,
+            sprint_speed,
+            agility,
+            reactions,
+            balance,
+            shot_power,
+            jumping,
+            stamina,
+            strength,
+            long_shots,
+            aggression,
+            interceptions,
+            attack_position,
+            vision,
+            penalties,
+            composure,
+            defensive_awareness,
+            standing_tackle,
+            sliding_tackle,
+            gk_diving,
+            gk_handling,
+            gk_kicking,
+            gk_positioning,
+            gk_reflexes
+        FROM "public"."player"
+        WHERE player_id = :player_id
+        """
+    )
+
+    with get_engine().connect() as connection:
+        row = connection.execute(query, {"player_id": player_id}).mappings().first()
+
+    if not row:
+        raise HTTPException(status_code=404, detail="Player not found")
+
+    return {"player": dict(row)}

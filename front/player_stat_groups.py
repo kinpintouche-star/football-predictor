@@ -1,0 +1,50 @@
+PLAYER_STAT_GROUPS = {
+    "Vitesse": [
+        ("sprint_speed", "Vitesse"),
+        ("acceleration", "Accélération"),
+    ],
+    "Tir": [
+        ("finishing", "Finition"),
+        ("attack_position", "Placement offensif"),
+        ("shot_power", "Puissance frappe"),
+        ("long_shots", "Tirs de loin"),
+        ("penalties", "Penaltys"),
+        ("volleys", "Reprise de volée"),
+    ],
+    "Passe": [
+        ("vision", "Vista"),
+        ("crossing", "Centres"),
+        ("fk_accuracy", "Précision CF"),
+        ("long_passing", "Passes longues"),
+        ("short_passing", "Passes courtes"),
+        ("curve", "Effet"),
+    ],
+    "Dribble": [
+        ("agility", "Agilité"),
+        ("balance", "Équilibre"),
+        ("reactions", "Réactivité"),
+        ("composure", "Calme"),
+        ("ball_control", "Contrôle du ballon"),
+        ("dribbling", "Dribble"),
+    ],
+    "Défense": [
+        ("interceptions", "Interceptions"),
+        ("heading_accuracy", "Précision de la tête"),
+        ("defensive_awareness", "Conscience défensive"),
+        ("standing_tackle", "Tacle"),
+        ("sliding_tackle", "Tacle glissé"),
+    ],
+    "Physique": [
+        ("jumping", "Détente"),
+        ("stamina", "Endurance"),
+        ("strength", "Force"),
+        ("aggression", "Agressivité"),
+    ],
+    "Gardien": [
+        ("gk_diving", "Plongeon"),
+        ("gk_handling", "Jeu à la main"),
+        ("gk_kicking", "Jeu au pied"),
+        ("gk_positioning", "Placement"),
+        ("gk_reflexes", "Réflexes"),
+    ],
+}

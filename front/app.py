@@ -1,9 +1,12 @@
 import os
 
+import plotly.graph_objects as go
 import requests
 import streamlit as st
 from dotenv import load_dotenv
 from streamlit_searchbox import st_searchbox
+
+from player_stat_groups import PLAYER_STAT_GROUPS
 
 
 # -----------------------------------------------------------------------------
@@ -37,6 +40,12 @@ def search_teams(search: str):
 
 def get_team(team_id: int):
     response = requests.get(f"{API_BASE_URL}/team/{team_id}")
+    response.raise_for_status()
+    return response.json()
+
+
+def get_player(player_id: int):
+    response = requests.get(f"{API_BASE_URL}/player/{player_id}")
     response.raise_for_status()
     return response.json()
 
@@ -91,6 +100,105 @@ def show_players_block(title: str, players: list[dict]):
         columns[2].write(player["global_note"])
 
 
+def format_note(value):
+    if value is None:
+        return "-"
+
+    value = float(value)
+    if value.is_integer():
+        return str(int(value))
+
+    return str(round(value, 1))
+
+
+def group_average(player: dict, stats: list[tuple[str, str]]):
+    values = [
+        float(player[column])
+        for column, _ in stats
+        if player.get(column) is not None
+    ]
+
+    if not values:
+        return None
+
+    return round(sum(values) / len(values), 1)
+
+
+def get_group_scores(player: dict):
+    scores = []
+
+    for group_name, stats in PLAYER_STAT_GROUPS.items():
+        average = group_average(player, stats)
+
+        if average is not None:
+            scores.append((group_name, average))
+
+    return scores
+
+
+def show_player_radar_chart(player: dict):
+    st.subheader("Profil")
+
+    scores = get_group_scores(player)
+    if len(scores) < 3:
+        st.info("Pas assez de statistiques pour afficher le radar.")
+        return
+
+    labels = [group_name for group_name, _ in scores]
+    values = [score for _, score in scores]
+
+    labels.append(labels[0])
+    values.append(values[0])
+
+    figure = go.Figure(
+        data=[
+            go.Scatterpolar(
+                r=values,
+                theta=labels,
+                fill="toself",
+                line_color="#16a34a",
+                fillcolor="rgba(22, 163, 74, 0.25)",
+            )
+        ]
+    )
+
+    figure.update_layout(
+        height=420,
+        margin=dict(l=30, r=30, t=20, b=20),
+        showlegend=False,
+        polar=dict(
+            radialaxis=dict(
+                visible=True,
+                range=[0, 100],
+            )
+        ),
+    )
+
+    st.plotly_chart(figure, use_container_width=True, config={"displayModeBar": False})
+
+
+def show_player_stat_groups(player: dict):
+    st.subheader("Statistiques")
+
+    for group_name, stats in PLAYER_STAT_GROUPS.items():
+        available_stats = [
+            (column, label)
+            for column, label in stats
+            if player.get(column) is not None
+        ]
+
+        if not available_stats:
+            continue
+
+        average = group_average(player, available_stats)
+
+        with st.expander(f"{group_name} - moyenne {format_note(average)}", expanded=True):
+            columns = st.columns(2)
+
+            for index, (column, label) in enumerate(available_stats):
+                columns[index % 2].write(f"{label} : {format_note(player[column])}")
+
+
 # -----------------------------------------------------------------------------
 # Page équipe
 # -----------------------------------------------------------------------------
@@ -127,15 +235,24 @@ def show_team_page():
 # -----------------------------------------------------------------------------
 
 def show_player_page():
-    player = st.session_state["selected_player"]
+    selected_player = st.session_state["selected_player"]
 
     if st.button("Retour"):
         set_page(PAGE_TEAM)
 
+    player = get_player(selected_player["player_id"])["player"]
+
     st.title(player["player_name"])
-    st.write(f"Poste : {player['position']}")
+    st.write(f"Poste : {player['best_position']}")
     st.write(f"Note globale : {player['global_note']}")
-    st.write(f"ID joueur : {player['player_id']}")
+
+    stats_column, radar_column = st.columns([3, 2])
+
+    with stats_column:
+        show_player_stat_groups(player)
+
+    with radar_column:
+        show_player_radar_chart(player)
 
 
 # -----------------------------------------------------------------------------

@@ -1,4 +1,5 @@
 python-dotenv
+plotly
 requests
 streamlit
 streamlit-searchbox
