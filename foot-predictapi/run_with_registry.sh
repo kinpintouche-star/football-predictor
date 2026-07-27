@@ -13,4 +13,4 @@ docker run --rm -it \
 -e ARTIFACT_ROOT=$ARTIFACT_ROOT \
 -e PORT=$PORT \
 -p $PORT:$PORT \
-foot-predictapi:0.1.1
+ghcr.io/waaou/foot-predictapi:0.1.1
