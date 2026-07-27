@@ -11,6 +11,7 @@ RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt
 
 COPY app.py .
+COPY player_stat_groups.py .
 
 EXPOSE 8501
 

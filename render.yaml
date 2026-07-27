@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: football-predictor-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./api_football_predictor/Dockerfile
+    dockerContext: ./api_football_predictor
+    envVars:
+      - fromGroup: API_DATA
+
+  - type: web
+    name: football-predictor-front
+    runtime: docker
+    plan: free
+    dockerfilePath: ./front/Dockerfile
+    dockerContext: ./front
+    envVars:
+      - fromGroup: STREAMLIT
+      - key: API_SERVICE_HOSTPORT
+        fromService:
+          type: web
+          name: football-predictor-api
+          property: hostport
+
+  - type: web
+    name: football-predictor-inference-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./foot-predictapi/Dockerfile
+    dockerContext: ./foot-predictapi
+    healthCheckPath: /health
+    envVars:
+      - fromGroup: API_PREDICT

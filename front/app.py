@@ -15,7 +15,14 @@ from player_stat_groups import PLAYER_STAT_GROUPS
 
 load_dotenv()
 
-API_BASE_URL = os.getenv("API_BASE_URL", "http://127.0.0.1:8000")
+API_SERVICE_HOSTPORT = os.getenv("API_SERVICE_HOSTPORT")
+API_BASE_URL = os.getenv("API_BASE_URL")
+
+if not API_BASE_URL and API_SERVICE_HOSTPORT:
+    API_BASE_URL = f"http://{API_SERVICE_HOSTPORT}"
+
+if not API_BASE_URL:
+    API_BASE_URL = "http://127.0.0.1:8000"
 
 PAGE_TEAM = "team"
 PAGE_PLAYER = "player"
