@@ -6,6 +6,7 @@ import streamlit as st
 from dotenv import load_dotenv
 from streamlit_searchbox import st_searchbox
 
+from custom_team_page import show_custom_team_page
 from player_stat_groups import PLAYER_STAT_GROUPS
 
 
@@ -21,6 +22,19 @@ PREDICT_API_BASE_URL = os.getenv("PREDICT_API_BASE_URL", "http://127.0.0.1:4000"
 PAGE_TEAM = "team"
 PAGE_LINEUP = "lineup"
 PAGE_PLAYER = "player"
+PAGE_PREDICT = "predict"
+PAGE_CUSTOM_TEAM = "custom_team"
+
+# Sections proposées dans le menu latéral. Les autres pages ( composition d'un
+# match, fiche joueur ) sont des vues de détail : on y entre en cliquant, pas
+# par le menu, et un bouton Retour en sort.
+SIDEBAR_SECTIONS = {
+    "Équipes": PAGE_TEAM,
+    "Prédiction": PAGE_PREDICT,
+    "Équipe custom": PAGE_CUSTOM_TEAM,
+}
+
+STARTERS_PER_TEAM = 11
 
 
 # -----------------------------------------------------------------------------
@@ -89,6 +103,8 @@ def get_player(player_id: int):
     return response.json()
 
 
+
+
 # -----------------------------------------------------------------------------
 # Navigation
 # -----------------------------------------------------------------------------
@@ -96,6 +112,28 @@ def get_player(player_id: int):
 def set_page(page_name: str):
     st.session_state["page"] = page_name
     st.rerun()
+
+
+def show_sidebar_navigation():
+    """Menu latéral, replié en hamburger sur petit écran."""
+    current_page = st.session_state.get("page", PAGE_TEAM)
+
+    # Une vue de détail garde surlignée la section d'où l'on vient.
+    origin = st.session_state.get("section", PAGE_TEAM)
+    active = current_page if current_page in SIDEBAR_SECTIONS.values() else origin
+
+    labels = list(SIDEBAR_SECTIONS)
+    index = labels.index(next(k for k, v in SIDEBAR_SECTIONS.items() if v == active))
+
+    with st.sidebar:
+        st.markdown("### Football Predictor")
+        choice = st.radio("Navigation", labels, index=index, label_visibility="collapsed")
+
+    target = SIDEBAR_SECTIONS[choice]
+
+    if target != active:
+        st.session_state["section"] = target
+        set_page(target)
 
 
 def go_to_player_page(player: dict):
@@ -337,14 +375,7 @@ def show_player_stat_groups(player: dict):
 
 def show_team_page():
     st.title("Football Predictor")
-
-    squad_section, prediction_section = st.tabs(["Équipe", "Prédiction"])
-
-    with squad_section:
-        show_team_section()
-
-    with prediction_section:
-        show_prediction_section()
+    show_team_section()
 
 
 def show_team_section():
@@ -475,6 +506,11 @@ def show_prediction_section():
         show_prediction_xi(away_features, "Extérieur")
 
 
+def show_prediction_page():
+    st.title("Prédiction")
+    show_prediction_section()
+
+
 # -----------------------------------------------------------------------------
 # Page composition du dernier match
 # -----------------------------------------------------------------------------
@@ -529,9 +565,13 @@ def show_player_page():
 
 ROUTES = {
     PAGE_TEAM: show_team_page,
+    PAGE_PREDICT: show_prediction_page,
+    PAGE_CUSTOM_TEAM: show_custom_team_page,
     PAGE_LINEUP: show_lineup_page,
     PAGE_PLAYER: show_player_page,
 }
+
+show_sidebar_navigation()
 
 current_page = st.session_state.get("page", PAGE_TEAM)
 page_function = ROUTES.get(current_page, show_team_page)
