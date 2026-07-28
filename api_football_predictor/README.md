@@ -2,6 +2,14 @@
 
 API FastAPI qui lit les données depuis Neon.
 
+## Structure
+
+```text
+app/main.py      # demarrage FastAPI
+app/routes.py    # endpoints API
+app/methods.py   # requetes SQL et regles metier
+```
+
 ## .env
 
 En local, créer `api_football_predictor/.env` :
@@ -25,6 +33,11 @@ uvicorn app.main:app --reload --port 8000
 ```text
 GET /teams/{search}
 GET /team/{team_id}
+GET /player/{player_id}
+POST /players
+POST /custom/team
+POST /custom/tournament
+POST /custom/tournament/set
 ```
 
 ## Docker
@@ -42,4 +55,3 @@ Port exposé sur la machine :
 ```txt
 API_PORT=8000
 ```
-

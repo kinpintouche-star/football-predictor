@@ -19,7 +19,9 @@ TABLE_LOAD_ORDER = [
     "custom_team",
     "custom_team_player",
     "tournament",
+    "tournament_team",
     "custom_match",
+    "custom_lineup",
 ]
 
 CHUNK_SIZE = 500

@@ -345,8 +345,21 @@ def build_empty_tournament_table() -> pd.DataFrame:
     return pd.DataFrame(
         columns=[
             "tournament_id",
+            "tournament_name",
             "nb_teams",
             "winner_team_id",
+        ]
+    )
+
+
+def build_empty_tournament_team_table() -> pd.DataFrame:
+    return pd.DataFrame(
+        columns=[
+            "tournament_id",
+            "custom_team_id",
+            "nb_wins",
+            "nb_loss",
+            "nb_equal",
         ]
     )
 
@@ -367,8 +380,22 @@ def build_empty_custom_match_table() -> pd.DataFrame:
             "custom_match_id",
             "home_custom_team_id",
             "away_custom_team_id",
+            "home_score",
+            "away_score",
+            "result",
             "tournament_phase",
             "tournament_id",
+        ]
+    )
+
+
+def build_empty_custom_lineup_table() -> pd.DataFrame:
+    return pd.DataFrame(
+        columns=[
+            "custom_match_id",
+            "custom_team_id",
+            "player_id",
+            "is_starting_match",
         ]
     )
 
@@ -390,7 +417,9 @@ def main() -> None:
     save_table("custom_team", build_empty_custom_team_table())
     save_table("custom_team_player", build_empty_custom_team_player_table())
     save_table("tournament", build_empty_tournament_table())
+    save_table("tournament_team", build_empty_tournament_team_table())
     save_table("custom_match", build_empty_custom_match_table())
+    save_table("custom_lineup", build_empty_custom_lineup_table())
 
 
 if __name__ == "__main__":
