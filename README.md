@@ -19,10 +19,11 @@ python -m pip install -r requirements.txt
 
 ## Docker Compose
 
-Le projet contient deux services :
+Le projet contient ces services :
 
 - `api` : FastAPI, dans `api_football_predictor/`
 - `front` : Streamlit, dans `front/`
+- `sql_agent` : chatbot read-only Neon, dans `sql_agent/`
 
 Créer un fichier `.env` à la racine :
 
@@ -32,6 +33,10 @@ API_PORT=8000
 API_SERVER_PORT=8000
 FRONT_PORT=8501
 FRONT_SERVER_PORT=8501
+SQL_AGENT_PORT=8100
+SQL_AGENT_SERVER_PORT=8100
+LIGHTNING_API_KEY=...
+LLM_MODEL=openai/gpt-5.4-mini-2026-03-17
 ```
 
 Lancer les deux services :
@@ -45,6 +50,7 @@ URLs locales par défaut :
 ```text
 API   http://127.0.0.1:8000
 Front http://127.0.0.1:8501
+Agent http://127.0.0.1:8100
 ```
 
 
