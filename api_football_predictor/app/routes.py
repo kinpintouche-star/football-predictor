@@ -11,6 +11,7 @@ class CreateCustomTeamRequest(BaseModel):
     team_name: str
     reference_formation: str
     isBudget: bool
+    budget: int | None = None
     players: list[int]
 
 

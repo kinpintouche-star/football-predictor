@@ -484,12 +484,16 @@ def set_tournament_match(
 
 def create_custom_team(payload):
     player_ids = list(dict.fromkeys(payload.players))
+    budget_eur = payload.budget or DEFAULT_CUSTOM_TEAM_BUDGET_EUR
 
     if not payload.team_name.strip():
         raise HTTPException(status_code=422, detail="team_name est obligatoire")
 
     if not payload.reference_formation.strip():
         raise HTTPException(status_code=422, detail="reference_formation est obligatoire")
+
+    if budget_eur <= 0:
+        raise HTTPException(status_code=422, detail="budget doit etre positif")
 
     if not player_ids:
         raise HTTPException(status_code=422, detail="players doit contenir au moins un joueur")
@@ -527,13 +531,13 @@ def create_custom_team(payload):
         total_cost_eur = int(sum(row["market_value_eur"] or 0 for row in players))
         team_ratings = calculate_custom_team_ratings(players)
 
-        if payload.isBudget and total_cost_eur > DEFAULT_CUSTOM_TEAM_BUDGET_EUR:
+        if payload.isBudget and total_cost_eur > budget_eur:
             raise HTTPException(
                 status_code=422,
                 detail={
                     "message": "Budget depasse",
                     "total_cost_eur": total_cost_eur,
-                    "budget_eur": DEFAULT_CUSTOM_TEAM_BUDGET_EUR,
+                    "budget_eur": budget_eur,
                 },
             )
 
@@ -568,7 +572,7 @@ def create_custom_team(payload):
                 "custom_team_id": custom_team_id,
                 "team_name": payload.team_name.strip(),
                 "reference_formation": payload.reference_formation.strip(),
-                "budget_eur": DEFAULT_CUSTOM_TEAM_BUDGET_EUR,
+                "budget_eur": budget_eur,
                 **team_ratings,
             },
         )
@@ -595,9 +599,9 @@ def create_custom_team(payload):
             "team_name": payload.team_name.strip(),
             "reference_formation": payload.reference_formation.strip(),
             "isBudget": payload.isBudget,
-            "budget_eur": DEFAULT_CUSTOM_TEAM_BUDGET_EUR,
+            "budget_eur": budget_eur,
             "total_cost_eur": total_cost_eur,
-            "remaining_budget_eur": DEFAULT_CUSTOM_TEAM_BUDGET_EUR - total_cost_eur,
+            "remaining_budget_eur": budget_eur - total_cost_eur,
             **team_ratings,
         },
         "players": [
