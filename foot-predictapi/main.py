@@ -1,7 +1,7 @@
 import os
 from contextlib import asynccontextmanager
+from pathlib import Path
 
-import mlflow
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel, Field
@@ -9,13 +9,40 @@ from pydantic import BaseModel, Field
 APP_URI = os.environ.get("APP_URI")
 MODEL_ID = os.environ.get("MODEL_ID")
 
+# Deux façons de charger le modèle :
+#
+# * MLflow, dès que APP_URI et MODEL_ID sont fournis. C'est la voie visée en
+#   production, mais elle suppose un modèle enregistré dans le registry ;
+# * un fichier joblib local, produit par scripts/train_local_model.py. C'est la
+#   voie par défaut, qui permet de faire tourner le service sans MLflow.
+#
+# Le contrat de /predict est identique dans les deux cas : 22 notes en entrée,
+# une classe dans {-1, 0, 1} en sortie.
+DEFAULT_LOCAL_MODEL_PATH = Path(__file__).parent / "model" / "match_outcome.joblib"
+LOCAL_MODEL_PATH = Path(os.environ.get("LOCAL_MODEL_PATH", DEFAULT_LOCAL_MODEL_PATH))
+
+
+def load_model():
+    if APP_URI and MODEL_ID:
+        import mlflow
+
+        mlflow.set_tracking_uri(APP_URI)
+        return mlflow.sklearn.load_model(f"models:/{MODEL_ID}"), f"mlflow:{MODEL_ID}"
+
+    if LOCAL_MODEL_PATH.is_file():
+        import joblib
+
+        return joblib.load(LOCAL_MODEL_PATH), f"local:{LOCAL_MODEL_PATH.name}"
+
+    raise RuntimeError(
+        "Aucun modèle disponible : renseignez APP_URI et MODEL_ID, ou lancez "
+        "python scripts/train_local_model.py pour produire un modèle local."
+    )
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Set tracking URI to your Hugging Face application
-    mlflow.set_tracking_uri(APP_URI)
-    model_uri = f"models:/{MODEL_ID}"
-    app.state.model = mlflow.sklearn.load_model(model_uri)
+    app.state.model, app.state.model_source = load_model()
     yield
 
 
@@ -52,7 +79,11 @@ class PredictionResponse(BaseModel):
 
 @app.get("/health")
 def health(request: Request):
-    return {"status": "ok", "model_loaded": request.app.state.model is not None}
+    return {
+        "status": "ok",
+        "model_loaded": request.app.state.model is not None,
+        "model_source": getattr(request.app.state, "model_source", None),
+    }
 
 
 @app.post("/predict", response_model=PredictionResponse)

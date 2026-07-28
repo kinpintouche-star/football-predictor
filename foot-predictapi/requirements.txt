@@ -1,7 +1,11 @@
 fastapi==0.111.0
 uvicorn[standard]==0.30.1
-mlflow==3.10
 scikit-learn==1.9.0
 pandas
-boto3==1.43.55
 pydantic
+joblib
+
+# Uniquement pour le chargement depuis le registry MLflow ( APP_URI + MODEL_ID ).
+# Le service démarre sans, en chargeant model/match_outcome.joblib.
+mlflow==3.10
+boto3==1.43.55
