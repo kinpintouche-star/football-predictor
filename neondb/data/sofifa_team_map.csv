@@ -1,0 +1,101 @@
+ranking_year,rank,ranking_row,uefa_club_name,club_key,match_key,sofifa_team_id,sofifa_team_name,sofifa_match_key,club_league_id,club_league_name,club_logo,club_rating_from_player_csv,sofifa_player_rows,mapping_status,candidate_count,candidate_names
+2026,1,1,Bayern München,bayern munchen,bayern munchen,21,FC Bayern München,bayern munchen,19,Bundesliga,https://cdn.sofifa.net/meta/team/503/30.png,84,31,matched,1,FC Bayern München
+2026,2,2,Real Madrid,real madrid,real madrid,243,Real Madrid,real madrid,53,La Liga,https://cdn.sofifa.net/meta/team/3468/30.png,85,29,matched,1,Real Madrid
+2026,3,3,Paris Saint-Germain,paris saint germain,paris saint germain,73,Paris Saint-Germain,paris saint germain,16,Ligue 1,https://cdn.sofifa.net/meta/team/591/30.png,83,27,matched_multiple_chose_highest_rating,2,Paris Saint-Germain | Paris FC
+2026,4,4,Liverpool,liverpool,liverpool,9,Liverpool,liverpool,13,Premier League,https://cdn.sofifa.net/meta/team/8/30.png,84,26,matched,1,Liverpool
+2026,5,5,Internazionale,inter,inter,44,Inter,inter,31,Serie A,https://cdn.sofifa.net/meta/team/2930/30.png,84,27,matched,1,Inter
+2026,6,6,Manchester City,manchester city,manchester city,10,Manchester City,manchester city,13,Premier League,https://cdn.sofifa.net/meta/team/9/30.png,85,30,matched,1,Manchester City
+2026,7,7,Arsenal,arsenal,arsenal,1,Arsenal,arsenal,13,Premier League,https://cdn.sofifa.net/meta/team/19/30.png,83,25,matched,1,Arsenal
+2026,8,8,FC Barcelona,barcelona,barcelona,241,FC Barcelona,barcelona,53,La Liga,https://cdn.sofifa.net/meta/team/83/30.png,84,30,matched,1,FC Barcelona
+2026,9,9,Bayer Leverkusen,bayer leverkusen,bayer leverkusen,32,Bayer 04 Leverkusen,bayer leverkusen,19,Bundesliga,https://cdn.sofifa.net/meta/team/3321/30.png,83,32,matched,1,Bayer 04 Leverkusen
+2026,10,10,Atlético Madrid,atletico madrid,atletico madrid,240,Atlético Madrid,atletico madrid,53,La Liga,https://cdn.sofifa.net/meta/team/7980/30.png,82,29,matched,1,Atlético Madrid
+2026,11,11,Borussia Dortmund,borussia dortmund,borussia dortmund,22,Borussia Dortmund,borussia dortmund,19,Bundesliga,https://cdn.sofifa.net/meta/team/68/30.png,81,29,matched,1,Borussia Dortmund
+2026,12,12,Chelsea,chelsea,chelsea,5,Chelsea,chelsea,13,Premier League,https://cdn.sofifa.net/meta/team/18/30.png,80,29,matched,1,Chelsea
+2026,13,13,AS Roma,roma,roma,52,Roma,roma,31,Serie A,https://cdn.sofifa.net/meta/team/37/30.png,79,28,matched,1,Roma
+2026,14,14,Benfica,benfica,benfica,234,SL Benfica,benfica,308,Primeira Liga,https://cdn.sofifa.net/meta/team/605/30.png,79,29,matched,1,SL Benfica
+2026,15,15,Sporting CP Lisbon,sporting cp lisbon,sporting cp lisbon,237,Sporting CP,sporting cp lisbon,308,Primeira Liga,https://cdn.sofifa.net/meta/team/58/30.png,79,33,matched,1,Sporting CP
+2026,15,16,Atalanta,atalanta,atalanta,39,Atalanta,atalanta,31,Serie A,https://cdn.sofifa.net/meta/team/708/30.png,80,28,matched,1,Atalanta
+2026,17,17,Aston Villa,aston villa,aston villa,2,Aston Villa,aston villa,13,Premier League,https://cdn.sofifa.net/meta/team/15/30.png,81,24,matched,1,Aston Villa
+2026,17,18,Eintracht Frankfurt,eintracht frankfurt,eintracht frankfurt,1824,Eintracht Frankfurt,eintracht frankfurt,19,Bundesliga,https://cdn.sofifa.net/meta/team/366/30.png,77,30,matched,1,Eintracht Frankfurt
+2026,19,19,Tottenham Hotspur,tottenham hotspur,tottenham hotspur,18,Tottenham Hotspur,tottenham hotspur,13,Premier League,https://cdn.sofifa.net/meta/team/6/30.png,81,29,matched,1,Tottenham Hotspur
+2026,20,20,FC Porto,porto,porto,236,FC Porto,porto,308,Primeira Liga,https://cdn.sofifa.net/meta/team/652/30.png,76,28,matched,1,FC Porto
+2026,21,21,Manchester United,manchester united,manchester united,11,Manchester United,manchester united,13,Premier League,https://cdn.sofifa.net/meta/team/14/30.png,80,28,matched,1,Manchester United
+2026,22,22,Fiorentina,fiorentina,fiorentina,110374,Fiorentina,fiorentina,31,Serie A,https://cdn.sofifa.net/meta/team/109/30.png,77,27,matched,1,Fiorentina
+2026,23,23,Club Brugge,club brugge,club brugge,231,Club Brugge KV,club brugge,4,Pro League,https://cdn.sofifa.net/meta/team/340/30.png,74,31,matched,1,Club Brugge KV
+2026,24,24,Real Betis,real betis,real betis,449,Real Betis Balompié,real betis,53,La Liga,https://cdn.sofifa.net/meta/team/485/30.png,78,34,matched,1,Real Betis Balompié
+2026,25,25,Juventus,juventus,juventus,45,Juventus,juventus,31,Serie A,https://cdn.sofifa.net/meta/team/625/30.png,80,29,matched,1,Juventus
+2026,26,26,PSV Eindhoven,psv eindhoven,psv eindhoven,247,PSV,psv eindhoven,10,Eredivisie,https://cdn.sofifa.net/meta/team/682/30.png,78,35,matched,1,PSV
+2026,27,27,Feyenoord,feyenoord,feyenoord,246,Feyenoord,feyenoord,10,Eredivisie,https://cdn.sofifa.net/meta/team/73/30.png,76,37,matched,1,Feyenoord
+2026,28,28,West Ham United,west ham united,west ham united,19,West Ham United,west ham united,13,Premier League,https://cdn.sofifa.net/meta/team/1/30.png,78,28,matched,1,West Ham United
+2026,29,29,Lille OSC,lille osc,lille osc,65,Lille OSC,lille osc,16,Ligue 1,https://cdn.sofifa.net/meta/team/690/30.png,77,27,matched,1,Lille OSC
+2026,30,30,AC Milan,milan,milan,47,AC Milan,milan,31,Serie A,https://cdn.sofifa.net/meta/team/113/30.png,81,33,matched,1,AC Milan
+2026,31,31,Olympique Lyon,lyon,lyon,66,Olympique Lyonnais,lyon,16,Ligue 1,https://cdn.sofifa.net/meta/team/79/30.png,77,24,matched,1,Olympique Lyonnais
+2026,32,32,Bodø/Glimt,bodo glimt,bodo glimt,918,FK Bodø/Glimt,bodo glimt,41,Eliteserien,https://cdn.sofifa.net/meta/team/1668/30.png,69,26,matched,1,FK Bodø/Glimt
+2026,33,33,Sporting Braga,sporting braga,braga,1896,Sporting Clube de Braga,braga,308,Primeira Liga,https://cdn.sofifa.net/meta/team/884/30.png,74,28,matched,1,Sporting Clube de Braga
+2026,34,34,Napoli,napoli,napoli,48,Napoli,napoli,31,Serie A,https://cdn.sofifa.net/meta/team/597/30.png,79,25,matched,1,Napoli
+2026,35,35,AZ Alkmaar,az alkmaar,az alkmaar,1906,AZ Alkmaar,az alkmaar,10,Eredivisie,https://cdn.sofifa.net/meta/team/61/30.png,71,36,matched,1,AZ Alkmaar
+2026,36,36,Olympiakos Piraeus,olympiakos,olympiakos,280,Olympiacos FC,olympiakos,63,Super League,https://cdn.sofifa.net/meta/team/602/30.png,76,25,matched,1,Olympiacos FC
+2026,37,37,RB Leipzig,rb leipzig,rb leipzig,112172,RB Leipzig,rb leipzig,19,Bundesliga,https://cdn.sofifa.net/meta/team/277/30.png,80,32,matched,1,RB Leipzig
+2026,38,38,Glasgow Rangers,rangers,rangers,86,Rangers FC,rangers,50,Premiership,https://cdn.sofifa.net/meta/team/62/30.png,74,30,matched,1,Rangers FC
+2026,39,39,Villarreal,villarreal,villarreal,483,Villarreal CF,villarreal,53,La Liga,https://cdn.sofifa.net/meta/team/3477/30.png,78,29,matched,1,Villarreal CF
+2026,39,40,Lazio,lazio,lazio,46,Lazio,lazio,31,Serie A,https://cdn.sofifa.net/meta/team/43/30.png,79,27,matched,1,Lazio
+2026,41,41,Ajax,ajax,ajax,245,Ajax,ajax,10,Eredivisie,https://cdn.sofifa.net/meta/team/629/30.png,76,37,matched,1,Ajax
+2026,42,42,Fenerbahçe,fenerbahce,fenerbahce,326,Fenerbahçe SK,fenerbahce,68,Süper Lig,https://cdn.sofifa.net/meta/team/88/30.png,80,28,matched,1,Fenerbahçe SK
+2026,43,43,Real Sociedad,real sociedad,real sociedad,457,Real Sociedad,real sociedad,53,La Liga,https://cdn.sofifa.net/meta/team/594/30.png,78,33,matched,1,Real Sociedad
+2026,44,44,SC Freiburg,freiburg,freiburg,25,SC Freiburg,freiburg,19,Bundesliga,https://cdn.sofifa.net/meta/team/3543/30.png,76,28,matched,1,SC Freiburg
+2026,45,45,Shakhtar Donetsk,shakhtar donetsk,shakhtar donetsk,101059,Shakhtar Donetsk,shakhtar donetsk,332,Premier League,https://cdn.sofifa.net/meta/team/621/30.png,72,30,matched,1,Shakhtar Donetsk
+2026,46,46,AS Monaco,monaco,monaco,69,AS Monaco,monaco,16,Ligue 1,https://cdn.sofifa.net/meta/team/6789/30.png,77,28,matched,1,AS Monaco
+2026,47,47,FC København,copenhagen,copenhagen,819,FC København,copenhagen,1,Superliga,https://cdn.sofifa.net/meta/team/85/30.png,72,27,matched,1,FC København
+2026,48,48,Olympique Marseille,marseille,marseille,219,Olympique de Marseille,marseille,16,Ligue 1,https://cdn.sofifa.net/meta/team/44/30.png,78,32,matched,1,Olympique de Marseille
+2026,49,49,Galatasaray,galatasaray,galatasaray,325,Galatasaray SK,galatasaray,68,Süper Lig,https://cdn.sofifa.net/meta/team/34/30.png,79,32,matched,1,Galatasaray SK
+2026,50,50,Ferencváros,ferencvaros,ferencvaros,1874,Ferencvárosi Torna Club,ferencvaros,64,Nemzeti Bajnokság I,https://cdn.sofifa.net/meta/team/112/30.png,72,31,matched,1,Ferencvárosi Torna Club
+2026,51,51,Viktoria Plzen,viktoria plzen,viktoria plzen,110468,Viktoria Plzeň,viktoria plzen,319,První liga,https://cdn.sofifa.net/meta/team/3545/30.png,73,26,matched,1,Viktoria Plzeň
+2026,52,52,FC Midtjylland,midtjylland,midtjylland,1516,FC Midtjylland,midtjylland,1,Superliga,https://cdn.sofifa.net/meta/team/939/30.png,70,26,matched,1,FC Midtjylland
+2026,52,53,PAOK Thessaloniki,paok thessaloniki,paok thessaloniki,393,PAOK,paok thessaloniki,63,Super League,https://cdn.sofifa.net/meta/team/649/30.png,74,33,matched,1,PAOK
+2026,54,54,Union Saint-Gilloise,union saint gilloise,union saint gilloise,2014,Union Saint-Gilloise,union saint gilloise,4,Pro League,https://cdn.sofifa.net/meta/team/3958/30.png,71,26,matched,1,Union Saint-Gilloise
+2026,55,55,Red Star Belgrade,red star belgrade,red star belgrade,,,,,,,,,missing,0,
+2026,55,56,Dinamo Zagreb,dinamo zagreb,dinamo zagreb,211,Dinamo Zagreb,dinamo zagreb,317,Hrvatska nogometna liga,https://cdn.sofifa.net/meta/team/674/30.png,71,33,matched,1,Dinamo Zagreb
+2026,57,57,FC Salzburg,salzburg,salzburg,191,FC Red Bull Salzburg,salzburg,80,Bundesliga,https://cdn.sofifa.net/meta/team/49/30.png,71,30,matched,1,FC Red Bull Salzburg
+2026,58,58,Celtic,celtic,celtic,78,Celtic,celtic,50,Premiership,https://cdn.sofifa.net/meta/team/53/30.png,75,29,matched,1,Celtic
+2026,58,59,Slavia Praha,slavia prague,slavia prague,266,SK Slavia Praha,slavia prague,319,První liga,https://cdn.sofifa.net/meta/team/216/30.png,74,28,matched,1,SK Slavia Praha
+2026,60,60,Qarabag FK,qarabag,qarabag,113888,Qarabağ FK,qarabag,313,Premyer Liqa,https://cdn.sofifa.net/meta/team/5317/30.png,69,24,matched,1,Qarabağ FK
+2026,61,61,AA Gent,gent,gent,674,KAA Gent,gent,4,Pro League,https://cdn.sofifa.net/meta/team/2402/30.png,71,30,matched,1,KAA Gent
+2026,61,62,Sevilla,sevilla,sevilla,481,Sevilla FC,sevilla,53,La Liga,https://cdn.sofifa.net/meta/team/676/30.png,76,32,matched,1,Sevilla FC
+2026,63,63,Athletic Bilbao,athletic bilbao,athletic bilbao,448,Athletic Club,athletic bilbao,53,La Liga,https://cdn.sofifa.net/meta/team/13258/30.png,80,28,matched,1,Athletic Club
+2026,64,64,Sparta Praha,sparta praha,sparta prague,267,Sparta Praha,sparta prague,319,První liga,https://cdn.sofifa.net/meta/team/2727/30.png,74,28,matched,1,Sparta Praha
+2026,65,65,Slovan Bratislava,slovan bratislava,slovan bratislava,,,,,,,,,missing,0,
+2026,66,66,Stade Rennais,stade rennais,stade rennais,74,Stade Rennais FC,stade rennais,16,Ligue 1,https://cdn.sofifa.net/meta/team/598/30.png,76,30,matched,1,Stade Rennais FC
+2026,67,67,FC Basel,basel,basel,896,FC Basel 1893,basel,189,Super League,https://cdn.sofifa.net/meta/team/468/30.png,70,30,matched,1,FC Basel 1893
+2026,68,68,Legia Warsaw,legia warsaw,legia warsaw,1871,Legia Warszawa,legia warsaw,66,Ekstraklasa,https://cdn.sofifa.net/meta/team/349/30.png,68,29,matched,1,Legia Warszawa
+2026,68,69,Maccabi Tel-Aviv,maccabi tel aviv,maccabi tel aviv,,,,,,,,,missing,0,
+2026,70,70,Djurgårdens IF,djurgardens if,djurgardens if,710,Djurgårdens IF,djurgardens if,56,Allsvenskan,https://cdn.sofifa.net/meta/team/443/30.png,67,28,matched,1,Djurgårdens IF
+2026,71,71,Bologna,bologna,bologna,189,Bologna,bologna,31,Serie A,https://cdn.sofifa.net/meta/team/8513/30.png,76,28,matched,1,Bologna
+2026,71,72,Anderlecht,anderlecht,anderlecht,229,RSC Anderlecht,anderlecht,4,Pro League,https://cdn.sofifa.net/meta/team/2555/30.png,73,28,matched,1,RSC Anderlecht
+2026,73,73,Newcastle United,newcastle united,newcastle united,13,Newcastle United,newcastle united,13,Premier League,https://cdn.sofifa.net/meta/team/20/30.png,81,27,matched,1,Newcastle United
+2026,73,74,Rapid Wien,rapid wien,rapid wien,254,SK Rapid,rapid wien,80,Bundesliga,https://cdn.sofifa.net/meta/team/3678/30.png,69,30,matched,1,SK Rapid
+2026,75,75,Young Boys,young boys,young boys,900,BSC Young Boys,young boys,189,Super League,https://cdn.sofifa.net/meta/team/647/30.png,70,28,matched,1,BSC Young Boys
+2026,76,76,Panathinaikos,panathinaikos,panathinaikos,1884,Panathinaikos FC,panathinaikos,63,Super League,https://cdn.sofifa.net/meta/team/57/30.png,74,29,matched,1,Panathinaikos FC
+2026,77,77,Racing Genk,genk,genk,673,KRC Genk,genk,4,Pro League,https://cdn.sofifa.net/meta/team/2709/30.png,72,26,matched,1,KRC Genk
+2026,78,78,Ludogorets Razgrad,ludogorets razgrad,ludogorets razgrad,,,,,,,,,missing,0,
+2026,79,79,Sturm Graz,sturm graz,sturm graz,209,SK Sturm Graz,sturm graz,80,Bundesliga,https://cdn.sofifa.net/meta/team/3357/30.png,69,28,matched,1,SK Sturm Graz
+2026,80,80,VfB Stuttgart,stuttgart,stuttgart,36,VfB Stuttgart,stuttgart,19,Bundesliga,https://cdn.sofifa.net/meta/team/3319/30.png,77,34,matched,1,VfB Stuttgart
+2026,81,81,Lech Poznan,lech poznan,lech poznan,873,Lech Poznań,lech poznan,66,Ekstraklasa,https://cdn.sofifa.net/meta/team/302/30.png,69,25,matched,1,Lech Poznań
+2026,82,82,FCSB,fcsb,fcsb,100761,FCSB,fcsb,330,Liga I,https://cdn.sofifa.net/meta/team/3444/30.png,69,30,matched,1,FCSB
+2026,83,83,Pafos FC,pafos,pafos,,,,,,,,,missing,0,
+2026,84,84,AEK Athens,aek athens,aek athens,278,AEK Athens,aek athens,63,Super League,https://cdn.sofifa.net/meta/team/781/30.png,75,26,matched,1,AEK Athens
+2026,85,85,Nottingham Forest,nottingham forest,nottingham forest,14,Nottingham Forest,nottingham forest,13,Premier League,https://cdn.sofifa.net/meta/team/63/30.png,78,25,matched,1,Nottingham Forest
+2026,85,86,Crystal Palace,crystal palace,crystal palace,1799,Crystal Palace,crystal palace,13,Premier League,https://cdn.sofifa.net/meta/team/51/30.png,78,28,matched,1,Crystal Palace
+2026,85,87,Brighton & Hove Albion,brighton and hove albion,brighton and hove albion,1808,Brighton & Hove Albion,brighton and hove albion,13,Premier League,https://cdn.sofifa.net/meta/team/78/30.png,78,30,matched,1,Brighton & Hove Albion
+2026,85,88,Leicester City,leicester city,leicester city,95,Leicester City,leicester city,13,Premier League,https://cdn.sofifa.net/meta/team/42/30.png,75,32,matched,1,Leicester City
+2026,89,89,NK Celje,celje,celje,,,,,,,,,missing,0,
+2026,89,90,Union Berlin,union berlin,union berlin,1831,1. FC Union Berlin,union berlin,19,Bundesliga,https://cdn.sofifa.net/meta/team/1079/30.png,75,27,matched,1,1. FC Union Berlin
+2026,91,91,Raków Czestochowa,rakow czestochowa,rakow czestochowa,114326,Raków Częstochowa,rakow czestochowa,66,Ekstraklasa,https://cdn.sofifa.net/meta/team/3270/30.png,68,26,matched,1,Raków Częstochowa
+2026,92,92,Rayo Vallecano,rayo vallecano,rayo vallecano,480,Rayo Vallecano,rayo vallecano,53,La Liga,https://cdn.sofifa.net/meta/team/377/30.png,77,26,matched,1,Rayo Vallecano
+2026,92,93,Jagiellonia Bialystok,jagiellonia bialystok,jagiellonia bialystok,110745,Jagiellonia Białystok,jagiellonia bialystok,66,Ekstraklasa,https://cdn.sofifa.net/meta/team/890/30.png,68,23,matched,1,Jagiellonia Białystok
+2026,92,94,Partizan Belgrade,partizan,partizan,,,,,,,,,missing,0,
+2026,95,95,Molde FK,molde,molde,417,Molde FK,molde,41,Eliteserien,https://cdn.sofifa.net/meta/team/290/30.png,68,33,matched,1,Molde FK
+2026,96,96,RC Strasbourg,strasbourg,strasbourg,76,RC Strasbourg Alsace,strasbourg,16,Ligue 1,https://cdn.sofifa.net/meta/team/686/30.png,74,30,matched,1,RC Strasbourg Alsace
+2026,97,97,Omonia Nicosia,omonia nicosia,omonia nicosia,,,,,,,,,missing,0,
+2026,97,98,FC Lugano,lugano,lugano,10032,FC Lugano,lugano,189,Super League,https://cdn.sofifa.net/meta/team/13775/30.png,69,31,matched,1,FC Lugano
+2026,99,99,LASK,lask,lask,252,LASK Linz,lask,80,Bundesliga,https://cdn.sofifa.net/meta/team/3369/30.png,69,36,matched,1,LASK Linz
+2026,100,100,AEK Larnaca,aek larnaca,aek larnaca,,,,,,,,,missing,0,

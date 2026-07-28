@@ -1,0 +1,88 @@
+team_id,team_name,sofifa_team_id,club_key,uefa_rank,club_league_name,overall,attack,midfield,defence,build_up_style,defensive_line,defensive_approach
+418,Real Madrid,243,real madrid,2,La Liga,85,88,85,90,Balanced,90,High
+583,Paris Saint-Germain,73,paris saint germain,3,Ligue 1,84,85,84,90,Balanced,90,High
+631,Chelsea,5,chelsea,12,Premier League,80,80,82,65,Balanced,65,High
+3948,Union Saint-Gilloise,2014,union saint gilloise,54,Pro League,74,74,73,50,Balanced,50,Balanced
+124,Rangers FC,86,rangers,38,Premiership,73,72,73,90,Balanced,90,High
+2282,Club Brugge KV,231,club brugge,23,Pro League,74,73,76,90,Balanced,90,High
+265,Panathinaikos FC,1884,panathinaikos,76,Super League,74,73,74,50,Counter,50,Balanced
+336,Sporting CP,237,sporting cp lisbon,15,Primeira Liga,79,79,80,65,Balanced,65,High
+413,LASK Linz,252,lask,99,Bundesliga,68,73,68,30,Balanced,30,Deep
+26,FC Basel 1893,896,basel,67,Super League,71,69,72,50,Balanced,50,Balanced
+409,FC Red Bull Salzburg,191,salzburg,57,Bundesliga,70,69,70,90,Balanced,90,High
+234,Feyenoord,246,feyenoord,27,Eredivisie,75,76,77,65,Short passing,65,High
+157,KAA Gent,674,gent,61,Pro League,70,70,70,30,Balanced,30,Deep
+873,Crystal Palace,1799,crystal palace,85,Premier League,79,78,77,30,Short passing,30,Deep
+122,SK Sturm Graz,209,sturm graz,79,Bundesliga,68,67,71,90,Short passing,90,High
+2790,FC Lugano,10032,lugano,97,Super League,70,71,68,50,Counter,50,Balanced
+941,Viktoria Plzeň,110468,viktoria plzen,51,První liga,72,73,71,90,Short passing,90,High
+36,Fenerbahçe SK,326,fenerbahce,42,Süper Lig,79,79,79,90,Balanced,90,High
+660,Shakhtar Donetsk,101059,shakhtar donetsk,45,Premier League,72,71,73,50,Balanced,50,Balanced
+273,Stade Rennais FC,74,stade rennais,66,Ligue 1,76,74,76,65,Balanced,65,High
+79,VfB Stuttgart,36,stuttgart,80,Bundesliga,77,78,77,90,Balanced,90,High
+405,Aston Villa,2,aston villa,17,Premier League,80,83,81,50,Balanced,50,Balanced
+621,Athletic Club,448,athletic bilbao,63,La Liga,80,78,81,65,Short passing,65,High
+985,Manchester United,11,manchester united,21,Premier League,80,82,80,65,Balanced,65,High
+279,Ferencvárosi Torna Club,1874,ferencvaros,50,Nemzeti Bajnokság I,72,72,71,50,Short passing,50,Balanced
+501,FK Bodø/Glimt,918,bodo glimt,32,Eliteserien,71,70,73,90,Balanced,90,High
+238,Lech Poznań,873,lech poznan,81,Ekstraklasa,70,72,68,50,Balanced,50,Balanced
+27,FC Bayern München,21,bayern munchen,1,Bundesliga,84,89,85,65,Balanced,65,High
+379,West Ham United,19,west ham united,28,Premier League,77,78,77,30,Short passing,30,Deep
+281,Manchester City,10,manchester city,6,Premier League,84,82,85,65,Balanced,65,High
+12,Roma,52,roma,13,Serie A,80,77,79,50,Balanced,50,Balanced
+89,1. FC Union Berlin,1831,union berlin,89,Bundesliga,75,72,73,30,Counter,30,Deep
+1082,Lille OSC,65,lille osc,29,Ligue 1,76,79,76,65,Balanced,65,High
+762,Newcastle United,13,newcastle united,73,Premier League,81,81,84,50,Short passing,50,Balanced
+10625,Qarabağ FK,113888,qarabag,60,Premyer Liqa,69,67,69,50,Short passing,50,Balanced
+190,FC København,819,copenhagen,47,Superliga,72,73,72,90,Balanced,90,High
+294,SL Benfica,234,benfica,14,Primeira Liga,78,79,78,90,Balanced,90,High
+1184,KRC Genk,673,genk,77,Pro League,73,72,73,50,Balanced,50,Balanced
+16,Borussia Dortmund,22,borussia dortmund,11,Bundesliga,81,83,80,65,Balanced,65,High
+367,Rayo Vallecano,480,rayo vallecano,92,La Liga,77,73,77,65,Short passing,65,High
+452,BSC Young Boys,900,young boys,75,Super League,70,70,71,50,Counter,50,Balanced
+162,AS Monaco,69,monaco,46,Ligue 1,78,77,75,65,Balanced,65,High
+1041,Olympique Lyonnais,66,lyon,31,Ligue 1,76,74,75,65,Balanced,65,High
+150,Real Betis Balompié,449,real betis,24,La Liga,78,77,79,50,Balanced,50,Balanced
+1237,Brighton & Hove Albion,1808,brighton and hove albion,85,Premier League,78,78,78,65,Short passing,65,High
+31,Liverpool,9,liverpool,4,Premier League,85,85,86,65,Balanced,65,High
+703,Nottingham Forest,14,nottingham forest,85,Premier League,79,79,79,50,Balanced,50,Balanced
+15,Bayer 04 Leverkusen,32,bayer leverkusen,9,Bundesliga,79,82,79,50,Balanced,50,Balanced
+681,Real Sociedad,457,real sociedad,43,La Liga,77,79,77,90,Short passing,90,High
+60,SC Freiburg,25,freiburg,44,Bundesliga,75,71,74,50,Balanced,50,Balanced
+430,Fiorentina,110374,fiorentina,22,Serie A,77,79,75,65,Short passing,65,High
+13,Atlético Madrid,240,atletico madrid,10,La Liga,82,84,81,65,Balanced,65,High
+11,Arsenal,1,arsenal,7,Premier League,84,86,84,65,Balanced,65,High
+506,Juventus,45,juventus,25,Serie A,80,81,80,90,Balanced,90,High
+58,RSC Anderlecht,229,anderlecht,71,Pro League,71,74,70,90,Balanced,90,High
+5,AC Milan,47,milan,30,Serie A,81,82,79,50,Short passing,50,Balanced
+148,Tottenham Hotspur,18,tottenham hotspur,19,Premier League,81,79,81,90,Balanced,90,High
+383,PSV,247,psv eindhoven,26,Eredivisie,77,76,80,65,Balanced,65,High
+62,SK Slavia Praha,266,slavia prague,58,První liga,75,74,75,50,Short passing,50,Balanced
+24,Eintracht Frankfurt,1824,eintracht frankfurt,17,Bundesliga,78,77,78,65,Short passing,65,High
+9644,Raków Częstochowa,114326,rakow czestochowa,91,Ekstraklasa,69,71,69,90,Balanced,90,High
+197,Sparta Praha,267,sparta praha,64,První liga,73,75,74,50,Short passing,50,Balanced
+398,Lazio,46,lazio,39,Serie A,79,80,77,30,Balanced,30,Deep
+1090,AZ Alkmaar,1906,az alkmaar,35,Eredivisie,73,74,74,65,Balanced,65,High
+244,Olympique de Marseille,219,marseille,48,Ligue 1,79,81,79,65,Balanced,65,High
+368,Sevilla FC,481,sevilla,61,La Liga,75,75,76,50,Counter,50,Balanced
+419,Dinamo Zagreb,211,dinamo zagreb,55,Hrvatska nogometna liga,72,70,71,50,Counter,50,Balanced
+1075,Sporting Clube de Braga,1896,sporting braga,33,Primeira Liga,74,74,75,65,Short passing,65,High
+865,FC Midtjylland,1516,midtjylland,52,Superliga,71,71,26,50,Balanced,50,Balanced
+255,Legia Warszawa,1871,legia warsaw,68,Ekstraklasa,69,69,70,90,Balanced,90,High
+667,RC Strasbourg Alsace,76,strasbourg,96,Ligue 1,75,76,74,65,Short passing,65,High
+1050,Villarreal CF,483,villarreal,39,La Liga,79,80,79,50,Short passing,50,Balanced
+131,FC Barcelona,241,barcelona,8,La Liga,85,85,85,65,Balanced,65,High
+800,Atalanta,39,atalanta,15,Serie A,79,79,79,50,Short passing,50,Balanced
+141,Galatasaray SK,325,galatasaray,49,Süper Lig,80,84,80,65,Balanced,65,High
+46,Inter,44,inter,5,Serie A,83,86,83,90,Balanced,90,High
+6195,Napoli,48,napoli,34,Serie A,81,79,82,65,Balanced,65,High
+371,Celtic,78,celtic,58,Premiership,75,74,75,90,Balanced,90,High
+1025,Bologna,189,bologna,71,Serie A,76,76,77,65,Balanced,65,High
+301,FCSB,100761,fcsb,82,Liga I,69,69,70,30,Balanced,30,Deep
+1091,PAOK,393,paok thessaloniki,52,Super League,74,75,74,90,Balanced,90,High
+720,FC Porto,236,porto,20,Primeira Liga,77,77,77,65,Balanced,65,High
+170,SK Rapid,254,rapid wien,73,Bundesliga,69,67,69,50,Balanced,50,Balanced
+23826,RB Leipzig,112172,rb leipzig,37,Bundesliga,78,77,76,65,Counter,65,High
+2300,Jagiellonia Białystok,110745,jagiellonia bialystok,92,Ekstraklasa,69,72,69,50,Balanced,50,Balanced
+683,Olympiacos FC,280,olympiakos,36,Super League,76,79,76,90,Balanced,90,High
+687,Molde FK,417,molde,95,Eliteserien,68,69,68,65,Balanced,65,High

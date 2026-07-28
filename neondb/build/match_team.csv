@@ -1,0 +1,1747 @@
+match_id,team_id,side,score,formation,coach_name,sofifa_team_id,overall,attack,midfield,defence,build_up_style,defensive_line,defensive_approach
+4506866,418,home,1,,,243,85,88,85,82,Balanced,90,High
+4506870,583,home,2,,,73,84,85,84,85,Balanced,90,High
+4506871,418,home,3,,,243,85,88,85,82,Balanced,90,High
+4506873,583,home,4,,,73,84,85,84,85,Balanced,90,High
+4506874,631,home,3,,,5,80,80,82,80,Balanced,65,High
+4624298,3948,home,1,,,2014,74,74,73,75,Balanced,50,Balanced
+4625710,124,home,2,,,86,73,72,73,72,Balanced,90,High
+4627422,2282,home,2,,,231,74,73,76,73,Balanced,90,High
+4625727,265,home,1,,,1884,74,73,74,73,Counter,50,Balanced
+4683940,336,home,0,,,237,79,79,80,77,Balanced,65,High
+4638183,413,home,0,,,252,68,73,68,68,Balanced,30,Deep
+4691926,124,home,3,,,86,73,72,73,72,Balanced,90,High
+4627251,26,home,4,,,896,71,69,72,71,Balanced,50,Balanced
+4676662,409,home,0,,,191,70,69,70,69,Balanced,90,High
+4676659,234,home,2,,,246,75,76,77,74,Short passing,65,High
+4692614,265,home,0,,,1884,74,73,74,73,Counter,50,Balanced
+4627485,157,home,2,,,674,70,70,70,68,Balanced,30,Deep
+4703996,873,home,5,,,1799,79,78,77,80,Short passing,30,Deep
+4638193,122,home,1,,,209,68,67,71,67,Short passing,90,High
+4627250,2790,home,3,,,10032,70,71,68,68,Counter,50,Balanced
+4691930,941,home,2,,,110468,72,73,71,73,Short passing,90,High
+4676665,2282,home,3,,,231,74,73,76,73,Balanced,90,High
+4676660,36,home,5,,,326,79,79,79,76,Balanced,90,High
+4625635,583,home,6,,,73,84,85,84,85,Balanced,90,High
+4692627,660,home,3,,,101059,72,71,73,73,Balanced,50,Balanced
+4635006,273,home,1,,,74,76,74,76,74,Balanced,65,High
+4622725,79,home,1,,,36,77,78,77,74,Balanced,90,High
+4625775,405,home,0,,,2,80,83,81,80,Balanced,50,Balanced
+4645613,621,home,3,,,448,80,78,81,78,Short passing,65,High
+4625781,631,home,0,,,5,80,80,82,80,Balanced,65,High
+4625782,985,home,0,,,11,80,82,80,79,Balanced,65,High
+4697246,124,home,1,,,86,73,72,73,72,Balanced,90,High
+4697247,279,home,1,,,1874,72,72,71,68,Short passing,50,Balanced
+4697251,26,home,1,,,896,71,69,72,71,Balanced,50,Balanced
+4697249,501,home,5,,,918,71,70,73,70,Balanced,90,High
+4697252,36,home,0,,,326,79,79,79,76,Balanced,90,High
+4705693,238,home,1,,,873,70,72,68,70,Balanced,50,Balanced
+4632805,27,home,6,,,21,84,89,85,82,Balanced,65,High
+4625784,379,home,1,,,19,77,78,77,77,Short passing,30,Deep
+4625786,281,home,0,,,10,84,82,85,82,Balanced,65,High
+4642892,409,home,3,,,191,70,69,70,69,Balanced,90,High
+4620691,12,home,1,,,52,80,77,79,80,Balanced,50,Balanced
+4634126,89,home,2,,,1831,75,72,73,75,Counter,30,Deep
+4635016,1082,home,1,,,65,76,79,76,76,Balanced,65,High
+4625793,873,home,1,,,1799,79,78,77,80,Short passing,30,Deep
+4625785,762,home,2,,,13,81,81,84,80,Short passing,50,Balanced
+4645517,621,home,1,,,448,80,78,81,78,Short passing,65,High
+4705682,122,home,2,,,209,68,67,71,67,Short passing,90,High
+4705680,10625,home,2,,,113888,69,67,69,67,Short passing,50,Balanced
+4705686,2282,home,6,,,231,74,73,76,73,Balanced,90,High
+4705684,190,home,2,,,819,72,73,72,71,Balanced,90,High
+4705685,294,home,1,,,234,78,79,78,77,Balanced,90,High
+4705705,1184,home,1,,,673,73,72,73,75,Balanced,50,Balanced
+4648653,336,home,1,,,237,79,79,80,77,Balanced,65,High
+4634137,16,home,3,,,22,81,83,80,82,Balanced,65,High
+4645534,367,home,1,,,480,77,73,77,77,Short passing,65,High
+4627262,452,home,3,,,900,70,70,71,68,Counter,50,Balanced
+4638809,124,home,0,,,86,73,72,73,72,Balanced,90,High
+4627542,157,home,1,,,674,70,70,70,68,Balanced,30,Deep
+4627544,3948,home,2,,,2014,74,74,73,75,Balanced,50,Balanced
+4635025,162,home,3,,,69,78,77,75,77,Balanced,65,High
+4635032,1041,home,1,,,66,76,74,75,76,Balanced,65,High
+4645533,150,home,1,,,449,78,77,79,77,Balanced,50,Balanced
+4625794,405,home,0,,,2,80,83,81,80,Balanced,50,Balanced
+4625795,1237,home,2,,,1808,78,78,78,78,Short passing,65,High
+4625798,31,home,1,,,9,85,85,86,83,Balanced,65,High
+4625800,703,home,0,,,14,79,79,79,79,Balanced,50,Balanced
+4634147,15,home,3,,,32,79,82,79,77,Balanced,50,Balanced
+4645565,681,home,1,,,457,77,79,77,75,Short passing,90,High
+4634148,60,home,3,,,25,75,71,74,76,Balanced,50,Balanced
+4620707,430,home,1,,,110374,77,79,75,75,Short passing,65,High
+4645566,13,home,2,,,240,82,84,81,82,Balanced,65,High
+4625804,11,home,3,,,1,84,86,84,84,Balanced,65,High
+4620708,506,home,4,,,45,80,81,80,80,Balanced,90,High
+4625813,379,home,0,,,19,77,78,77,77,Short passing,30,Deep
+4627572,58,home,1,,,229,71,74,70,68,Balanced,90,High
+4635041,273,home,3,,,74,76,74,76,74,Balanced,65,High
+4620709,5,home,1,,,47,81,82,79,78,Short passing,50,Balanced
+4625811,281,home,3,,,10,84,82,85,82,Balanced,65,High
+4716845,148,home,1,,,18,81,79,81,81,Balanced,90,High
+4716844,294,home,2,,,234,78,79,78,77,Balanced,90,High
+4716774,506,home,4,,,45,80,81,80,80,Balanced,90,High
+4716843,418,home,2,,,243,85,88,85,82,Balanced,90,High
+4716779,383,home,1,,,247,77,76,80,76,Balanced,65,High
+4716778,621,home,0,,,448,80,78,81,78,Short passing,65,High
+4717479,31,home,3,,,9,85,85,86,83,Balanced,65,High
+4716847,62,home,2,,,266,75,74,75,73,Short passing,50,Balanced
+4717478,27,home,3,,,21,84,89,85,82,Balanced,65,High
+4716777,583,home,4,,,73,84,85,84,85,Balanced,90,High
+4716776,281,home,2,,,10,84,82,85,82,Balanced,65,High
+4717481,190,home,2,,,819,72,73,72,71,Balanced,90,High
+4717480,2282,home,4,,,231,74,73,76,73,Balanced,90,High
+4717482,24,home,5,,,1824,78,77,78,80,Short passing,65,High
+4717484,762,home,1,,,13,81,81,84,80,Short passing,50,Balanced
+4645487,150,home,3,,,449,78,77,79,77,Balanced,50,Balanced
+4625816,1237,home,2,,,1808,78,78,78,78,Short passing,65,High
+4625820,985,home,2,,,11,80,82,80,79,Balanced,65,High
+4625822,379,home,1,,,19,77,78,77,77,Short passing,30,Deep
+4623184,9644,home,1,,,114326,69,71,69,70,Balanced,90,High
+4642910,409,home,0,,,191,70,69,70,69,Balanced,90,High
+4624582,197,home,2,,,267,73,75,74,72,Short passing,50,Balanced
+4641233,1184,home,1,,,673,73,72,73,75,Balanced,50,Balanced
+4620718,398,home,0,,,46,79,80,77,78,Balanced,30,Deep
+4625814,11,home,1,,,1,84,86,84,84,Balanced,65,High
+4634156,24,home,3,,,1824,78,77,78,80,Short passing,65,High
+4665074,265,home,1,,,1884,74,73,74,73,Counter,50,Balanced
+4641477,1090,home,3,,,1906,73,74,74,72,Balanced,65,High
+4635050,244,home,1,,,219,79,81,79,79,Balanced,65,High
+4627525,58,home,1,,,229,71,74,70,68,Balanced,90,High
+4645540,368,home,1,,,481,75,75,76,75,Counter,50,Balanced
+4715936,419,home,3,,,211,72,70,71,70,Counter,50,Balanced
+4715941,150,home,2,,,449,78,77,79,77,Balanced,50,Balanced
+4715955,1075,home,1,,,1896,74,74,75,74,Short passing,65,High
+4715997,60,home,2,,,25,75,71,74,76,Balanced,50,Balanced
+4716256,865,home,2,,,1516,71,71,70,71,Balanced,50,Balanced
+4623156,9644,home,2,,,114326,69,71,69,70,Balanced,90,High
+4623153,255,home,0,,,1871,69,69,70,70,Balanced,90,High
+4645537,13,home,3,,,240,82,84,81,82,Balanced,65,High
+4715950,405,home,1,,,2,80,83,81,80,Balanced,50,Balanced
+4715990,452,home,1,,,900,70,70,71,68,Counter,50,Balanced
+4715943,409,home,0,,,191,70,69,70,69,Balanced,90,High
+4715976,279,home,1,,,1874,72,72,71,68,Short passing,50,Balanced
+4715926,124,home,0,,,86,73,72,73,72,Balanced,90,High
+4635051,667,home,1,,,76,75,76,74,75,Short passing,65,High
+4620727,506,home,1,,,45,80,81,80,80,Balanced,90,High
+4645582,1050,home,1,,,483,79,80,79,77,Short passing,50,Balanced
+4645576,13,home,5,,,240,82,84,81,82,Balanced,65,High
+4625827,873,home,2,,,1799,79,78,77,80,Short passing,30,Deep
+4625826,631,home,1,,,5,80,80,82,80,Balanced,65,High
+4645577,131,home,2,,,241,85,85,85,82,Balanced,65,High
+4645580,367,home,0,,,480,77,73,77,77,Short passing,65,High
+4625831,762,home,1,,,13,81,81,84,80,Short passing,50,Balanced
+4623188,238,home,2,,,873,70,72,68,70,Balanced,50,Balanced
+4620729,5,home,2,,,47,81,82,79,78,Short passing,50,Balanced
+4635058,1082,home,0,,,65,76,79,76,76,Balanced,65,High
+4715003,631,home,1,,,5,80,80,82,80,Balanced,65,High
+4715031,800,home,2,,,39,79,79,79,79,Short passing,50,Balanced
+4715117,141,home,1,,,325,80,84,80,79,Balanced,65,High
+4715103,501,home,2,,,918,71,70,73,70,Balanced,90,High
+4715000,46,home,3,,,44,83,86,83,83,Balanced,90,High
+4715023,13,home,5,,,240,82,84,81,82,Balanced,65,High
+4715009,16,home,4,,,22,81,83,80,82,Balanced,65,High
+4715035,1050,home,2,,,483,79,80,79,77,Short passing,50,Balanced
+4715128,10625,home,2,,,113888,69,67,69,67,Short passing,50,Balanced
+4715124,3948,home,0,,,2014,74,74,73,75,Balanced,50,Balanced
+4715113,162,home,2,,,69,78,77,75,77,Balanced,65,High
+4715020,15,home,1,,,32,79,82,79,77,Balanced,50,Balanced
+4715016,11,home,2,,,1,84,86,84,84,Balanced,65,High
+4715010,131,home,1,,,241,85,85,85,82,Balanced,65,High
+4715091,6195,home,2,,,48,81,79,82,80,Balanced,65,High
+4715915,12,home,0,,,52,80,77,79,80,Balanced,50,Balanced
+4715963,1041,home,2,,,66,76,74,75,76,Balanced,65,High
+4715980,371,home,0,,,78,75,74,75,74,Balanced,90,High
+4715927,234,home,0,,,246,75,76,77,74,Short passing,65,High
+4715994,26,home,2,,,896,71,69,72,71,Balanced,50,Balanced
+4716048,1184,home,0,,,673,73,72,73,75,Balanced,50,Balanced
+4716021,1025,home,1,,,189,76,76,77,74,Balanced,65,High
+4716013,301,home,0,,,100761,69,69,70,68,Balanced,30,Deep
+4716007,122,home,2,,,209,68,67,71,67,Short passing,90,High
+4716005,703,home,2,,,14,79,79,79,79,Balanced,50,Balanced
+4716097,238,home,4,,,873,70,72,68,70,Balanced,50,Balanced
+4634175,16,home,1,,,22,81,83,80,82,Balanced,65,High
+4634174,24,home,0,,,1824,78,77,78,80,Short passing,65,High
+4634173,15,home,2,,,32,79,82,79,77,Balanced,50,Balanced
+4645508,418,home,3,,,243,85,88,85,82,Balanced,90,High
+4625838,631,home,2,,,5,80,80,82,80,Balanced,65,High
+4625834,11,home,2,,,1,84,86,84,84,Balanced,65,High
+4641239,2282,home,1,,,231,74,73,76,73,Balanced,90,High
+4642922,409,home,2,,,191,70,69,70,69,Balanced,90,High
+4645514,681,home,0,,,457,77,79,77,75,Short passing,90,High
+4645510,368,home,4,,,481,75,75,76,75,Counter,50,Balanced
+4665013,1091,home,2,,,393,74,75,74,73,Balanced,90,High
+4625842,762,home,2,,,13,81,81,84,80,Short passing,50,Balanced
+4624607,197,home,1,,,267,73,75,74,72,Short passing,50,Balanced
+4648344,190,home,1,,,819,72,73,72,71,Balanced,90,High
+4620741,506,home,0,,,45,80,81,80,80,Balanced,90,High
+4648743,336,home,1,,,237,79,79,80,77,Balanced,65,High
+4648744,720,home,0,,,236,77,77,77,76,Balanced,65,High
+4620739,430,home,1,,,110374,77,79,75,75,Short passing,65,High
+4635068,1082,home,1,,,65,76,79,76,76,Balanced,65,High
+4635071,583,home,3,,,73,84,85,84,85,Balanced,90,High
+4625844,1237,home,2,,,1808,78,78,78,78,Short passing,65,High
+4625850,703,home,0,,,14,79,79,79,79,Balanced,50,Balanced
+4620755,12,home,0,,,52,80,77,79,80,Balanced,50,Balanced
+4645602,1050,home,2,,,483,79,80,79,77,Short passing,50,Balanced
+4634182,27,home,2,,,21,84,89,85,82,Balanced,65,High
+4642929,170,home,0,,,254,69,67,69,70,Balanced,50,Balanced
+4620753,5,home,2,,,47,81,82,79,78,Short passing,50,Balanced
+4625848,31,home,1,,,9,85,85,86,83,Balanced,65,High
+4625852,148,home,1,,,18,81,79,81,81,Balanced,90,High
+4620747,800,home,0,,,39,79,79,79,79,Short passing,50,Balanced
+4634183,60,home,2,,,25,75,71,74,76,Balanced,50,Balanced
+4715018,15,home,2,,,32,79,82,79,77,Balanced,50,Balanced
+4715109,190,home,2,,,819,72,73,72,71,Balanced,90,High
+4715034,1050,home,0,,,483,79,80,79,77,Short passing,50,Balanced
+4715134,762,home,3,,,13,81,81,84,80,Short passing,50,Balanced
+4715012,131,home,6,,,241,85,85,85,82,Balanced,65,High
+4715062,383,home,6,,,247,77,76,80,76,Balanced,65,High
+4715121,3948,home,0,,,2014,74,74,73,75,Balanced,50,Balanced
+4715015,11,home,4,,,1,84,86,84,84,Balanced,65,High
+4714987,27,home,4,,,21,84,89,85,82,Balanced,65,High
+4715057,162,home,0,,,69,78,77,75,77,Balanced,65,High
+4715006,24,home,1,,,1824,78,77,78,80,Short passing,65,High
+4715119,141,home,3,,,325,80,84,80,79,Balanced,65,High
+4715038,336,home,2,,,237,79,79,80,77,Balanced,65,High
+4715132,621,home,3,,,448,80,78,81,78,Short passing,65,High
+4714979,418,home,1,,,243,85,88,85,82,Balanced,90,High
+4715139,800,home,0,,,39,79,79,79,79,Short passing,50,Balanced
+4716076,660,home,1,,,101059,72,71,73,73,Balanced,50,Balanced
+4715981,371,home,2,,,78,75,74,75,74,Balanced,90,High
+4716047,1184,home,0,,,673,73,72,73,75,Balanced,50,Balanced
+4716014,301,home,1,,,100761,69,69,70,68,Balanced,30,Deep
+4716003,703,home,2,,,14,79,79,79,79,Balanced,50,Balanced
+4715954,36,home,1,,,326,79,79,79,76,Balanced,90,High
+4715916,12,home,1,,,52,80,77,79,80,Balanced,50,Balanced
+4716113,667,home,1,,,76,75,76,74,75,Short passing,65,High
+4715965,1041,home,2,,,66,76,74,75,76,Balanced,65,High
+4715930,234,home,3,,,246,75,76,77,74,Short passing,65,High
+4715932,1082,home,3,,,65,76,79,76,76,Balanced,65,High
+4715944,409,home,2,,,191,70,69,70,69,Balanced,90,High
+4716082,170,home,0,,,254,69,67,69,70,Balanced,50,Balanced
+4645557,681,home,2,,,457,77,79,77,75,Short passing,90,High
+4620761,6195,home,3,,,48,81,79,82,80,Balanced,65,High
+4625861,985,home,4,,,11,80,82,80,79,Balanced,65,High
+4645561,418,home,2,,,243,85,88,85,82,Balanced,90,High
+4620758,430,home,2,,,110374,77,79,75,75,Short passing,65,High
+4620759,398,home,1,,,46,79,80,77,78,Balanced,30,Deep
+4634191,15,home,2,,,32,79,82,79,77,Balanced,50,Balanced
+4635078,1041,home,2,,,66,76,74,75,76,Balanced,65,High
+4623859,255,home,0,,,1871,69,69,70,70,Balanced,90,High
+4641652,234,home,2,,,246,75,76,77,74,Short passing,65,High
+4625854,11,home,1,,,1,84,86,84,84,Balanced,65,High
+4625855,405,home,1,,,2,80,83,81,80,Balanced,50,Balanced
+4645560,150,home,0,,,449,78,77,79,77,Balanced,50,Balanced
+4717153,24,home,3,,,1824,78,77,78,80,Short passing,65,High
+4620767,800,home,1,,,39,79,79,79,79,Short passing,50,Balanced
+4740851,31,home,0,,,9,85,85,86,83,Balanced,65,High
+4740854,762,home,2,,,13,81,81,84,80,Short passing,50,Balanced
+4740850,11,home,2,,,1,84,86,84,84,Balanced,65,High
+4620772,46,home,3,,,44,83,86,83,83,Balanced,90,High
+4625870,703,home,2,,,14,79,79,79,79,Balanced,50,Balanced
+4634200,27,home,3,,,21,84,89,85,82,Balanced,65,High
+4625868,31,home,2,,,9,85,85,86,83,Balanced,65,High
+4634202,23826,home,3,,,112172,78,77,76,80,Counter,65,High
+4625872,148,home,0,,,18,81,79,81,81,Balanced,90,High
+4645585,13,home,3,,,240,82,84,81,82,Balanced,65,High
+4645590,681,home,3,,,457,77,79,77,75,Short passing,90,High
+4645593,1050,home,4,,,483,79,80,79,77,Short passing,50,Balanced
+4634205,89,home,0,,,1831,75,72,73,75,Counter,30,Deep
+4620780,5,home,1,,,47,81,82,79,78,Short passing,50,Balanced
+4712532,2300,home,1,,,110745,69,72,69,69,Balanced,50,Balanced
+4635099,273,home,4,,,74,76,74,76,74,Balanced,65,High
+4625873,379,home,3,,,19,77,78,77,77,Short passing,30,Deep
+4648725,720,home,2,,,236,77,77,77,76,Balanced,65,High
+4627309,452,home,0,,,900,70,70,71,68,Counter,50,Balanced
+4642941,170,home,2,,,254,69,67,69,70,Balanced,50,Balanced
+4715037,683,home,1,,,280,76,79,76,75,Balanced,90,High
+4715026,501,home,0,,,918,71,70,73,70,Balanced,90,High
+4714994,583,home,1,,,73,84,85,84,85,Balanced,90,High
+4714992,148,home,4,,,18,81,79,81,81,Balanced,90,High
+4714990,31,home,1,,,9,85,85,86,83,Balanced,65,High
+4715008,506,home,1,,,45,80,81,80,80,Balanced,90,High
+4715033,62,home,0,,,266,75,74,75,73,Short passing,50,Balanced
+4715093,6195,home,0,,,48,81,79,82,80,Balanced,65,High
+4715025,13,home,3,,,240,82,84,81,82,Balanced,65,High
+4715027,294,home,0,,,234,78,79,78,77,Balanced,90,High
+4715055,10625,home,2,,,113888,69,67,69,67,Short passing,50,Balanced
+4714982,281,home,4,,,10,84,82,85,82,Balanced,65,High
+4714999,2282,home,3,,,231,74,73,76,73,Balanced,90,High
+4715143,762,home,2,,,13,81,81,84,80,Short passing,50,Balanced
+4715022,244,home,0,,,219,79,81,79,79,Balanced,65,High
+4715993,26,home,3,,,896,71,69,72,71,Balanced,50,Balanced
+4715969,1091,home,4,,,393,74,75,74,73,Balanced,90,High
+4715940,150,home,2,,,449,78,77,79,77,Balanced,50,Balanced
+4715958,1075,home,3,,,1896,74,74,75,74,Short passing,65,High
+4715972,941,home,0,,,110468,72,73,71,73,Short passing,90,High
+4716027,79,home,2,,,36,77,78,77,74,Balanced,90,High
+4716255,865,home,3,,,1516,71,71,70,71,Balanced,50,Balanced
+4716009,122,home,0,,,209,68,67,71,67,Short passing,90,High
+4716094,873,home,3,,,1799,79,78,77,80,Short passing,30,Deep
+4715923,124,home,0,,,86,73,72,73,72,Balanced,90,High
+4716100,367,home,3,,,480,77,73,77,77,Short passing,65,High
+4716090,197,home,0,,,267,73,75,74,72,Short passing,50,Balanced
+4625882,148,home,2,,,18,81,79,81,81,Balanced,90,High
+4634215,89,home,2,,,1831,75,72,73,75,Counter,30,Deep
+4641215,157,home,1,,,674,70,70,70,68,Balanced,30,Deep
+4635113,667,home,2,,,76,75,76,74,75,Short passing,65,High
+4641214,58,home,1,,,229,71,74,70,68,Balanced,90,High
+4625877,873,home,0,,,1799,79,78,77,80,Short passing,30,Deep
+4642946,122,home,1,,,209,68,67,71,67,Short passing,90,High
+4625879,281,home,3,,,10,84,82,85,82,Balanced,65,High
+4620793,1025,home,2,,,189,76,76,77,74,Balanced,65,High
+4645549,367,home,0,,,480,77,73,77,77,Short passing,65,High
+4665019,265,home,2,,,1884,74,73,74,73,Counter,50,Balanced
+4620796,46,home,2,,,44,83,86,83,83,Balanced,90,High
+4641679,1090,home,1,,,1906,73,74,74,72,Balanced,65,High
+4624637,941,home,3,,,110468,72,73,71,73,Short passing,90,High
+4627311,26,home,0,,,896,71,69,72,71,Balanced,50,Balanced
+4635106,1041,home,2,,,66,76,74,75,76,Balanced,65,High
+4635115,273,home,4,,,74,76,74,76,74,Balanced,65,High
+4645500,131,home,4,,,241,85,85,85,82,Balanced,65,High
+4634218,27,home,6,,,21,84,89,85,82,Balanced,65,High
+4634219,16,home,3,,,22,81,83,80,82,Balanced,65,High
+4625892,762,home,2,,,13,81,81,84,80,Short passing,50,Balanced
+4620807,6195,home,3,,,48,81,79,82,80,Balanced,65,High
+4625890,31,home,0,,,9,85,85,86,83,Balanced,65,High
+4620804,430,home,1,,,110374,77,79,75,75,Short passing,65,High
+4642952,122,home,1,,,209,68,67,71,67,Short passing,90,High
+4620805,46,home,0,,,44,83,86,83,83,Balanced,90,High
+4625884,11,home,4,,,1,84,86,84,84,Balanced,65,High
+4714986,141,home,0,,,325,80,84,80,79,Balanced,65,High
+4715122,16,home,4,,,22,81,83,80,82,Balanced,65,High
+4715021,244,home,2,,,219,79,81,79,79,Balanced,65,High
+4715095,281,home,0,,,10,84,82,85,82,Balanced,65,High
+4715030,62,home,0,,,266,75,74,75,73,Short passing,50,Balanced
+4715028,501,home,2,,,918,71,70,73,70,Balanced,90,High
+4715013,6195,home,2,,,48,81,79,82,80,Balanced,65,High
+4715053,631,home,3,,,5,80,80,82,80,Balanced,65,High
+4715125,13,home,2,,,240,82,84,81,82,Balanced,65,High
+4715005,24,home,0,,,1824,78,77,78,80,Short passing,65,High
+4715060,583,home,5,,,73,84,85,84,85,Balanced,90,High
+4715114,336,home,3,,,237,79,79,80,77,Balanced,65,High
+4715066,31,home,1,,,9,85,85,86,83,Balanced,65,High
+4715049,683,home,3,,,280,76,79,76,75,Balanced,90,High
+4715130,11,home,3,,,1,84,86,84,84,Balanced,65,High
+4715952,36,home,1,,,326,79,79,79,76,Balanced,90,High
+4715949,405,home,2,,,2,80,83,81,80,Balanced,50,Balanced
+4715931,1082,home,4,,,65,76,79,76,76,Balanced,65,High
+4715917,12,home,2,,,52,80,77,79,80,Balanced,50,Balanced
+4716019,1025,home,4,,,189,76,76,77,74,Balanced,65,High
+4716033,265,home,2,,,1884,74,73,74,73,Counter,50,Balanced
+4715973,941,home,0,,,110468,72,73,71,73,Short passing,90,High
+4716049,1184,home,2,,,673,73,72,73,75,Balanced,50,Balanced
+4716085,255,home,0,,,1871,69,69,70,70,Balanced,90,High
+4715924,124,home,1,,,86,73,72,73,72,Balanced,90,High
+4716151,9644,home,4,,,114326,69,71,69,70,Balanced,90,High
+4715928,234,home,1,,,246,75,76,77,74,Short passing,65,High
+4716112,667,home,2,,,76,75,76,74,75,Short passing,65,High
+4635130,162,home,1,,,69,78,77,75,77,Balanced,65,High
+4634228,15,home,1,,,32,79,82,79,77,Balanced,50,Balanced
+4620818,5,home,1,,,47,81,82,79,78,Short passing,50,Balanced
+4625896,631,home,1,,,5,80,80,82,80,Balanced,65,High
+4645766,368,home,0,,,481,75,75,76,75,Counter,50,Balanced
+4641280,58,home,1,,,229,71,74,70,68,Balanced,90,High
+4645763,681,home,2,,,457,77,79,77,75,Short passing,90,High
+4620812,800,home,2,,,39,79,79,79,79,Short passing,50,Balanced
+4642958,413,home,3,,,252,68,73,68,68,Balanced,30,Deep
+4620821,12,home,0,,,52,80,77,79,80,Balanced,50,Balanced
+4625900,703,home,0,,,14,79,79,79,79,Balanced,50,Balanced
+4625897,873,home,1,,,1799,79,78,77,80,Short passing,30,Deep
+4625903,379,home,0,,,19,77,78,77,77,Short passing,30,Deep
+4647882,36,home,1,,,326,79,79,79,76,Balanced,90,High
+4761580,16,home,0,,,22,81,83,80,82,Balanced,65,High
+4625912,762,home,2,,,13,81,81,84,80,Short passing,50,Balanced
+4645831,131,home,3,,,241,85,85,85,82,Balanced,65,High
+4625906,1237,home,3,,,1808,78,78,78,78,Short passing,65,High
+4645837,621,home,0,,,448,80,78,81,78,Short passing,65,High
+4761581,89,home,2,,,1831,75,72,73,75,Counter,30,Deep
+4625911,985,home,1,,,11,80,82,80,79,Balanced,65,High
+4736144,398,home,1,,,46,79,80,77,78,Balanced,30,Deep
+4635132,1082,home,1,,,65,76,79,76,76,Balanced,65,High
+4648686,294,home,1,,,234,78,79,78,77,Balanced,90,High
+4634238,23826,home,6,,,112172,78,77,76,80,Counter,65,High
+4641287,3948,home,1,,,2014,74,74,73,75,Balanced,50,Balanced
+4634239,79,home,0,,,36,77,78,77,74,Balanced,90,High
+4645779,621,home,1,,,448,80,78,81,78,Short passing,65,High
+4645772,150,home,3,,,449,78,77,79,77,Balanced,50,Balanced
+4635140,583,home,5,,,73,84,85,84,85,Balanced,90,High
+4625914,405,home,2,,,2,80,83,81,80,Balanced,50,Balanced
+4625916,1237,home,1,,,1808,78,78,78,78,Short passing,65,High
+4620835,398,home,1,,,46,79,80,77,78,Balanced,30,Deep
+4620836,6195,home,2,,,48,81,79,82,80,Balanced,65,High
+4715096,162,home,1,,,69,78,77,75,77,Balanced,65,High
+4715058,46,home,0,,,44,83,86,83,83,Balanced,90,High
+4715064,3948,home,2,,,2014,74,74,73,75,Balanced,50,Balanced
+4715135,131,home,2,,,241,85,85,85,82,Balanced,65,High
+4715092,27,home,3,,,21,84,89,85,82,Balanced,65,High
+4715112,800,home,2,,,39,79,79,79,79,Short passing,50,Balanced
+4714993,148,home,3,,,18,81,79,81,81,Balanced,90,High
+4714988,383,home,2,,,247,77,76,80,76,Balanced,65,High
+4714996,1050,home,2,,,483,79,80,79,77,Short passing,50,Balanced
+4715136,16,home,2,,,22,81,83,80,82,Balanced,65,High
+4715065,418,home,1,,,243,85,88,85,82,Balanced,90,High
+4714998,2282,home,0,,,231,74,73,76,73,Balanced,90,High
+4715126,15,home,2,,,32,79,82,79,77,Balanced,50,Balanced
+4715051,621,home,0,,,448,80,78,81,78,Short passing,65,High
+4715116,294,home,2,,,234,78,79,78,77,Balanced,90,High
+4716115,2300,home,1,,,110745,69,72,69,69,Balanced,50,Balanced
+4716257,865,home,1,,,1516,71,71,70,71,Balanced,50,Balanced
+4715935,419,home,1,,,211,72,70,71,70,Counter,50,Balanced
+4716032,265,home,0,,,1884,74,73,74,73,Counter,50,Balanced
+4715975,279,home,2,,,1874,72,72,71,68,Short passing,50,Balanced
+4715979,371,home,0,,,78,75,74,75,74,Balanced,90,High
+4715987,452,home,1,,,900,70,70,71,68,Counter,50,Balanced
+4715995,60,home,1,,,25,75,71,74,76,Balanced,50,Balanced
+4715991,26,home,1,,,896,71,69,72,71,Balanced,50,Balanced
+4716011,301,home,4,,,100761,69,69,70,68,Balanced,30,Deep
+4634251,89,home,3,,,1831,75,72,73,75,Counter,30,Deep
+4625929,31,home,2,,,9,85,85,86,83,Balanced,65,High
+4625933,379,home,2,,,19,77,78,77,77,Short passing,30,Deep
+4625931,703,home,3,,,14,79,79,79,79,Balanced,50,Balanced
+4635149,244,home,1,,,219,79,81,79,79,Balanced,65,High
+4634248,60,home,1,,,25,75,71,74,76,Balanced,50,Balanced
+4625928,873,home,0,,,1799,79,78,77,80,Short passing,30,Deep
+4620843,1025,home,0,,,189,76,76,77,74,Balanced,65,High
+4645782,367,home,0,,,480,77,73,77,77,Short passing,65,High
+4716074,1090,home,0,,,1906,73,74,74,72,Balanced,65,High
+4641399,6195,home,2,,,48,81,79,82,80,Balanced,65,High
+4641400,1025,home,4,,,189,76,76,77,74,Balanced,65,High
+4645840,418,home,2,,,243,85,88,85,82,Balanced,90,High
+4620857,506,home,2,,,45,80,81,80,80,Balanced,90,High
+4625940,281,home,3,,,10,84,82,85,82,Balanced,65,High
+4625941,762,home,2,,,13,81,81,84,80,Short passing,50,Balanced
+4625942,148,home,1,,,18,81,79,81,81,Balanced,90,High
+4634256,23826,home,1,,,112172,78,77,76,80,Counter,65,High
+4627350,2790,home,3,,,10032,70,71,68,68,Counter,50,Balanced
+4641383,2282,home,2,,,231,74,73,76,73,Balanced,90,High
+4625934,405,home,2,,,2,80,83,81,80,Balanced,50,Balanced
+4645843,1050,home,0,,,483,79,80,79,77,Short passing,50,Balanced
+4665111,1091,home,2,,,393,74,75,74,73,Balanced,90,High
+4786004,6195,home,2,,,48,81,79,82,80,Balanced,65,High
+4769165,11,home,9,,,1,84,86,84,84,Balanced,65,High
+4641344,1184,home,3,,,673,73,72,73,75,Balanced,50,Balanced
+4625950,985,home,1,,,11,80,82,80,79,Balanced,65,High
+4625947,631,home,1,,,5,80,80,82,80,Balanced,65,High
+4625944,11,home,2,,,1,84,86,84,84,Balanced,65,High
+4625951,703,home,1,,,14,79,79,79,79,Balanced,50,Balanced
+4648780,1075,home,2,,,1896,74,74,75,74,Short passing,65,High
+4625948,873,home,0,,,1799,79,78,77,80,Short passing,30,Deep
+4620862,800,home,0,,,39,79,79,79,79,Short passing,50,Balanced
+4625963,379,home,2,,,19,77,78,77,77,Short passing,30,Deep
+4625954,11,home,4,,,1,84,86,84,84,Balanced,65,High
+4635152,162,home,1,,,69,78,77,75,77,Balanced,65,High
+4625964,405,home,3,,,2,80,83,81,80,Balanced,50,Balanced
+4649463,371,home,1,,,78,75,74,75,74,Balanced,90,High
+4620872,800,home,1,,,39,79,79,79,79,Short passing,50,Balanced
+4635153,1082,home,0,,,65,76,79,76,76,Balanced,65,High
+4645851,681,home,1,,,457,77,79,77,75,Short passing,90,High
+4625970,281,home,1,,,10,84,82,85,82,Balanced,65,High
+4620877,46,home,3,,,44,83,86,83,83,Balanced,90,High
+4620879,398,home,0,,,46,79,80,77,78,Balanced,30,Deep
+4625971,762,home,2,,,13,81,81,84,80,Short passing,50,Balanced
+4645853,418,home,5,,,243,85,88,85,82,Balanced,90,High
+4626007,379,home,1,,,19,77,78,77,77,Short passing,30,Deep
+4626005,281,home,1,,,10,84,82,85,82,Balanced,65,High
+4626002,873,home,0,,,1799,79,78,77,80,Short passing,30,Deep
+4790450,131,home,5,,,241,85,85,85,82,Balanced,65,High
+4779999,294,home,1,,,234,78,79,78,77,Balanced,90,High
+4620882,1025,home,0,,,189,76,76,77,74,Balanced,65,High
+4620884,398,home,2,,,46,79,80,77,78,Balanced,30,Deep
+4790451,13,home,1,,,240,82,84,81,82,Balanced,65,High
+4625998,11,home,0,,,1,84,86,84,84,Balanced,65,High
+4738246,583,home,6,,,73,84,85,84,85,Balanced,90,High
+4634265,24,home,3,,,1824,78,77,78,80,Short passing,65,High
+4788523,148,home,1,,,18,81,79,81,81,Balanced,90,High
+4634264,15,home,1,,,32,79,82,79,77,Balanced,50,Balanced
+4800635,131,home,3,,,241,85,85,85,82,Balanced,65,High
+4620896,46,home,2,,,44,83,86,83,83,Balanced,90,High
+4620894,430,home,1,,,110374,77,79,75,75,Short passing,65,High
+4788527,985,home,1,,,11,80,82,80,79,Balanced,65,High
+4798808,762,home,0,,,13,81,81,84,80,Short passing,50,Balanced
+4634275,79,home,3,,,36,77,78,77,74,Balanced,90,High
+4798809,631,home,2,,,5,80,80,82,80,Balanced,65,High
+4799312,683,home,0,,,280,76,79,76,75,Balanced,90,High
+4634274,23826,home,2,,,112172,78,77,76,80,Counter,65,High
+4635166,583,home,3,,,73,84,85,84,85,Balanced,90,High
+4626016,148,home,1,,,18,81,79,81,81,Balanced,90,High
+4626014,703,home,0,,,14,79,79,79,79,Balanced,50,Balanced
+4626013,985,home,2,,,11,80,82,80,79,Balanced,65,High
+4634282,23826,home,1,,,112172,78,77,76,80,Counter,65,High
+4645876,150,home,2,,,449,78,77,79,77,Balanced,50,Balanced
+4645874,681,home,2,,,457,77,79,77,75,Short passing,90,High
+4641321,157,home,4,,,674,70,70,70,68,Balanced,30,Deep
+4634284,79,home,1,,,36,77,78,77,74,Balanced,90,High
+4620902,1025,home,1,,,189,76,76,77,74,Balanced,65,High
+4715056,46,home,1,,,44,83,86,83,83,Balanced,90,High
+4715100,418,home,6,,,243,85,88,85,82,Balanced,90,High
+4715102,336,home,2,,,237,79,79,80,77,Balanced,65,High
+4715046,148,home,2,,,18,81,79,81,81,Balanced,90,High
+4715039,683,home,2,,,280,76,79,76,75,Balanced,90,High
+4715019,190,home,1,,,819,72,73,72,71,Balanced,90,High
+4715029,501,home,3,,,918,71,70,73,70,Balanced,90,High
+4715110,10625,home,3,,,113888,69,67,69,67,Short passing,50,Balanced
+4714995,141,home,1,,,325,80,84,80,79,Balanced,65,High
+4715011,506,home,2,,,45,80,81,80,80,Balanced,90,High
+4715148,762,home,3,,,13,81,81,84,80,Short passing,50,Balanced
+4715024,244,home,0,,,219,79,81,79,79,Balanced,65,High
+4715108,800,home,2,,,39,79,79,79,79,Short passing,50,Balanced
+4715036,62,home,2,,,266,75,74,75,73,Short passing,50,Balanced
+4715068,27,home,2,,,21,84,89,85,82,Balanced,65,High
+4715971,941,home,1,,,110468,72,73,71,73,Short passing,90,High
+4715988,452,home,0,,,900,70,70,71,68,Counter,50,Balanced
+4715937,419,home,4,,,211,72,70,71,70,Counter,50,Balanced
+4715951,36,home,0,,,326,79,79,79,76,Balanced,90,High
+4715978,279,home,1,,,1874,72,72,71,68,Short passing,50,Balanced
+4715945,409,home,3,,,191,70,69,70,69,Balanced,90,High
+4715967,1091,home,2,,,393,74,75,74,73,Balanced,90,High
+4716020,1025,home,2,,,189,76,76,77,74,Balanced,65,High
+4715929,234,home,3,,,246,75,76,77,74,Short passing,65,High
+4715957,1075,home,1,,,1896,74,74,75,74,Short passing,65,High
+4715918,12,home,2,,,52,80,77,79,80,Balanced,50,Balanced
+4645794,1050,home,0,,,483,79,80,79,77,Short passing,50,Balanced
+4634303,89,home,0,,,1831,75,72,73,75,Counter,30,Deep
+4645798,368,home,2,,,481,75,75,76,75,Counter,50,Balanced
+4635168,1082,home,1,,,65,76,79,76,76,Balanced,65,High
+4626026,762,home,0,,,13,81,81,84,80,Short passing,50,Balanced
+4620918,506,home,3,,,45,80,81,80,80,Balanced,90,High
+4620920,12,home,1,,,52,80,77,79,80,Balanced,50,Balanced
+4626018,11,home,2,,,1,84,86,84,84,Balanced,65,High
+4626022,873,home,1,,,1799,79,78,77,80,Short passing,30,Deep
+4714997,2282,home,3,,,231,74,73,76,73,Balanced,90,High
+4715014,162,home,0,,,69,78,77,75,77,Balanced,65,High
+4715127,15,home,3,,,32,79,82,79,77,Balanced,50,Balanced
+4715138,131,home,4,,,241,85,85,85,82,Balanced,65,High
+4715123,13,home,1,,,240,82,84,81,82,Balanced,65,High
+4715050,16,home,0,,,22,81,83,80,82,Balanced,65,High
+4715120,294,home,4,,,234,78,79,78,77,Balanced,90,High
+4714989,383,home,1,,,247,77,76,80,76,Balanced,65,High
+4714984,621,home,2,,,448,80,78,81,78,Short passing,65,High
+4714981,6195,home,2,,,48,81,79,82,80,Balanced,65,High
+4715104,31,home,6,,,9,85,85,86,83,Balanced,65,High
+4715059,583,home,1,,,73,84,85,84,85,Balanced,90,High
+4715099,3948,home,1,,,2014,74,74,73,75,Balanced,50,Balanced
+4715094,281,home,2,,,10,84,82,85,82,Balanced,65,High
+4715002,24,home,0,,,1824,78,77,78,80,Short passing,65,High
+4716254,865,home,2,,,1516,71,71,70,71,Balanced,50,Balanced
+4716031,265,home,1,,,1884,74,73,74,73,Counter,50,Balanced
+4716029,79,home,3,,,36,77,78,77,74,Balanced,90,High
+4715964,1041,home,4,,,66,76,74,75,76,Balanced,65,High
+4715919,720,home,3,,,236,77,77,77,76,Balanced,65,High
+4716004,703,home,4,,,14,79,79,79,79,Balanced,50,Balanced
+4715992,26,home,0,,,896,71,69,72,71,Balanced,50,Balanced
+4715933,1082,home,1,,,65,76,79,76,76,Balanced,65,High
+4715947,405,home,3,,,2,80,83,81,80,Balanced,50,Balanced
+4715939,150,home,2,,,449,78,77,79,77,Balanced,50,Balanced
+4716012,301,home,1,,,100761,69,69,70,68,Balanced,30,Deep
+4626032,31,home,4,,,9,85,85,86,83,Balanced,65,High
+4635182,162,home,4,,,69,78,77,75,77,Balanced,65,High
+4634306,24,home,1,,,1824,78,77,78,80,Short passing,65,High
+4620928,6195,home,2,,,48,81,79,82,80,Balanced,65,High
+4626030,631,home,3,,,5,80,80,82,80,Balanced,65,High
+4635179,667,home,1,,,76,75,76,74,75,Short passing,65,High
+4635178,1041,home,1,,,66,76,74,75,76,Balanced,65,High
+4645804,418,home,2,,,243,85,88,85,82,Balanced,90,High
+4641311,3948,home,1,,,2014,74,74,73,75,Balanced,50,Balanced
+4645805,621,home,1,,,448,80,78,81,78,Short passing,65,High
+4626034,703,home,1,,,14,79,79,79,79,Balanced,50,Balanced
+4626036,148,home,2,,,18,81,79,81,81,Balanced,90,High
+4641616,383,home,3,,,247,77,76,80,76,Balanced,65,High
+4634310,79,home,1,,,36,77,78,77,74,Balanced,90,High
+4798810,11,home,1,,,1,84,86,84,84,Balanced,65,High
+4620923,1025,home,0,,,189,76,76,77,74,Balanced,65,High
+4798811,281,home,3,,,10,84,82,85,82,Balanced,65,High
+4804365,265,home,0,,,1884,74,73,74,73,Counter,50,Balanced
+4808019,150,home,0,,,449,78,77,79,77,Balanced,50,Balanced
+4785785,800,home,3,,,39,79,79,79,79,Short passing,50,Balanced
+4634329,89,home,1,,,1831,75,72,73,75,Counter,30,Deep
+4626045,985,home,2,,,11,80,82,80,79,Balanced,65,High
+4626040,1237,home,0,,,1808,78,78,78,78,Short passing,65,High
+4620943,506,home,2,,,45,80,81,80,80,Balanced,90,High
+4626044,31,home,1,,,9,85,85,86,83,Balanced,65,High
+4645818,13,home,0,,,240,82,84,81,82,Balanced,65,High
+4641361,1184,home,2,,,673,73,72,73,75,Balanced,50,Balanced
+4665123,683,home,0,,,280,76,79,76,75,Balanced,90,High
+4648389,865,home,2,,,1516,71,71,70,71,Balanced,50,Balanced
+4635186,583,home,5,,,73,84,85,84,85,Balanced,90,High
+4648806,720,home,1,,,236,77,77,77,76,Balanced,65,High
+4626057,379,home,1,,,19,77,78,77,77,Short passing,30,Deep
+4626056,148,home,1,,,18,81,79,81,81,Balanced,90,High
+4782524,27,home,2,,,21,84,89,85,82,Balanced,65,High
+4785784,1025,home,2,,,189,76,76,77,74,Balanced,65,High
+4819275,621,home,0,,,448,80,78,81,78,Short passing,65,High
+4804367,1091,home,2,,,393,74,75,74,73,Balanced,90,High
+4626048,405,home,1,,,2,80,83,81,80,Balanced,50,Balanced
+4819274,13,home,4,,,240,82,84,81,82,Balanced,65,High
+4635203,273,home,3,,,74,76,74,76,74,Balanced,65,High
+4645888,418,home,4,,,243,85,88,85,82,Balanced,90,High
+4808368,405,home,1,,,2,80,83,81,80,Balanced,50,Balanced
+4620959,398,home,0,,,46,79,80,77,78,Balanced,30,Deep
+4620958,46,home,3,,,44,83,86,83,83,Balanced,90,High
+4808369,31,home,3,,,9,85,85,86,83,Balanced,65,High
+4635196,244,home,2,,,219,79,81,79,79,Balanced,65,High
+4645881,367,home,3,,,480,77,73,77,77,Short passing,65,High
+4620960,6195,home,2,,,48,81,79,82,80,Balanced,65,High
+4787666,26,home,1,,,896,71,69,72,71,Balanced,50,Balanced
+4814097,294,home,0,,,234,78,79,78,77,Balanced,90,High
+4814095,162,home,2,,,69,78,77,75,77,Balanced,65,High
+4814098,16,home,2,,,22,81,83,80,82,Balanced,65,High
+4814096,141,home,5,,,325,80,84,80,79,Balanced,65,High
+4814099,10625,home,1,,,113888,69,67,69,67,Short passing,50,Balanced
+4814100,2282,home,3,,,231,74,73,76,73,Balanced,90,High
+4814102,683,home,0,,,280,76,79,76,75,Balanced,90,High
+4814101,501,home,3,,,918,71,70,73,70,Balanced,90,High
+4805889,265,home,2,,,1884,74,73,74,73,Counter,50,Balanced
+4805838,2300,home,0,,,110745,69,72,69,69,Balanced,50,Balanced
+4805890,419,home,1,,,211,72,70,71,70,Counter,50,Balanced
+4805892,371,home,1,,,78,75,74,75,74,Balanced,90,High
+4805893,36,home,0,,,326,79,79,79,76,Balanced,90,High
+4634365,89,home,1,,,1831,75,72,73,75,Counter,30,Deep
+4634363,23826,home,2,,,112172,78,77,76,80,Counter,65,High
+4626063,281,home,2,,,10,84,82,85,82,Balanced,65,High
+4645868,150,home,1,,,449,78,77,79,77,Balanced,50,Balanced
+4634360,27,home,3,,,21,84,89,85,82,Balanced,65,High
+4635204,667,home,3,,,76,75,76,74,75,Short passing,65,High
+4624700,941,home,0,,,110468,72,73,71,73,Short passing,90,High
+4626066,148,home,1,,,18,81,79,81,81,Balanced,90,High
+4626064,703,home,0,,,14,79,79,79,79,Balanced,50,Balanced
+4642989,413,home,1,,,252,68,73,68,68,Balanced,30,Deep
+4620965,800,home,2,,,39,79,79,79,79,Short passing,50,Balanced
+4814107,762,home,3,,,13,81,81,84,80,Short passing,50,Balanced
+4814108,13,home,4,,,240,82,84,81,82,Balanced,65,High
+4814109,46,home,1,,,44,83,86,83,83,Balanced,90,High
+4814110,15,home,0,,,32,79,82,79,77,Balanced,50,Balanced
+4814106,800,home,4,,,39,79,79,79,79,Short passing,50,Balanced
+4814103,583,home,2,,,73,84,85,84,85,Balanced,90,High
+4814104,506,home,3,,,45,80,81,80,80,Balanced,90,High
+4814105,418,home,2,,,243,85,88,85,82,Balanced,90,High
+4805897,941,home,4,,,110468,72,73,71,73,Short passing,90,High
+4805898,1184,home,3,,,673,73,72,73,75,Balanced,50,Balanced
+4805846,430,home,2,,,110374,77,79,75,75,Short passing,65,High
+4805900,79,home,0,,,36,77,78,77,74,Balanced,90,High
+4805901,703,home,1,,,14,79,79,79,79,Balanced,50,Balanced
+4645824,131,home,4,,,241,85,85,85,82,Balanced,65,High
+4626074,31,home,5,,,9,85,85,86,83,Balanced,65,High
+4645829,367,home,1,,,480,77,73,77,77,Short passing,65,High
+4634380,16,home,2,,,22,81,83,80,82,Balanced,65,High
+4645825,150,home,2,,,449,78,77,79,77,Balanced,50,Balanced
+4641296,1184,home,3,,,673,73,72,73,75,Balanced,50,Balanced
+4626070,1237,home,2,,,1808,78,78,78,78,Short passing,65,High
+4626068,11,home,2,,,1,84,86,84,84,Balanced,65,High
+4634379,24,home,2,,,1824,78,77,78,80,Short passing,65,High
+4624832,238,home,4,,,873,70,72,68,70,Balanced,50,Balanced
+4635221,244,home,3,,,219,79,81,79,79,Balanced,65,High
+4624831,2300,home,2,,,110745,69,72,69,69,Balanced,50,Balanced
+4620980,12,home,3,,,52,80,77,79,80,Balanced,50,Balanced
+4649528,124,home,2,,,86,73,72,73,72,Balanced,90,High
+4626075,985,home,2,,,11,80,82,80,79,Balanced,65,High
+4819283,131,home,3,,,241,85,85,85,82,Balanced,65,High
+4626084,281,home,2,,,10,84,82,85,82,Balanced,65,High
+4819284,681,home,1,,,457,77,79,77,75,Short passing,90,High
+4626080,1237,home,0,,,1808,78,78,78,78,Short passing,65,High
+4626078,405,home,1,,,2,80,83,81,80,Balanced,50,Balanced
+4824554,398,home,2,,,46,79,80,77,78,Balanced,30,Deep
+4626085,762,home,2,,,13,81,81,84,80,Short passing,50,Balanced
+4626086,148,home,1,,,18,81,79,81,81,Balanced,90,High
+4635230,583,home,1,,,73,84,85,84,85,Balanced,90,High
+4645953,13,home,3,,,240,82,84,81,82,Balanced,65,High
+4641355,3948,home,2,,,2014,74,74,73,75,Balanced,50,Balanced
+4827501,762,home,1,,,13,81,81,84,80,Short passing,50,Balanced
+4645952,621,home,0,,,448,80,78,81,78,Short passing,65,High
+4641581,383,home,2,,,247,77,76,80,76,Balanced,65,High
+4634388,60,home,3,,,25,75,71,74,76,Balanced,50,Balanced
+4648851,1075,home,2,,,1896,74,74,75,74,Short passing,65,High
+4643002,170,home,1,,,254,69,67,69,70,Balanced,50,Balanced
+4620993,5,home,1,,,47,81,82,79,78,Short passing,50,Balanced
+4624719,62,home,3,,,266,75,74,75,73,Short passing,50,Balanced
+4645951,368,home,1,,,481,75,75,76,75,Counter,50,Balanced
+4648852,294,home,2,,,234,78,79,78,77,Balanced,90,High
+4664998,683,home,0,,,280,76,79,76,75,Balanced,90,High
+4641354,2282,home,2,,,231,74,73,76,73,Balanced,90,High
+4832715,124,home,2,,,86,73,72,73,72,Balanced,90,High
+4814359,13,home,5,,,240,82,84,81,82,Balanced,65,High
+4814355,141,home,1,,,325,80,84,80,79,Balanced,65,High
+4814357,800,home,1,,,39,79,79,79,79,Short passing,50,Balanced
+4814358,762,home,1,,,13,81,81,84,80,Short passing,50,Balanced
+4814354,583,home,5,,,73,84,85,84,85,Balanced,90,High
+4814356,418,home,3,,,243,85,88,85,82,Balanced,90,High
+4814361,15,home,1,,,32,79,82,79,77,Balanced,50,Balanced
+4814360,501,home,3,,,918,71,70,73,70,Balanced,90,High
+4805859,238,home,1,,,873,70,72,68,70,Balanced,50,Balanced
+4805908,79,home,1,,,36,77,78,77,74,Balanced,90,High
+4805911,1082,home,0,,,65,76,79,76,76,Balanced,65,High
+4805910,1025,home,1,,,189,76,76,77,74,Balanced,65,High
+4805904,279,home,2,,,1874,72,72,71,68,Short passing,50,Balanced
+4805905,265,home,1,,,1884,74,73,74,73,Counter,50,Balanced
+4805906,1184,home,1,,,673,73,72,73,75,Balanced,50,Balanced
+4805909,703,home,0,,,14,79,79,79,79,Balanced,50,Balanced
+4805862,430,home,2,,,110374,77,79,75,75,Short passing,65,High
+4805860,1090,home,2,,,1906,73,74,74,72,Balanced,65,High
+4620997,46,home,1,,,44,83,86,83,83,Balanced,90,High
+4626097,379,home,1,,,19,77,78,77,77,Short passing,30,Deep
+4634405,15,home,1,,,32,79,82,79,77,Balanced,50,Balanced
+4626091,631,home,0,,,5,80,80,82,80,Balanced,65,High
+4634410,79,home,1,,,36,77,78,77,74,Balanced,90,High
+4634408,60,home,0,,,25,75,71,74,76,Balanced,50,Balanced
+4626093,31,home,1,,,9,85,85,86,83,Balanced,65,High
+4626094,985,home,3,,,11,80,82,80,79,Balanced,65,High
+4645925,131,home,5,,,241,85,85,85,82,Balanced,65,High
+4839823,409,home,0,,,191,70,69,70,69,Balanced,90,High
+4620998,398,home,1,,,46,79,80,77,78,Balanced,30,Deep
+4635236,273,home,1,,,74,76,74,76,74,Balanced,65,High
+4814369,11,home,2,,,1,84,86,84,84,Balanced,65,High
+4814368,336,home,5,,,237,79,79,80,77,Balanced,65,High
+4814362,631,home,0,,,5,80,80,82,80,Balanced,65,High
+4814364,281,home,1,,,10,84,82,85,82,Balanced,65,High
+4814363,31,home,4,,,9,85,85,86,83,Balanced,65,High
+4814366,131,home,7,,,241,85,85,85,82,Balanced,65,High
+4814367,148,home,3,,,18,81,79,81,81,Balanced,90,High
+4814365,27,home,4,,,21,84,89,85,82,Balanced,65,High
+4805912,1075,home,4,,,1896,74,74,75,74,Short passing,65,High
+4805913,150,home,4,,,449,78,77,79,77,Balanced,50,Balanced
+4805914,60,home,5,,,25,75,71,74,76,Balanced,50,Balanced
+4805917,865,home,1,,,1516,71,71,70,71,Balanced,50,Balanced
+4805918,12,home,3,,,52,80,77,79,80,Balanced,50,Balanced
+4805919,405,home,2,,,2,80,83,81,80,Balanced,50,Balanced
+4805870,9644,home,1,,,114326,69,71,69,70,Balanced,90,High
+4805868,197,home,0,,,267,73,75,74,72,Short passing,50,Balanced
+4805867,660,home,1,,,101059,72,71,73,73,Balanced,50,Balanced
+4805916,720,home,2,,,236,77,77,77,76,Balanced,65,High
+4645911,1050,home,3,,,483,79,80,79,77,Short passing,50,Balanced
+4839825,122,home,1,,,209,68,67,71,67,Short passing,90,High
+4626100,1237,home,2,,,1808,78,78,78,78,Short passing,65,High
+4634423,27,home,4,,,21,84,89,85,82,Balanced,65,High
+4645912,621,home,2,,,448,80,78,81,78,Short passing,65,High
+4645913,131,home,1,,,241,85,85,85,82,Balanced,65,High
+4645909,418,home,3,,,243,85,88,85,82,Balanced,90,High
+4787643,452,home,1,,,900,70,70,71,68,Counter,50,Balanced
+4818788,11,home,0,,,1,84,86,84,84,Balanced,65,High
+4839830,170,home,4,,,254,69,67,69,70,Balanced,50,Balanced
+4626106,148,home,0,,,18,81,79,81,81,Balanced,90,High
+4626098,405,home,2,,,2,80,83,81,80,Balanced,50,Balanced
+4635240,1041,home,1,,,66,76,74,75,76,Balanced,65,High
+4635248,244,home,1,,,219,79,81,79,79,Balanced,65,High
+4648869,1075,home,1,,,1896,74,74,75,74,Short passing,65,High
+4621009,430,home,1,,,110374,77,79,75,75,Short passing,65,High
+4621006,1025,home,0,,,189,76,76,77,74,Balanced,65,High
+4624858,255,home,1,,,1871,69,69,70,70,Balanced,90,High
+4624867,2300,home,0,,,110745,69,72,69,69,Balanced,50,Balanced
+4634445,79,home,0,,,36,77,78,77,74,Balanced,90,High
+4645903,13,home,1,,,240,82,84,81,82,Balanced,65,High
+4634443,60,home,2,,,25,75,71,74,76,Balanced,50,Balanced
+4787628,26,home,3,,,896,71,69,72,71,Balanced,50,Balanced
+4844306,281,home,4,,,10,84,82,85,82,Balanced,65,High
+4635249,162,home,2,,,69,78,77,75,77,Balanced,65,High
+4839836,170,home,0,,,254,69,67,69,70,Balanced,50,Balanced
+4621016,46,home,5,,,44,83,86,83,83,Balanced,90,High
+4621020,6195,home,1,,,48,81,79,82,80,Balanced,65,High
+4850165,2282,home,4,,,231,74,73,76,73,Balanced,90,High
+4814371,418,home,1,,,243,85,88,85,82,Balanced,90,High
+4814373,336,home,0,,,237,79,79,80,77,Balanced,65,High
+4814372,131,home,0,,,241,85,85,85,82,Balanced,65,High
+4805920,1075,home,1,,,1896,74,74,75,74,Short passing,65,High
+4814370,583,home,2,,,73,84,85,84,85,Balanced,90,High
+4805875,660,home,3,,,101059,72,71,73,73,Balanced,50,Balanced
+4805876,873,home,3,,,1799,79,78,77,80,Short passing,30,Deep
+4805922,720,home,1,,,236,77,77,77,76,Balanced,65,High
+4805923,1025,home,1,,,189,76,76,77,74,Balanced,65,High
+4839837,409,home,2,,,191,70,69,70,69,Balanced,90,High
+4634459,16,home,0,,,22,81,83,80,82,Balanced,65,High
+4645947,368,home,2,,,481,75,75,76,75,Counter,50,Balanced
+4621025,800,home,0,,,39,79,79,79,79,Short passing,50,Balanced
+4624749,62,home,0,,,266,75,74,75,73,Short passing,50,Balanced
+4850145,58,home,3,,,229,71,74,70,68,Balanced,90,High
+4626115,703,home,1,,,14,79,79,79,79,Balanced,50,Balanced
+4626111,631,home,0,,,5,80,80,82,80,Balanced,65,High
+4626112,873,home,2,,,1799,79,78,77,80,Short passing,30,Deep
+4645941,621,home,1,,,448,80,78,81,78,Short passing,65,High
+4621029,430,home,1,,,110374,77,79,75,75,Short passing,65,High
+4814374,31,home,0,,,9,85,85,86,83,Balanced,65,High
+4814376,13,home,1,,,240,82,84,81,82,Balanced,65,High
+4814375,27,home,4,,,21,84,89,85,82,Balanced,65,High
+4814377,11,home,0,,,1,84,86,84,84,Balanced,65,High
+4805926,703,home,1,,,14,79,79,79,79,Balanced,50,Balanced
+4805924,150,home,2,,,449,78,77,79,77,Balanced,50,Balanced
+4805880,430,home,2,,,110374,77,79,75,75,Short passing,65,High
+4805879,1090,home,2,,,1906,73,74,74,72,Balanced,65,High
+4805927,405,home,4,,,2,80,83,81,80,Balanced,50,Balanced
+4626127,148,home,2,,,18,81,79,81,81,Balanced,90,High
+4842389,13,home,5,,,240,82,84,81,82,Balanced,65,High
+4634479,24,home,1,,,1824,78,77,78,80,Short passing,65,High
+4621041,12,home,1,,,52,80,77,79,80,Balanced,50,Balanced
+4621039,6195,home,0,,,48,81,79,82,80,Balanced,65,High
+4626120,631,home,0,,,5,80,80,82,80,Balanced,65,High
+4635275,583,home,1,,,73,84,85,84,85,Balanced,90,High
+4635268,667,home,0,,,76,75,76,74,75,Short passing,65,High
+4634477,27,home,4,,,21,84,89,85,82,Balanced,65,High
+4850139,3948,home,2,,,2014,74,74,73,75,Balanced,50,Balanced
+4839849,413,home,1,,,252,68,73,68,68,Balanced,30,Deep
+4621037,506,home,2,,,45,80,81,80,80,Balanced,90,High
+4626124,281,home,2,,,10,84,82,85,82,Balanced,65,High
+4648893,336,home,1,,,237,79,79,80,77,Balanced,65,High
+4626121,873,home,0,,,1799,79,78,77,80,Short passing,30,Deep
+4626130,1237,home,3,,,1808,78,78,78,78,Short passing,65,High
+4839855,122,home,1,,,209,68,67,71,67,Short passing,90,High
+4824556,800,home,2,,,39,79,79,79,79,Short passing,50,Balanced
+4830557,15,home,0,,,32,79,82,79,77,Balanced,50,Balanced
+4850162,3948,home,0,,,2014,74,74,73,75,Balanced,50,Balanced
+4830556,79,home,2,,,36,77,78,77,74,Balanced,90,High
+4634497,23826,home,3,,,112172,78,77,76,80,Counter,65,High
+4645971,150,home,1,,,449,78,77,79,77,Balanced,50,Balanced
+4626128,11,home,1,,,1,84,86,84,84,Balanced,65,High
+4621045,1025,home,0,,,189,76,76,77,74,Balanced,65,High
+4645975,13,home,3,,,240,82,84,81,82,Balanced,65,High
+4626133,31,home,3,,,9,85,85,86,83,Balanced,65,High
+4621050,5,home,0,,,47,81,82,79,78,Short passing,50,Balanced
+4850148,58,home,1,,,229,71,74,70,68,Balanced,90,High
+4850146,157,home,0,,,674,70,70,70,68,Balanced,30,Deep
+4624893,238,home,4,,,873,70,72,68,70,Balanced,50,Balanced
+4634495,16,home,4,,,22,81,83,80,82,Balanced,65,High
+4839859,170,home,1,,,254,69,67,69,70,Balanced,50,Balanced
+4645974,367,home,3,,,480,77,73,77,77,Short passing,65,High
+4648044,141,home,3,,,325,80,84,80,79,Balanced,65,High
+4814378,583,home,5,,,73,84,85,84,85,Balanced,90,High
+4814379,13,home,1,,,240,82,84,81,82,Balanced,65,High
+4805884,367,home,1,,,480,77,73,77,77,Short passing,65,High
+4805883,660,home,1,,,101059,72,71,73,73,Balanced,50,Balanced
+4805928,1075,home,2,,,1896,74,74,75,74,Short passing,65,High
+4805929,703,home,1,,,14,79,79,79,79,Balanced,50,Balanced
+4626146,762,home,3,,,13,81,81,84,80,Short passing,50,Balanced
+4634514,15,home,4,,,32,79,82,79,77,Balanced,50,Balanced
+4856831,2790,home,1,,,10032,70,71,68,68,Counter,50,Balanced
+4626139,405,home,1,,,2,80,83,81,80,Balanced,50,Balanced
+4850154,58,home,1,,,229,71,74,70,68,Balanced,90,High
+4635290,1041,home,4,,,66,76,74,75,76,Balanced,65,High
+4626145,985,home,3,,,11,80,82,80,79,Balanced,65,High
+4839867,409,home,1,,,191,70,69,70,69,Balanced,90,High
+4646000,368,home,1,,,481,75,75,76,75,Counter,50,Balanced
+4621065,12,home,4,,,52,80,77,79,80,Balanced,50,Balanced
+4626142,631,home,1,,,5,80,80,82,80,Balanced,65,High
+4839865,413,home,3,,,252,68,73,68,68,Balanced,30,Deep
+4794682,501,home,0,,,918,71,70,73,70,Balanced,90,High
+4814381,11,home,1,,,1,84,86,84,84,Balanced,65,High
+4814380,27,home,1,,,21,84,89,85,82,Balanced,65,High
+4805930,60,home,3,,,25,75,71,74,76,Balanced,50,Balanced
+4805886,667,home,0,,,76,75,76,74,75,Short passing,65,High
+4805885,873,home,2,,,1799,79,78,77,80,Short passing,30,Deep
+4805931,405,home,4,,,2,80,83,81,80,Balanced,50,Balanced
+4634531,16,home,3,,,22,81,83,80,82,Balanced,65,High
+4626152,31,home,1,,,9,85,85,86,83,Balanced,65,High
+4646016,681,home,2,,,457,77,79,77,75,Short passing,90,High
+4634534,79,home,3,,,36,77,78,77,74,Balanced,90,High
+4621071,398,home,0,,,46,79,80,77,78,Balanced,30,Deep
+4839873,413,home,2,,,252,68,73,68,68,Balanced,30,Deep
+4850156,157,home,1,,,674,70,70,70,68,Balanced,30,Deep
+4856837,452,home,3,,,900,70,70,71,68,Counter,50,Balanced
+4646012,131,home,2,,,241,85,85,85,82,Balanced,65,High
+4621073,5,home,2,,,47,81,82,79,78,Short passing,50,Balanced
+4626154,703,home,1,,,14,79,79,79,79,Balanced,50,Balanced
+4642439,234,home,1,,,246,75,76,77,74,Short passing,65,High
+4626157,379,home,0,,,19,77,78,77,77,Short passing,30,Deep
+4635302,162,home,0,,,69,78,77,75,77,Balanced,65,High
+4621074,6195,home,2,,,48,81,79,82,80,Balanced,65,High
+4648933,294,home,2,,,234,78,79,78,77,Balanced,90,High
+4624906,9644,home,0,,,114326,69,71,69,70,Balanced,90,High
+4626104,281,home,3,,,10,84,82,85,82,Balanced,65,High
+4645967,1050,home,2,,,483,79,80,79,77,Short passing,50,Balanced
+4626159,405,home,4,,,2,80,83,81,80,Balanced,50,Balanced
+4634552,60,home,4,,,25,75,71,74,76,Balanced,50,Balanced
+4634551,24,home,2,,,1824,78,77,78,80,Short passing,65,High
+4645991,131,home,3,,,241,85,85,85,82,Balanced,65,High
+4621083,506,home,0,,,45,80,81,80,80,Balanced,90,High
+4621085,12,home,2,,,52,80,77,79,80,Balanced,50,Balanced
+4645994,367,home,2,,,480,77,73,77,77,Short passing,65,High
+4645998,368,home,0,,,481,75,75,76,75,Counter,50,Balanced
+4621078,800,home,0,,,39,79,79,79,79,Short passing,50,Balanced
+4856817,2790,home,4,,,10032,70,71,68,68,Counter,50,Balanced
+4850160,2282,home,5,,,231,74,73,76,73,Balanced,90,High
+4839879,122,home,2,,,209,68,67,71,67,Short passing,90,High
+4635310,667,home,5,,,76,75,76,74,75,Short passing,65,High
+4635309,244,home,3,,,219,79,81,79,79,Balanced,65,High
+4626165,985,home,3,,,11,80,82,80,79,Balanced,65,High
+4626166,762,home,3,,,13,81,81,84,80,Short passing,50,Balanced
+4626162,631,home,2,,,5,80,80,82,80,Balanced,65,High
+4850149,157,home,0,,,674,70,70,70,68,Balanced,30,Deep
+4621090,430,home,1,,,110374,77,79,75,75,Short passing,65,High
+4621088,1025,home,3,,,189,76,76,77,74,Balanced,65,High
+4645985,418,home,4,,,243,85,88,85,82,Balanced,90,High
+4626168,1237,home,0,,,1808,78,78,78,78,Short passing,65,High
+4850141,3948,home,5,,,2014,74,74,73,75,Balanced,50,Balanced
+4626173,281,home,1,,,10,84,82,85,82,Balanced,65,High
+4645986,1050,home,5,,,483,79,80,79,77,Short passing,50,Balanced
+4626170,873,home,1,,,1799,79,78,77,80,Short passing,30,Deep
+4850140,2282,home,5,,,231,74,73,76,73,Balanced,90,High
+4506866,506,away,0,,,45,80,81,80,80,Balanced,90,High
+4506870,27,away,0,,,21,84,89,85,82,Balanced,65,High
+4506871,16,away,2,,,22,81,83,80,82,Balanced,65,High
+4506873,418,away,0,,,243,85,88,85,82,Balanced,90,High
+4506874,583,away,0,,,73,84,85,84,85,Balanced,90,High
+4624298,2282,away,2,,,231,74,73,76,73,Balanced,90,High
+4625710,265,away,0,,,1884,74,73,74,73,Counter,50,Balanced
+4627422,1184,away,1,,,673,73,72,73,75,Balanced,50,Balanced
+4625727,124,away,1,,,86,73,72,73,72,Balanced,90,High
+4683940,294,away,1,,,234,78,79,78,77,Balanced,90,High
+4638183,122,away,2,,,209,68,67,71,67,Short passing,90,High
+4691926,941,away,0,,,110468,72,73,71,73,Short passing,90,High
+4627251,452,away,1,,,900,70,70,71,68,Counter,50,Balanced
+4676662,2282,away,1,,,231,74,73,76,73,Balanced,90,High
+4676659,36,away,1,,,326,79,79,79,76,Balanced,90,High
+4692614,660,away,0,,,101059,72,71,73,73,Balanced,50,Balanced
+4627485,3948,away,3,,,2014,74,74,73,75,Balanced,50,Balanced
+4703996,31,away,4,,,9,85,85,86,83,Balanced,65,High
+4638193,170,away,2,,,254,69,67,69,70,Balanced,50,Balanced
+4627250,26,away,1,,,896,71,69,72,71,Balanced,50,Balanced
+4691930,124,away,1,,,86,73,72,73,72,Balanced,90,High
+4676665,409,away,2,,,191,70,69,70,69,Balanced,90,High
+4676660,234,away,2,,,246,75,76,77,74,Short passing,65,High
+4625635,148,away,5,,,18,81,79,81,81,Balanced,90,High
+4692627,265,away,4,,,1884,74,73,74,73,Counter,50,Balanced
+4635006,244,away,0,,,219,79,81,79,79,Balanced,65,High
+4622725,27,away,2,,,21,84,89,85,82,Balanced,65,High
+4625775,762,away,0,,,13,81,81,84,80,Short passing,50,Balanced
+4645613,368,away,2,,,481,75,75,76,75,Counter,50,Balanced
+4625781,873,away,0,,,1799,79,78,77,80,Short passing,30,Deep
+4625782,11,away,1,,,1,84,86,84,84,Balanced,65,High
+4697246,2282,away,3,,,231,74,73,76,73,Balanced,90,High
+4697247,10625,away,3,,,113888,69,67,69,67,Short passing,50,Balanced
+4697251,190,away,1,,,819,72,73,72,71,Balanced,90,High
+4697249,122,away,0,,,209,68,67,71,67,Short passing,90,High
+4697252,294,away,0,,,234,78,79,78,77,Balanced,90,High
+4705693,1184,away,5,,,673,73,72,73,75,Balanced,50,Balanced
+4632805,23826,away,0,,,112172,78,77,76,80,Counter,65,High
+4625784,631,away,5,,,5,80,80,82,80,Balanced,65,High
+4625786,148,away,2,,,18,81,79,81,81,Balanced,90,High
+4642892,413,away,0,,,252,68,73,68,68,Balanced,30,Deep
+4620691,1025,away,0,,,189,76,76,77,74,Balanced,65,High
+4634126,79,away,1,,,36,77,78,77,74,Balanced,90,High
+4635016,162,away,0,,,69,78,77,75,77,Balanced,65,High
+4625793,703,away,1,,,14,79,79,79,79,Balanced,50,Balanced
+4625785,31,away,3,,,9,85,85,86,83,Balanced,65,High
+4645517,367,away,0,,,480,77,73,77,77,Short passing,65,High
+4705682,501,away,1,,,918,71,70,73,70,Balanced,90,High
+4705680,279,away,3,,,1874,72,72,71,68,Short passing,50,Balanced
+4705686,124,away,0,,,86,73,72,73,72,Balanced,90,High
+4705684,26,away,0,,,896,71,69,72,71,Balanced,50,Balanced
+4705685,36,away,0,,,326,79,79,79,76,Balanced,90,High
+4705705,238,away,2,,,873,70,72,68,70,Balanced,50,Balanced
+4648653,720,away,2,,,236,77,77,77,76,Balanced,65,High
+4634137,89,away,0,,,1831,75,72,73,75,Counter,30,Deep
+4645534,131,away,1,,,241,85,85,85,82,Balanced,65,High
+4627262,2790,away,1,,,10032,70,71,68,68,Counter,50,Balanced
+4638809,371,away,0,,,78,75,74,75,74,Balanced,90,High
+4627542,2282,away,1,,,231,74,73,76,73,Balanced,90,High
+4627544,58,away,0,,,229,71,74,70,68,Balanced,90,High
+4635025,667,away,2,,,76,75,76,74,75,Short passing,65,High
+4635032,244,away,0,,,219,79,81,79,79,Balanced,65,High
+4645533,621,away,2,,,448,80,78,81,78,Short passing,65,High
+4625794,873,away,3,,,1799,79,78,77,80,Short passing,30,Deep
+4625795,281,away,1,,,10,84,82,85,82,Balanced,65,High
+4625798,11,away,0,,,1,84,86,84,84,Balanced,65,High
+4625800,379,away,3,,,19,77,78,77,77,Short passing,30,Deep
+4634147,24,away,1,,,1824,78,77,78,80,Short passing,65,High
+4645565,418,away,2,,,243,85,88,85,82,Balanced,90,High
+4634148,79,away,1,,,36,77,78,77,74,Balanced,90,High
+4620707,6195,away,3,,,48,81,79,82,80,Balanced,65,High
+4645566,1050,away,0,,,483,79,80,79,77,Short passing,50,Balanced
+4625804,703,away,0,,,14,79,79,79,79,Balanced,50,Balanced
+4620708,46,away,3,,,44,83,86,83,83,Balanced,90,High
+4625813,148,away,3,,,18,81,79,81,81,Balanced,90,High
+4627572,1184,away,1,,,673,73,72,73,75,Balanced,50,Balanced
+4635041,1041,away,1,,,66,76,74,75,76,Balanced,65,High
+4620709,1025,away,0,,,189,76,76,77,74,Balanced,65,High
+4625811,985,away,0,,,11,80,82,80,79,Balanced,65,High
+4716845,1050,away,0,,,483,79,80,79,77,Short passing,50,Balanced
+4716844,10625,away,3,,,113888,69,67,69,67,Short passing,50,Balanced
+4716774,16,away,4,,,22,81,83,80,82,Balanced,65,High
+4716843,244,away,1,,,219,79,81,79,79,Balanced,65,High
+4716779,3948,away,3,,,2014,74,74,73,75,Balanced,50,Balanced
+4716778,11,away,2,,,1,84,86,84,84,Balanced,65,High
+4717479,13,away,2,,,240,82,84,81,82,Balanced,65,High
+4716847,501,away,2,,,918,71,70,73,70,Balanced,90,High
+4717478,631,away,1,,,5,80,80,82,80,Balanced,65,High
+4716777,800,away,0,,,39,79,79,79,79,Short passing,50,Balanced
+4716776,6195,away,0,,,48,81,79,82,80,Balanced,65,High
+4717481,15,away,2,,,32,79,82,79,77,Balanced,50,Balanced
+4717480,162,away,1,,,69,78,77,75,77,Balanced,65,High
+4717482,141,away,1,,,325,80,84,80,79,Balanced,65,High
+4717484,131,away,2,,,241,85,85,85,82,Balanced,65,High
+4645487,681,away,1,,,457,77,79,77,75,Short passing,90,High
+4625816,148,away,2,,,18,81,79,81,81,Balanced,90,High
+4625820,631,away,1,,,5,80,80,82,80,Balanced,65,High
+4625822,873,away,2,,,1799,79,78,77,80,Short passing,30,Deep
+4623184,255,away,1,,,1871,69,69,70,70,Balanced,90,High
+4642910,122,away,2,,,209,68,67,71,67,Short passing,90,High
+4624582,941,away,1,,,110468,72,73,71,73,Short passing,90,High
+4641233,3948,away,2,,,2014,74,74,73,75,Balanced,50,Balanced
+4620718,12,away,1,,,52,80,77,79,80,Balanced,50,Balanced
+4625814,281,away,1,,,10,84,82,85,82,Balanced,65,High
+4634156,89,away,4,,,1831,75,72,73,75,Counter,30,Deep
+4665074,683,away,1,,,280,76,79,76,75,Balanced,90,High
+4641477,234,away,3,,,246,75,76,77,74,Short passing,65,High
+4635050,583,away,0,,,73,84,85,84,85,Balanced,90,High
+4627525,157,away,0,,,674,70,70,70,68,Balanced,30,Deep
+4645540,1050,away,2,,,483,79,80,79,77,Short passing,50,Balanced
+4715936,36,away,1,,,326,79,79,79,76,Balanced,90,High
+4715941,703,away,2,,,14,79,79,79,79,Balanced,50,Balanced
+4715955,234,away,0,,,246,75,76,77,74,Short passing,65,High
+4715997,26,away,1,,,896,71,69,72,71,Balanced,50,Balanced
+4716256,122,away,0,,,209,68,67,71,67,Short passing,90,High
+4623156,238,away,2,,,873,70,72,68,70,Balanced,50,Balanced
+4623153,2300,away,0,,,110745,69,72,69,69,Balanced,50,Balanced
+4645537,367,away,2,,,480,77,73,77,77,Short passing,65,High
+4715950,1025,away,0,,,189,76,76,77,74,Balanced,65,High
+4715990,265,away,4,,,1884,74,73,74,73,Counter,50,Balanced
+4715943,720,away,1,,,236,77,77,77,76,Balanced,65,High
+4715976,941,away,1,,,110468,72,73,71,73,Short passing,90,High
+4715926,1184,away,1,,,673,73,72,73,75,Balanced,50,Balanced
+4635051,244,away,2,,,219,79,81,79,79,Balanced,65,High
+4620727,800,away,1,,,39,79,79,79,79,Short passing,50,Balanced
+4645582,621,away,0,,,448,80,78,81,78,Short passing,65,High
+4645576,418,away,2,,,243,85,88,85,82,Balanced,90,High
+4625827,31,away,1,,,9,85,85,86,83,Balanced,65,High
+4625826,1237,away,3,,,1808,78,78,78,78,Short passing,65,High
+4645577,681,away,1,,,457,77,79,77,75,Short passing,90,High
+4645580,368,away,1,,,481,75,75,76,75,Counter,50,Balanced
+4625831,11,away,2,,,1,84,86,84,84,Balanced,65,High
+4623188,2300,away,2,,,110745,69,72,69,69,Balanced,50,Balanced
+4620729,6195,away,1,,,48,81,79,82,80,Balanced,65,High
+4635058,1041,away,1,,,66,76,74,75,76,Balanced,65,High
+4715003,294,away,0,,,234,78,79,78,77,Balanced,90,High
+4715031,2282,away,1,,,231,74,73,76,73,Balanced,90,High
+4715117,31,away,0,,,9,85,85,86,83,Balanced,65,High
+4715103,148,away,2,,,18,81,79,81,81,Balanced,90,High
+4715000,62,away,0,,,266,75,74,75,73,Short passing,50,Balanced
+4715023,24,away,1,,,1824,78,77,78,80,Short passing,65,High
+4715009,621,away,1,,,448,80,78,81,78,Short passing,65,High
+4715035,506,away,2,,,45,80,81,80,80,Balanced,90,High
+4715128,190,away,0,,,819,72,73,72,71,Balanced,90,High
+4715124,762,away,4,,,13,81,81,84,80,Short passing,50,Balanced
+4715113,281,away,2,,,10,84,82,85,82,Balanced,65,High
+4715020,383,away,1,,,247,77,76,80,76,Balanced,65,High
+4715016,683,away,0,,,280,76,79,76,75,Balanced,90,High
+4715010,583,away,2,,,73,84,85,84,85,Balanced,90,High
+4715091,336,away,1,,,237,79,79,80,77,Balanced,65,High
+4715915,1082,away,1,,,65,76,79,76,76,Balanced,65,High
+4715963,409,away,0,,,191,70,69,70,69,Balanced,90,High
+4715980,1075,away,2,,,1896,74,74,75,74,Short passing,65,High
+4715927,405,away,2,,,2,80,83,81,80,Balanced,50,Balanced
+4715994,79,away,0,,,36,77,78,77,74,Balanced,90,High
+4716048,279,away,1,,,1874,72,72,71,68,Short passing,50,Balanced
+4716021,60,away,1,,,25,75,71,74,76,Balanced,50,Balanced
+4716013,452,away,2,,,900,70,70,71,68,Counter,50,Balanced
+4716007,124,away,1,,,86,73,72,73,72,Balanced,90,High
+4716005,865,away,3,,,1516,71,71,70,71,Balanced,50,Balanced
+4716097,170,away,1,,,254,69,67,69,70,Balanced,50,Balanced
+4634175,23826,away,1,,,112172,78,77,76,80,Counter,65,High
+4634174,27,away,3,,,21,84,89,85,82,Balanced,65,High
+4634173,89,away,0,,,1831,75,72,73,75,Counter,30,Deep
+4645508,1050,away,1,,,483,79,80,79,77,Short passing,50,Balanced
+4625838,31,away,1,,,9,85,85,86,83,Balanced,65,High
+4625834,379,away,0,,,19,77,78,77,77,Short passing,30,Deep
+4641239,3948,away,0,,,2014,74,74,73,75,Balanced,50,Balanced
+4642922,170,away,1,,,254,69,67,69,70,Balanced,50,Balanced
+4645514,367,away,1,,,480,77,73,77,77,Short passing,65,High
+4645510,131,away,1,,,241,85,85,85,82,Balanced,65,High
+4665013,683,away,1,,,280,76,79,76,75,Balanced,90,High
+4625842,703,away,0,,,14,79,79,79,79,Balanced,50,Balanced
+4624607,62,away,1,,,266,75,74,75,73,Short passing,50,Balanced
+4648344,865,away,1,,,1516,71,71,70,71,Balanced,50,Balanced
+4620741,5,away,0,,,47,81,82,79,78,Short passing,50,Balanced
+4648743,1075,away,1,,,1896,74,74,75,74,Short passing,65,High
+4648744,294,away,0,,,234,78,79,78,77,Balanced,90,High
+4620739,12,away,2,,,52,80,77,79,80,Balanced,50,Balanced
+4635068,583,away,1,,,73,84,85,84,85,Balanced,90,High
+4635071,667,away,3,,,76,75,76,74,75,Short passing,65,High
+4625844,762,away,1,,,13,81,81,84,80,Short passing,50,Balanced
+4625850,631,away,3,,,5,80,80,82,80,Balanced,65,High
+4620755,46,away,1,,,44,83,86,83,83,Balanced,90,High
+4645602,150,away,2,,,449,78,77,79,77,Balanced,50,Balanced
+4634182,16,away,1,,,22,81,83,80,82,Balanced,65,High
+4642929,413,away,2,,,252,68,73,68,68,Balanced,30,Deep
+4620753,430,away,1,,,110374,77,79,75,75,Short passing,65,High
+4625848,985,away,2,,,11,80,82,80,79,Balanced,65,High
+4625852,405,away,2,,,2,80,83,81,80,Balanced,50,Balanced
+4620747,398,away,0,,,46,79,80,77,78,Balanced,30,Deep
+4634183,24,away,2,,,1824,78,77,78,80,Short passing,65,High
+4715018,583,away,7,,,73,84,85,84,85,Balanced,90,High
+4715109,16,away,4,,,22,81,83,80,82,Balanced,65,High
+4715034,281,away,2,,,10,84,82,85,82,Balanced,65,High
+4715134,294,away,0,,,234,78,79,78,77,Balanced,90,High
+4715012,683,away,1,,,280,76,79,76,75,Balanced,90,High
+4715062,6195,away,2,,,48,81,79,82,80,Balanced,65,High
+4715121,46,away,4,,,44,83,86,83,83,Balanced,90,High
+4715015,13,away,0,,,240,82,84,81,82,Balanced,65,High
+4714987,2282,away,0,,,231,74,73,76,73,Balanced,90,High
+4715057,148,away,0,,,18,81,79,81,81,Balanced,90,High
+4715006,31,away,5,,,9,85,85,86,83,Balanced,65,High
+4715119,501,away,1,,,918,71,70,73,70,Balanced,90,High
+4715038,244,away,1,,,219,79,81,79,79,Balanced,65,High
+4715132,10625,away,1,,,113888,69,67,69,67,Short passing,50,Balanced
+4714979,506,away,0,,,45,80,81,80,80,Balanced,90,High
+4715139,62,away,0,,,266,75,74,75,73,Short passing,50,Balanced
+4716076,255,away,2,,,1871,69,69,70,70,Balanced,90,High
+4715981,122,away,1,,,209,68,67,71,67,Short passing,90,High
+4716047,150,away,0,,,449,78,77,79,77,Balanced,50,Balanced
+4716014,1025,away,2,,,189,76,76,77,74,Balanced,65,High
+4716003,720,away,0,,,236,77,77,77,76,Balanced,65,High
+4715954,79,away,0,,,36,77,78,77,74,Balanced,90,High
+4715916,941,away,2,,,110468,72,73,71,73,Short passing,90,High
+4716113,2300,away,1,,,110745,69,72,69,69,Balanced,50,Balanced
+4715965,26,away,0,,,896,71,69,72,71,Balanced,50,Balanced
+4715930,265,away,1,,,1884,74,73,74,73,Counter,50,Balanced
+4715932,1091,away,4,,,393,74,75,74,73,Balanced,90,High
+4715944,279,away,3,,,1874,72,72,71,68,Short passing,50,Balanced
+4716082,430,away,3,,,110374,77,79,75,75,Short passing,65,High
+4645557,368,away,1,,,481,75,75,76,75,Counter,50,Balanced
+4620761,46,away,1,,,44,83,86,83,83,Balanced,90,High
+4625861,1237,away,2,,,1808,78,78,78,78,Short passing,65,High
+4645561,131,away,1,,,241,85,85,85,82,Balanced,65,High
+4620758,1025,away,2,,,189,76,76,77,74,Balanced,65,High
+4620759,506,away,0,,,45,80,81,80,80,Balanced,90,High
+4634191,60,away,0,,,25,75,71,74,76,Balanced,50,Balanced
+4635078,667,away,1,,,76,75,76,74,75,Short passing,65,High
+4623859,238,away,0,,,873,70,72,68,70,Balanced,50,Balanced
+4641652,383,away,3,,,247,77,76,80,76,Balanced,65,High
+4625854,873,away,0,,,1799,79,78,77,80,Short passing,30,Deep
+4625855,281,away,0,,,10,84,82,85,82,Balanced,65,High
+4645560,13,away,2,,,240,82,84,81,82,Balanced,65,High
+4717153,16,away,5,,,22,81,83,80,82,Balanced,65,High
+4620767,5,away,1,,,47,81,82,79,78,Short passing,50,Balanced
+4740851,873,away,3,,,1799,79,78,77,80,Short passing,30,Deep
+4740854,148,away,0,,,18,81,79,81,81,Balanced,90,High
+4740850,1237,away,0,,,1808,78,78,78,78,Short passing,65,High
+4620772,430,away,0,,,110374,77,79,75,75,Short passing,65,High
+4625870,985,away,2,,,11,80,82,80,79,Balanced,65,High
+4634200,15,away,0,,,32,79,82,79,77,Balanced,50,Balanced
+4625868,405,away,0,,,2,80,83,81,80,Balanced,50,Balanced
+4634202,79,away,1,,,36,77,78,77,74,Balanced,90,High
+4625872,631,away,1,,,5,80,80,82,80,Balanced,65,High
+4645585,368,away,0,,,481,75,75,76,75,Counter,50,Balanced
+4645590,621,away,2,,,448,80,78,81,78,Short passing,65,High
+4645593,367,away,0,,,480,77,73,77,77,Short passing,65,High
+4634205,60,away,0,,,25,75,71,74,76,Balanced,50,Balanced
+4620780,12,away,0,,,52,80,77,79,80,Balanced,50,Balanced
+4712532,9644,away,2,,,114326,69,71,69,70,Balanced,90,High
+4635099,667,away,1,,,76,75,76,74,75,Short passing,65,High
+4625873,762,away,1,,,13,81,81,84,80,Short passing,50,Balanced
+4648725,1075,away,1,,,1896,74,74,75,74,Short passing,65,High
+4627309,26,away,0,,,896,71,69,72,71,Balanced,50,Balanced
+4642941,122,away,1,,,209,68,67,71,67,Short passing,90,High
+4715037,383,away,1,,,247,77,76,80,76,Balanced,65,High
+4715026,162,away,1,,,69,78,77,75,77,Balanced,65,High
+4714994,27,away,2,,,21,84,89,85,82,Balanced,65,High
+4714992,190,away,0,,,819,72,73,72,71,Balanced,90,High
+4714990,418,away,0,,,243,85,88,85,82,Balanced,90,High
+4715008,336,away,1,,,237,79,79,80,77,Balanced,65,High
+4715033,11,away,3,,,1,84,86,84,84,Balanced,65,High
+4715093,24,away,0,,,1824,78,77,78,80,Short passing,65,High
+4715025,3948,away,1,,,2014,74,74,73,75,Balanced,50,Balanced
+4715027,15,away,1,,,32,79,82,79,77,Balanced,50,Balanced
+4715055,631,away,2,,,5,80,80,82,80,Balanced,65,High
+4714982,16,away,1,,,22,81,83,80,82,Balanced,65,High
+4714999,131,away,3,,,241,85,85,85,82,Balanced,65,High
+4715143,621,away,0,,,448,80,78,81,78,Short passing,65,High
+4715022,800,away,1,,,39,79,79,79,79,Short passing,50,Balanced
+4715993,301,away,1,,,100761,69,69,70,68,Balanced,30,Deep
+4715969,452,away,0,,,900,70,70,71,68,Counter,50,Balanced
+4715940,1041,away,0,,,66,76,74,75,76,Balanced,65,High
+4715958,1184,away,4,,,673,73,72,73,75,Balanced,50,Balanced
+4715972,36,away,0,,,326,79,79,79,76,Balanced,90,High
+4716027,234,away,0,,,246,75,76,77,74,Short passing,65,High
+4716255,371,away,1,,,78,75,74,75,74,Balanced,90,High
+4716009,703,away,0,,,14,79,79,79,79,Balanced,50,Balanced
+4716094,1090,away,1,,,1906,73,74,74,72,Balanced,65,High
+4715923,12,away,2,,,52,80,77,79,80,Balanced,50,Balanced
+4716100,238,away,2,,,873,70,72,68,70,Balanced,50,Balanced
+4716090,9644,away,0,,,114326,69,71,69,70,Balanced,90,High
+4625882,985,away,2,,,11,80,82,80,79,Balanced,65,High
+4634215,27,away,2,,,21,84,89,85,82,Balanced,65,High
+4641215,1184,away,1,,,673,73,72,73,75,Balanced,50,Balanced
+4635113,1082,away,0,,,65,76,79,76,76,Balanced,65,High
+4641214,2282,away,0,,,231,74,73,76,73,Balanced,90,High
+4625877,1237,away,0,,,1808,78,78,78,78,Short passing,65,High
+4642946,409,away,1,,,191,70,69,70,69,Balanced,90,High
+4625879,31,away,0,,,9,85,85,86,83,Balanced,65,High
+4620793,6195,away,0,,,48,81,79,82,80,Balanced,65,High
+4645549,418,away,0,,,243,85,88,85,82,Balanced,90,High
+4665019,1091,away,1,,,393,74,75,74,73,Balanced,90,High
+4620796,398,away,0,,,46,79,80,77,78,Balanced,30,Deep
+4641679,383,away,5,,,247,77,76,80,76,Balanced,65,High
+4624637,62,away,5,,,266,75,74,75,73,Short passing,50,Balanced
+4627311,2790,away,1,,,10032,70,71,68,68,Counter,50,Balanced
+4635106,583,away,3,,,73,84,85,84,85,Balanced,90,High
+4635115,162,away,1,,,69,78,77,75,77,Balanced,65,High
+4645500,621,away,0,,,448,80,78,81,78,Short passing,65,High
+4634218,60,away,2,,,25,75,71,74,76,Balanced,50,Balanced
+4634219,79,away,3,,,36,77,78,77,74,Balanced,90,High
+4625892,281,away,1,,,10,84,82,85,82,Balanced,65,High
+4620807,800,away,1,,,39,79,79,79,79,Short passing,50,Balanced
+4625890,703,away,3,,,14,79,79,79,79,Balanced,50,Balanced
+4620804,506,away,1,,,45,80,81,80,80,Balanced,90,High
+4642952,413,away,3,,,252,68,73,68,68,Balanced,30,Deep
+4620805,5,away,1,,,47,81,82,79,78,Short passing,50,Balanced
+4625884,148,away,1,,,18,81,79,81,81,Balanced,90,High
+4714986,3948,away,1,,,2014,74,74,73,75,Balanced,50,Balanced
+4715122,1050,away,0,,,483,79,80,79,77,Short passing,50,Balanced
+4715021,762,away,1,,,13,81,81,84,80,Short passing,50,Balanced
+4715095,15,away,2,,,32,79,82,79,77,Balanced,50,Balanced
+4715030,621,away,0,,,448,80,78,81,78,Short passing,65,High
+4715028,506,away,3,,,45,80,81,80,80,Balanced,90,High
+4715013,10625,away,0,,,113888,69,67,69,67,Short passing,50,Balanced
+4715053,131,away,0,,,241,85,85,85,82,Balanced,65,High
+4715125,46,away,1,,,44,83,86,83,83,Balanced,90,High
+4715005,800,away,3,,,39,79,79,79,79,Short passing,50,Balanced
+4715060,148,away,3,,,18,81,79,81,81,Balanced,90,High
+4715114,2282,away,0,,,231,74,73,76,73,Balanced,90,High
+4715066,383,away,4,,,247,77,76,80,76,Balanced,65,High
+4715049,418,away,4,,,243,85,88,85,82,Balanced,90,High
+4715130,27,away,1,,,21,84,89,85,82,Balanced,65,High
+4715952,279,away,1,,,1874,72,72,71,68,Short passing,50,Balanced
+4715949,452,away,1,,,900,70,70,71,68,Counter,50,Balanced
+4715931,419,away,0,,,211,72,70,71,70,Counter,50,Balanced
+4715917,865,away,1,,,1516,71,71,70,71,Balanced,50,Balanced
+4716019,409,away,1,,,191,70,69,70,69,Balanced,90,High
+4716033,122,away,1,,,209,68,67,71,67,Short passing,90,High
+4715973,60,away,0,,,25,75,71,74,76,Balanced,50,Balanced
+4716049,26,away,1,,,896,71,69,72,71,Balanced,50,Balanced
+4716085,197,away,1,,,267,73,75,74,72,Short passing,50,Balanced
+4715924,1075,away,1,,,1896,74,74,75,74,Short passing,65,High
+4716151,170,away,1,,,254,69,67,69,70,Balanced,50,Balanced
+4715928,371,away,3,,,78,75,74,75,74,Balanced,90,High
+4716112,873,away,1,,,1799,79,78,77,80,Short passing,30,Deep
+4635130,583,away,0,,,73,84,85,84,85,Balanced,90,High
+4634228,16,away,2,,,22,81,83,80,82,Balanced,65,High
+4620818,398,away,0,,,46,79,80,77,78,Balanced,30,Deep
+4625896,11,away,1,,,1,84,86,84,84,Balanced,65,High
+4645766,150,away,2,,,449,78,77,79,77,Balanced,50,Balanced
+4641280,3948,away,0,,,2014,74,74,73,75,Balanced,50,Balanced
+4645763,1050,away,3,,,483,79,80,79,77,Short passing,50,Balanced
+4620812,430,away,0,,,110374,77,79,75,75,Short passing,65,High
+4642958,170,away,0,,,254,69,67,69,70,Balanced,50,Balanced
+4620821,6195,away,1,,,48,81,79,82,80,Balanced,65,High
+4625900,1237,away,2,,,1808,78,78,78,78,Short passing,65,High
+4625897,985,away,2,,,11,80,82,80,79,Balanced,65,High
+4625903,31,away,2,,,9,85,85,86,83,Balanced,65,High
+4647882,141,away,1,,,325,80,84,80,79,Balanced,65,High
+4761580,15,away,1,,,32,79,82,79,77,Balanced,50,Balanced
+4625912,148,away,2,,,18,81,79,81,81,Balanced,90,High
+4645831,13,away,1,,,240,82,84,81,82,Balanced,65,High
+4625906,405,away,4,,,2,80,83,81,80,Balanced,50,Balanced
+4645837,418,away,3,,,243,85,88,85,82,Balanced,90,High
+4761581,27,away,3,,,21,84,89,85,82,Balanced,65,High
+4625911,379,away,1,,,19,77,78,77,77,Short passing,30,Deep
+4736144,5,away,0,,,47,81,82,79,78,Short passing,50,Balanced
+4635132,244,away,0,,,219,79,81,79,79,Balanced,65,High
+4648686,336,away,1,,,237,79,79,80,77,Balanced,65,High
+4634238,24,away,0,,,1824,78,77,78,80,Short passing,65,High
+4641287,157,away,1,,,674,70,70,70,68,Balanced,30,Deep
+4634239,27,away,5,,,21,84,89,85,82,Balanced,65,High
+4645779,13,away,0,,,240,82,84,81,82,Balanced,65,High
+4645772,131,away,5,,,241,85,85,85,82,Balanced,65,High
+4635140,273,away,0,,,74,76,74,76,74,Balanced,65,High
+4625914,11,away,1,,,1,84,86,84,84,Balanced,65,High
+4625916,379,away,1,,,19,77,78,77,77,Short passing,30,Deep
+4620835,1025,away,1,,,189,76,76,77,74,Balanced,65,High
+4620836,506,away,1,,,45,80,81,80,80,Balanced,90,High
+4715096,141,away,0,,,325,80,84,80,79,Balanced,65,High
+4715058,31,away,1,,,9,85,85,86,83,Balanced,65,High
+4715064,244,away,3,,,219,79,81,79,79,Balanced,65,High
+4715135,24,away,1,,,1824,78,77,78,80,Short passing,65,High
+4715092,336,away,1,,,237,79,79,80,77,Balanced,65,High
+4715112,631,away,1,,,5,80,80,82,80,Balanced,65,High
+4714993,62,away,0,,,266,75,74,75,73,Short passing,50,Balanced
+4714988,13,away,3,,,240,82,84,81,82,Balanced,65,High
+4714996,190,away,3,,,819,72,73,72,71,Balanced,90,High
+4715136,501,away,2,,,918,71,70,73,70,Balanced,90,High
+4715065,281,away,2,,,10,84,82,85,82,Balanced,65,High
+4714998,11,away,3,,,1,84,86,84,84,Balanced,65,High
+4715126,762,away,2,,,13,81,81,84,80,Short passing,50,Balanced
+4715051,583,away,0,,,73,84,85,84,85,Balanced,90,High
+4715116,6195,away,0,,,48,81,79,82,80,Balanced,65,High
+4716115,367,away,2,,,480,77,73,77,77,Short passing,65,High
+4716257,1184,away,0,,,673,73,72,73,75,Balanced,50,Balanced
+4715935,150,away,3,,,449,78,77,79,77,Balanced,50,Balanced
+4716032,941,away,0,,,110468,72,73,71,73,Short passing,90,High
+4715975,124,away,1,,,86,73,72,73,72,Balanced,90,High
+4715979,12,away,3,,,52,80,77,79,80,Balanced,50,Balanced
+4715987,1082,away,0,,,65,76,79,76,76,Balanced,65,High
+4715995,409,away,0,,,191,70,69,70,69,Balanced,90,High
+4715991,405,away,2,,,2,80,83,81,80,Balanced,50,Balanced
+4716011,234,away,3,,,246,75,76,77,74,Short passing,65,High
+4634251,23826,away,1,,,112172,78,77,76,80,Counter,65,High
+4625929,1237,away,0,,,1808,78,78,78,78,Short passing,65,High
+4625933,405,away,3,,,2,80,83,81,80,Balanced,50,Balanced
+4625931,148,away,0,,,18,81,79,81,81,Balanced,90,High
+4635149,162,away,0,,,69,78,77,75,77,Balanced,65,High
+4634248,16,away,1,,,22,81,83,80,82,Balanced,65,High
+4625928,281,away,3,,,10,84,82,85,82,Balanced,65,High
+4620843,506,away,1,,,45,80,81,80,80,Balanced,90,High
+4645782,150,away,0,,,449,78,77,79,77,Balanced,50,Balanced
+4716074,2300,away,0,,,110745,69,72,69,69,Balanced,50,Balanced
+4641399,5,away,0,,,47,81,82,79,78,Short passing,50,Balanced
+4641400,46,away,3,,,44,83,86,83,83,Balanced,90,High
+4645840,368,away,0,,,481,75,75,76,75,Counter,50,Balanced
+4620857,12,away,1,,,52,80,77,79,80,Balanced,50,Balanced
+4625940,379,away,0,,,19,77,78,77,77,Short passing,30,Deep
+4625941,631,away,2,,,5,80,80,82,80,Balanced,65,High
+4625942,31,away,2,,,9,85,85,86,83,Balanced,65,High
+4634256,15,away,3,,,32,79,82,79,77,Balanced,50,Balanced
+4627350,452,away,0,,,900,70,70,71,68,Counter,50,Balanced
+4641383,157,away,1,,,674,70,70,70,68,Balanced,30,Deep
+4625934,985,away,1,,,11,80,82,80,79,Balanced,65,High
+4645843,131,away,2,,,241,85,85,85,82,Balanced,65,High
+4665111,265,away,0,,,1884,74,73,74,73,Counter,50,Balanced
+4786004,1025,away,0,,,189,76,76,77,74,Balanced,65,High
+4769165,873,away,8,,,1799,79,78,77,80,Short passing,30,Deep
+4641344,2282,away,5,,,231,74,73,76,73,Balanced,90,High
+4625950,762,away,0,,,13,81,81,84,80,Short passing,50,Balanced
+4625947,405,away,2,,,2,80,83,81,80,Balanced,50,Balanced
+4625944,1237,away,1,,,1808,78,78,78,78,Short passing,65,High
+4625951,281,away,2,,,10,84,82,85,82,Balanced,65,High
+4648780,294,away,2,,,234,78,79,78,77,Balanced,90,High
+4625948,148,away,1,,,18,81,79,81,81,Balanced,90,High
+4620862,46,away,1,,,44,83,86,83,83,Balanced,90,High
+4625963,1237,away,2,,,1808,78,78,78,78,Short passing,65,High
+4625954,405,away,1,,,2,80,83,81,80,Balanced,50,Balanced
+4635152,1041,away,3,,,66,76,74,75,76,Balanced,65,High
+4625964,703,away,1,,,14,79,79,79,79,Balanced,50,Balanced
+4649463,124,away,3,,,86,73,72,73,72,Balanced,90,High
+4620872,12,away,0,,,52,80,77,79,80,Balanced,50,Balanced
+4635153,273,away,2,,,74,76,74,76,74,Balanced,65,High
+4645851,13,away,1,,,240,82,84,81,82,Balanced,65,High
+4625970,631,away,1,,,5,80,80,82,80,Balanced,65,High
+4620877,1025,away,1,,,189,76,76,77,74,Balanced,65,High
+4620879,6195,away,2,,,48,81,79,82,80,Balanced,65,High
+4625971,873,away,0,,,1799,79,78,77,80,Short passing,30,Deep
+4645853,150,away,1,,,449,78,77,79,77,Balanced,50,Balanced
+4626007,703,away,2,,,14,79,79,79,79,Balanced,50,Balanced
+4626005,1237,away,1,,,1808,78,78,78,78,Short passing,65,High
+4626002,405,away,0,,,2,80,83,81,80,Balanced,50,Balanced
+4790450,621,away,0,,,448,80,78,81,78,Short passing,65,High
+4779999,1075,away,3,,,1896,74,74,75,74,Short passing,65,High
+4620882,800,away,2,,,39,79,79,79,79,Short passing,50,Balanced
+4620884,430,away,2,,,110374,77,79,75,75,Short passing,65,High
+4790451,418,away,2,,,243,85,88,85,82,Balanced,90,High
+4625998,31,away,0,,,9,85,85,86,83,Balanced,65,High
+4738246,244,away,3,,,219,79,81,79,79,Balanced,65,High
+4634265,16,away,3,,,22,81,83,80,82,Balanced,65,High
+4788523,405,away,2,,,2,80,83,81,80,Balanced,50,Balanced
+4634264,79,away,4,,,36,77,78,77,74,Balanced,90,High
+4800635,418,away,2,,,243,85,88,85,82,Balanced,90,High
+4620896,6195,away,2,,,48,81,79,82,80,Balanced,65,High
+4620894,5,away,1,,,47,81,82,79,78,Short passing,50,Balanced
+4788527,1237,away,2,,,1808,78,78,78,78,Short passing,65,High
+4798808,281,away,2,,,10,84,82,85,82,Balanced,65,High
+4634275,24,away,2,,,1824,78,77,78,80,Short passing,65,High
+4798809,11,away,3,,,1,84,86,84,84,Balanced,65,High
+4799312,1091,away,2,,,393,74,75,74,73,Balanced,90,High
+4634274,60,away,0,,,25,75,71,74,76,Balanced,50,Balanced
+4635166,1082,away,0,,,65,76,79,76,76,Balanced,65,High
+4626016,379,away,2,,,19,77,78,77,77,Short passing,30,Deep
+4626014,11,away,0,,,1,84,86,84,84,Balanced,65,High
+4626013,281,away,0,,,10,84,82,85,82,Balanced,65,High
+4634282,27,away,5,,,21,84,89,85,82,Balanced,65,High
+4645876,1050,away,0,,,483,79,80,79,77,Short passing,50,Balanced
+4645874,131,away,1,,,241,85,85,85,82,Balanced,65,High
+4641321,58,away,2,,,229,71,74,70,68,Balanced,90,High
+4634284,89,away,1,,,1831,75,72,73,75,Counter,30,Deep
+4620902,430,away,2,,,110374,77,79,75,75,Short passing,65,High
+4715056,11,away,3,,,1,84,86,84,84,Balanced,65,High
+4715100,162,away,1,,,69,78,77,75,77,Balanced,65,High
+4715102,583,away,1,,,73,84,85,84,85,Balanced,90,High
+4715046,16,away,0,,,22,81,83,80,82,Balanced,65,High
+4715039,15,away,0,,,32,79,82,79,77,Balanced,50,Balanced
+4715019,6195,away,1,,,48,81,79,82,80,Balanced,65,High
+4715029,281,away,1,,,10,84,82,85,82,Balanced,65,High
+4715110,24,away,2,,,1824,78,77,78,80,Short passing,65,High
+4714995,13,away,1,,,240,82,84,81,82,Balanced,65,High
+4715011,294,away,0,,,234,78,79,78,77,Balanced,90,High
+4715148,383,away,0,,,247,77,76,80,76,Balanced,65,High
+4715024,31,away,3,,,9,85,85,86,83,Balanced,65,High
+4715108,621,away,3,,,448,80,78,81,78,Short passing,65,High
+4715036,131,away,4,,,241,85,85,85,82,Balanced,65,High
+4715068,3948,away,0,,,2014,74,74,73,75,Balanced,50,Balanced
+4715971,720,away,1,,,236,77,77,77,76,Balanced,65,High
+4715988,1041,away,1,,,66,76,74,75,76,Balanced,65,High
+4715937,301,away,1,,,100761,69,69,70,68,Balanced,30,Deep
+4715951,405,away,1,,,2,80,83,81,80,Balanced,50,Balanced
+4715978,265,away,1,,,1884,74,73,74,73,Counter,50,Balanced
+4715945,26,away,1,,,896,71,69,72,71,Balanced,50,Balanced
+4715967,150,away,0,,,449,78,77,79,77,Balanced,50,Balanced
+4716020,371,away,2,,,78,75,74,75,74,Balanced,90,High
+4715929,122,away,0,,,209,68,67,71,67,Short passing,90,High
+4715957,703,away,0,,,14,79,79,79,79,Balanced,50,Balanced
+4715918,79,away,0,,,36,77,78,77,74,Balanced,90,High
+4645794,418,away,2,,,243,85,88,85,82,Balanced,90,High
+4634303,16,away,3,,,22,81,83,80,82,Balanced,65,High
+4645798,621,away,1,,,448,80,78,81,78,Short passing,65,High
+4635168,667,away,4,,,76,75,76,74,75,Short passing,65,High
+4626026,405,away,2,,,2,80,83,81,80,Balanced,50,Balanced
+4620918,6195,away,0,,,48,81,79,82,80,Balanced,65,High
+4620920,5,away,1,,,47,81,82,79,78,Short passing,50,Balanced
+4626018,985,away,3,,,11,80,82,80,79,Balanced,65,High
+4626022,631,away,3,,,5,80,80,82,80,Balanced,65,High
+4714997,244,away,0,,,219,79,81,79,79,Balanced,65,High
+4715014,506,away,0,,,45,80,81,80,80,Balanced,90,High
+4715127,1050,away,0,,,483,79,80,79,77,Short passing,50,Balanced
+4715138,190,away,1,,,819,72,73,72,71,Balanced,90,High
+4715123,501,away,2,,,918,71,70,73,70,Balanced,90,High
+4715050,46,away,2,,,44,83,86,83,83,Balanced,90,High
+4715120,418,away,2,,,243,85,88,85,82,Balanced,90,High
+4714989,27,away,2,,,21,84,89,85,82,Balanced,65,High
+4714984,336,away,3,,,237,79,79,80,77,Balanced,65,High
+4714981,631,away,3,,,5,80,80,82,80,Balanced,65,High
+4715104,10625,away,0,,,113888,69,67,69,67,Short passing,50,Balanced
+4715059,762,away,1,,,13,81,81,84,80,Short passing,50,Balanced
+4715099,800,away,0,,,39,79,79,79,79,Short passing,50,Balanced
+4715094,141,away,0,,,325,80,84,80,79,Balanced,65,High
+4715002,148,away,2,,,18,81,79,81,81,Balanced,90,High
+4716254,419,away,0,,,211,72,70,71,70,Counter,50,Balanced
+4716031,12,away,1,,,52,80,77,79,80,Balanced,50,Balanced
+4716029,452,away,2,,,900,70,70,71,68,Counter,50,Balanced
+4715964,1091,away,2,,,393,74,75,74,73,Balanced,90,High
+4715919,124,away,1,,,86,73,72,73,72,Balanced,90,High
+4716004,279,away,0,,,1874,72,72,71,68,Short passing,50,Balanced
+4715992,941,away,1,,,110468,72,73,71,73,Short passing,90,High
+4715933,60,away,0,,,25,75,71,74,76,Balanced,50,Balanced
+4715947,409,away,2,,,191,70,69,70,69,Balanced,90,High
+4715939,234,away,1,,,246,75,76,77,74,Short passing,65,High
+4716012,36,away,1,,,326,79,79,79,76,Balanced,90,High
+4626032,762,away,1,,,13,81,81,84,80,Short passing,50,Balanced
+4635182,273,away,0,,,74,76,74,76,74,Balanced,65,High
+4634306,15,away,3,,,32,79,82,79,77,Balanced,50,Balanced
+4620928,430,away,1,,,110374,77,79,75,75,Short passing,65,High
+4626030,379,away,2,,,19,77,78,77,77,Short passing,30,Deep
+4635179,583,away,2,,,73,84,85,84,85,Balanced,90,High
+4635178,1082,away,0,,,65,76,79,76,76,Balanced,65,High
+4645804,367,away,1,,,480,77,73,77,77,Short passing,65,High
+4641311,2282,away,0,,,231,74,73,76,73,Balanced,90,High
+4645805,681,away,1,,,457,77,79,77,75,Short passing,90,High
+4626034,873,away,1,,,1799,79,78,77,80,Short passing,30,Deep
+4626036,281,away,2,,,10,84,82,85,82,Balanced,65,High
+4641616,234,away,0,,,246,75,76,77,74,Short passing,65,High
+4634310,60,away,0,,,25,75,71,74,76,Balanced,50,Balanced
+4798810,631,away,0,,,5,80,80,82,80,Balanced,65,High
+4620923,5,away,3,,,47,81,82,79,78,Short passing,50,Balanced
+4798811,762,away,1,,,13,81,81,84,80,Short passing,50,Balanced
+4804365,1091,away,1,,,393,74,75,74,73,Balanced,90,High
+4808019,13,away,5,,,240,82,84,81,82,Balanced,65,High
+4785785,506,away,0,,,45,80,81,80,80,Balanced,90,High
+4634329,24,away,1,,,1824,78,77,78,80,Short passing,65,High
+4626045,148,away,0,,,18,81,79,81,81,Balanced,90,High
+4626040,873,away,1,,,1799,79,78,77,80,Short passing,30,Deep
+4620943,398,away,2,,,46,79,80,77,78,Balanced,30,Deep
+4626044,281,away,2,,,10,84,82,85,82,Balanced,65,High
+4645818,150,away,1,,,449,78,77,79,77,Balanced,50,Balanced
+4641361,58,away,0,,,229,71,74,70,68,Balanced,90,High
+4665123,265,away,1,,,1884,74,73,74,73,Counter,50,Balanced
+4648389,190,away,1,,,819,72,73,72,71,Balanced,90,High
+4635186,244,away,0,,,219,79,81,79,79,Balanced,65,High
+4648806,336,away,1,,,237,79,79,80,77,Balanced,65,High
+4626057,985,away,1,,,11,80,82,80,79,Balanced,65,High
+4626056,762,away,2,,,13,81,81,84,80,Short passing,50,Balanced
+4782524,23826,away,0,,,112172,78,77,76,80,Counter,65,High
+4785784,398,away,5,,,46,79,80,77,78,Balanced,30,Deep
+4819275,681,away,1,,,457,77,79,77,75,Short passing,90,High
+4804367,265,away,0,,,1884,74,73,74,73,Counter,50,Balanced
+4626048,1237,away,0,,,1808,78,78,78,78,Short passing,65,High
+4819274,131,away,0,,,241,85,85,85,82,Balanced,65,High
+4635203,583,away,1,,,73,84,85,84,85,Balanced,90,High
+4645888,681,away,1,,,457,77,79,77,75,Short passing,90,High
+4808368,762,away,3,,,13,81,81,84,80,Short passing,50,Balanced
+4620959,800,away,2,,,39,79,79,79,79,Short passing,50,Balanced
+4620958,506,away,2,,,45,80,81,80,80,Balanced,90,High
+4808369,1237,away,0,,,1808,78,78,78,78,Short passing,65,High
+4635196,667,away,2,,,76,75,76,74,75,Short passing,65,High
+4645881,13,away,0,,,240,82,84,81,82,Balanced,65,High
+4620960,12,away,2,,,52,80,77,79,80,Balanced,50,Balanced
+4787666,2790,away,1,,,10032,70,71,68,68,Counter,50,Balanced
+4814097,418,away,1,,,243,85,88,85,82,Balanced,90,High
+4814095,583,away,3,,,73,84,85,84,85,Balanced,90,High
+4814098,800,away,0,,,39,79,79,79,79,Short passing,50,Balanced
+4814096,506,away,2,,,45,80,81,80,80,Balanced,90,High
+4814099,762,away,6,,,13,81,81,84,80,Short passing,50,Balanced
+4814100,13,away,3,,,240,82,84,81,82,Balanced,65,High
+4814102,15,away,2,,,32,79,82,79,77,Balanced,50,Balanced
+4814101,46,away,1,,,44,83,86,83,83,Balanced,90,High
+4805889,941,away,2,,,110468,72,73,71,73,Short passing,90,High
+4805838,430,away,3,,,110374,77,79,75,75,Short passing,65,High
+4805890,1184,away,3,,,673,73,72,73,75,Balanced,50,Balanced
+4805892,79,away,4,,,36,77,78,77,74,Balanced,90,High
+4805893,703,away,3,,,14,79,79,79,79,Balanced,50,Balanced
+4634365,15,away,0,,,32,79,82,79,77,Balanced,50,Balanced
+4634363,16,away,2,,,22,81,83,80,82,Balanced,65,High
+4626063,762,away,1,,,13,81,81,84,80,Short passing,50,Balanced
+4645868,367,away,1,,,480,77,73,77,77,Short passing,65,High
+4634360,24,away,2,,,1824,78,77,78,80,Short passing,65,High
+4635204,1041,away,1,,,66,76,74,75,76,Balanced,65,High
+4624700,197,away,0,,,267,73,75,74,72,Short passing,50,Balanced
+4626066,11,away,4,,,1,84,86,84,84,Balanced,65,High
+4626064,31,away,1,,,9,85,85,86,83,Balanced,65,High
+4642989,409,away,5,,,191,70,69,70,69,Balanced,90,High
+4620965,6195,away,1,,,48,81,79,82,80,Balanced,65,High
+4814107,10625,away,2,,,113888,69,67,69,67,Short passing,50,Balanced
+4814108,2282,away,1,,,231,74,73,76,73,Balanced,90,High
+4814109,501,away,2,,,918,71,70,73,70,Balanced,90,High
+4814110,683,away,0,,,280,76,79,76,75,Balanced,90,High
+4814106,16,away,1,,,22,81,83,80,82,Balanced,65,High
+4814103,162,away,2,,,69,78,77,75,77,Balanced,65,High
+4814104,141,away,2,,,325,80,84,80,79,Balanced,65,High
+4814105,294,away,1,,,234,78,79,78,77,Balanced,90,High
+4805897,265,away,5,,,1884,74,73,74,73,Counter,50,Balanced
+4805898,419,away,3,,,211,72,70,71,70,Counter,50,Balanced
+4805846,2300,away,4,,,110745,69,72,69,69,Balanced,50,Balanced
+4805900,371,away,1,,,78,75,74,75,74,Balanced,90,High
+4805901,36,away,2,,,326,79,79,79,76,Balanced,90,High
+4645824,1050,away,1,,,483,79,80,79,77,Short passing,50,Balanced
+4626074,379,away,2,,,19,77,78,77,77,Short passing,30,Deep
+4645829,621,away,1,,,448,80,78,81,78,Short passing,65,High
+4634380,27,away,3,,,21,84,89,85,82,Balanced,65,High
+4645825,368,away,2,,,481,75,75,76,75,Counter,50,Balanced
+4641296,157,away,0,,,674,70,70,70,68,Balanced,30,Deep
+4626070,703,away,1,,,14,79,79,79,79,Balanced,50,Balanced
+4626068,631,away,1,,,5,80,80,82,80,Balanced,65,High
+4634379,60,away,0,,,25,75,71,74,76,Balanced,50,Balanced
+4624832,9644,away,3,,,114326,69,71,69,70,Balanced,90,High
+4635221,1041,away,2,,,66,76,74,75,76,Balanced,65,High
+4624831,255,away,2,,,1871,69,69,70,70,Balanced,90,High
+4620980,506,away,3,,,45,80,81,80,80,Balanced,90,High
+4649528,371,away,2,,,78,75,74,75,74,Balanced,90,High
+4626075,873,away,1,,,1799,79,78,77,80,Short passing,30,Deep
+4819283,13,away,0,,,240,82,84,81,82,Balanced,65,High
+4626084,703,away,2,,,14,79,79,79,79,Balanced,50,Balanced
+4819284,621,away,0,,,448,80,78,81,78,Short passing,65,High
+4626080,11,away,1,,,1,84,86,84,84,Balanced,65,High
+4626078,631,away,4,,,5,80,80,82,80,Balanced,65,High
+4824554,800,away,2,,,39,79,79,79,79,Short passing,50,Balanced
+4626085,985,away,1,,,11,80,82,80,79,Balanced,65,High
+4626086,873,away,3,,,1799,79,78,77,80,Short passing,30,Deep
+4635230,162,away,3,,,69,78,77,75,77,Balanced,65,High
+4645953,681,away,2,,,457,77,79,77,75,Short passing,90,High
+4641355,1184,away,1,,,673,73,72,73,75,Balanced,50,Balanced
+4827501,281,away,3,,,10,84,82,85,82,Balanced,65,High
+4645952,131,away,1,,,241,85,85,85,82,Balanced,65,High
+4641581,1090,away,1,,,1906,73,74,74,72,Balanced,65,High
+4634388,15,away,3,,,32,79,82,79,77,Balanced,50,Balanced
+4648851,336,away,2,,,237,79,79,80,77,Balanced,65,High
+4643002,409,away,0,,,191,70,69,70,69,Balanced,90,High
+4620993,46,away,0,,,44,83,86,83,83,Balanced,90,High
+4624719,197,away,1,,,267,73,75,74,72,Short passing,50,Balanced
+4645951,367,away,1,,,480,77,73,77,77,Short passing,65,High
+4648852,720,away,2,,,236,77,77,77,76,Balanced,65,High
+4664998,1091,away,0,,,393,74,75,74,73,Balanced,90,High
+4641354,58,away,2,,,229,71,74,70,68,Balanced,90,High
+4832715,371,away,4,,,78,75,74,75,74,Balanced,90,High
+4814359,148,away,2,,,18,81,79,81,81,Balanced,90,High
+4814355,31,away,0,,,9,85,85,86,83,Balanced,65,High
+4814357,27,away,6,,,21,84,89,85,82,Balanced,65,High
+4814358,131,away,1,,,241,85,85,85,82,Balanced,65,High
+4814354,631,away,2,,,5,80,80,82,80,Balanced,65,High
+4814356,281,away,0,,,10,84,82,85,82,Balanced,65,High
+4814361,11,away,1,,,1,84,86,84,84,Balanced,65,High
+4814360,336,away,0,,,237,79,79,80,77,Balanced,65,High
+4805859,660,away,3,,,101059,72,71,73,73,Balanced,50,Balanced
+4805908,720,away,2,,,236,77,77,77,76,Balanced,65,High
+4805911,405,away,1,,,2,80,83,81,80,Balanced,50,Balanced
+4805910,12,away,1,,,52,80,77,79,80,Balanced,50,Balanced
+4805904,1075,away,0,,,1896,74,74,75,74,Short passing,65,High
+4805905,150,away,0,,,449,78,77,79,77,Balanced,50,Balanced
+4805906,60,away,0,,,25,75,71,74,76,Balanced,50,Balanced
+4805909,865,away,1,,,1516,71,71,70,71,Balanced,50,Balanced
+4805862,9644,away,1,,,114326,69,71,69,70,Balanced,90,High
+4805860,197,away,1,,,267,73,75,74,72,Short passing,50,Balanced
+4620997,800,away,1,,,39,79,79,79,79,Short passing,50,Balanced
+4626097,281,away,1,,,10,84,82,85,82,Balanced,65,High
+4634405,27,away,1,,,21,84,89,85,82,Balanced,65,High
+4626091,762,away,1,,,13,81,81,84,80,Short passing,50,Balanced
+4634410,23826,away,0,,,112172,78,77,76,80,Counter,65,High
+4634408,89,away,1,,,1831,75,72,73,75,Counter,30,Deep
+4626093,148,away,1,,,18,81,79,81,81,Balanced,90,High
+4626094,405,away,1,,,2,80,83,81,80,Balanced,50,Balanced
+4645925,368,away,2,,,481,75,75,76,75,Counter,50,Balanced
+4839823,170,away,1,,,254,69,67,69,70,Balanced,50,Balanced
+4620998,5,away,0,,,47,81,82,79,78,Short passing,50,Balanced
+4635236,1082,away,2,,,65,76,79,76,76,Balanced,65,High
+4814369,15,away,0,,,32,79,82,79,77,Balanced,50,Balanced
+4814368,501,away,0,,,918,71,70,73,70,Balanced,90,High
+4814362,583,away,3,,,73,84,85,84,85,Balanced,90,High
+4814364,418,away,2,,,243,85,88,85,82,Balanced,90,High
+4814363,141,away,0,,,325,80,84,80,79,Balanced,65,High
+4814366,762,away,2,,,13,81,81,84,80,Short passing,50,Balanced
+4814367,13,away,2,,,240,82,84,81,82,Balanced,65,High
+4814365,800,away,1,,,39,79,79,79,79,Short passing,50,Balanced
+4805912,279,away,0,,,1874,72,72,71,68,Short passing,50,Balanced
+4805913,265,away,0,,,1884,74,73,74,73,Counter,50,Balanced
+4805914,1184,away,1,,,673,73,72,73,75,Balanced,50,Balanced
+4805917,703,away,5,,,14,79,79,79,79,Balanced,50,Balanced
+4805918,1025,away,4,,,189,76,76,77,74,Balanced,65,High
+4805919,1082,away,0,,,65,76,79,76,76,Balanced,65,High
+4805870,430,away,2,,,110374,77,79,75,75,Short passing,65,High
+4805868,1090,away,4,,,1906,73,74,74,72,Balanced,65,High
+4805867,238,away,2,,,873,70,72,68,70,Balanced,50,Balanced
+4805916,79,away,0,,,36,77,78,77,74,Balanced,90,High
+4645911,681,away,1,,,457,77,79,77,75,Short passing,90,High
+4839825,409,away,1,,,191,70,69,70,69,Balanced,90,High
+4626100,31,away,1,,,9,85,85,86,83,Balanced,65,High
+4634423,89,away,0,,,1831,75,72,73,75,Counter,30,Deep
+4645912,150,away,1,,,449,78,77,79,77,Balanced,50,Balanced
+4645913,367,away,0,,,480,77,73,77,77,Short passing,65,High
+4645909,13,away,2,,,240,82,84,81,82,Balanced,65,High
+4787643,2790,away,1,,,10032,70,71,68,68,Counter,50,Balanced
+4818788,281,away,2,,,10,84,82,85,82,Balanced,65,High
+4839830,413,away,2,,,252,68,73,68,68,Balanced,30,Deep
+4626106,703,away,3,,,14,79,79,79,79,Balanced,50,Balanced
+4626098,379,away,0,,,19,77,78,77,77,Short passing,30,Deep
+4635240,162,away,2,,,69,78,77,75,77,Balanced,65,High
+4635248,1082,away,2,,,65,76,79,76,76,Balanced,65,High
+4648869,720,away,2,,,236,77,77,77,76,Balanced,65,High
+4621009,46,away,1,,,44,83,86,83,83,Balanced,90,High
+4621006,398,away,2,,,46,79,80,77,78,Balanced,30,Deep
+4624858,9644,away,1,,,114326,69,71,69,70,Balanced,90,High
+4624867,238,away,0,,,873,70,72,68,70,Balanced,50,Balanced
+4634445,16,away,2,,,22,81,83,80,82,Balanced,65,High
+4645903,131,away,2,,,241,85,85,85,82,Balanced,65,High
+4634443,27,away,3,,,21,84,89,85,82,Balanced,65,High
+4787628,452,away,3,,,900,70,70,71,68,Counter,50,Balanced
+4844306,31,away,0,,,9,85,85,86,83,Balanced,65,High
+4635249,244,away,1,,,219,79,81,79,79,Balanced,65,High
+4839836,122,away,2,,,209,68,67,71,67,Short passing,90,High
+4621016,12,away,2,,,52,80,77,79,80,Balanced,50,Balanced
+4621020,5,away,0,,,47,81,82,79,78,Short passing,50,Balanced
+4850165,58,away,2,,,229,71,74,70,68,Balanced,90,High
+4814371,27,away,2,,,21,84,89,85,82,Balanced,65,High
+4814373,11,away,1,,,1,84,86,84,84,Balanced,65,High
+4814372,13,away,2,,,240,82,84,81,82,Balanced,65,High
+4805920,150,away,1,,,449,78,77,79,77,Balanced,50,Balanced
+4814370,31,away,0,,,9,85,85,86,83,Balanced,65,High
+4805875,1090,away,0,,,1906,73,74,74,72,Balanced,65,High
+4805876,430,away,0,,,110374,77,79,75,75,Short passing,65,High
+4805922,703,away,1,,,14,79,79,79,79,Balanced,50,Balanced
+4805923,405,away,3,,,2,80,83,81,80,Balanced,50,Balanced
+4839837,413,away,3,,,252,68,73,68,68,Balanced,30,Deep
+4634459,15,away,1,,,32,79,82,79,77,Balanced,50,Balanced
+4645947,13,away,1,,,240,82,84,81,82,Balanced,65,High
+4621025,506,away,1,,,45,80,81,80,80,Balanced,90,High
+4624749,941,away,0,,,110468,72,73,71,73,Short passing,90,High
+4850145,157,away,1,,,674,70,70,70,68,Balanced,30,Deep
+4626115,405,away,1,,,2,80,83,81,80,Balanced,50,Balanced
+4626111,281,away,3,,,10,84,82,85,82,Balanced,65,High
+4626112,762,away,1,,,13,81,81,84,80,Short passing,50,Balanced
+4645941,1050,away,2,,,483,79,80,79,77,Short passing,50,Balanced
+4621029,398,away,0,,,46,79,80,77,78,Balanced,30,Deep
+4814374,583,away,2,,,73,84,85,84,85,Balanced,90,High
+4814376,131,away,2,,,241,85,85,85,82,Balanced,65,High
+4814375,418,away,3,,,243,85,88,85,82,Balanced,90,High
+4814377,336,away,0,,,237,79,79,80,77,Balanced,65,High
+4805926,720,away,0,,,236,77,77,77,76,Balanced,65,High
+4805924,1075,away,4,,,1896,74,74,75,74,Short passing,65,High
+4805880,873,away,1,,,1799,79,78,77,80,Short passing,30,Deep
+4805879,660,away,2,,,101059,72,71,73,73,Balanced,50,Balanced
+4805927,1025,away,0,,,189,76,76,77,74,Balanced,65,High
+4626127,1237,away,2,,,1808,78,78,78,78,Short passing,65,High
+4842389,681,away,6,,,457,77,79,77,75,Short passing,90,High
+4634479,23826,away,3,,,112172,78,77,76,80,Counter,65,High
+4621041,800,away,1,,,39,79,79,79,79,Short passing,50,Balanced
+4621039,398,away,2,,,46,79,80,77,78,Balanced,30,Deep
+4626120,985,away,1,,,11,80,82,80,79,Balanced,65,High
+4635275,1041,away,2,,,66,76,74,75,76,Balanced,65,High
+4635268,273,away,3,,,74,76,74,76,74,Balanced,65,High
+4634477,79,away,2,,,36,77,78,77,74,Balanced,90,High
+4850139,2282,away,1,,,231,74,73,76,73,Balanced,90,High
+4839849,122,away,1,,,209,68,67,71,67,Short passing,90,High
+4621037,1025,away,0,,,189,76,76,77,74,Balanced,65,High
+4626124,11,away,1,,,1,84,86,84,84,Balanced,65,High
+4648893,294,away,2,,,234,78,79,78,77,Balanced,90,High
+4626121,379,away,0,,,19,77,78,77,77,Short passing,30,Deep
+4626130,631,away,0,,,5,80,80,82,80,Balanced,65,High
+4839855,413,away,1,,,252,68,73,68,68,Balanced,30,Deep
+4824556,398,away,3,,,46,79,80,77,78,Balanced,30,Deep
+4830557,27,away,2,,,21,84,89,85,82,Balanced,65,High
+4850162,157,away,0,,,674,70,70,70,68,Balanced,30,Deep
+4830556,60,away,1,,,25,75,71,74,76,Balanced,50,Balanced
+4634497,89,away,1,,,1831,75,72,73,75,Counter,30,Deep
+4645971,418,away,1,,,243,85,88,85,82,Balanced,90,High
+4626128,762,away,0,,,13,81,81,84,80,Short passing,50,Balanced
+4621045,12,away,2,,,52,80,77,79,80,Balanced,50,Balanced
+4645975,621,away,2,,,448,80,78,81,78,Short passing,65,High
+4626133,873,away,1,,,1799,79,78,77,80,Short passing,30,Deep
+4621050,506,away,0,,,45,80,81,80,80,Balanced,90,High
+4850148,3948,away,3,,,2014,74,74,73,75,Balanced,50,Balanced
+4850146,2282,away,2,,,231,74,73,76,73,Balanced,90,High
+4624893,255,away,0,,,1871,69,69,70,70,Balanced,90,High
+4634495,60,away,0,,,25,75,71,74,76,Balanced,50,Balanced
+4839859,409,away,0,,,191,70,69,70,69,Balanced,90,High
+4645974,681,away,3,,,457,77,79,77,75,Short passing,90,High
+4648044,36,away,0,,,326,79,79,79,76,Balanced,90,High
+4814378,27,away,4,,,21,84,89,85,82,Balanced,65,High
+4814379,11,away,1,,,1,84,86,84,84,Balanced,65,High
+4805884,667,away,0,,,76,75,76,74,75,Short passing,65,High
+4805883,873,away,3,,,1799,79,78,77,80,Short passing,30,Deep
+4805928,60,away,1,,,25,75,71,74,76,Balanced,50,Balanced
+4805929,405,away,0,,,2,80,83,81,80,Balanced,50,Balanced
+4626146,1237,away,1,,,1808,78,78,78,78,Short passing,65,High
+4634514,23826,away,1,,,112172,78,77,76,80,Counter,65,High
+4856831,452,away,0,,,900,70,70,71,68,Counter,50,Balanced
+4626139,148,away,2,,,18,81,79,81,81,Balanced,90,High
+4850154,2282,away,3,,,231,74,73,76,73,Balanced,90,High
+4635290,273,away,2,,,74,76,74,76,74,Balanced,65,High
+4626145,31,away,2,,,9,85,85,86,83,Balanced,65,High
+4839867,122,away,1,,,209,68,67,71,67,Short passing,90,High
+4646000,681,away,0,,,457,77,79,77,75,Short passing,90,High
+4621065,430,away,0,,,110374,77,79,75,75,Short passing,65,High
+4626142,703,away,3,,,14,79,79,79,79,Balanced,50,Balanced
+4839865,170,away,1,,,254,69,67,69,70,Balanced,50,Balanced
+4794682,687,away,1,,,417,68,69,68,67,Balanced,65,High
+4814381,13,away,0,,,240,82,84,81,82,Balanced,65,High
+4814380,583,away,1,,,73,84,85,84,85,Balanced,90,High
+4805930,1075,away,1,,,1896,74,74,75,74,Short passing,65,High
+4805886,367,away,1,,,480,77,73,77,77,Short passing,65,High
+4805885,660,away,1,,,101059,72,71,73,73,Balanced,50,Balanced
+4805931,703,away,0,,,14,79,79,79,79,Balanced,50,Balanced
+4634531,24,away,2,,,1824,78,77,78,80,Short passing,65,High
+4626152,631,away,1,,,5,80,80,82,80,Balanced,65,High
+4646016,150,away,2,,,449,78,77,79,77,Balanced,50,Balanced
+4634534,15,away,1,,,32,79,82,79,77,Balanced,50,Balanced
+4621071,46,away,3,,,44,83,86,83,83,Balanced,90,High
+4839873,409,away,1,,,191,70,69,70,69,Balanced,90,High
+4850156,58,away,1,,,229,71,74,70,68,Balanced,90,High
+4856837,26,away,0,,,896,71,69,72,71,Balanced,50,Balanced
+4646012,418,away,0,,,243,85,88,85,82,Balanced,90,High
+4621073,800,away,3,,,39,79,79,79,79,Short passing,50,Balanced
+4626154,762,away,1,,,13,81,81,84,80,Short passing,50,Balanced
+4642439,1090,away,1,,,1906,73,74,74,72,Balanced,65,High
+4626157,11,away,1,,,1,84,86,84,84,Balanced,65,High
+4635302,1082,away,1,,,65,76,79,76,76,Balanced,65,High
+4621074,1025,away,3,,,189,76,76,77,74,Balanced,65,High
+4648933,1075,away,2,,,1896,74,74,75,74,Short passing,65,High
+4624906,2300,away,2,,,110745,69,72,69,69,Balanced,50,Balanced
+4626104,873,away,0,,,1799,79,78,77,80,Short passing,30,Deep
+4645967,368,away,3,,,481,75,75,76,75,Counter,50,Balanced
+4626159,31,away,2,,,9,85,85,86,83,Balanced,65,High
+4634552,23826,away,1,,,112172,78,77,76,80,Counter,65,High
+4634551,79,away,2,,,36,77,78,77,74,Balanced,90,High
+4645991,150,away,1,,,449,78,77,79,77,Balanced,50,Balanced
+4621083,430,away,2,,,110374,77,79,75,75,Short passing,65,High
+4621085,398,away,0,,,46,79,80,77,78,Balanced,30,Deep
+4645994,1050,away,0,,,483,79,80,79,77,Short passing,50,Balanced
+4645998,418,away,1,,,243,85,88,85,82,Balanced,90,High
+4621078,1025,away,1,,,189,76,76,77,74,Balanced,65,High
+4856817,26,away,0,,,896,71,69,72,71,Balanced,50,Balanced
+4850160,3948,away,0,,,2014,74,74,73,75,Balanced,50,Balanced
+4839879,170,away,0,,,254,69,67,69,70,Balanced,50,Balanced
+4635310,162,away,4,,,69,78,77,75,77,Balanced,65,High
+4635309,273,away,1,,,74,76,74,76,74,Balanced,65,High
+4626165,703,away,2,,,14,79,79,79,79,Balanced,50,Balanced
+4626166,379,away,1,,,19,77,78,77,77,Short passing,30,Deep
+4626162,148,away,1,,,18,81,79,81,81,Balanced,90,High
+4850149,3948,away,0,,,2014,74,74,73,75,Balanced,50,Balanced
+4621090,800,away,1,,,39,79,79,79,79,Short passing,50,Balanced
+4621088,46,away,3,,,44,83,86,83,83,Balanced,90,High
+4645985,621,away,2,,,448,80,78,81,78,Short passing,65,High
+4626168,985,away,3,,,11,80,82,80,79,Balanced,65,High
+4850141,58,away,1,,,229,71,74,70,68,Balanced,90,High
+4626173,405,away,2,,,2,80,83,81,80,Balanced,50,Balanced
+4645986,13,away,1,,,240,82,84,81,82,Balanced,65,High
+4626170,11,away,2,,,1,84,86,84,84,Balanced,65,High
+4850140,157,away,0,,,674,70,70,70,68,Balanced,30,Deep
