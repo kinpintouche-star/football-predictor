@@ -343,31 +343,31 @@ def show_player_stat_groups(player: dict):
 
 
 def show_sql_agent_chat():
-    st.sidebar.divider()
-    st.sidebar.subheader("Chat data")
+    st.divider()
 
-    with st.sidebar.form("sql_agent_chat_form"):
-        message = st.text_area(
-            "Question",
-            placeholder="Ex : quels sont les meilleurs attaquants ?",
-            height=90,
-        )
-        submitted = st.form_submit_button("Envoyer")
+    with st.expander("Chat data", expanded=True):
+        with st.form("sql_agent_chat_form"):
+            message = st.text_input(
+                "Question",
+                placeholder="Ex : quels sont les 10 meilleurs joueurs ?",
+            )
+            submitted = st.form_submit_button("Envoyer")
 
-    if not submitted:
-        return
+        if not submitted:
+            return
 
-    if not message.strip():
-        st.sidebar.warning("Écris une question.")
-        return
+        if not message.strip():
+            st.warning("Écris une question.")
+            return
 
-    try:
-        result = ask_sql_agent(message.strip())
-    except requests.RequestException as error:
-        st.sidebar.error(f"Agent indisponible : {error}")
-        return
+        try:
+            with st.spinner("Recherche dans les données..."):
+                result = ask_sql_agent(message.strip())
+        except requests.RequestException as error:
+            st.error(f"Agent indisponible : {error}")
+            return
 
-    st.sidebar.write(result["answer"])
+        st.write(result["answer"])
 
 
 # -----------------------------------------------------------------------------
@@ -572,8 +572,7 @@ ROUTES = {
     PAGE_PLAYER: show_player_page,
 }
 
-show_sql_agent_chat()
-
 current_page = st.session_state.get("page", PAGE_TEAM)
 page_function = ROUTES.get(current_page, show_team_page)
 page_function()
+show_sql_agent_chat()
