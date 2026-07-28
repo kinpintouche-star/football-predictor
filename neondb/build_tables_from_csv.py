@@ -49,6 +49,28 @@ STAT_COLUMNS = [
     "gk_reflexes",
 ]
 
+PLAYER_NUMERIC_COLUMNS = [
+    "player_id",
+    "height_cm",
+    "weight_kg",
+    "overall_rating",
+    "potential",
+    "weak_foot",
+    "skill_moves",
+    "current_sofifa_team_id",
+    "sofifa_value_eur",
+    "transfermarkt_market_value_eur",
+    "has_sofifa_profile",
+] + STAT_COLUMNS
+
+
+def clean_numeric_columns(dataframe: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
+    for column in columns:
+        if column in dataframe.columns:
+            dataframe[column] = pd.to_numeric(dataframe[column], errors="coerce")
+
+    return dataframe
+
 
 def euro_to_number(value):
     # Convertit "€115.5M", "€440K" ou vide en nombre brut.
@@ -121,6 +143,8 @@ def build_player_table() -> pd.DataFrame:
         "has_sofifa_profile",
     ]
 
+    players = clean_numeric_columns(players, PLAYER_NUMERIC_COLUMNS)
+
     return players[base_columns + STAT_COLUMNS]
 
 
@@ -166,6 +190,19 @@ def build_team_table() -> pd.DataFrame:
     teams = teams.merge(profiles[profile_columns], on="sofifa_team_id", how="left")
     teams = teams.merge(team_map[rank_columns], on="sofifa_team_id", how="left")
     teams = teams.rename(columns={"rank": "uefa_rank"})
+    teams = clean_numeric_columns(
+        teams,
+        [
+            "team_id",
+            "sofifa_team_id",
+            "uefa_rank",
+            "overall",
+            "attack",
+            "midfield",
+            "defence",
+            "defensive_line",
+        ],
+    )
 
     return teams[
         [
@@ -188,6 +225,10 @@ def build_team_table() -> pd.DataFrame:
 
 def build_match_table() -> pd.DataFrame:
     matches = pd.read_csv(MATCH_SOURCE)
+    matches = clean_numeric_columns(
+        matches,
+        ["match_id", "home_score", "away_score"],
+    )
 
     return matches[
         ["match_id", "match_date", "home_score", "away_score", "result"]
@@ -196,6 +237,28 @@ def build_match_table() -> pd.DataFrame:
 
 def build_match_team_table() -> pd.DataFrame:
     matches = pd.read_csv(MATCH_SOURCE)
+    matches = clean_numeric_columns(
+        matches,
+        [
+            "match_id",
+            "home_team_id",
+            "away_team_id",
+            "home_score",
+            "away_score",
+            "home_sofifa_id",
+            "away_sofifa_id",
+            "home_overall",
+            "away_overall",
+            "home_attack",
+            "away_attack",
+            "home_midfield",
+            "away_midfield",
+            "home_defence",
+            "away_defence",
+            "home_defensive_line",
+            "away_defensive_line",
+        ],
+    )
 
     home = pd.DataFrame(
         {

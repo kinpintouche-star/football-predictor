@@ -25,7 +25,22 @@ Les fichiers sources utilises sont :
 Le CSV `training_match_dataset.csv` est conserve comme reference modele, mais
 il n'est pas necessaire pour construire les tables relationnelles de base.
 
-## Construire les CSV propres
+## Ordre de lancement
+
+### 1. Creer les tables vides dans Neon
+
+```bash
+python neondb/create_tables.py
+```
+
+Cette commande execute `schema.sql`.
+
+Elle cree seulement les tables et index manquants. Elle n'insere aucune donnee.
+
+Les requetes utilisent `CREATE TABLE IF NOT EXISTS` et `CREATE INDEX IF NOT EXISTS` :
+elles ne suppriment pas et ne remplacent pas les tables deja presentes.
+
+### 2. Construire les CSV propres
 
 Depuis la racine du projet :
 
@@ -55,6 +70,17 @@ Les tables custom sont aussi vides au build :
 - `custom_match` : match custom entre deux equipes custom. Son id commence par
   `c` et il peut etre rattache a une phase de tournoi.
 
+### 3. Inserer les CSV dans les tables Neon
+
+Apres avoir genere les CSV avec `build_tables_from_csv.py`, lancer :
+
+```bash
+python neondb/load_csv_to_neon.py
+```
+
+Le chargement utilise `ON CONFLICT DO NOTHING` :
+les lignes deja presentes sont ignorees, pas remplacees.
+
 ## Voir le schema sans rien executer
 
 ```bash
@@ -62,14 +88,3 @@ python neondb/prepare_neon_db.py
 ```
 
 Ce script affiche le SQL. Il ne se connecte pas a Neon.
-
-## Creer les tables dans Neon
-
-```bash
-python neondb/create_tables.py
-```
-
-Le script execute `schema.sql`, qui contient tout le schema.
-
-Les requetes utilisent `CREATE TABLE IF NOT EXISTS` et `CREATE INDEX IF NOT EXISTS` :
-elles ne suppriment pas et ne remplacent pas les tables deja presentes.
