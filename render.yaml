@@ -16,11 +16,6 @@ services:
     dockerContext: ./front
     envVars:
       - fromGroup: STREAMLIT
-      - key: API_SERVICE_HOSTPORT
-        fromService:
-          type: web
-          name: football-predictor-api
-          property: hostport
 
   - type: web
     name: football-predictor-inference-api

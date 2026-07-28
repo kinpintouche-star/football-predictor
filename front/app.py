@@ -15,24 +15,8 @@ from player_stat_groups import PLAYER_STAT_GROUPS
 
 load_dotenv()
 
-API_SERVICE_HOSTPORT = os.getenv("API_SERVICE_HOSTPORT")
-API_BASE_URL = os.getenv("API_BASE_URL")
-
-if not API_BASE_URL and API_SERVICE_HOSTPORT:
-    API_BASE_URL = f"http://{API_SERVICE_HOSTPORT}"
-
-if not API_BASE_URL:
-    API_BASE_URL = "http://127.0.0.1:8000"
-
-# Seconde API : le service d'inférence, qui sert le modèle MLflow.
-PREDICT_SERVICE_HOSTPORT = os.getenv("PREDICT_SERVICE_HOSTPORT")
-PREDICT_API_BASE_URL = os.getenv("PREDICT_API_BASE_URL")
-
-if not PREDICT_API_BASE_URL and PREDICT_SERVICE_HOSTPORT:
-    PREDICT_API_BASE_URL = f"http://{PREDICT_SERVICE_HOSTPORT}"
-
-if not PREDICT_API_BASE_URL:
-    PREDICT_API_BASE_URL = "http://127.0.0.1:4000"
+API_BASE_URL = os.getenv("API_BASE_URL", "http://127.0.0.1:8000").rstrip("/")
+PREDICT_API_BASE_URL = os.getenv("PREDICT_API_BASE_URL", "http://127.0.0.1:4000").rstrip("/")
 
 PAGE_TEAM = "team"
 PAGE_LINEUP = "lineup"

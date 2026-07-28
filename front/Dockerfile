@@ -3,6 +3,8 @@ FROM python:3.13-slim
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 ENV FRONT_SERVER_PORT=8501
+ENV API_BASE_URL=http://127.0.0.1:8000
+ENV PREDICT_API_BASE_URL=http://127.0.0.1:4000
 
 WORKDIR /app
 
@@ -10,8 +12,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt
 
-COPY app.py .
-COPY player_stat_groups.py .
+COPY . .
 
 EXPOSE 8501
 
