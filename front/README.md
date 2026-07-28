@@ -8,6 +8,7 @@ En local, créer `front/.env` :
 
 ```txt
 API_BASE_URL=http://127.0.0.1:8000
+SQL_AGENT_API_URL=https://ton-url-lightning
 ```
 
 Avec Docker Compose, `API_BASE_URL` est injecté automatiquement avec :
@@ -15,6 +16,9 @@ Avec Docker Compose, `API_BASE_URL` est injecté automatiquement avec :
 ```txt
 http://api:${API_SERVER_PORT}
 ```
+
+Le chat data appelle `SQL_AGENT_API_URL`. Sur Render, ajouter cette variable
+d'environnement avec l'URL publique Lightning AI de l'agent SQL.
 
 ## Lancer en local
 
@@ -41,4 +45,3 @@ Port exposé sur la machine :
 ```txt
 FRONT_PORT=8501
 ```
-
