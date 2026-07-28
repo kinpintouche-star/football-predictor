@@ -15,6 +15,7 @@ TABLES = [
     "match_team",
     "lineup",
     "custom_team",
+    "custom_team_player",
     "tournament",
     "custom_match",
 ]

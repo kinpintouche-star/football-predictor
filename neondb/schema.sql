@@ -129,6 +129,12 @@ CREATE TABLE IF NOT EXISTS "custom_team" (
     budget_eur BIGINT DEFAULT 500000000
 );
 
+CREATE TABLE IF NOT EXISTS "custom_team_player" (
+    custom_team_id TEXT REFERENCES "custom_team"(custom_team_id),
+    player_id BIGINT REFERENCES "player"(player_id),
+    PRIMARY KEY (custom_team_id, player_id)
+);
+
 CREATE TABLE IF NOT EXISTS "tournament" (
     tournament_id TEXT PRIMARY KEY,
     nb_teams INTEGER NOT NULL,
@@ -146,4 +152,5 @@ CREATE TABLE IF NOT EXISTS "custom_match" (
 CREATE INDEX IF NOT EXISTS idx_lineup_team_match ON "lineup"(team_id, match_id);
 CREATE INDEX IF NOT EXISTS idx_match_team_team ON "match_team"(team_id);
 CREATE INDEX IF NOT EXISTS idx_match_date ON "match"(match_date);
+CREATE INDEX IF NOT EXISTS idx_custom_team_player_player ON "custom_team_player"(player_id);
 CREATE INDEX IF NOT EXISTS idx_custom_match_tournament ON "custom_match"(tournament_id);

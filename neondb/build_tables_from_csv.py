@@ -351,6 +351,15 @@ def build_empty_tournament_table() -> pd.DataFrame:
     )
 
 
+def build_empty_custom_team_player_table() -> pd.DataFrame:
+    return pd.DataFrame(
+        columns=[
+            "custom_team_id",
+            "player_id",
+        ]
+    )
+
+
 def build_empty_custom_match_table() -> pd.DataFrame:
     # Les ids de match custom commencent aussi par "c".
     return pd.DataFrame(
@@ -379,6 +388,7 @@ def main() -> None:
     save_table("match_team", build_match_team_table())
     save_table("lineup", build_empty_lineup_table())
     save_table("custom_team", build_empty_custom_team_table())
+    save_table("custom_team_player", build_empty_custom_team_player_table())
     save_table("tournament", build_empty_tournament_table())
     save_table("custom_match", build_empty_custom_match_table())
 

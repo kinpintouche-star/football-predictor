@@ -56,6 +56,7 @@ Sorties attendues :
 - `build/match_team.csv`
 - `build/lineup.csv`
 - `build/custom_team.csv`
+- `build/custom_team_player.csv`
 - `build/tournament.csv`
 - `build/custom_match.csv`
 
@@ -66,6 +67,7 @@ Les tables custom sont aussi vides au build :
 
 - `custom_team` : equipe creee par l'utilisateur. Son id commence par `c`,
   et elle ajoute `reference_formation` et `budget_eur` aux colonnes d'une team.
+- `custom_team_player` : association entre une equipe custom et ses joueurs.
 - `tournament` : tournoi custom avec nombre d'equipes et vainqueur optionnel.
 - `custom_match` : match custom entre deux equipes custom. Son id commence par
   `c` et il peut etre rattache a une phase de tournoi.
