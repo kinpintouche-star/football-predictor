@@ -1,0 +1,1922 @@
+[
+{
+"player_id": 315858,
+"player_name": "Gianluigi Donnarumma",
+"best_position": "GK",
+"price": 45000000,
+"note": 37.3,
+"line": "GK"
+},
+{
+"player_id": 357153,
+"player_name": "Diogo Costa",
+"best_position": "GK",
+"price": 40000000,
+"note": 31.7,
+"line": "GK"
+},
+{
+"player_id": 257814,
+"player_name": "Gregor Kobel",
+"best_position": "GK",
+"price": 40000000,
+"note": 33.7,
+"line": "GK"
+},
+{
+"player_id": 182906,
+"player_name": "Mike Maignan",
+"best_position": "GK",
+"price": 38000000,
+"note": 44.7,
+"line": "GK"
+},
+{
+"player_id": 565093,
+"player_name": "Bart Verbruggen",
+"best_position": "GK",
+"price": 35000000,
+"note": 33.9,
+"line": "GK"
+},
+{
+"player_id": 262749,
+"player_name": "David Raya",
+"best_position": "GK",
+"price": 35000000,
+"note": 40.1,
+"line": "GK"
+},
+{
+"player_id": 338670,
+"player_name": "Mile Svilar",
+"best_position": "GK",
+"price": 35000000,
+"note": 38.8,
+"line": "GK"
+},
+{
+"player_id": 286047,
+"player_name": "Guglielmo Vicario",
+"best_position": "GK",
+"price": 30000000,
+"note": 36.3,
+"line": "GK"
+},
+{
+"player_id": 262396,
+"player_name": "Unai Simón",
+"best_position": "GK",
+"price": 30000000,
+"note": 35.4,
+"line": "GK"
+},
+{
+"player_id": 561613,
+"player_name": "Joan García",
+"best_position": "GK",
+"price": 30000000,
+"note": 33.5,
+"line": "GK"
+},
+{
+"player_id": 502676,
+"player_name": "Giorgi Mamardashvili",
+"best_position": "GK",
+"price": 28000000,
+"note": 29.8,
+"line": "GK"
+},
+{
+"player_id": 537844,
+"player_name": "Anatoliy Trubin",
+"best_position": "GK",
+"price": 28000000,
+"note": 31.8,
+"line": "GK"
+},
+{
+"player_id": 108390,
+"player_name": "Thibaut Courtois",
+"best_position": "GK",
+"price": 28000000,
+"note": 35.6,
+"line": "GK"
+},
+{
+"player_id": 465555,
+"player_name": "Djordje Petrovic",
+"best_position": "GK",
+"price": 28000000,
+"note": 34.2,
+"line": "GK"
+},
+{
+"player_id": 258919,
+"player_name": "Dean Henderson",
+"best_position": "GK",
+"price": 28000000,
+"note": 36.3,
+"line": "GK"
+},
+{
+"player_id": 74857,
+"player_name": "Marc-André ter Stegen",
+"best_position": "GK",
+"price": 28000000,
+"note": 38.7,
+"line": "GK"
+},
+{
+"player_id": 404839,
+"player_name": "Andriy Lunin",
+"best_position": "GK",
+"price": 25000000,
+"note": 29.8,
+"line": "GK"
+},
+{
+"player_id": 463600,
+"player_name": "Lucas Chevalier",
+"best_position": "GK",
+"price": 25000000,
+"note": 31.2,
+"line": "GK"
+},
+{
+"player_id": 503883,
+"player_name": "Senne Lammens",
+"best_position": "GK",
+"price": 25000000,
+"note": 26.7,
+"line": "GK"
+},
+{
+"player_id": 340918,
+"player_name": "Caoimhín Kelleher",
+"best_position": "GK",
+"price": 22000000,
+"note": 33.5,
+"line": "GK"
+},
+{
+"player_id": 403151,
+"player_name": "Robert Sánchez",
+"best_position": "GK",
+"price": 22000000,
+"note": 38.7,
+"line": "GK"
+},
+{
+"player_id": 526845,
+"player_name": "Noah Atubolu",
+"best_position": "GK",
+"price": 20000000,
+"note": 32.8,
+"line": "GK"
+},
+{
+"player_id": 566799,
+"player_name": "James Trafford",
+"best_position": "GK",
+"price": 18000000,
+"note": 37.1,
+"line": "GK"
+},
+{
+"player_id": 301238,
+"player_name": "Michele Di Gregorio",
+"best_position": "GK",
+"price": 18000000,
+"note": 37.7,
+"line": "GK"
+},
+{
+"player_id": 121483,
+"player_name": "Jan Oblak",
+"best_position": "GK",
+"price": 17000000,
+"note": 37.8,
+"line": "GK"
+},
+{
+"player_id": 105470,
+"player_name": "Alisson",
+"best_position": "GK",
+"price": 17000000,
+"note": 40.3,
+"line": "GK"
+},
+{
+"player_id": 459763,
+"player_name": "Marco Carnesecchi",
+"best_position": "GK",
+"price": 16000000,
+"note": 28.3,
+"line": "GK"
+},
+{
+"player_id": 554389,
+"player_name": "Konstantinos Tzolakis",
+"best_position": "GK",
+"price": 15000000,
+"note": 38.1,
+"line": "GK"
+},
+{
+"player_id": 318470,
+"player_name": "Matvey Safonov",
+"best_position": "GK",
+"price": 15000000,
+"note": 32.6,
+"line": "GK"
+},
+{
+"player_id": 234509,
+"player_name": "André Onana",
+"best_position": "GK",
+"price": 15000000,
+"note": 42.5,
+"line": "GK"
+},
+{
+"player_id": 495666,
+"player_name": "William Saliba",
+"best_position": "CB",
+"price": 90000000,
+"note": 69.9,
+"line": "DEF"
+},
+{
+"player_id": 398073,
+"player_name": "Achraf Hakimi",
+"best_position": "RB",
+"price": 80000000,
+"note": 82.5,
+"line": "DEF"
+},
+{
+"player_id": 315853,
+"player_name": "Alessandro Bastoni",
+"best_position": "CB",
+"price": 80000000,
+"note": 73.4,
+"line": "DEF"
+},
+{
+"player_id": 435338,
+"player_name": "Gabriel Magalhães",
+"best_position": "CB",
+"price": 75000000,
+"note": 67.4,
+"line": "DEF"
+},
+{
+"player_id": 616341,
+"player_name": "Nuno Mendes",
+"best_position": "LB",
+"price": 75000000,
+"note": 81.4,
+"line": "DEF"
+},
+{
+"player_id": 344695,
+"player_name": "Dayot Upamecano",
+"best_position": "CB",
+"price": 70000000,
+"note": 69.5,
+"line": "DEF"
+},
+{
+"player_id": 475959,
+"player_name": "Josko Gvardiol",
+"best_position": "CB",
+"price": 70000000,
+"note": 77.9,
+"line": "DEF"
+},
+{
+"player_id": 314353,
+"player_name": "Trent Alexander-Arnold",
+"best_position": "RB",
+"price": 70000000,
+"note": 78.5,
+"line": "DEF"
+},
+{
+"player_id": 480267,
+"player_name": "Ronald Araujo",
+"best_position": "CB",
+"price": 70000000,
+"note": 69.5,
+"line": "DEF"
+},
+{
+"player_id": 420243,
+"player_name": "Jurriën Timber",
+"best_position": "RB",
+"price": 70000000,
+"note": 73.2,
+"line": "DEF"
+},
+{
+"player_id": 661171,
+"player_name": "Willian Pacho",
+"best_position": "CB",
+"price": 70000000,
+"note": 67.9,
+"line": "DEF"
+},
+{
+"player_id": 326031,
+"player_name": "Matthijs de Ligt",
+"best_position": "CB",
+"price": 65000000,
+"note": 68.0,
+"line": "DEF"
+},
+{
+"player_id": 355915,
+"player_name": "Cristian Romero",
+"best_position": "CB",
+"price": 60000000,
+"note": 67.4,
+"line": "DEF"
+},
+{
+"player_id": 339808,
+"player_name": "Theo Hernández",
+"best_position": "LB",
+"price": 60000000,
+"note": 81.4,
+"line": "DEF"
+},
+{
+"player_id": 811778,
+"player_name": "Álvaro Carreras",
+"best_position": "LWB",
+"price": 60000000,
+"note": 75.1,
+"line": "DEF"
+},
+{
+"player_id": 401530,
+"player_name": "Éder Militão",
+"best_position": "CB",
+"price": 60000000,
+"note": 72.9,
+"line": "DEF"
+},
+{
+"player_id": 258004,
+"player_name": "Rúben Dias",
+"best_position": "CB",
+"price": 60000000,
+"note": 67.0,
+"line": "DEF"
+},
+{
+"player_id": 636688,
+"player_name": "Alejandro Balde",
+"best_position": "LB",
+"price": 60000000,
+"note": 71.8,
+"line": "DEF"
+},
+{
+"player_id": 1005649,
+"player_name": "Murillo",
+"best_position": "CB",
+"price": 55000000,
+"note": 71.7,
+"line": "DEF"
+},
+{
+"player_id": 923831,
+"player_name": "Leny Yoro",
+"best_position": "CB",
+"price": 55000000,
+"note": 63.3,
+"line": "DEF"
+},
+{
+"player_id": 392757,
+"player_name": "Marc Guéhi",
+"best_position": "CB",
+"price": 55000000,
+"note": 67.7,
+"line": "DEF"
+},
+{
+"player_id": 557459,
+"player_name": "Micky van de Ven",
+"best_position": "CB",
+"price": 55000000,
+"note": 71.1,
+"line": "DEF"
+},
+{
+"player_id": 388198,
+"player_name": "Nico Schlotterbeck",
+"best_position": "CB",
+"price": 55000000,
+"note": 74.7,
+"line": "DEF"
+},
+{
+"player_id": 659813,
+"player_name": "Piero Hincapié",
+"best_position": "CB",
+"price": 50000000,
+"note": 71.0,
+"line": "DEF"
+},
+{
+"player_id": 198116,
+"player_name": "Federico Dimarco",
+"best_position": "LB",
+"price": 50000000,
+"note": 81.4,
+"line": "DEF"
+},
+{
+"player_id": 659089,
+"player_name": "Ilya Zabarnyi",
+"best_position": "CB",
+"price": 50000000,
+"note": 66.9,
+"line": "DEF"
+},
+{
+"player_id": 472423,
+"player_name": "Reece James",
+"best_position": "CB",
+"price": 50000000,
+"note": 77.7,
+"line": "DEF"
+},
+{
+"player_id": 614258,
+"player_name": "Levi Colwill",
+"best_position": "CB",
+"price": 50000000,
+"note": 68.5,
+"line": "DEF"
+},
+{
+"player_id": 480762,
+"player_name": "Lisandro Martínez",
+"best_position": "CB",
+"price": 50000000,
+"note": 73.2,
+"line": "DEF"
+},
+{
+"player_id": 284857,
+"player_name": "Marc Cucurella",
+"best_position": "LB",
+"price": 50000000,
+"note": 76.8,
+"line": "DEF"
+},
+{
+"player_id": 502821,
+"player_name": "Riccardo Calafiori",
+"best_position": "CB",
+"price": 50000000,
+"note": 74.2,
+"line": "DEF"
+},
+{
+"player_id": 357119,
+"player_name": "Ibrahima Konaté",
+"best_position": "CB",
+"price": 45000000,
+"note": 67.5,
+"line": "DEF"
+},
+{
+"player_id": 571604,
+"player_name": "Giorgio Scalvini",
+"best_position": "CB",
+"price": 45000000,
+"note": 58.7,
+"line": "DEF"
+},
+{
+"player_id": 974982,
+"player_name": "Ousmane Diomande",
+"best_position": "CB",
+"price": 45000000,
+"note": 64.3,
+"line": "DEF"
+},
+{
+"player_id": 618472,
+"player_name": "Castello Lukeba",
+"best_position": "CB",
+"price": 45000000,
+"note": 68.0,
+"line": "DEF"
+},
+{
+"player_id": 386446,
+"player_name": "Alessandro Buongiorno",
+"best_position": "CB",
+"price": 45000000,
+"note": 68.1,
+"line": "DEF"
+},
+{
+"player_id": 661053,
+"player_name": "Jarrad Branthwaite",
+"best_position": "CB",
+"price": 45000000,
+"note": 62.2,
+"line": "DEF"
+},
+{
+"player_id": 406640,
+"player_name": "Felix Nmecha",
+"best_position": "CB",
+"price": 45000000,
+"note": 79.0,
+"line": "DEF"
+},
+{
+"player_id": 549006,
+"player_name": "Gonçalo Inácio",
+"best_position": "CB",
+"price": 45000000,
+"note": 70.5,
+"line": "DEF"
+},
+{
+"player_id": 411975,
+"player_name": "Jules Koundé",
+"best_position": "RB",
+"price": 45000000,
+"note": 74.5,
+"line": "DEF"
+},
+{
+"player_id": 485706,
+"player_name": "Amadou Onana",
+"best_position": "CB",
+"price": 42000000,
+"note": 71.2,
+"line": "DEF"
+},
+{
+"player_id": 303254,
+"player_name": "Fikayo Tomori",
+"best_position": "CB",
+"price": 40000000,
+"note": 68.4,
+"line": "DEF"
+},
+{
+"player_id": 578391,
+"player_name": "Rayan Aït-Nouri",
+"best_position": "LWB",
+"price": 40000000,
+"note": 73.6,
+"line": "DEF"
+},
+{
+"player_id": 743413,
+"player_name": "Nico O'Reilly",
+"best_position": "LB",
+"price": 40000000,
+"note": 72.3,
+"line": "DEF"
+},
+{
+"player_id": 556385,
+"player_name": "Destiny Udogie",
+"best_position": "LWB",
+"price": 40000000,
+"note": 75.2,
+"line": "DEF"
+},
+{
+"player_id": 730861,
+"player_name": "Milos Kerkez",
+"best_position": "LWB",
+"price": 40000000,
+"note": 75.9,
+"line": "DEF"
+},
+{
+"player_id": 892160,
+"player_name": "Luka Vuskovic",
+"best_position": "CB",
+"price": 40000000,
+"note": 60.9,
+"line": "DEF"
+},
+{
+"player_id": 503981,
+"player_name": "Tino Livramento",
+"best_position": "RWB",
+"price": 40000000,
+"note": 71.7,
+"line": "DEF"
+},
+{
+"player_id": 632349,
+"player_name": "Jarell Quansah",
+"best_position": "CB",
+"price": 40000000,
+"note": 64.9,
+"line": "DEF"
+},
+{
+"player_id": 196948,
+"player_name": "Andreas Christensen",
+"best_position": "CB",
+"price": 40000000,
+"note": 64.8,
+"line": "DEF"
+},
+{
+"player_id": 351809,
+"player_name": "Robin Le Normand",
+"best_position": "CB",
+"price": 40000000,
+"note": 63.1,
+"line": "DEF"
+},
+{
+"player_id": 553875,
+"player_name": "Pedro Porro",
+"best_position": "RWB",
+"price": 40000000,
+"note": 77.3,
+"line": "DEF"
+},
+{
+"player_id": 601883,
+"player_name": "Matheus Nunes",
+"best_position": "RB",
+"price": 38000000,
+"note": 75.0,
+"line": "DEF"
+},
+{
+"player_id": 484547,
+"player_name": "Jeremie Frimpong",
+"best_position": "RB",
+"price": 38000000,
+"note": 74.8,
+"line": "DEF"
+},
+{
+"player_id": 691892,
+"player_name": "Nathaniel Brown",
+"best_position": "LWB",
+"price": 35000000,
+"note": 68.2,
+"line": "DEF"
+},
+{
+"player_id": 463605,
+"player_name": "Bafodé Diakité",
+"best_position": "CB",
+"price": 35000000,
+"note": 68.5,
+"line": "DEF"
+},
+{
+"player_id": 346314,
+"player_name": "Trevoh Chalobah",
+"best_position": "CB",
+"price": 35000000,
+"note": 68.2,
+"line": "DEF"
+},
+{
+"player_id": 413403,
+"player_name": "Ezri Konsa",
+"best_position": "CB",
+"price": 35000000,
+"note": 71.7,
+"line": "DEF"
+},
+{
+"player_id": 516716,
+"player_name": "Bremer",
+"best_position": "CB",
+"price": 35000000,
+"note": 69.7,
+"line": "DEF"
+},
+{
+"player_id": 904802,
+"player_name": "Jorrel Hato",
+"best_position": "LB",
+"price": 35000000,
+"note": 69.6,
+"line": "DEF"
+},
+{
+"player_id": 434224,
+"player_name": "Maxence Lacroix",
+"best_position": "CB",
+"price": 35000000,
+"note": 68.0,
+"line": "DEF"
+},
+{
+"player_id": 441986,
+"player_name": "Yann Bisseck",
+"best_position": "CB",
+"price": 35000000,
+"note": 69.3,
+"line": "DEF"
+},
+{
+"player_id": 646750,
+"player_name": "Cristhian Mosquera",
+"best_position": "CB",
+"price": 35000000,
+"note": 64.8,
+"line": "DEF"
+},
+{
+"player_id": 763079,
+"player_name": "Abdukodir Khusanov",
+"best_position": "CB",
+"price": 35000000,
+"note": 66.6,
+"line": "DEF"
+},
+{
+"player_id": 564545,
+"player_name": "Edmond Tapsoba",
+"best_position": "CB",
+"price": 35000000,
+"note": 70.3,
+"line": "DEF"
+},
+{
+"player_id": 620322,
+"player_name": "Malo Gusto",
+"best_position": "RWB",
+"price": 35000000,
+"note": 72.0,
+"line": "DEF"
+},
+{
+"player_id": 701057,
+"player_name": "Rico Lewis",
+"best_position": "RWB",
+"price": 35000000,
+"note": 68.2,
+"line": "DEF"
+},
+{
+"player_id": 576314,
+"player_name": "Jan Paul van Hecke",
+"best_position": "CB",
+"price": 35000000,
+"note": 68.7,
+"line": "DEF"
+},
+{
+"player_id": 361093,
+"player_name": "Sven Botman",
+"best_position": "CB",
+"price": 35000000,
+"note": 62.5,
+"line": "DEF"
+},
+{
+"player_id": 670858,
+"player_name": "Lewis Hall",
+"best_position": "LWB",
+"price": 32000000,
+"note": 73.0,
+"line": "DEF"
+},
+{
+"player_id": 371998,
+"player_name": "Vinicius Junior",
+"best_position": "CAM",
+"price": 180000000,
+"note": 73.7,
+"line": "MID"
+},
+{
+"player_id": 581678,
+"player_name": "Jude Bellingham",
+"best_position": "CAM",
+"price": 160000000,
+"note": 82.6,
+"line": "MID"
+},
+{
+"player_id": 406635,
+"player_name": "Phil Foden",
+"best_position": "CAM",
+"price": 150000000,
+"note": 73.8,
+"line": "MID"
+},
+{
+"player_id": 566723,
+"player_name": "Michael Olise",
+"best_position": "CAM",
+"price": 130000000,
+"note": 74.0,
+"line": "MID"
+},
+{
+"player_id": 580195,
+"player_name": "Jamal Musiala",
+"best_position": "CAM",
+"price": 130000000,
+"note": 76.4,
+"line": "MID"
+},
+{
+"player_id": 568177,
+"player_name": "Cole Palmer",
+"best_position": "CAM",
+"price": 120000000,
+"note": 74.5,
+"line": "MID"
+},
+{
+"player_id": 369081,
+"player_name": "Federico Valverde",
+"best_position": "CM",
+"price": 120000000,
+"note": 82.8,
+"line": "MID"
+},
+{
+"player_id": 357662,
+"player_name": "Declan Rice",
+"best_position": "CDM",
+"price": 120000000,
+"note": 78.7,
+"line": "MID"
+},
+{
+"player_id": 937958,
+"player_name": "Lamine Yamal",
+"best_position": "CAM",
+"price": 120000000,
+"note": 69.9,
+"line": "MID"
+},
+{
+"player_id": 670681,
+"player_name": "João Neves",
+"best_position": "CM",
+"price": 110000000,
+"note": 78.2,
+"line": "MID"
+},
+{
+"player_id": 487469,
+"player_name": "Vitinha",
+"best_position": "CM",
+"price": 110000000,
+"note": 77.8,
+"line": "MID"
+},
+{
+"player_id": 412363,
+"player_name": "Rodrygo",
+"best_position": "CAM",
+"price": 110000000,
+"note": 71.9,
+"line": "MID"
+},
+{
+"player_id": 598577,
+"player_name": "Florian Wirtz",
+"best_position": "CAM",
+"price": 110000000,
+"note": 75.3,
+"line": "MID"
+},
+{
+"player_id": 687626,
+"player_name": "Moisés Caicedo",
+"best_position": "CDM",
+"price": 110000000,
+"note": 76.1,
+"line": "MID"
+},
+{
+"player_id": 413112,
+"player_name": "Aurélien Tchouaméni",
+"best_position": "CDM",
+"price": 100000000,
+"note": 75.4,
+"line": "MID"
+},
+{
+"player_id": 576024,
+"player_name": "Julián Alvarez",
+"best_position": "CAM",
+"price": 100000000,
+"note": 80.4,
+"line": "MID"
+},
+{
+"player_id": 478573,
+"player_name": "Ryan Gravenberch",
+"best_position": "CM",
+"price": 90000000,
+"note": 78.3,
+"line": "MID"
+},
+{
+"player_id": 914562,
+"player_name": "Désiré Doué",
+"best_position": "CAM",
+"price": 90000000,
+"note": 75.5,
+"line": "MID"
+},
+{
+"player_id": 502670,
+"player_name": "Khvicha Kvaratskhelia",
+"best_position": "CAM",
+"price": 90000000,
+"note": 78.0,
+"line": "MID"
+},
+{
+"player_id": 357164,
+"player_name": "Rafael Leão",
+"best_position": "RM",
+"price": 90000000,
+"note": 72.7,
+"line": "MID"
+},
+{
+"player_id": 648195,
+"player_name": "Enzo Fernández",
+"best_position": "CM",
+"price": 85000000,
+"note": 76.5,
+"line": "MID"
+},
+{
+"player_id": 534033,
+"player_name": "Alexis Mac Allister",
+"best_position": "CM",
+"price": 85000000,
+"note": 78.6,
+"line": "MID"
+},
+{
+"player_id": 451276,
+"player_name": "Dominik Szoboszlai",
+"best_position": "CAM",
+"price": 85000000,
+"note": 78.9,
+"line": "MID"
+},
+{
+"player_id": 683840,
+"player_name": "Pedri",
+"best_position": "CM",
+"price": 80000000,
+"note": 78.3,
+"line": "MID"
+},
+{
+"player_id": 566931,
+"player_name": "Xavi Simons",
+"best_position": "CAM",
+"price": 80000000,
+"note": 74.5,
+"line": "MID"
+},
+{
+"player_id": 845654,
+"player_name": "Kenan Yıldız",
+"best_position": "CAM",
+"price": 75000000,
+"note": 70.2,
+"line": "MID"
+},
+{
+"player_id": 357565,
+"player_name": "Rodri",
+"best_position": "CDM",
+"price": 75000000,
+"note": 79.5,
+"line": "MID"
+},
+{
+"player_id": 397033,
+"player_name": "Sandro Tonali",
+"best_position": "CDM",
+"price": 75000000,
+"note": 79.9,
+"line": "MID"
+},
+{
+"player_id": 316264,
+"player_name": "Martin Ødegaard",
+"best_position": "CAM",
+"price": 75000000,
+"note": 74.9,
+"line": "MID"
+},
+{
+"player_id": 520624,
+"player_name": "Bruno Guimarães",
+"best_position": "CM",
+"price": 75000000,
+"note": 77.0,
+"line": "MID"
+},
+{
+"player_id": 326330,
+"player_name": "Frenkie de Jong",
+"best_position": "CM",
+"price": 70000000,
+"note": 79.1,
+"line": "MID"
+},
+{
+"player_id": 434675,
+"player_name": "Cody Gakpo",
+"best_position": "LM",
+"price": 70000000,
+"note": 74.7,
+"line": "MID"
+},
+{
+"player_id": 708265,
+"player_name": "Bradley Barcola",
+"best_position": "RM",
+"price": 70000000,
+"note": 72.4,
+"line": "MID"
+},
+{
+"player_id": 480692,
+"player_name": "Luis Díaz",
+"best_position": "LM",
+"price": 70000000,
+"note": 74.7,
+"line": "MID"
+},
+{
+"player_id": 503743,
+"player_name": "Morgan Rogers",
+"best_position": "CAM",
+"price": 70000000,
+"note": 75.0,
+"line": "MID"
+},
+{
+"player_id": 583255,
+"player_name": "Antoine Semenyo",
+"best_position": "RM",
+"price": 65000000,
+"note": 71.6,
+"line": "MID"
+},
+{
+"player_id": 792380,
+"player_name": "Aleksandar Pavlovic",
+"best_position": "CM",
+"price": 65000000,
+"note": 70.9,
+"line": "MID"
+},
+{
+"player_id": 445939,
+"player_name": "Omar Marmoush",
+"best_position": "CAM",
+"price": 65000000,
+"note": 73.9,
+"line": "MID"
+},
+{
+"player_id": 460939,
+"player_name": "Tijjani Reijnders",
+"best_position": "CM",
+"price": 65000000,
+"note": 78.6,
+"line": "MID"
+},
+{
+"player_id": 486049,
+"player_name": "Jérémy Doku",
+"best_position": "CAM",
+"price": 65000000,
+"note": 69.5,
+"line": "MID"
+},
+{
+"player_id": 479999,
+"player_name": "Eberechi Eze",
+"best_position": "CAM",
+"price": 65000000,
+"note": 73.0,
+"line": "MID"
+},
+{
+"player_id": 344381,
+"player_name": "Christopher Nkunku",
+"best_position": "CAM",
+"price": 65000000,
+"note": 69.7,
+"line": "MID"
+},
+{
+"player_id": 429014,
+"player_name": "Morgan Gibbs-White",
+"best_position": "CAM",
+"price": 65000000,
+"note": 74.7,
+"line": "MID"
+},
+{
+"player_id": 948294,
+"player_name": "Nico Paz",
+"best_position": "CAM",
+"price": 65000000,
+"note": 67.4,
+"line": "MID"
+},
+{
+"player_id": 567576,
+"player_name": "Elliot Anderson",
+"best_position": "CM",
+"price": 60000000,
+"note": 76.1,
+"line": "MID"
+},
+{
+"player_id": 775605,
+"player_name": "Pablo Barrios",
+"best_position": "CM",
+"price": 60000000,
+"note": 73.9,
+"line": "MID"
+},
+{
+"player_id": 744149,
+"player_name": "Adam Wharton",
+"best_position": "CM",
+"price": 60000000,
+"note": 70.2,
+"line": "MID"
+},
+{
+"player_id": 293385,
+"player_name": "Dani Olmo",
+"best_position": "CAM",
+"price": 60000000,
+"note": 70.8,
+"line": "MID"
+},
+{
+"player_id": 1075147,
+"player_name": "Lennart Karl",
+"best_position": "CAM",
+"price": 60000000,
+"note": 56.9,
+"line": "MID"
+},
+{
+"player_id": 487465,
+"player_name": "Pedro Neto",
+"best_position": "CAM",
+"price": 60000000,
+"note": 72.0,
+"line": "MID"
+},
+{
+"player_id": 255942,
+"player_name": "Nicolò Barella",
+"best_position": "CM",
+"price": 60000000,
+"note": 81.4,
+"line": "MID"
+},
+{
+"player_id": 973085,
+"player_name": "Carlos Baleba",
+"best_position": "CDM",
+"price": 60000000,
+"note": 74.9,
+"line": "MID"
+},
+{
+"player_id": 503733,
+"player_name": "Anthony Gordon",
+"best_position": "RM",
+"price": 60000000,
+"note": 75.1,
+"line": "MID"
+},
+{
+"player_id": 709187,
+"player_name": "Nico Williams",
+"best_position": "RM",
+"price": 60000000,
+"note": 73.4,
+"line": "MID"
+},
+{
+"player_id": 395516,
+"player_name": "Moussa Diaby",
+"best_position": "RM",
+"price": 55000000,
+"note": 71.8,
+"line": "MID"
+},
+{
+"player_id": 543499,
+"player_name": "Mohammed Kudus",
+"best_position": "CAM",
+"price": 55000000,
+"note": 74.3,
+"line": "MID"
+},
+{
+"player_id": 411295,
+"player_name": "Raphinha",
+"best_position": "LM",
+"price": 50000000,
+"note": 79.6,
+"line": "MID"
+},
+{
+"player_id": 607223,
+"player_name": "Rayan Cherki",
+"best_position": "CAM",
+"price": 50000000,
+"note": 66.1,
+"line": "MID"
+},
+{
+"player_id": 461496,
+"player_name": "Morten Hjulmand",
+"best_position": "CDM",
+"price": 50000000,
+"note": 75.8,
+"line": "MID"
+},
+{
+"player_id": 68290,
+"player_name": "Neymar",
+"best_position": "CAM",
+"price": 50000000,
+"note": 70.3,
+"line": "MID"
+},
+{
+"player_id": 423440,
+"player_name": "Martín Zubimendi",
+"best_position": "CM",
+"price": 50000000,
+"note": 74.3,
+"line": "MID"
+},
+{
+"player_id": 532826,
+"player_name": "Mason Greenwood",
+"best_position": "CAM",
+"price": 50000000,
+"note": 72.0,
+"line": "MID"
+},
+{
+"player_id": 536835,
+"player_name": "Amad Diallo",
+"best_position": "CAM",
+"price": 50000000,
+"note": 70.3,
+"line": "MID"
+},
+{
+"player_id": 503987,
+"player_name": "Noni Madueke",
+"best_position": "CAM",
+"price": 50000000,
+"note": 71.8,
+"line": "MID"
+},
+{
+"player_id": 583189,
+"player_name": "Anthony Elanga",
+"best_position": "RM",
+"price": 50000000,
+"note": 71.4,
+"line": "MID"
+},
+{
+"player_id": 624690,
+"player_name": "Manu Koné",
+"best_position": "CM",
+"price": 50000000,
+"note": 75.1,
+"line": "MID"
+},
+{
+"player_id": 810092,
+"player_name": "Warren Zaïre-Emery",
+"best_position": "CM",
+"price": 50000000,
+"note": 74.8,
+"line": "MID"
+},
+{
+"player_id": 424204,
+"player_name": "Alphonso Davies",
+"best_position": "LM",
+"price": 50000000,
+"note": 78.3,
+"line": "MID"
+},
+{
+"player_id": 640428,
+"player_name": "Eduardo Camavinga",
+"best_position": "CM",
+"price": 50000000,
+"note": 77.8,
+"line": "MID"
+},
+{
+"player_id": 470607,
+"player_name": "Brennan Johnson",
+"best_position": "RM",
+"price": 48000000,
+"note": 68.5,
+"line": "MID"
+},
+{
+"player_id": 431755,
+"player_name": "Dejan Kulusevski",
+"best_position": "CAM",
+"price": 45000000,
+"note": 76.2,
+"line": "MID"
+},
+{
+"player_id": 745200,
+"player_name": "Maghnes Akliouche",
+"best_position": "CAM",
+"price": 45000000,
+"note": 68.5,
+"line": "MID"
+},
+{
+"player_id": 443710,
+"player_name": "Angelo Stiller",
+"best_position": "CM",
+"price": 45000000,
+"note": 70.5,
+"line": "MID"
+},
+{
+"player_id": 743591,
+"player_name": "Savinho",
+"best_position": "LM",
+"price": 45000000,
+"note": 67.3,
+"line": "MID"
+},
+{
+"player_id": 315969,
+"player_name": "Scott McTominay",
+"best_position": "CM",
+"price": 45000000,
+"note": 77.6,
+"line": "MID"
+},
+{
+"player_id": 1138758,
+"player_name": "Geovany Quenda",
+"best_position": "CAM",
+"price": 45000000,
+"note": 67.3,
+"line": "MID"
+},
+{
+"player_id": 811779,
+"player_name": "Alejandro Garnacho",
+"best_position": "CAM",
+"price": 45000000,
+"note": 68.3,
+"line": "MID"
+},
+{
+"player_id": 816585,
+"player_name": "Can Uzun",
+"best_position": "CAM",
+"price": 45000000,
+"note": 65.4,
+"line": "MID"
+},
+{
+"player_id": 655488,
+"player_name": "Gabriel Martinelli",
+"best_position": "RM",
+"price": 45000000,
+"note": 74.4,
+"line": "MID"
+},
+{
+"player_id": 861410,
+"player_name": "Arda Güler",
+"best_position": "CAM",
+"price": 45000000,
+"note": 69.9,
+"line": "MID"
+},
+{
+"player_id": 418560,
+"player_name": "Erling Haaland",
+"best_position": "ST",
+"price": 200000000,
+"note": 76.8,
+"line": "FWD"
+},
+{
+"player_id": 342229,
+"player_name": "Kylian Mbappé",
+"best_position": "ST",
+"price": 180000000,
+"note": 78.9,
+"line": "FWD"
+},
+{
+"player_id": 433177,
+"player_name": "Bukayo Saka",
+"best_position": "RW",
+"price": 130000000,
+"note": 78.1,
+"line": "FWD"
+},
+{
+"player_id": 349066,
+"player_name": "Alexander Isak",
+"best_position": "ST",
+"price": 120000000,
+"note": 74.0,
+"line": "FWD"
+},
+{
+"player_id": 288230,
+"player_name": "Ousmane Dembélé",
+"best_position": "CF",
+"price": 100000000,
+"note": 78.6,
+"line": "FWD"
+},
+{
+"player_id": 406625,
+"player_name": "Lautaro Martínez",
+"best_position": "ST",
+"price": 85000000,
+"note": 78.3,
+"line": "FWD"
+},
+{
+"player_id": 709726,
+"player_name": "Hugo Ekitiké",
+"best_position": "ST",
+"price": 85000000,
+"note": 70.5,
+"line": "FWD"
+},
+{
+"player_id": 401923,
+"player_name": "Victor Osimhen",
+"best_position": "ST",
+"price": 75000000,
+"note": 74.5,
+"line": "FWD"
+},
+{
+"player_id": 546543,
+"player_name": "Darwin Núñez",
+"best_position": "ST",
+"price": 70000000,
+"note": 74.3,
+"line": "FWD"
+},
+{
+"player_id": 325443,
+"player_name": "Viktor Gyökeres",
+"best_position": "ST",
+"price": 70000000,
+"note": 76.2,
+"line": "FWD"
+},
+{
+"player_id": 455661,
+"player_name": "Nick Woltemade",
+"best_position": "ST",
+"price": 70000000,
+"note": 67.1,
+"line": "FWD"
+},
+{
+"player_id": 132098,
+"player_name": "Harry Kane",
+"best_position": "ST",
+"price": 65000000,
+"note": 75.6,
+"line": "FWD"
+},
+{
+"player_id": 626724,
+"player_name": "João Pedro",
+"best_position": "ST",
+"price": 65000000,
+"note": 70.0,
+"line": "FWD"
+},
+{
+"player_id": 315779,
+"player_name": "Christian Pulisic",
+"best_position": "RW",
+"price": 60000000,
+"note": 74.6,
+"line": "FWD"
+},
+{
+"player_id": 496094,
+"player_name": "Karim Adeyemi",
+"best_position": "ST",
+"price": 60000000,
+"note": 73.2,
+"line": "FWD"
+},
+{
+"player_id": 368887,
+"player_name": "Loïs Openda",
+"best_position": "ST",
+"price": 60000000,
+"note": 73.2,
+"line": "FWD"
+},
+{
+"player_id": 318528,
+"player_name": "Marcus Thuram",
+"best_position": "ST",
+"price": 60000000,
+"note": 75.5,
+"line": "FWD"
+},
+{
+"player_id": 309400,
+"player_name": "Kai Havertz",
+"best_position": "ST",
+"price": 55000000,
+"note": 71.5,
+"line": "FWD"
+},
+{
+"player_id": 627442,
+"player_name": "Benjamin Sesko",
+"best_position": "ST",
+"price": 50000000,
+"note": 71.2,
+"line": "FWD"
+},
+{
+"player_id": 1390649,
+"player_name": "Yan Diomande",
+"best_position": "ST",
+"price": 45000000,
+"note": 61.9,
+"line": "FWD"
+},
+{
+"player_id": 776890,
+"player_name": "Nicolas Jackson",
+"best_position": "ST",
+"price": 45000000,
+"note": 70.3,
+"line": "FWD"
+},
+{
+"player_id": 364135,
+"player_name": "Moise Kean",
+"best_position": "ST",
+"price": 45000000,
+"note": 70.1,
+"line": "FWD"
+},
+{
+"player_id": 610442,
+"player_name": "Rasmus Højlund",
+"best_position": "ST",
+"price": 45000000,
+"note": 67.0,
+"line": "FWD"
+},
+{
+"player_id": 429983,
+"player_name": "Jørgen Strand Larsen",
+"best_position": "ST",
+"price": 40000000,
+"note": 66.2,
+"line": "FWD"
+},
+{
+"player_id": 270541,
+"player_name": "Serhou Guirassy",
+"best_position": "ST",
+"price": 40000000,
+"note": 74.8,
+"line": "FWD"
+},
+{
+"player_id": 554903,
+"player_name": "Mateo Retegui",
+"best_position": "ST",
+"price": 40000000,
+"note": 67.9,
+"line": "FWD"
+},
+{
+"player_id": 258889,
+"player_name": "Dominic Solanke",
+"best_position": "ST",
+"price": 40000000,
+"note": 69.2,
+"line": "FWD"
+},
+{
+"player_id": 711337,
+"player_name": "Evanilson",
+"best_position": "ST",
+"price": 40000000,
+"note": 68.4,
+"line": "FWD"
+},
+{
+"player_id": 552955,
+"player_name": "Santiago Gimenez",
+"best_position": "ST",
+"price": 40000000,
+"note": 70.0,
+"line": "FWD"
+},
+{
+"player_id": 420002,
+"player_name": "Jean-Philippe Mateta",
+"best_position": "ST",
+"price": 40000000,
+"note": 70.2,
+"line": "FWD"
+},
+{
+"player_id": 413039,
+"player_name": "Bryan Mbeumo",
+"best_position": "RW",
+"price": 40000000,
+"note": 76.9,
+"line": "FWD"
+},
+{
+"player_id": 340950,
+"player_name": "Diogo Jota",
+"best_position": "ST",
+"price": 40000000,
+"note": 75.7,
+"line": "FWD"
+},
+{
+"player_id": 258923,
+"player_name": "Marcus Rashford",
+"best_position": "CF",
+"price": 40000000,
+"note": 71.8,
+"line": "FWD"
+},
+{
+"player_id": 357498,
+"player_name": "Dušan Vlahović",
+"best_position": "ST",
+"price": 35000000,
+"note": 70.5,
+"line": "FWD"
+},
+{
+"player_id": 550550,
+"player_name": "Gonçalo Ramos",
+"best_position": "ST",
+"price": 35000000,
+"note": 70.0,
+"line": "FWD"
+},
+{
+"player_id": 315867,
+"player_name": "Gianluca Scamacca",
+"best_position": "ST",
+"price": 35000000,
+"note": 64.9,
+"line": "FWD"
+},
+{
+"player_id": 333647,
+"player_name": "Jonathan Burkardt",
+"best_position": "ST",
+"price": 35000000,
+"note": 71.5,
+"line": "FWD"
+},
+{
+"player_id": 943837,
+"player_name": "Vitor Roque",
+"best_position": "ST",
+"price": 35000000,
+"note": 69.2,
+"line": "FWD"
+},
+{
+"player_id": 28003,
+"player_name": "Lionel Messi",
+"best_position": "RW",
+"price": 35000000,
+"note": 72.7,
+"line": "FWD"
+},
+{
+"player_id": 533738,
+"player_name": "Jonathan David",
+"best_position": "ST",
+"price": 35000000,
+"note": 70.8,
+"line": "FWD"
+},
+{
+"player_id": 991268,
+"player_name": "Samu Aghehowa",
+"best_position": "ST",
+"price": 35000000,
+"note": 66.4,
+"line": "FWD"
+},
+{
+"player_id": 930781,
+"player_name": "Pio Esposito",
+"best_position": "ST",
+"price": 35000000,
+"note": 64.1,
+"line": "FWD"
+},
+{
+"player_id": 406040,
+"player_name": "Ademola Lookman",
+"best_position": "CF",
+"price": 35000000,
+"note": 71.7,
+"line": "FWD"
+},
+{
+"player_id": 398065,
+"player_name": "Harvey Barnes",
+"best_position": "LW",
+"price": 32000000,
+"note": 70.5,
+"line": "FWD"
+},
+{
+"player_id": 649317,
+"player_name": "Jhon Durán",
+"best_position": "ST",
+"price": 32000000,
+"note": 68.3,
+"line": "FWD"
+},
+{
+"player_id": 398184,
+"player_name": "Ferran Torres",
+"best_position": "ST",
+"price": 30000000,
+"note": 73.2,
+"line": "FWD"
+},
+{
+"player_id": 801734,
+"player_name": "Mathys Tel",
+"best_position": "ST",
+"price": 30000000,
+"note": 67.8,
+"line": "FWD"
+},
+{
+"player_id": 578392,
+"player_name": "Maximilian Beier",
+"best_position": "ST",
+"price": 30000000,
+"note": 69.7,
+"line": "FWD"
+},
+{
+"player_id": 324358,
+"player_name": "Ollie Watkins",
+"best_position": "ST",
+"price": 30000000,
+"note": 73.7,
+"line": "FWD"
+},
+{
+"player_id": 305947,
+"player_name": "Albert Gudmundsson",
+"best_position": "CF",
+"price": 30000000,
+"note": 70.5,
+"line": "FWD"
+},
+{
+"player_id": 520662,
+"player_name": "Pepê",
+"best_position": "RW",
+"price": 30000000,
+"note": 69.3,
+"line": "FWD"
+},
+{
+"player_id": 729814,
+"player_name": "Georges Mikautadze",
+"best_position": "ST",
+"price": 28000000,
+"note": 72.2,
+"line": "FWD"
+},
+{
+"player_id": 388165,
+"player_name": "Yoane Wissa",
+"best_position": "ST",
+"price": 28000000,
+"note": 70.4,
+"line": "FWD"
+},
+{
+"player_id": 559328,
+"player_name": "Emmanuel Emegha",
+"best_position": "ST",
+"price": 28000000,
+"note": 67.5,
+"line": "FWD"
+},
+{
+"player_id": 469822,
+"player_name": "David Neres",
+"best_position": "LW",
+"price": 28000000,
+"note": 70.8,
+"line": "FWD"
+},
+{
+"player_id": 505653,
+"player_name": "Fábio Silva",
+"best_position": "ST",
+"price": 28000000,
+"note": 69.0,
+"line": "FWD"
+},
+{
+"player_id": 500689,
+"player_name": "Evann Guessand",
+"best_position": "ST",
+"price": 28000000,
+"note": 69.3,
+"line": "FWD"
+},
+{
+"player_id": 378710,
+"player_name": "Richarlison",
+"best_position": "ST",
+"price": 28000000,
+"note": 72.3,
+"line": "FWD"
+},
+{
+"player_id": 339332,
+"player_name": "Noa Lang",
+"best_position": "LW",
+"price": 25000000,
+"note": 71.7,
+"line": "FWD"
+},
+{
+"player_id": 1060087,
+"player_name": "Charalampos Kostoulas",
+"best_position": "ST",
+"price": 25000000,
+"note": 67.5,
+"line": "FWD"
+}
+]
