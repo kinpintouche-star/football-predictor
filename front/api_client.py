@@ -31,6 +31,7 @@ Les endpoints qui lèveraient ces limites sont listés dans front/README.md.
 from __future__ import annotations
 
 import os
+import unicodedata
 
 import requests
 import streamlit as st
@@ -329,6 +330,13 @@ def predict_match(team_id_1: str, team_id_2: str) -> int:
     return response.json()["match_score_predict"]
 
 
+def normalize_text(value: str) -> str:
+    value = unicodedata.normalize("NFKD", value)
+    value = value.encode("ascii", "ignore").decode("ascii")
+    return value.lower()
+
+
+@st.cache_data(show_spinner=False, ttl=120)
 def list_tournament_candidate_teams() -> list[dict]:
     """Équipes custom utilisables en tournoi.
 
@@ -367,6 +375,20 @@ def list_tournament_candidate_teams() -> list[dict]:
         )
 
     return candidates
+
+
+def search_tournament_candidate_teams(search: str) -> list[tuple[str, dict]]:
+    if not search or len(search) < 3:
+        return []
+
+    search_value = normalize_text(search)
+    teams = [
+        team
+        for team in list_tournament_candidate_teams()
+        if search_value in normalize_text(team["team_name"])
+    ][:20]
+
+    return [(team["team_name"], team) for team in teams]
 
 
 def set_tournament(

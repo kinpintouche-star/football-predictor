@@ -10,6 +10,7 @@ from html import escape
 import random
 
 import streamlit as st
+from streamlit_searchbox import st_searchbox
 
 import api_client
 
@@ -32,6 +33,24 @@ def normalize_team(team: dict) -> dict:
     return team
 
 
+def get_creation_slots(nb_teams: int) -> list[dict | None]:
+    slots = st.session_state.setdefault("new_tournament_teams", [])
+
+    while len(slots) < nb_teams:
+        slots.append(None)
+
+    del slots[nb_teams:]
+    return slots
+
+
+def selected_team_ids(teams: list[dict | None], current_index: int | None = None) -> set[str]:
+    return {
+        get_team_id(team)
+        for index, team in enumerate(teams)
+        if team and index != current_index
+    }
+
+
 def format_team_name(team: dict | None) -> str:
     if not team:
         return "À définir"
@@ -39,8 +58,11 @@ def format_team_name(team: dict | None) -> str:
     return team.get("team_name") or team.get("name") or str(team.get("team_id", "À définir"))
 
 
-def build_initial_rounds(teams: list[dict]) -> list[list[dict | None]]:
-    first_round = [normalize_team(team) for team in teams[:16]]
+def build_initial_rounds(teams: list[dict | None]) -> list[list[dict | None]]:
+    first_round = [
+        normalize_team(team) if team else None
+        for team in teams[:16]
+    ]
     rounds = [first_round]
     next_round_size = len(first_round) // 2
 
@@ -49,6 +71,48 @@ def build_initial_rounds(teams: list[dict]) -> list[list[dict | None]]:
         next_round_size //= 2
 
     return rounds
+
+
+def fill_empty_creation_slots(selected_teams: list[dict | None], nb_teams: int):
+    candidates = api_client.list_tournament_candidate_teams()
+    taken_ids = selected_team_ids(selected_teams)
+    available = [team for team in candidates if get_team_id(team) not in taken_ids]
+
+    if len(available) < selected_teams.count(None):
+        st.warning(f"{len(available)} équipe(s) disponible(s) pour les slots vides.")
+        return
+
+    random.shuffle(available)
+
+    for index in range(nb_teams):
+        if selected_teams[index] is None:
+            selected_teams[index] = available.pop()
+
+
+def show_team_slot(slot_index: int, selected_teams: list[dict | None]):
+    selected_team = selected_teams[slot_index]
+    columns = st.columns([2, 5, 2])
+
+    columns[0].write(f"Équipe {slot_index + 1}")
+
+    with columns[1]:
+        choice = st_searchbox(
+            search_function=api_client.search_tournament_candidate_teams,
+            placeholder="Rechercher une équipe custom",
+            key=f"tournament_team_search_{slot_index}",
+            label=f"Équipe {slot_index + 1}",
+            default=selected_team,
+            label_visibility="collapsed",
+        )
+
+    if choice:
+        if get_team_id(choice) in selected_team_ids(selected_teams, slot_index):
+            columns[2].warning("Déjà prise")
+        else:
+            selected_teams[slot_index] = choice
+            selected_team = choice
+
+    columns[2].success("Rempli") if selected_team else columns[2].error("Vide")
 
 
 def get_bracket_state(record: dict) -> dict:
@@ -182,11 +246,12 @@ def show_next_prediction(record: dict, bracket: dict):
     team_1 = rounds[round_index][slot_index]
     team_2 = rounds[round_index][slot_index + 1]
     phase = round_label(len(rounds[round_index]))
+    button_label = "Poursuivre tournoi" if bracket["matches"] else "Lancer tournoi"
 
     st.subheader("Prochain match")
     st.write(f"{phase} : {format_team_name(team_1)} vs {format_team_name(team_2)}")
 
-    if not st.button("Prédire prochain match", type="primary"):
+    if not st.button(button_label, type="primary"):
         return
 
     try:
@@ -281,7 +346,7 @@ def show_tournament_detail_page(main_page: str):
     show_match_history(bracket["matches"])
 
 
-def show_tournament_create_page(main_page: str):
+def show_tournament_create_page(main_page: str, detail_page: str):
     if st.button("Retour"):
         go_to_page(main_page)
 
@@ -292,41 +357,39 @@ def show_tournament_create_page(main_page: str):
 
     if st.session_state.get("new_tournament_size") != nb_teams:
         st.session_state["new_tournament_size"] = nb_teams
-        st.session_state["new_tournament_teams"] = []
+        st.session_state["new_tournament_teams"] = [None for _ in range(nb_teams)]
 
-    selected_teams = st.session_state.setdefault("new_tournament_teams", [])
+    selected_teams = get_creation_slots(nb_teams)
 
     if st.button("Fill"):
         try:
-            candidates = api_client.list_tournament_candidate_teams()
+            fill_empty_creation_slots(selected_teams, nb_teams)
         except api_client.ApiError as error:
             st.error(f"Fill impossible : {error}")
             return
 
-        if len(candidates) < nb_teams:
-            st.warning(f"{len(candidates)} équipe(s) custom prédictible(s) disponible(s).")
-            return
+    st.subheader("Équipes")
+    for slot_index in range(nb_teams):
+        show_team_slot(slot_index, selected_teams)
 
-        selected_teams = random.sample(candidates, nb_teams)
-        st.session_state["new_tournament_teams"] = selected_teams
-
-    if selected_teams:
+    if any(selected_teams):
         st.subheader("Tableau initial")
         show_bracket(build_initial_rounds(selected_teams))
 
-    can_create = bool(tournament_name.strip()) and len(selected_teams) == nb_teams
+    selected_complete_teams = [team for team in selected_teams if team]
+    can_create = bool(tournament_name.strip()) and len(selected_complete_teams) == nb_teams
 
     if st.button("Créer", type="primary", disabled=not can_create):
         try:
             record = api_client.create_tournament(
                 tournament_name,
-                [team["team_id"] for team in selected_teams],
+                [get_team_id(team) for team in selected_complete_teams],
             )
         except api_client.ApiError as error:
             st.error(f"Création impossible : {error}")
             return
 
-        st.session_state["new_tournament_teams"] = []
+        st.session_state["new_tournament_teams"] = [None for _ in range(nb_teams)]
         st.session_state["selected_tournament_id"] = record["tournament"]["tournament_id"]
         st.success("Tournoi créé.")
-        go_to_page(main_page)
+        go_to_page(detail_page)

@@ -661,7 +661,10 @@ ROUTES = {
         PAGE_TOURNAMENT_CREATE,
         PAGE_TOURNAMENT_DETAIL,
     ),
-    PAGE_TOURNAMENT_CREATE: lambda: tournament_page.show_tournament_create_page(PAGE_TOURNAMENT),
+    PAGE_TOURNAMENT_CREATE: lambda: tournament_page.show_tournament_create_page(
+        PAGE_TOURNAMENT,
+        PAGE_TOURNAMENT_DETAIL,
+    ),
     PAGE_TOURNAMENT_DETAIL: lambda: tournament_page.show_tournament_detail_page(PAGE_TOURNAMENT),
     PAGE_LINEUP: show_lineup_page,
     PAGE_PLAYER: show_player_page,
