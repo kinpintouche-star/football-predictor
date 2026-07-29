@@ -107,6 +107,14 @@ Tournois:
   sinon le deduire avec home_score et away_score.
 
 Regles SQL utiles:
+- pour chercher par nom de joueur/equipe/tournoi, utiliser la logique des
+  templates `*_by_name.sql` avec LOWER(TRANSLATE(...)) plutot qu'un simple ILIKE;
+- si la question demande "la meilleure equipe" sans autre precision:
+  utiliser team.uefa_rank ASC;
+- si la question demande "l'equipe la mieux notee" ou "par overall":
+  utiliser team.overall DESC;
+- si la question demande "la meilleure equipe custom":
+  utiliser custom_team.overall DESC;
 - utiliser LEFT JOIN seulement quand l'information peut manquer;
 - exclure les NULL quand on classe par note, prix, taille ou autre metrique;
 - utiliser NULLS LAST dans les classements;

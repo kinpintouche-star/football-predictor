@@ -2,11 +2,16 @@ import inspect
 import os
 
 
-def ask_llm(system_prompt: str, user_prompt: str, max_tokens: int | None = None) -> str:
+def ask_llm(
+    system_prompt: str,
+    user_prompt: str,
+    max_tokens: int | None = None,
+    model: str | None = None,
+) -> str:
     from litai import LLM
 
     api_key = os.getenv("LIGHTNING_API_KEY")
-    model = os.getenv("LLM_MODEL", "google/gemini-3.5-flash")
+    model = model or os.getenv("LLM_MODEL", "openai/gpt-5.4-mini-2026-03-17")
     max_tokens = max_tokens or int(os.getenv("LLM_MAX_RESPONSE_TOKENS", "1600"))
 
     if not api_key:
