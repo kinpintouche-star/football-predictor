@@ -74,6 +74,10 @@ def build_initial_rounds(teams: list[dict | None]) -> list[list[dict | None]]:
     return rounds
 
 
+def same_team(team_1: dict | None, team_2: dict | None) -> bool:
+    return bool(team_1 and team_2 and get_team_id(team_1) == get_team_id(team_2))
+
+
 def fill_empty_creation_slots(selected_teams: list[dict | None], nb_teams: int):
     candidates = api_client.list_tournament_candidate_teams()
     taken_ids = selected_team_ids(selected_teams)
@@ -135,7 +139,7 @@ def get_bracket_state(record: dict) -> dict:
 
 
 def show_bracket(rounds: list[list[dict | None]]):
-    """Affiche le tableau actuel."""
+    """Affiche le tableau actuel avec les liens entre tours."""
     if not rounds:
         return
 
@@ -143,41 +147,140 @@ def show_bracket(rounds: list[list[dict | None]]):
     if not teams:
         return
 
-    html = """
+    slot_width = 240
+    slot_height = 58
+    horizontal_gap = 76
+    row_gap = 24
+    padding = 12
+    step = slot_height + row_gap
+    width = padding * 2 + len(rounds) * slot_width + (len(rounds) - 1) * horizontal_gap
+    height = padding * 2 + len(teams) * slot_height + (len(teams) - 1) * row_gap
+
+    def slot_position(round_index: int, slot_index: int) -> tuple[float, float]:
+        group_size = 2 ** round_index
+        center_y = padding + slot_height / 2 + (
+            slot_index * group_size + (group_size - 1) / 2
+        ) * step
+        x = padding + round_index * (slot_width + horizontal_gap)
+        y = center_y - slot_height / 2
+        return x, y
+
+    def slot_status(round_index: int, slot_index: int, team: dict | None) -> str:
+        if not team:
+            return "pending"
+
+        if round_index == len(rounds) - 1:
+            return "winner"
+
+        next_team = rounds[round_index + 1][slot_index // 2]
+        if not next_team:
+            return "pending"
+
+        return "winner" if same_team(team, next_team) else "loser"
+
+    def connector_color(round_index: int, slot_index: int) -> str:
+        team = rounds[round_index][slot_index]
+        next_team = rounds[round_index + 1][slot_index // 2]
+
+        if not next_team or not team:
+            return "#2563eb"
+
+        return "#16a34a" if same_team(team, next_team) else "#dc2626"
+
+    paths = []
+    for round_index in range(len(rounds) - 1):
+        for pair_start in range(0, len(rounds[round_index]), 2):
+            indexes = [pair_start, pair_start + 1]
+            next_team = rounds[round_index + 1][pair_start // 2]
+
+            if next_team:
+                indexes.sort(key=lambda index: same_team(rounds[round_index][index], next_team))
+
+            for slot_index in indexes:
+                x1, y1 = slot_position(round_index, slot_index)
+                x2, y2 = slot_position(round_index + 1, slot_index // 2)
+                start_x = x1 + slot_width
+                start_y = y1 + slot_height / 2
+                end_x = x2
+                end_y = y2 + slot_height / 2
+                mid_x = start_x + horizontal_gap / 2
+                color = connector_color(round_index, slot_index)
+
+                paths.append(
+                    f'<path d="M {start_x} {start_y} H {mid_x} V {end_y} H {end_x}" '
+                    f'stroke="{color}" stroke-width="3" fill="none" '
+                    f'stroke-linecap="round" stroke-linejoin="round" />'
+                )
+
+    slots = []
+    for round_index, round_teams in enumerate(rounds):
+        for slot_index, team in enumerate(round_teams):
+            x, y = slot_position(round_index, slot_index)
+            status = slot_status(round_index, slot_index, team)
+            slots.append(
+                f'<div class="tournament-slot tournament-slot-{status}" '
+                f'style="left:{x}px; top:{y}px;">'
+                f'{escape(format_team_name(team))}'
+                f'</div>'
+            )
+
+    html = f"""
     <style>
-        .tournament-bracket {
-            display: flex;
-            gap: 28px;
-            align-items: center;
+        .tournament-bracket-scroll {{
             overflow-x: auto;
-            padding: 18px 0;
-        }
-        .tournament-round {
+            padding: 18px 0 28px;
+        }}
+        .tournament-bracket {{
+            position: relative;
+            width: {width}px;
+            height: {height}px;
+        }}
+        .tournament-lines {{
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }}
+        .tournament-slot {{
+            position: absolute;
+            z-index: 2;
+            width: {slot_width}px;
+            height: {slot_height}px;
             display: flex;
-            flex-direction: column;
-            gap: 12px;
-            min-width: 190px;
-        }
-        .tournament-slot {
-            border: 1px solid #4b5563;
+            align-items: center;
+            border: 2px solid #2563eb;
             border-radius: 8px;
-            padding: 10px 12px;
-            min-height: 42px;
+            padding: 0 16px;
             background: #111827;
             color: #f9fafb;
-            font-size: 14px;
-        }
+            font-size: 15px;
+            font-weight: 700;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.18);
+        }}
+        .tournament-slot-winner {{
+            border-color: #16a34a;
+            background: #052e16;
+        }}
+        .tournament-slot-loser {{
+            border-color: #dc2626;
+            background: #3f0b0b;
+            color: #fecaca;
+        }}
+        .tournament-slot-pending {{
+            border-color: #2563eb;
+        }}
     </style>
-    <div class="tournament-bracket">
+    <div class="tournament-bracket-scroll">
+        <div class="tournament-bracket">
+            <svg class="tournament-lines" width="{width}" height="{height}">
+                {''.join(paths)}
+            </svg>
+            {''.join(slots)}
+        </div>
+    </div>
     """
-
-    for round_index, round_teams in enumerate(rounds, start=1):
-        html += f'<div class="tournament-round" aria-label="Tour {round_index}">'
-        for team in round_teams:
-            html += f'<div class="tournament-slot">{escape(format_team_name(team))}</div>'
-        html += "</div>"
-
-    html += "</div>"
     st.markdown(html, unsafe_allow_html=True)
 
 
