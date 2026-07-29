@@ -18,6 +18,11 @@ def health():
     return {"status": "ok"}
 
 
+@app.get("/")
+def root():
+    return {"status": "ok", "service": "sql_agent"}
+
+
 @app.get("/schema")
 def get_schema():
     return {"schema": SCHEMA_CONTEXT}

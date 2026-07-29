@@ -110,9 +110,17 @@ Tu dois produire une seule requete SQL de lecture.
 Tu n'as pas le droit d'ecrire, modifier, creer ou supprimer des donnees.
 Tu dois utiliser uniquement les tables ci-dessous.
 Reponds uniquement avec la requete SQL, sans markdown, sans explication.
-Quand une question demande les meilleurs, plus grands, plus chers ou un classement,
-exclus les valeurs NULL pertinentes avec WHERE colonne IS NOT NULL,
-et utilise NULLS LAST dans les ORDER BY.
+Quand une question demande les meilleurs, plus grands, plus chers ou un classement:
+- identifie d'abord la metrique la plus proche dans le schema;
+- si elle n'existe pas directement dans la table evidente, cherche si elle peut etre
+  calculee par jointure avec les autres tables autorisees;
+- privilegie une requete simple et explicable;
+- exclus les valeurs NULL pertinentes avec WHERE colonne IS NOT NULL;
+- utilise NULLS LAST dans les ORDER BY.
+
+Si la question demande une information qui n'est pas directement stockee,
+tu peux construire une approximation raisonnable seulement si le schema permet
+clairement de la calculer.
 Exemple:
 SELECT player_name, overall_rating
 FROM player
@@ -149,6 +157,70 @@ Regenere une requete SQL complete et valide.
     raise HTTPException(status_code=422, detail="Impossible de generer un SQL valide")
 
 
+def classify_message(message: str) -> str:
+    # Petit routeur : on ne lance du SQL que si la question demande les donnees.
+    system_prompt = """
+Tu classes une question utilisateur pour un assistant football.
+Reponds uniquement avec DATA ou CHAT.
+
+DATA = la question demande de lire, comparer, compter, classer ou retrouver des donnees
+dans la base football.
+CHAT = la question est une discussion simple, une demande d'explication generale,
+une demande de formulation ou une question sur le fonctionnement.
+"""
+
+    try:
+        response = ask_llm(system_prompt, message).strip().upper()
+    except Exception:
+        return "DATA"
+
+    if "CHAT" in response and "DATA" not in response:
+        return "CHAT"
+
+    return "DATA"
+
+
+def answer_simple_chat(message: str) -> str:
+    system_prompt = """
+Tu es l'assistant conversationnel du projet Football Predictor.
+Reponds en francais, simplement et clairement.
+Tu peux expliquer le projet, aider a formuler une question data,
+ou discuter normalement.
+Si l'utilisateur demande une donnee precise de la base, dis-lui que tu vas
+interroger la base plutot que d'inventer.
+"""
+
+    return ask_llm(system_prompt, message)
+
+
+def answer_data_failure(message: str, error_detail) -> str:
+    system_prompt = f"""
+Tu es l'assistant data du projet Football Predictor.
+La question utilisateur semble demander des donnees, mais la requete SQL n'a pas pu etre construite ou executee.
+Reponds en francais, simplement, sans inventer de chiffres.
+Explique ce qui bloque et propose une question plus precise si utile.
+
+Schema disponible:
+{SCHEMA_CONTEXT}
+"""
+
+    user_prompt = json.dumps(
+        {
+            "question": message,
+            "erreur": str(error_detail),
+        },
+        ensure_ascii=False,
+    )
+
+    try:
+        return ask_llm(system_prompt, user_prompt)
+    except Exception:
+        return (
+            "Je n'arrive pas a construire une requete fiable pour cette question. "
+            "Essaie de preciser la table ou la metrique attendue."
+        )
+
+
 def repair_sql(question: str, sql: str, error: Exception) -> str:
     repair_prompt = f"""
 La requete SQL ci-dessous a echoue dans PostgreSQL.
@@ -179,6 +251,7 @@ def summarize_answer(question: str, sql: str, rows: list[dict]) -> str:
     system_prompt = """
 Tu es un assistant data football.
 Reponds en francais, simplement, a partir des lignes SQL fournies.
+Si l'utilisateur demande une liste ou un top, cite toutes les lignes recues.
 Ne mentionne pas de donnees absentes.
 """
 
@@ -202,18 +275,47 @@ def chat_with_database(message: str, max_rows: int = 30):
         raise HTTPException(status_code=422, detail="message est obligatoire")
 
     max_rows = min(max(max_rows, 1), 100)
-    sql = build_sql(message)
+
+    if classify_message(message) == "CHAT":
+        return {
+            "answer": answer_simple_chat(message),
+            "mode": "chat",
+            "sql": None,
+            "rows": [],
+            "row_count": 0,
+        }
+
+    try:
+        sql = build_sql(message)
+    except HTTPException as error:
+        return {
+            "answer": answer_data_failure(message, error.detail),
+            "mode": "data_error",
+            "sql": None,
+            "rows": [],
+            "row_count": 0,
+        }
 
     try:
         rows = run_readonly_query(sql, max_rows=max_rows)
     except SQLAlchemyError as error:
-        sql = repair_sql(message, sql, error)
-        rows = run_readonly_query(sql, max_rows=max_rows)
+        try:
+            sql = repair_sql(message, sql, error)
+            rows = run_readonly_query(sql, max_rows=max_rows)
+        except Exception as final_error:
+            return {
+                "answer": answer_data_failure(message, final_error),
+                "mode": "data_error",
+                "sql": sql,
+                "rows": [],
+                "row_count": 0,
+            }
 
     answer = summarize_answer(message, sql, rows)
 
     return {
         "answer": answer,
+        "mode": "data",
         "sql": sql,
         "rows": rows,
         "row_count": len(rows),
