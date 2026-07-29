@@ -22,6 +22,16 @@ def go_to_page(page_name: str):
     st.rerun()
 
 
+def get_team_id(team: dict) -> str:
+    return str(team.get("team_id") or team.get("custom_team_id"))
+
+
+def normalize_team(team: dict) -> dict:
+    team = dict(team)
+    team["team_id"] = get_team_id(team)
+    return team
+
+
 def format_team_name(team: dict | None) -> str:
     if not team:
         return "À définir"
@@ -29,19 +39,39 @@ def format_team_name(team: dict | None) -> str:
     return team.get("team_name") or team.get("name") or str(team.get("team_id", "À définir"))
 
 
-def show_bracket(teams: list[dict]):
-    """Affiche un tableau simple : premier tour rempli, tours suivants vides."""
-    if not teams:
+def build_initial_rounds(teams: list[dict]) -> list[list[dict | None]]:
+    first_round = [normalize_team(team) for team in teams[:16]]
+    rounds = [first_round]
+    next_round_size = len(first_round) // 2
+
+    while next_round_size:
+        rounds.append([None for _ in range(next_round_size)])
+        next_round_size //= 2
+
+    return rounds
+
+
+def get_bracket_state(record: dict) -> dict:
+    tournament_id = record["tournament"]["tournament_id"]
+    brackets = st.session_state.setdefault("tournament_brackets", {})
+
+    if tournament_id not in brackets:
+        brackets[tournament_id] = {
+            "rounds": build_initial_rounds(record.get("teams", [])),
+            "matches": [],
+        }
+
+    return brackets[tournament_id]
+
+
+def show_bracket(rounds: list[list[dict | None]]):
+    """Affiche le tableau actuel."""
+    if not rounds:
         return
 
-    rounds = []
-    current_round = teams
-
-    while current_round:
-        rounds.append(current_round)
-        if len(current_round) == 1:
-            break
-        current_round = [None for _ in range(len(current_round) // 2)]
+    teams = rounds[0]
+    if not teams:
+        return
 
     html = """
     <style>
@@ -81,17 +111,114 @@ def show_bracket(teams: list[dict]):
     st.markdown(html, unsafe_allow_html=True)
 
 
-def show_tournament_summary(tournament_record: dict):
-    tournament = tournament_record["tournament"]
-    winner = tournament.get("winner_team_id")
-    status = "Terminé" if winner else "En cours"
+def find_next_match(rounds: list[list[dict | None]]) -> tuple[int, int] | None:
+    for round_index in range(len(rounds) - 1):
+        current_round = rounds[round_index]
+        next_round = rounds[round_index + 1]
 
-    st.subheader(tournament["tournament_name"])
-    st.write(f"Nombre d'équipes : {tournament['nb_teams']}")
-    st.write(f"Statut : {status}")
+        for slot_index in range(0, len(current_round), 2):
+            next_slot_index = slot_index // 2
+            has_both_teams = current_round[slot_index] and current_round[slot_index + 1]
 
-    if winner:
-        st.write(f"Vainqueur : {winner}")
+            if has_both_teams and not next_round[next_slot_index]:
+                return round_index, slot_index
+
+    return None
+
+
+def round_label(round_size: int) -> str:
+    if round_size == 2:
+        return "Finale"
+
+    if round_size == 4:
+        return "Demi-finale"
+
+    if round_size == 8:
+        return "Quart de finale"
+
+    return "Premier tour"
+
+
+def prediction_to_winner(prediction: int, team_1: dict, team_2: dict) -> tuple[dict, int, int, str]:
+    if prediction == 1:
+        return team_1, 1, 0, f"Victoire prédite : {format_team_name(team_1)}"
+
+    if prediction == -1:
+        return team_2, 0, 1, f"Victoire prédite : {format_team_name(team_2)}"
+
+    winner = random.choice([team_1, team_2])
+    return winner, 1, 1, f"Nul prédit, {format_team_name(winner)} passe aux tirs au but"
+
+
+def show_match_history(matches: list[dict]):
+    if not matches:
+        return
+
+    st.subheader("Matchs joués")
+
+    for match in matches:
+        st.write(
+            f"{match['phase']} - {match['team_1_name']} {match['score_team_1']}"
+            f" / {match['score_team_2']} {match['team_2_name']} - "
+            f"{match['winner_name']} qualifié"
+        )
+
+
+def show_next_prediction(record: dict, bracket: dict):
+    rounds = bracket["rounds"]
+    next_match = find_next_match(rounds)
+
+    if not next_match:
+        winner = rounds[-1][0] if rounds and rounds[-1] else None
+
+        if winner:
+            record["tournament"]["winner_team_id"] = get_team_id(winner)
+            record["tournament"]["winner_team_name"] = format_team_name(winner)
+            st.success(f"Vainqueur : {format_team_name(winner)}")
+
+        return
+
+    round_index, slot_index = next_match
+    team_1 = rounds[round_index][slot_index]
+    team_2 = rounds[round_index][slot_index + 1]
+    phase = round_label(len(rounds[round_index]))
+
+    st.subheader("Prochain match")
+    st.write(f"{phase} : {format_team_name(team_1)} vs {format_team_name(team_2)}")
+
+    if not st.button("Prédire prochain match", type="primary"):
+        return
+
+    try:
+        prediction = api_client.predict_match(get_team_id(team_1), get_team_id(team_2))
+        winner, score_1, score_2, message = prediction_to_winner(prediction, team_1, team_2)
+        api_client.set_tournament(
+            record["tournament"]["tournament_id"],
+            get_team_id(team_1),
+            get_team_id(team_2),
+            score_1,
+            score_2,
+            phase,
+        )
+    except api_client.ApiError as error:
+        st.error(f"Prédiction impossible : {error}")
+        return
+
+    rounds[round_index + 1][slot_index // 2] = winner
+    bracket["matches"].append(
+        {
+            "phase": phase,
+            "team_1_name": format_team_name(team_1),
+            "team_2_name": format_team_name(team_2),
+            "score_team_1": score_1,
+            "score_team_2": score_2,
+            "winner_name": format_team_name(winner),
+            "message": message,
+        }
+    )
+
+    st.success(message)
+    st.rerun()
 
 
 def show_tournament_page(create_page: str, detail_page: str):
@@ -137,7 +264,7 @@ def show_tournament_detail_page(main_page: str):
         return
 
     tournament = record["tournament"]
-    winner = tournament.get("winner_team_id")
+    winner = tournament.get("winner_team_name") or tournament.get("winner_team_id")
     status = "Terminé" if winner else "En cours"
 
     st.title(tournament["tournament_name"])
@@ -148,7 +275,10 @@ def show_tournament_detail_page(main_page: str):
     info_columns[2].metric("Vainqueur", winner or "-")
 
     st.subheader("Tableau")
-    show_bracket(record.get("teams", [])[:16])
+    bracket = get_bracket_state(record)
+    show_bracket(bracket["rounds"])
+    show_next_prediction(record, bracket)
+    show_match_history(bracket["matches"])
 
 
 def show_tournament_create_page(main_page: str):
@@ -182,7 +312,7 @@ def show_tournament_create_page(main_page: str):
 
     if selected_teams:
         st.subheader("Tableau initial")
-        show_bracket(selected_teams)
+        show_bracket(build_initial_rounds(selected_teams))
 
     can_create = bool(tournament_name.strip()) and len(selected_teams) == nb_teams
 

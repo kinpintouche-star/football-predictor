@@ -36,6 +36,7 @@ import requests
 import streamlit as st
 
 API_BASE_URL = os.getenv("API_BASE_URL", "http://127.0.0.1:8000").rstrip("/")
+PREDICT_API_BASE_URL = os.getenv("PREDICT_API_BASE_URL", "http://127.0.0.1:4000").rstrip("/")
 
 TIMEOUT_SECONDS = 30
 
@@ -297,6 +298,35 @@ def list_tournaments() -> list[dict]:
 
 def get_tournament(tournament_id: str) -> dict | None:
     return _created_tournaments().get(tournament_id)
+
+
+def get_prediction_features(team_id: str) -> dict:
+    return _request("GET", f"/team/{team_id}/prediction_features")
+
+
+def predict_match(team_id_1: str, team_id_2: str) -> int:
+    """Prédit le résultat du point de vue de l'équipe 1."""
+    team_1 = get_prediction_features(team_id_1)
+    team_2 = get_prediction_features(team_id_2)
+    payload = {}
+
+    for team_number, notes in [(1, team_1["notes"]), (2, team_2["notes"])]:
+        for player_number, note in enumerate(notes, start=1):
+            payload[f"team_{team_number}_player_{player_number}_note"] = note
+
+    try:
+        response = requests.post(
+            f"{PREDICT_API_BASE_URL}/predict",
+            json=payload,
+            timeout=60,
+        )
+    except requests.RequestException as error:
+        raise ApiError(f"API prediction injoignable : {error}") from error
+
+    if response.status_code >= 400:
+        raise ApiError(response.text)
+
+    return response.json()["match_score_predict"]
 
 
 def list_tournament_candidate_teams() -> list[dict]:
