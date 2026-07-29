@@ -3,7 +3,7 @@ réelle prise comme modèle.
 
 Deux façons de remplir la compo, qui se combinent :
 
-* poste par poste, en choisissant dans le catalogue ;
+* poste par poste, en choisissant dans les joueurs renvoyés par l'API ;
 * d'un coup, en cherchant une équipe réelle et en cliquant « Fill » : les
   meilleurs joueurs de son effectif sont placés selon la compo choisie, puis
   chaque poste reste modifiable.
@@ -73,6 +73,17 @@ def format_price(value) -> str:
     return f"{sign}{value:.0f} €"
 
 
+def format_note(value) -> str:
+    if value is None:
+        return "NA"
+
+    value = float(value)
+    if value.is_integer():
+        return str(int(value))
+
+    return str(round(value, 1))
+
+
 def go_to_page(page_name: str):
     # app.py importe ce module : on ne peut pas importer son set_page en retour.
     # L'état de navigation est de toute façon porté par la session.
@@ -112,16 +123,7 @@ def drop_slots_outside_compo(lines: dict):
 # -----------------------------------------------------------------------------
 
 def normalize_squad_player(player: dict) -> dict | None:
-    """Met un joueur d'effectif réel au format du catalogue.
-
-    Quand le joueur figure au catalogue, c'est cette version qui est retenue :
-    sa note est alors celle du modèle, comparable à celle des joueurs choisis à
-    la main. Sinon on garde `global_note`, qui vaut overall_rating.
-
-    Les deux échelles n'ont rien à voir — un gardien vaut 89 en overall et 37
-    pour le modèle — donc une compo pré-remplie mélange les genres tant que
-    l'API n'expose pas la note du modèle par joueur ( voir README ).
-    """
+    """Met un joueur d'effectif réel au format de la page custom."""
     line = LINE_BY_POSITION.get(player.get("position"))
 
     if not line:
@@ -129,20 +131,11 @@ def normalize_squad_player(player: dict) -> dict | None:
 
     catalogue_player = api_client.get_catalogue_player(player["player_id"])
 
-    if catalogue_player:
-        return catalogue_player
+    if not catalogue_player:
+        return None
 
-    return {
-        "player_id": player["player_id"],
-        "player_name": player["player_name"],
-        "best_position": player["position"],
-        "note": player.get("global_note"),
-        # 18 des 48 joueurs d'un effectif comme le Real n'ont pas de valeur
-        # marchande connue. On les compte pour 0 : le total est alors un
-        # minimum, ce qui vaut mieux qu'un poste inchiffrable.
-        "price": player.get("market_value_eur") or 0,
-        "line": line,
-    }
+    catalogue_player["line"] = line
+    return catalogue_player
 
 
 def fill_from_team(team_id: int, lines: dict):
@@ -279,7 +272,7 @@ def show_template_controls(lines: dict):
 # Tableau de la compo
 # -----------------------------------------------------------------------------
 
-def show_slot_row(line: str, slot_index: int, catalogue: list[dict]):
+def show_slot_row(line: str, slot_index: int, available_players: list[dict]):
     selection = get_selection()
     slot = (line, slot_index)
     current = selection.get(slot)
@@ -290,16 +283,16 @@ def show_slot_row(line: str, slot_index: int, catalogue: list[dict]):
         for other_slot, player in selection.items()
         if player and other_slot != slot
     }
-    candidates = [player for player in catalogue if player["player_id"] not in taken]
+    candidates = [player for player in available_players if player["player_id"] not in taken]
 
     # Un joueur placé par « Fill » vient de l'effectif d'une équipe réelle, pas
-    # du catalogue : sans cet ajout il ne figurerait pas dans ses propres
+    # de la liste API courante : sans cet ajout il ne figurerait pas dans ses propres
     # options et le poste se viderait au premier affichage.
     if current and all(player["player_id"] != current["player_id"] for player in candidates):
         candidates = [current] + candidates
 
     labels = [FREE_SLOT] + [
-        f"{player['player_name']} · {player['best_position']} · note {player['note']}"
+        f"{player['player_name']} · {player['best_position']} · note {format_note(player.get('note'))}"
         for player in candidates
     ]
 
@@ -343,10 +336,10 @@ def show_compo_table(lines: dict):
     header[2].markdown("**Budget**")
 
     for line, count in lines.items():
-        catalogue = api_client.get_players(line=line)
+        players = api_client.get_players(line=line)
 
         for slot_index in range(count):
-            show_slot_row(line, slot_index, catalogue)
+            show_slot_row(line, slot_index, players)
 
 
 def show_cost_summary(budget: int | None):
@@ -442,7 +435,7 @@ def show_custom_teams_list():
                 columns = st.columns([4, 2, 2, 2])
                 columns[0].write(player["player_name"])
                 columns[1].write(player["best_position"] or "-")
-                columns[2].write(player["note"] if player["note"] is not None else "-")
+                columns[2].write(format_note(player.get("note")))
                 columns[3].write(format_price(player["price"]))
 
             if st.button("Retirer", key=f"delete_custom_team_{team['custom_team_id']}"):

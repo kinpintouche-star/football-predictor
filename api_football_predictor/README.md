@@ -35,6 +35,7 @@ GET /teams/{search}
 POST /teams
 GET /team/{team_id}
 GET /player/{player_id}
+GET /players
 POST /players
 POST /custom/team
 POST /custom/tournament

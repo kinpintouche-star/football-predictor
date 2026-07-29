@@ -22,6 +22,22 @@ TABLES = [
     "custom_lineup",
 ]
 
+MIGRATIONS = [
+    'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS sofifa_team_id BIGINT',
+    'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS club_key TEXT',
+    'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS uefa_rank INTEGER',
+    'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS club_league_name TEXT',
+    'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS overall NUMERIC',
+    'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS attack NUMERIC',
+    'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS midfield NUMERIC',
+    'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS defence NUMERIC',
+    'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS build_up_style TEXT',
+    'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS defensive_line NUMERIC',
+    'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS defensive_approach TEXT',
+    'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS reference_formation TEXT',
+    'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS budget_eur BIGINT DEFAULT 500000000',
+]
+
 
 def load_env_file(path: Path) -> None:
     if not path.exists():
@@ -55,6 +71,10 @@ def main() -> None:
 
     with engine.begin() as connection:
         connection.exec_driver_sql(sql)
+
+        for migration in MIGRATIONS:
+            connection.exec_driver_sql(migration)
+
         rows = connection.execute(
             text(
                 """

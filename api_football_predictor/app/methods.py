@@ -3,6 +3,7 @@ import uuid
 
 from fastapi import HTTPException
 from sqlalchemy import text
+from sqlalchemy.exc import SQLAlchemyError
 
 from app.database import get_engine
 
@@ -56,6 +57,12 @@ DEFAULT_CUSTOM_TEAM_BUDGET_EUR = 500_000_000
 ATTACK_POSITIONS = {"ST", "CF", "LW", "RW"}
 MIDFIELD_POSITIONS = {"CDM", "CM", "CAM", "LM", "RM"}
 DEFENCE_POSITIONS = {"CB", "LB", "RB", "LWB", "RWB", "GK"}
+PLAYER_LINE_POSITIONS = {
+    "GK": {"GK"},
+    "DEF": {"CB", "LB", "RB", "LWB", "RWB"},
+    "MID": {"CDM", "CM", "CAM", "LM", "RM"},
+    "FWD": {"ST", "CF", "LW", "RW"},
+}
 
 
 def normalize_text(value: str) -> str:
@@ -276,6 +283,67 @@ def fetch_players_by_ids(connection, player_ids: list[int]):
     rows_by_id = {row["player_id"]: row for row in rows}
 
     return [rows_by_id[player_id] for player_id in player_ids if player_id in rows_by_id]
+
+
+def get_player_line(position: str | None) -> str | None:
+    for line, positions in PLAYER_LINE_POSITIONS.items():
+        if position in positions:
+            return line
+
+    return None
+
+
+def list_players(line: str | None = None, search: str = "", limit: int = 500):
+    limit = min(max(limit, 1), 500)
+
+    if line and line not in PLAYER_LINE_POSITIONS:
+        return {"players": []}
+
+    positions = PLAYER_LINE_POSITIONS.get(line) if line else None
+    conditions = ['COALESCE(has_sofifa_profile, 0) = 1']
+    params = {"limit": limit}
+
+    if positions:
+        conditions.append("best_position = ANY(:positions)")
+        params["positions"] = list(positions)
+
+    if search.strip():
+        conditions.append("LOWER(player_name) LIKE :search_pattern")
+        params["search_pattern"] = f"%{search.strip().lower()}%"
+
+    query = text(
+        f"""
+        SELECT
+            player_id,
+            player_name,
+            best_position,
+            overall_rating,
+            transfermarkt_market_value_eur AS market_value_eur
+        FROM "public"."player"
+        WHERE {" AND ".join(conditions)}
+        ORDER BY overall_rating DESC NULLS LAST,
+                 transfermarkt_market_value_eur DESC NULLS LAST,
+                 player_name
+        LIMIT :limit
+        """
+    )
+
+    with get_engine().connect() as connection:
+        rows = connection.execute(query, params).mappings().all()
+
+    return {
+        "players": [
+            {
+                "player_id": row["player_id"],
+                "player_name": row["player_name"],
+                "best_position": row["best_position"],
+                "note": row["overall_rating"],
+                "price": row["market_value_eur"] or 0,
+                "line": get_player_line(row["best_position"]),
+            }
+            for row in rows
+        ]
+    }
 
 
 def average_rating(players, positions=None):
@@ -575,6 +643,19 @@ def create_custom_team(payload):
                 },
             )
 
+        players_without_sofifa = [
+            row["player_id"] for row in players if not row["has_sofifa_profile"]
+        ]
+
+        if players_without_sofifa:
+            raise HTTPException(
+                status_code=422,
+                detail={
+                    "message": "Certains joueurs n'ont pas de profil SoFIFA",
+                    "player_ids": players_without_sofifa,
+                },
+            )
+
         players_without_value = [
             row["player_id"] for row in players if row["market_value_eur"] is None
         ]
@@ -603,55 +684,64 @@ def create_custom_team(payload):
 
         custom_team_id = f"c{uuid.uuid4().hex[:12]}"
 
-        connection.execute(
-            text(
-                """
-                INSERT INTO "public"."custom_team" (
-                    custom_team_id,
-                    team_name,
-                    reference_formation,
-                    budget_eur,
-                    overall,
-                    attack,
-                    midfield,
-                    defence
-                )
-                VALUES (
-                    :custom_team_id,
-                    :team_name,
-                    :reference_formation,
-                    :budget_eur,
-                    :overall,
-                    :attack,
-                    :midfield,
-                    :defence
-                )
-                """
-            ),
-            {
-                "custom_team_id": custom_team_id,
-                "team_name": payload.team_name.strip(),
-                "reference_formation": payload.reference_formation.strip(),
-                "budget_eur": budget_eur,
-                **team_ratings,
-            },
-        )
+        try:
+            connection.execute(
+                text(
+                    """
+                    INSERT INTO "public"."custom_team" (
+                        custom_team_id,
+                        team_name,
+                        reference_formation,
+                        budget_eur,
+                        overall,
+                        attack,
+                        midfield,
+                        defence
+                    )
+                    VALUES (
+                        :custom_team_id,
+                        :team_name,
+                        :reference_formation,
+                        :budget_eur,
+                        :overall,
+                        :attack,
+                        :midfield,
+                        :defence
+                    )
+                    """
+                ),
+                {
+                    "custom_team_id": custom_team_id,
+                    "team_name": payload.team_name.strip(),
+                    "reference_formation": payload.reference_formation.strip(),
+                    "budget_eur": budget_eur,
+                    **team_ratings,
+                },
+            )
 
-        connection.execute(
-            text(
-                """
-                INSERT INTO "public"."custom_team_player" (
-                    custom_team_id,
-                    player_id
-                )
-                VALUES (:custom_team_id, :player_id)
-                """
-            ),
-            [
-                {"custom_team_id": custom_team_id, "player_id": player_id}
-                for player_id in player_ids
-            ],
-        )
+            connection.execute(
+                text(
+                    """
+                    INSERT INTO "public"."custom_team_player" (
+                        custom_team_id,
+                        player_id
+                    )
+                    VALUES (:custom_team_id, :player_id)
+                    """
+                ),
+                [
+                    {"custom_team_id": custom_team_id, "player_id": player_id}
+                    for player_id in player_ids
+                ],
+            )
+        except SQLAlchemyError as error:
+            raise HTTPException(
+                status_code=500,
+                detail=(
+                    "Creation custom team impossible cote Neon. "
+                    "Lance python neondb/create_tables.py pour mettre a jour le schema."
+                ),
+            ) from error
 
     return {
         "team": {
@@ -1189,6 +1279,7 @@ LAST_MATCH_STARTERS_SQL = f"""
     JOIN "public"."player" p ON p.player_id = l.player_id
     WHERE l.is_starting_match = 1
       AND {HAS_SOFIFA_PROFILE_SQL}
+      AND {GLOBAL_NOTE_SQL} IS NOT NULL
     ORDER BY l.player_id
 """
 
@@ -1206,6 +1297,7 @@ SEASON_SQUAD_BY_NOTE_SQL = f"""
     WHERE l.team_id = :team_id
       AND m.match_date >= season.season_start
       AND {HAS_SOFIFA_PROFILE_SQL}
+      AND {GLOBAL_NOTE_SQL} IS NOT NULL
     ORDER BY global_note DESC
 """
 
@@ -1226,6 +1318,7 @@ CUSTOM_TEAM_PLAYERS_BY_NOTE_SQL = f"""
         ON p.player_id = ctp.player_id
     WHERE ct.custom_team_id = :custom_team_id
       AND {HAS_SOFIFA_PROFILE_SQL}
+      AND {GLOBAL_NOTE_SQL} IS NOT NULL
     ORDER BY ctp.player_id
 """
 

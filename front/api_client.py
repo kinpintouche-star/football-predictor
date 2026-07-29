@@ -19,13 +19,6 @@ Ce qui reste local :
 
 * `get_compos` : les compos de référence sont des constantes d'interface, pas
   une donnée. Elles n'ont rien à faire en base et restent ici ;
-* `get_players` : l'API ne sait pas parcourir le catalogue, `POST /players`
-  détaille des joueurs dont on connait déjà les identifiants. La sélection
-  s'appuie donc sur players_catalogue.json. Ce ne sont pas des données
-  inventées mais un extrait de la table `player` ( 240 joueurs ) : chaque
-  `note` est la note du modèle et chaque `price` la valeur Transfermarkt,
-  identiques à la base. Un `GET /players?line=&search=` le remplacerait tel
-  quel ;
 * `list_custom_teams` / `delete_custom_team` : ni GET ni DELETE sur
   custom_team. La liste affichée est celle des équipes créées pendant la
   session, alimentée par la réponse du POST. Conséquence à connaitre : une
@@ -37,9 +30,7 @@ Les endpoints qui lèveraient ces limites sont listés dans front/README.md.
 
 from __future__ import annotations
 
-import json
 import os
-from pathlib import Path
 
 import requests
 import streamlit as st
@@ -47,8 +38,6 @@ import streamlit as st
 API_BASE_URL = os.getenv("API_BASE_URL", "http://127.0.0.1:8000").rstrip("/")
 
 TIMEOUT_SECONDS = 30
-
-CATALOGUE_PATH = Path(__file__).parent / "players_catalogue.json"
 
 DEFAULT_BUDGET_EUR = 500_000_000
 
@@ -114,11 +103,15 @@ def _request(method: str, path: str, **kwargs):
             detail = response.text
         raise ApiError(_detail_message(detail))
 
-    # Une 500 est une panne côté API : la trace brute n'aide pas l'utilisateur.
+    # Une 500 est une panne côté API, mais si l'API fournit un détail propre
+    # on l'affiche : c'est utile pour les soucis de schéma Neon.
     if response.status_code >= 500:
-        raise ApiError(
-            f"Erreur interne de l'API ({response.status_code}) sur {method} {path}"
-        )
+        try:
+            detail = response.json().get("detail", response.text)
+        except ValueError:
+            detail = response.text
+
+        raise ApiError(_detail_message(detail))
 
     response.raise_for_status()
     return response.json()
@@ -133,34 +126,39 @@ def get_compos() -> list[dict]:
 
 
 # -----------------------------------------------------------------------------
-# Catalogue joueurs - local, en attente d'un GET /players
+# Catalogue joueurs - API
 # -----------------------------------------------------------------------------
 
 @st.cache_data(show_spinner=False)
-def _load_catalogue() -> list[dict]:
-    return json.loads(CATALOGUE_PATH.read_text(encoding="utf-8"))
-
-
 def get_players(line: str | None = None, search: str | None = None) -> list[dict]:
-    players = _load_catalogue()
+    params = {"limit": 500}
 
     if line:
-        players = [player for player in players if player["line"] == line]
+        params["line"] = line
 
     if search and search.strip():
-        needle = search.strip().lower()
-        players = [
-            player for player in players if needle in player["player_name"].lower()
-        ]
+        params["search"] = search.strip()
 
-    return sorted(players, key=lambda player: -player["price"])
+    return _request("GET", "/players", params=params)["players"]
 
 
 def get_catalogue_player(player_id: int) -> dict | None:
-    return next(
-        (player for player in _load_catalogue() if player["player_id"] == player_id),
-        None,
-    )
+    players = fetch_players([player_id])
+    if not players:
+        return None
+
+    player = players[0]
+    if not player.get("has_sofifa_profile"):
+        return None
+
+    return {
+        "player_id": player["player_id"],
+        "player_name": player["player_name"],
+        "best_position": player["best_position"],
+        "note": player.get("overall_rating"),
+        "price": player.get("market_value_eur") or 0,
+        "line": None,
+    }
 
 
 # -----------------------------------------------------------------------------
@@ -196,11 +194,6 @@ def get_team_squad(team_id: int) -> list[dict]:
     par joueur, donc la seule utilisable pour pré-remplir une compo avec son
     budget. `GET /team/{id}/lineup` donnerait le vrai onze du dernier match,
     mais sans aucun prix.
-
-    Attention : `global_note` est ici overall_rating, alors que la note du
-    catalogue est celle du modèle ( moyenne des groupes de statistiques de
-    champ ). Les deux ne sont pas comparables, voir normalize_squad_player
-    dans custom_team_page.
     """
     return _request("GET", f"/team/{team_id}")["players"]
 
@@ -215,7 +208,7 @@ def get_player(player_id: int) -> dict:
 
 
 def fetch_players(player_ids: list[int]) -> list[dict]:
-    """Détail de joueurs déjà identifiés. Ne sert pas à parcourir le catalogue."""
+    """Détail de joueurs déjà identifiés."""
     if not player_ids:
         return []
 
@@ -254,17 +247,14 @@ def create_team(
     response = _request("POST", "/custom/team", json=payload)
     team = response["team"]
 
-    # L'API renvoie les joueurs sans note ni ligne : on complète depuis le
-    # catalogue pour que la liste affiche les mêmes colonnes que le sélecteur.
     players = []
     for player in response.get("players", []):
-        catalogue_player = get_catalogue_player(player["player_id"])
         players.append(
             {
                 "player_id": player["player_id"],
                 "player_name": player["player_name"],
                 "best_position": player.get("position"),
-                "note": catalogue_player["note"] if catalogue_player else None,
+                "note": player.get("overall_rating"),
                 "price": player.get("market_value_eur") or 0,
             }
         )

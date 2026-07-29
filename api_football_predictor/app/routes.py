@@ -75,6 +75,11 @@ def get_player(player_id: int):
     return methods.get_player(player_id)
 
 
+@router.get("/players")
+def list_players(line: str | None = None, search: str = "", limit: int = 500):
+    return methods.list_players(line=line, search=search, limit=limit)
+
+
 @router.post("/players")
 def get_players(payload: GetPlayersRequest):
     return methods.get_players(payload)
