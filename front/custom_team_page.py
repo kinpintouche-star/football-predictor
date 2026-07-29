@@ -129,13 +129,14 @@ def normalize_squad_player(player: dict) -> dict | None:
     if not line:
         return None
 
-    catalogue_player = api_client.get_catalogue_player(player["player_id"])
-
-    if not catalogue_player:
-        return None
-
-    catalogue_player["line"] = line
-    return catalogue_player
+    return {
+        "player_id": player["player_id"],
+        "player_name": player["player_name"],
+        "best_position": player.get("position"),
+        "note": player.get("global_note"),
+        "price": player.get("market_value_eur") or 0,
+        "line": line,
+    }
 
 
 def fill_from_team(team_id: int, lines: dict):

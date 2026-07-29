@@ -142,25 +142,6 @@ def get_players(line: str | None = None, search: str | None = None) -> list[dict
     return _request("GET", "/players", params=params)["players"]
 
 
-def get_catalogue_player(player_id: int) -> dict | None:
-    players = fetch_players([player_id])
-    if not players:
-        return None
-
-    player = players[0]
-    if not player.get("has_sofifa_profile"):
-        return None
-
-    return {
-        "player_id": player["player_id"],
-        "player_name": player["player_name"],
-        "best_position": player["best_position"],
-        "note": player.get("overall_rating"),
-        "price": player.get("market_value_eur") or 0,
-        "line": None,
-    }
-
-
 # -----------------------------------------------------------------------------
 # Équipes réelles - API, utilisées comme modèle de départ
 # -----------------------------------------------------------------------------
