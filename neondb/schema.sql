@@ -139,7 +139,7 @@ CREATE TABLE IF NOT EXISTS "tournament" (
     tournament_id TEXT PRIMARY KEY,
     tournament_name TEXT,
     nb_teams INTEGER NOT NULL,
-    winner_team_id TEXT REFERENCES "custom_team"(custom_team_id)
+    winner_team_id TEXT
 );
 
 ALTER TABLE "tournament"
@@ -147,7 +147,7 @@ ADD COLUMN IF NOT EXISTS tournament_name TEXT;
 
 CREATE TABLE IF NOT EXISTS "tournament_team" (
     tournament_id TEXT REFERENCES "tournament"(tournament_id),
-    custom_team_id TEXT REFERENCES "custom_team"(custom_team_id),
+    custom_team_id TEXT,
     nb_wins INTEGER NOT NULL DEFAULT 0,
     nb_loss INTEGER NOT NULL DEFAULT 0,
     nb_equal INTEGER NOT NULL DEFAULT 0,
@@ -156,8 +156,8 @@ CREATE TABLE IF NOT EXISTS "tournament_team" (
 
 CREATE TABLE IF NOT EXISTS "custom_match" (
     custom_match_id TEXT PRIMARY KEY CHECK (LEFT(custom_match_id, 1) = 'c'),
-    home_custom_team_id TEXT REFERENCES "custom_team"(custom_team_id),
-    away_custom_team_id TEXT REFERENCES "custom_team"(custom_team_id),
+    home_custom_team_id TEXT,
+    away_custom_team_id TEXT,
     home_score INTEGER,
     away_score INTEGER,
     result TEXT,
@@ -176,7 +176,7 @@ ADD COLUMN IF NOT EXISTS result TEXT;
 
 CREATE TABLE IF NOT EXISTS "custom_lineup" (
     custom_match_id TEXT REFERENCES "custom_match"(custom_match_id),
-    custom_team_id TEXT REFERENCES "custom_team"(custom_team_id),
+    custom_team_id TEXT,
     player_id BIGINT REFERENCES "player"(player_id),
     is_starting_match INTEGER DEFAULT 1,
     PRIMARY KEY (custom_match_id, custom_team_id, player_id)

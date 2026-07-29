@@ -50,6 +50,30 @@ MIGRATIONS = [
     'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS defensive_approach TEXT',
     'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS reference_formation TEXT',
     'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS budget_eur BIGINT DEFAULT 500000000',
+    """
+    DO $$
+    DECLARE constraint_row record;
+    BEGIN
+        FOR constraint_row IN
+            SELECT conrelid::regclass AS table_name, conname
+            FROM pg_constraint
+            WHERE contype = 'f'
+              AND confrelid = '"public"."custom_team"'::regclass
+              AND conrelid IN (
+                  '"public"."tournament"'::regclass,
+                  '"public"."tournament_team"'::regclass,
+                  '"public"."custom_match"'::regclass,
+                  '"public"."custom_lineup"'::regclass
+              )
+        LOOP
+            EXECUTE format(
+                'ALTER TABLE %%s DROP CONSTRAINT IF EXISTS %%I',
+                constraint_row.table_name,
+                constraint_row.conname
+            );
+        END LOOP;
+    END $$;
+    """,
 ]
 
 

@@ -1,7 +1,6 @@
-"""Client API de la page « Équipe custom ».
+"""Client API des pages Fantasy.
 
-Ce module ne sert que cette page : les pages équipe, composition, joueur et
-prédiction appellent l'API directement depuis app.py.
+Ce module sert la création d'équipe custom et les pages tournoi.
 
 Il n'y a plus de jeu de données inventé ni d'interrupteur USE_MOCK_API. Chaque
 appel part vers l'API dès qu'un endpoint existe, et ce qui reste local est
@@ -12,6 +11,8 @@ Ce qui passe par l'API ( api_football_predictor/app/routes.py ) :
     POST   /custom/team             create_team
     GET    /player/{player_id}      get_player
     POST   /players                 fetch_players
+    POST   /teams                   search teams réelles + custom
+    GET    /team/{team_id}/prediction_features
     POST   /custom/tournament       create_tournament
     POST   /custom/tournament/set   set_tournament
 
@@ -338,7 +339,7 @@ def normalize_text(value: str) -> str:
 
 @st.cache_data(show_spinner=False, ttl=120)
 def list_tournament_candidate_teams() -> list[dict]:
-    """Équipes custom utilisables en tournoi.
+    """Équipes utilisables en tournoi.
 
     Une équipe est gardée seulement si l'API sait produire ses 11 notes de
     prédiction. C'est plus lent qu'un endpoint spécialisé, mais clair pour ce
@@ -355,9 +356,6 @@ def list_tournament_candidate_teams() -> list[dict]:
     for team in response["teams"]:
         team_id = str(team["team_id"])
 
-        if not team_id.startswith("c"):
-            continue
-
         try:
             _request("GET", f"/team/{team_id}/prediction_features")
         except ApiError:
@@ -367,6 +365,7 @@ def list_tournament_candidate_teams() -> list[dict]:
             {
                 "team_id": team_id,
                 "team_name": team["team_name"],
+                "team_type": team.get("team_type"),
                 "overall": team.get("overall"),
                 "attack": team.get("attack"),
                 "midfield": team.get("midfield"),

@@ -1,7 +1,7 @@
 """Pages Tournoi.
 
-Pour l'instant les tournois sont construits avec des équipes custom, car les
-tables Neon de tournoi référencent custom_team.
+Les tournois acceptent les équipes réelles et les équipes custom, tant que
+l'API sait produire leurs features de prédiction.
 """
 
 from __future__ import annotations
@@ -99,7 +99,7 @@ def show_team_slot(slot_index: int, selected_teams: list[dict | None]):
     with columns[1]:
         choice = st_searchbox(
             search_function=api_client.search_tournament_candidate_teams,
-            placeholder="Rechercher une équipe custom",
+            placeholder="Rechercher une équipe",
             key=f"tournament_team_search_{slot_index}",
             label=f"Équipe {slot_index + 1}",
             default=selected_team,

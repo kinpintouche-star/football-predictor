@@ -399,6 +399,54 @@ def get_match_result(score_team_1: int, score_team_2: int) -> str:
     return "draw"
 
 
+def fetch_tournament_teams(connection, team_ids: list[str]) -> dict[str, dict]:
+    custom_team_ids = [team_id for team_id in team_ids if team_id.startswith("c")]
+    real_team_ids = []
+
+    for team_id in team_ids:
+        if team_id.startswith("c"):
+            continue
+
+        try:
+            real_team_ids.append(int(team_id))
+        except ValueError:
+            continue
+
+    teams = {}
+
+    if real_team_ids:
+        rows = connection.execute(
+            text(
+                """
+                SELECT team_id::text AS team_id, team_name, 'real' AS team_type
+                FROM "public"."team"
+                WHERE team_id = ANY(:team_ids)
+                """
+            ),
+            {"team_ids": real_team_ids},
+        ).mappings().all()
+
+        for row in rows:
+            teams[row["team_id"]] = dict(row)
+
+    if custom_team_ids:
+        rows = connection.execute(
+            text(
+                """
+                SELECT custom_team_id AS team_id, team_name, 'custom' AS team_type
+                FROM "public"."custom_team"
+                WHERE custom_team_id = ANY(:team_ids)
+                """
+            ),
+            {"team_ids": custom_team_ids},
+        ).mappings().all()
+
+        for row in rows:
+            teams[row["team_id"]] = dict(row)
+
+    return teams
+
+
 def set_tournament_match(
     connection,
     tournament_id: str,
@@ -411,9 +459,6 @@ def set_tournament_match(
     # Règle métier complète : match + lineups + compteurs du tournoi.
     if team_id_1 == team_id_2:
         raise HTTPException(status_code=422, detail="Les deux equipes doivent etre differentes")
-
-    if not team_id_1.startswith("c") or not team_id_2.startswith("c"):
-        raise HTTPException(status_code=422, detail="Les ids des equipes doivent commencer par c")
 
     if score_team_1 < 0 or score_team_2 < 0:
         raise HTTPException(status_code=422, detail="Le score ne peut pas etre negatif")
@@ -439,9 +484,15 @@ def set_tournament_match(
     teams = connection.execute(
         text(
             """
-            SELECT tt.custom_team_id, ct.team_name, tt.nb_wins, tt.nb_loss, tt.nb_equal
+            SELECT
+                tt.custom_team_id AS team_id,
+                COALESCE(ct.team_name, t.team_name) AS team_name,
+                tt.nb_wins,
+                tt.nb_loss,
+                tt.nb_equal
             FROM "public"."tournament_team" tt
-            JOIN "public"."custom_team" ct ON ct.custom_team_id = tt.custom_team_id
+            LEFT JOIN "public"."custom_team" ct ON ct.custom_team_id = tt.custom_team_id
+            LEFT JOIN "public"."team" t ON t.team_id::text = tt.custom_team_id
             WHERE tt.tournament_id = :tournament_id
               AND tt.custom_team_id = ANY(:team_ids)
             """
@@ -449,7 +500,7 @@ def set_tournament_match(
         {"tournament_id": tournament_id, "team_ids": team_ids},
     ).mappings().all()
 
-    found_team_ids = {row["custom_team_id"] for row in teams}
+    found_team_ids = {row["team_id"] for row in teams}
     missing_team_ids = [team_id for team_id in team_ids if team_id not in found_team_ids]
 
     if missing_team_ids:
@@ -458,35 +509,6 @@ def set_tournament_match(
             detail={
                 "message": "Certaines equipes ne sont pas dans ce tournoi",
                 "team_ids": missing_team_ids,
-            },
-        )
-
-    lineup_counts = connection.execute(
-        text(
-            """
-            SELECT custom_team_id, COUNT(*) AS nb_players
-            FROM "public"."custom_team_player"
-            WHERE custom_team_id = ANY(:team_ids)
-            GROUP BY custom_team_id
-            """
-        ),
-        {"team_ids": team_ids},
-    ).mappings().all()
-
-    lineup_counts_by_team = {
-        row["custom_team_id"]: row["nb_players"]
-        for row in lineup_counts
-    }
-    teams_without_players = [
-        team_id for team_id in team_ids if lineup_counts_by_team.get(team_id, 0) == 0
-    ]
-
-    if teams_without_players:
-        raise HTTPException(
-            status_code=422,
-            detail={
-                "message": "Certaines equipes n'ont aucun joueur",
-                "team_ids": teams_without_players,
             },
         )
 
@@ -530,6 +552,22 @@ def set_tournament_match(
         },
     )
 
+    lineup_rows = []
+    lineup_counts_by_team = {}
+
+    for team_id in team_ids:
+        features = get_team_prediction_features(team_id)
+        lineup_counts_by_team[team_id] = len(features["players"])
+
+        for player in features["players"]:
+            lineup_rows.append(
+                {
+                    "custom_match_id": custom_match_id,
+                    "custom_team_id": team_id,
+                    "player_id": player["player_id"],
+                }
+            )
+
     connection.execute(
         text(
             """
@@ -539,16 +577,15 @@ def set_tournament_match(
                 player_id,
                 is_starting_match
             )
-            SELECT
+            VALUES (
                 :custom_match_id,
-                custom_team_id,
-                player_id,
+                :custom_team_id,
+                :player_id,
                 1
-            FROM "public"."custom_team_player"
-            WHERE custom_team_id = ANY(:team_ids)
+            )
             """
         ),
-        {"custom_match_id": custom_match_id, "team_ids": team_ids},
+        lineup_rows,
     )
 
     if result == "draw":
@@ -594,9 +631,15 @@ def set_tournament_match(
     updated_teams = connection.execute(
         text(
             """
-            SELECT tt.custom_team_id, ct.team_name, tt.nb_wins, tt.nb_loss, tt.nb_equal
+            SELECT
+                tt.custom_team_id AS team_id,
+                COALESCE(ct.team_name, t.team_name) AS team_name,
+                tt.nb_wins,
+                tt.nb_loss,
+                tt.nb_equal
             FROM "public"."tournament_team" tt
-            JOIN "public"."custom_team" ct ON ct.custom_team_id = tt.custom_team_id
+            LEFT JOIN "public"."custom_team" ct ON ct.custom_team_id = tt.custom_team_id
+            LEFT JOIN "public"."team" t ON t.team_id::text = tt.custom_team_id
             WHERE tt.tournament_id = :tournament_id
               AND tt.custom_team_id = ANY(:team_ids)
             ORDER BY tt.custom_team_id
@@ -780,7 +823,7 @@ def create_custom_team(payload):
 
 
 def create_tournament(payload):
-    team_ids = list(dict.fromkeys(payload.teams))
+    team_ids = [str(team_id) for team_id in dict.fromkeys(payload.teams)]
 
     if not payload.tournament_name.strip():
         raise HTTPException(status_code=422, detail="tournament_name est obligatoire")
@@ -794,29 +837,11 @@ def create_tournament(payload):
             detail="nb_teams doit correspondre au nombre d'equipes envoyees",
         )
 
-    invalid_team_ids = [team_id for team_id in team_ids if not team_id.startswith("c")]
-    if invalid_team_ids:
-        raise HTTPException(
-            status_code=422,
-            detail={
-                "message": "Les ids des equipes custom doivent commencer par c",
-                "team_ids": invalid_team_ids,
-            },
-        )
-
-    teams_query = text(
-        """
-        SELECT custom_team_id, team_name
-        FROM "public"."custom_team"
-        WHERE custom_team_id = ANY(:team_ids)
-        """
-    )
-
     tournament_id = f"t{uuid.uuid4().hex[:12]}"
 
     with get_engine().begin() as connection:
-        teams = connection.execute(teams_query, {"team_ids": team_ids}).mappings().all()
-        found_team_ids = {row["custom_team_id"] for row in teams}
+        teams_by_id = fetch_tournament_teams(connection, team_ids)
+        found_team_ids = set(teams_by_id)
         missing_team_ids = [
             team_id for team_id in team_ids if team_id not in found_team_ids
         ]
@@ -825,7 +850,7 @@ def create_tournament(payload):
             raise HTTPException(
                 status_code=404,
                 detail={
-                    "message": "Certaines equipes custom sont introuvables",
+                    "message": "Certaines equipes sont introuvables",
                     "team_ids": missing_team_ids,
                 },
             )
@@ -877,8 +902,6 @@ def create_tournament(payload):
             ],
         )
 
-    teams_by_id = {row["custom_team_id"]: row for row in teams}
-
     return {
         "tournament": {
             "tournament_id": tournament_id,
@@ -887,8 +910,10 @@ def create_tournament(payload):
         },
         "teams": [
             {
+                "team_id": team_id,
                 "custom_team_id": team_id,
                 "team_name": teams_by_id[team_id]["team_name"],
+                "team_type": teams_by_id[team_id]["team_type"],
                 "nb_wins": 0,
                 "nb_loss": 0,
                 "nb_equal": 0,
