@@ -15,6 +15,8 @@ from tournament_page import show_tournament_create_page, show_tournament_page
 # Configuration
 # -----------------------------------------------------------------------------
 
+st.set_page_config(layout="wide")
+
 load_dotenv()
 
 API_BASE_URL = os.getenv("API_BASE_URL", "http://127.0.0.1:8000").rstrip("/")
@@ -23,6 +25,19 @@ SQL_AGENT_API_URL = os.getenv(
     "SQL_AGENT_API_URL",
     "https://8100-01kyne3htfkyrjy07tgdspdwhp.cloudspaces.litng.ai",
 ).rstrip("/")
+
+st.markdown(
+    """
+    <style>
+        .block-container {
+            max-width: 1600px;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 PAGE_TEAM = "team"
 PAGE_LINEUP = "lineup"
@@ -405,13 +420,12 @@ def show_player_stat_groups(player: dict):
 
 
 def show_sql_agent_chat():
-    st.divider()
-
     with st.expander("Chat data", expanded=True):
         with st.form("sql_agent_chat_form"):
-            message = st.text_input(
+            message = st.text_area(
                 "Question",
                 placeholder="Ex : quels sont les 10 meilleurs joueurs ?",
+                height=110,
             )
             submitted = st.form_submit_button("Envoyer")
 
@@ -647,5 +661,11 @@ show_sidebar_navigation()
 
 current_page = st.session_state.get("page", PAGE_TEAM)
 page_function = ROUTES.get(current_page, show_team_page)
-page_function()
-show_sql_agent_chat()
+
+page_column, chat_column = st.columns([4, 2])
+
+with page_column:
+    page_function()
+
+with chat_column:
+    show_sql_agent_chat()
