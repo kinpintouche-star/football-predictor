@@ -153,7 +153,7 @@ def get_player(player_id: int):
 
 
 def ask_sql_agent(message: str):
-    payload = {"message": message, "max_rows": 10}
+    payload = {"message": message, "max_rows": 30}
     response = requests.post(f"{SQL_AGENT_API_URL}/chat", json=payload, timeout=120)
     response.raise_for_status()
     return response.json()
@@ -467,7 +467,7 @@ def show_sql_agent_chat():
             st.error(f"Agent indisponible : {error}")
             return
 
-        st.write(result["answer"])
+        st.markdown(result["answer"])
 
 
 # -----------------------------------------------------------------------------

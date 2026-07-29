@@ -170,7 +170,7 @@ une demande de formulation ou une question sur le fonctionnement.
 """
 
     try:
-        response = ask_llm(system_prompt, message).strip().upper()
+        response = ask_llm(system_prompt, message, max_tokens=20).strip().upper()
     except Exception:
         return "DATA"
 
@@ -198,7 +198,9 @@ def answer_data_failure(message: str, error_detail) -> str:
 Tu es l'assistant data du projet Football Predictor.
 La question utilisateur semble demander des donnees, mais la requete SQL n'a pas pu etre construite ou executee.
 Reponds en francais, simplement, sans inventer de chiffres.
-Explique ce qui bloque et propose une question plus precise si utile.
+Explique ce qui bloque.
+Si la question est trop large ou demande une jointure complexe, dis que cela demande une recherche plus precise dans la base,
+puis propose 2 ou 3 formulations de questions plus faciles a requeter.
 
 Schema disponible:
 {SCHEMA_CONTEXT}
@@ -252,20 +254,21 @@ def summarize_answer(question: str, sql: str, rows: list[dict]) -> str:
 Tu es un assistant data football.
 Reponds en francais, simplement, a partir des lignes SQL fournies.
 Si l'utilisateur demande une liste ou un top, cite toutes les lignes recues.
-Ne mentionne pas de donnees absentes.
+Si la reponse contient beaucoup de lignes, structure en liste claire.
+Ne mentionne pas de donnees absentes sauf si cela aide a comprendre une limite.
 """
 
     user_prompt = json.dumps(
         {
             "question": question,
             "sql": sql,
-            "rows": rows[:20],
+            "rows": rows[:50],
         },
         ensure_ascii=False,
     )
 
     try:
-        return ask_llm(system_prompt, user_prompt)
+        return ask_llm(system_prompt, user_prompt, max_tokens=2200)
     except Exception:
         return f"J'ai trouve {len(rows)} ligne(s). Les resultats sont disponibles dans le tableau."
 

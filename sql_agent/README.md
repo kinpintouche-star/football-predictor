@@ -7,11 +7,14 @@ Service FastAPI read-only qui permet au front de poser des questions sur Neon.
 ```txt
 NEON_DATABASE_URL=postgresql://user:password@host/database?sslmode=require
 LIGHTNING_API_KEY=...
-LLM_MODEL=openai/gpt-5.4-mini-2026-03-17
+LLM_MODEL=google/gemini-3.5-flash
+LLM_MAX_RESPONSE_TOKENS=1600
 SQL_AGENT_SERVER_PORT=8100
 ```
 
 Idealement, `NEON_DATABASE_URL` doit pointer vers un user Neon en lecture seule.
+`LLM_MAX_RESPONSE_TOKENS` est optionnel et controle la longueur cible des
+reponses de l'agent quand le SDK du modele l'accepte.
 
 ## Lancer en local
 
@@ -65,5 +68,3 @@ Exemple :
 ```
 
 L'agent valide la requete SQL, refuse toute ecriture, puis l'execute dans une transaction PostgreSQL read-only.
-
-

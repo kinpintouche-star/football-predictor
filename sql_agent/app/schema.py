@@ -59,13 +59,58 @@ custom_team_player(custom_team_id, player_id)
 tournament(tournament_id, tournament_name, nb_teams, winner_team_id)
 
 tournament_team(
-  tournament_id, custom_team_id, nb_wins, nb_loss, nb_equal
+  tournament_id, custom_team_id, slot_index, nb_wins, nb_loss, nb_equal
 )
 
 custom_match(
   custom_match_id, home_custom_team_id, away_custom_team_id,
-  home_score, away_score, result, tournament_phase, tournament_id
+  home_score, away_score, result, winner_team_id,
+  tournament_phase, tournament_id, created_at
 )
 
 custom_lineup(custom_match_id, custom_team_id, player_id, is_starting_match)
+
+Guide de recuperation des donnees.
+
+Joueurs:
+- infos, notes, stats et prix: table player;
+- prix a utiliser si on parle budget/valeur:
+  COALESCE(transfermarkt_market_value_eur, sofifa_value_eur);
+- joueurs sans profil SoFIFA: has_sofifa_profile = 0 ou NULL;
+- joueurs utilisables pour statistiques SoFIFA: has_sofifa_profile = 1.
+
+Equipes reelles:
+- infos generales et notes d'equipe: team;
+- chercher une equipe par nom: team.team_name;
+- effectif observe par les matchs: lineup JOIN match JOIN player;
+- dernier onze d'une equipe: prendre le match le plus recent dans lineup/match,
+  puis is_starting_match = 1.
+
+Equipes custom:
+- infos generales et notes: custom_team;
+- joueurs d'une equipe custom: custom_team_player JOIN player;
+- budget d'une equipe custom: sommer les prix des joueurs.
+
+Matchs reels:
+- date et score: match;
+- equipes, cote domicile/exterieur, coach, formation et notes d'equipe au match:
+  match_team;
+- joueurs, postes et temps de jeu: lineup;
+- pour afficher un match complet: match JOIN match_team JOIN lineup JOIN player.
+
+Tournois:
+- tournoi: tournament;
+- equipes inscrites et ordre dans le tableau: tournament_team.slot_index;
+- matchs joues: custom_match;
+- joueurs alignes dans un match custom: custom_lineup JOIN player;
+- vainqueur d'un match custom: custom_match.winner_team_id si present,
+  sinon le deduire avec home_score et away_score.
+
+Regles SQL utiles:
+- utiliser LEFT JOIN seulement quand l'information peut manquer;
+- exclure les NULL quand on classe par note, prix, taille ou autre metrique;
+- utiliser NULLS LAST dans les classements;
+- utiliser LIMIT quand la question demande un top ou une liste courte;
+- ne jamais inventer une colonne: si elle n'est pas dans le schema, la calculer
+  avec les tables ci-dessus ou expliquer que ce n'est pas disponible.
 """
