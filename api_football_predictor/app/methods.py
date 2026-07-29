@@ -580,7 +580,7 @@ def set_tournament_match(
     tournament = connection.execute(
         text(
             """
-            SELECT tournament_id, tournament_name, nb_teams
+            SELECT tournament_id, tournament_name, nb_teams, winner_team_id
             FROM "public"."tournament"
             WHERE tournament_id = :tournament_id
             """
@@ -590,6 +590,9 @@ def set_tournament_match(
 
     if not tournament:
         raise HTTPException(status_code=404, detail="Tournament not found")
+
+    if tournament["winner_team_id"]:
+        raise HTTPException(status_code=409, detail="Ce tournoi est deja termine")
 
     team_ids = [team_id_1, team_id_2]
     teams = connection.execute(
@@ -667,6 +670,23 @@ def set_tournament_match(
             "lineup": {},
             "teams": [dict(row) for row in teams],
         }
+
+    played_match_count = connection.execute(
+        text(
+            """
+            SELECT COUNT(*)
+            FROM "public"."custom_match"
+            WHERE tournament_id = :tournament_id
+            """
+        ),
+        {"tournament_id": tournament_id},
+    ).scalar_one()
+
+    if played_match_count >= tournament["nb_teams"] - 1:
+        raise HTTPException(
+            status_code=409,
+            detail="Nombre maximum de matchs atteint pour ce tournoi",
+        )
 
     result = get_match_result(score_team_1, score_team_2)
     saved_winner_team_id = winner_team_id

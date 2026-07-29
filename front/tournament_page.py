@@ -175,6 +175,15 @@ def find_saved_match_slot(
 
 
 def saved_match_to_history(match: dict) -> dict:
+    winner_name = match.get("winner_name")
+    winner_id = get_saved_match_winner_id(match)
+
+    if not winner_name and winner_id == str(match.get("team_id_1")):
+        winner_name = match.get("team_1_name")
+
+    if not winner_name and winner_id == str(match.get("team_id_2")):
+        winner_name = match.get("team_2_name")
+
     return {
         "custom_match_id": match.get("custom_match_id"),
         "phase": match.get("phase"),
@@ -182,8 +191,51 @@ def saved_match_to_history(match: dict) -> dict:
         "team_2_name": match.get("team_2_name"),
         "score_team_1": match.get("score_team_1"),
         "score_team_2": match.get("score_team_2"),
-        "winner_name": match.get("winner_name") or match.get("winner_team_id") or "-",
+        "winner_name": winner_name or winner_id or "-",
     }
+
+
+def apply_saved_match(
+    rounds: list[list[dict | None]],
+    teams_by_id: dict[str, dict],
+    match: dict,
+) -> bool:
+    winner_id = get_saved_match_winner_id(match)
+    if not winner_id:
+        return False
+
+    slot = find_saved_match_slot(
+        rounds,
+        str(match["team_id_1"]),
+        str(match["team_id_2"]),
+    )
+    if not slot:
+        return False
+
+    round_index, slot_index = slot
+    saved_phase = (match.get("phase") or "").strip().lower()
+    expected_phase = round_label(len(rounds[round_index])).lower()
+
+    if saved_phase != expected_phase:
+        return False
+
+    next_slot_index = slot_index // 2
+
+    # Si la case suivante est déjà remplie, c'est un doublon ou un match hors arbre.
+    if rounds[round_index + 1][next_slot_index]:
+        return False
+
+    current_pair = rounds[round_index][slot_index:slot_index + 2]
+    winner = next(
+        (team for team in current_pair if team and get_team_id(team) == winner_id),
+        teams_by_id.get(winner_id),
+    )
+
+    if not winner:
+        return False
+
+    rounds[round_index + 1][next_slot_index] = winner
+    return True
 
 
 def build_bracket_state(record: dict) -> dict:
@@ -198,28 +250,26 @@ def build_bracket_state(record: dict) -> dict:
     rounds = build_initial_rounds(teams)
     teams_by_id = {get_team_id(team): normalize_team(team) for team in teams}
     history = []
+    pending_matches = list(record.get("matches", []))
 
-    for match in record.get("matches", []):
-        history.append(saved_match_to_history(match))
-        winner_id = get_saved_match_winner_id(match)
-        slot = find_saved_match_slot(
-            rounds,
-            str(match["team_id_1"]),
-            str(match["team_id_2"]),
-        )
+    # Les matchs peuvent revenir de la base dans un ordre non strictement
+    # compatible avec l'arbre. On fait plusieurs passes : quarts, puis demies,
+    # puis finale. Les doublons ou matchs hors arbre sont ignorés côté visuel.
+    while pending_matches:
+        next_pending_matches = []
+        applied_match = False
 
-        if not winner_id or not slot:
-            continue
+        for match in pending_matches:
+            if apply_saved_match(rounds, teams_by_id, match):
+                history.append(saved_match_to_history(match))
+                applied_match = True
+            else:
+                next_pending_matches.append(match)
 
-        round_index, slot_index = slot
-        current_pair = rounds[round_index][slot_index:slot_index + 2]
-        winner = next(
-            (team for team in current_pair if team and get_team_id(team) == winner_id),
-            teams_by_id.get(winner_id),
-        )
+        if not applied_match:
+            break
 
-        if winner:
-            rounds[round_index + 1][slot_index // 2] = winner
+        pending_matches = next_pending_matches
 
     return {"rounds": rounds, "matches": history}
 
@@ -547,6 +597,14 @@ def run_remaining_predictions(
 
 
 def show_tournament_action(record: dict, bracket: dict, bracket_placeholder, history_placeholder):
+    saved_winner = (
+        record["tournament"].get("winner_team_name")
+        or record["tournament"].get("winner_team_id")
+    )
+    if saved_winner:
+        st.success(f"Vainqueur : {saved_winner}")
+        return
+
     rounds = bracket["rounds"]
     next_match = find_next_match(rounds)
 
