@@ -6,6 +6,7 @@ tables Neon de tournoi référencent custom_team.
 
 from __future__ import annotations
 
+from html import escape
 import random
 
 import streamlit as st
@@ -25,7 +26,7 @@ def format_team_name(team: dict | None) -> str:
     if not team:
         return "À définir"
 
-    return team.get("team_name") or team.get("name") or str(team.get("team_id"))
+    return team.get("team_name") or team.get("name") or str(team.get("team_id", "À définir"))
 
 
 def show_bracket(teams: list[dict]):
@@ -73,7 +74,7 @@ def show_bracket(teams: list[dict]):
     for round_index, round_teams in enumerate(rounds, start=1):
         html += f'<div class="tournament-round" aria-label="Tour {round_index}">'
         for team in round_teams:
-            html += f'<div class="tournament-slot">{format_team_name(team)}</div>'
+            html += f'<div class="tournament-slot">{escape(format_team_name(team))}</div>'
         html += "</div>"
 
     html += "</div>"
@@ -93,7 +94,7 @@ def show_tournament_summary(tournament_record: dict):
         st.write(f"Vainqueur : {winner}")
 
 
-def show_tournament_page(create_page: str):
+def show_tournament_page(create_page: str, detail_page: str):
     st.title("Tournois")
 
     if st.button("Créer tournoi", type="primary"):
@@ -115,21 +116,39 @@ def show_tournament_page(create_page: str):
 
                 if st.button(label, key=f"tournament_{tournament['tournament_id']}"):
                     st.session_state["selected_tournament_id"] = tournament["tournament_id"]
-
-    selected_id = st.session_state.get("selected_tournament_id")
+                    go_to_page(detail_page)
 
     with content_column:
-        if not selected_id:
-            st.info("Sélectionnez un tournoi ou créez-en un nouveau.")
-            return
+        st.info("Sélectionnez un tournoi dans la liste ou créez-en un nouveau.")
 
-        record = api_client.get_tournament(selected_id)
-        if not record:
-            st.warning("Tournoi introuvable dans la session.")
-            return
 
-        show_tournament_summary(record)
-        st.caption("La page détail avec le tableau complet arrive à l'étape suivante.")
+def show_tournament_detail_page(main_page: str):
+    if st.button("Retour"):
+        go_to_page(main_page)
+
+    selected_id = st.session_state.get("selected_tournament_id")
+    if not selected_id:
+        st.warning("Aucun tournoi sélectionné.")
+        return
+
+    record = api_client.get_tournament(selected_id)
+    if not record:
+        st.warning("Tournoi introuvable dans la session.")
+        return
+
+    tournament = record["tournament"]
+    winner = tournament.get("winner_team_id")
+    status = "Terminé" if winner else "En cours"
+
+    st.title(tournament["tournament_name"])
+
+    info_columns = st.columns(3)
+    info_columns[0].metric("Équipes", tournament["nb_teams"])
+    info_columns[1].metric("Statut", status)
+    info_columns[2].metric("Vainqueur", winner or "-")
+
+    st.subheader("Tableau")
+    show_bracket(record.get("teams", [])[:16])
 
 
 def show_tournament_create_page(main_page: str):

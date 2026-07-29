@@ -8,7 +8,11 @@ from streamlit_searchbox import st_searchbox
 
 from custom_team_page import show_custom_team_page
 from player_stat_groups import PLAYER_STAT_GROUPS
-from tournament_page import show_tournament_create_page, show_tournament_page
+from tournament_page import (
+    show_tournament_create_page,
+    show_tournament_detail_page,
+    show_tournament_page,
+)
 
 
 # -----------------------------------------------------------------------------
@@ -46,6 +50,7 @@ PAGE_PREDICT = "predict"
 PAGE_CUSTOM_TEAM = "custom_team"
 PAGE_TOURNAMENT = "tournament"
 PAGE_TOURNAMENT_CREATE = "tournament_create"
+PAGE_TOURNAMENT_DETAIL = "tournament_detail"
 
 # Sections proposées dans le menu latéral. Les pages de détail ne sont pas
 # affichées ici : on y entre en cliquant dans l'app, puis un bouton Retour en sort.
@@ -54,7 +59,12 @@ SIDEBAR_SECTIONS = {
     "Prédiction": PAGE_PREDICT,
 }
 
-FANTASY_PAGES = {PAGE_CUSTOM_TEAM, PAGE_TOURNAMENT, PAGE_TOURNAMENT_CREATE}
+FANTASY_PAGES = {
+    PAGE_CUSTOM_TEAM,
+    PAGE_TOURNAMENT,
+    PAGE_TOURNAMENT_CREATE,
+    PAGE_TOURNAMENT_DETAIL,
+}
 
 STARTERS_PER_TEAM = 11
 
@@ -651,8 +661,12 @@ ROUTES = {
     PAGE_TEAM: show_team_page,
     PAGE_PREDICT: show_prediction_page,
     PAGE_CUSTOM_TEAM: show_custom_team_page,
-    PAGE_TOURNAMENT: lambda: show_tournament_page(PAGE_TOURNAMENT_CREATE),
+    PAGE_TOURNAMENT: lambda: show_tournament_page(
+        PAGE_TOURNAMENT_CREATE,
+        PAGE_TOURNAMENT_DETAIL,
+    ),
     PAGE_TOURNAMENT_CREATE: lambda: show_tournament_create_page(PAGE_TOURNAMENT),
+    PAGE_TOURNAMENT_DETAIL: lambda: show_tournament_detail_page(PAGE_TOURNAMENT),
     PAGE_LINEUP: show_lineup_page,
     PAGE_PLAYER: show_player_page,
 }
