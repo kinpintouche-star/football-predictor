@@ -92,6 +92,8 @@ def fill_empty_creation_slots(selected_teams: list[dict | None], nb_teams: int):
 
 def show_team_slot(slot_index: int, selected_teams: list[dict | None]):
     selected_team = selected_teams[slot_index]
+    selected_name = format_team_name(selected_team) if selected_team else ""
+    selected_id = get_team_id(selected_team) if selected_team else "empty"
     columns = st.columns([2, 5, 2])
 
     columns[0].write(f"Équipe {slot_index + 1}")
@@ -100,9 +102,12 @@ def show_team_slot(slot_index: int, selected_teams: list[dict | None]):
         choice = st_searchbox(
             search_function=api_client.search_tournament_candidate_teams,
             placeholder="Rechercher une équipe",
-            key=f"tournament_team_search_{slot_index}",
+            key=f"tournament_team_search_{slot_index}_{selected_id}",
             label=f"Équipe {slot_index + 1}",
             default=selected_team,
+            default_searchterm=selected_name,
+            default_options=[(selected_name, selected_team)] if selected_team else None,
+            edit_after_submit="current",
             label_visibility="collapsed",
         )
 

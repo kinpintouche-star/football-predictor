@@ -18,6 +18,7 @@ class CreateCustomTeamRequest(BaseModel):
 class SearchTeamsRequest(BaseModel):
     search: str = ""
     custom: bool = True
+    prediction_ready: bool = False
     limit: int = 200
 
 

@@ -118,7 +118,111 @@ def search_teams(search: str):
 def get_teams(payload):
     # Endpoint unifié pour alimenter les recherches : équipes réelles + custom.
     search_value = normalize_text(payload.search.strip())
-    limit = min(max(payload.limit, 1), 500)
+    limit = min(max(payload.limit, 1), 1000)
+
+    if payload.prediction_ready:
+        real_query = text(
+            f"""
+            WITH latest_match AS (
+                SELECT l.team_id, MAX(m.match_date) AS latest_date
+                FROM "public"."lineup" l
+                JOIN "public"."match" m ON m.match_id = l.match_id
+                GROUP BY l.team_id
+            ),
+            season AS (
+                SELECT
+                    team_id,
+                    make_date(
+                        CASE
+                            WHEN EXTRACT(MONTH FROM latest_date) < 7
+                            THEN EXTRACT(YEAR FROM latest_date)::int - 1
+                            ELSE EXTRACT(YEAR FROM latest_date)::int
+                        END,
+                        7,
+                        1
+                    ) AS season_start
+                FROM latest_match
+            ),
+            eligible_team AS (
+                SELECT l.team_id
+                FROM "public"."lineup" l
+                JOIN "public"."match" m ON m.match_id = l.match_id
+                JOIN "public"."player" p ON p.player_id = l.player_id
+                JOIN season s ON s.team_id = l.team_id
+                WHERE m.match_date >= s.season_start
+                  AND {HAS_SOFIFA_PROFILE_SQL}
+                  AND {GLOBAL_NOTE_SQL} IS NOT NULL
+                GROUP BY l.team_id
+                HAVING COUNT(DISTINCT l.player_id) >= {STARTERS_PER_TEAM}
+            )
+            SELECT
+                t.team_id,
+                t.team_name,
+                'real' AS team_type,
+                NULL AS reference_formation,
+                NULL AS budget_eur,
+                t.overall,
+                t.attack,
+                t.midfield,
+                t.defence,
+                t.uefa_rank,
+                t.club_league_name
+            FROM "public"."team" t
+            JOIN eligible_team et ON et.team_id = t.team_id
+            ORDER BY t.team_name
+            """
+        )
+
+        custom_query = text(
+            f"""
+            SELECT
+                ct.custom_team_id AS team_id,
+                ct.team_name,
+                'custom' AS team_type,
+                ct.reference_formation,
+                ct.budget_eur,
+                ct.overall,
+                ct.attack,
+                ct.midfield,
+                ct.defence,
+                NULL AS uefa_rank,
+                NULL AS club_league_name
+            FROM "public"."custom_team" ct
+            JOIN "public"."custom_team_player" ctp
+                ON ctp.custom_team_id = ct.custom_team_id
+            JOIN "public"."player" p
+                ON p.player_id = ctp.player_id
+            WHERE {HAS_SOFIFA_PROFILE_SQL}
+              AND {GLOBAL_NOTE_SQL} IS NOT NULL
+            GROUP BY
+                ct.custom_team_id,
+                ct.team_name,
+                ct.reference_formation,
+                ct.budget_eur,
+                ct.overall,
+                ct.attack,
+                ct.midfield,
+                ct.defence
+            HAVING COUNT(DISTINCT ctp.player_id) = {STARTERS_PER_TEAM}
+            ORDER BY ct.team_name
+            """
+        )
+
+        with get_engine().connect() as connection:
+            teams = [dict(row) for row in connection.execute(real_query).mappings().all()]
+
+            if payload.custom:
+                teams.extend(
+                    dict(row) for row in connection.execute(custom_query).mappings().all()
+                )
+
+        if search_value:
+            teams = [
+                team for team in teams
+                if search_value in normalize_text(team["team_name"])
+            ]
+
+        return {"teams": teams[:limit]}
 
     real_query = text(
         """

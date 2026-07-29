@@ -341,39 +341,26 @@ def normalize_text(value: str) -> str:
 def list_tournament_candidate_teams() -> list[dict]:
     """Équipes utilisables en tournoi.
 
-    Une équipe est gardée seulement si l'API sait produire ses 11 notes de
-    prédiction. C'est plus lent qu'un endpoint spécialisé, mais clair pour ce
-    premier écran.
+    L'API fait le filtrage en SQL pour éviter de tester les équipes une par une.
     """
     response = _request(
         "POST",
         "/teams",
-        json={"search": "", "custom": True, "limit": 500},
+        json={"search": "", "custom": True, "prediction_ready": True, "limit": 1000},
     )
 
-    candidates = []
-
-    for team in response["teams"]:
-        team_id = str(team["team_id"])
-
-        try:
-            _request("GET", f"/team/{team_id}/prediction_features")
-        except ApiError:
-            continue
-
-        candidates.append(
-            {
-                "team_id": team_id,
-                "team_name": team["team_name"],
-                "team_type": team.get("team_type"),
-                "overall": team.get("overall"),
-                "attack": team.get("attack"),
-                "midfield": team.get("midfield"),
-                "defence": team.get("defence"),
-            }
-        )
-
-    return candidates
+    return [
+        {
+            "team_id": str(team["team_id"]),
+            "team_name": team["team_name"],
+            "team_type": team.get("team_type"),
+            "overall": team.get("overall"),
+            "attack": team.get("attack"),
+            "midfield": team.get("midfield"),
+            "defence": team.get("defence"),
+        }
+        for team in response["teams"]
+    ]
 
 
 def search_tournament_candidate_teams(search: str) -> list[tuple[str, dict]]:
