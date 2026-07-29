@@ -28,15 +28,16 @@ PAGE_LINEUP = "lineup"
 PAGE_PLAYER = "player"
 PAGE_PREDICT = "predict"
 PAGE_CUSTOM_TEAM = "custom_team"
+PAGE_TOURNAMENT = "tournament"
 
-# Sections proposées dans le menu latéral. Les autres pages ( composition d'un
-# match, fiche joueur ) sont des vues de détail : on y entre en cliquant, pas
-# par le menu, et un bouton Retour en sort.
+# Sections proposées dans le menu latéral. Les pages de détail ne sont pas
+# affichées ici : on y entre en cliquant dans l'app, puis un bouton Retour en sort.
 SIDEBAR_SECTIONS = {
     "Équipes": PAGE_TEAM,
     "Prédiction": PAGE_PREDICT,
-    "Équipe custom": PAGE_CUSTOM_TEAM,
 }
+
+FANTASY_PAGES = {PAGE_CUSTOM_TEAM, PAGE_TOURNAMENT}
 
 STARTERS_PER_TEAM = 11
 
@@ -107,6 +108,13 @@ def get_player(player_id: int):
     return response.json()
 
 
+def ask_sql_agent(message: str):
+    payload = {"message": message, "max_rows": 10}
+    response = requests.post(f"{SQL_AGENT_API_URL}/chat", json=payload, timeout=120)
+    response.raise_for_status()
+    return response.json()
+
+
 
 
 # -----------------------------------------------------------------------------
@@ -124,20 +132,25 @@ def show_sidebar_navigation():
 
     # Une vue de détail garde surlignée la section d'où l'on vient.
     origin = st.session_state.get("section", PAGE_TEAM)
-    active = current_page if current_page in SIDEBAR_SECTIONS.values() else origin
-
-    labels = list(SIDEBAR_SECTIONS)
-    index = labels.index(next(k for k, v in SIDEBAR_SECTIONS.items() if v == active))
+    navigation_pages = set(SIDEBAR_SECTIONS.values()) | FANTASY_PAGES
+    active = current_page if current_page in navigation_pages else origin
 
     with st.sidebar:
         st.markdown("### Football Predictor")
-        choice = st.radio("Navigation", labels, index=index, label_visibility="collapsed")
 
-    target = SIDEBAR_SECTIONS[choice]
+        for label, target in SIDEBAR_SECTIONS.items():
+            if st.button(label, use_container_width=True):
+                st.session_state["section"] = target
+                set_page(target)
 
-    if target != active:
-        st.session_state["section"] = target
-        set_page(target)
+        with st.expander("Fantasy", expanded=active in FANTASY_PAGES):
+            if st.button("Équipe custom", use_container_width=True):
+                st.session_state["section"] = PAGE_CUSTOM_TEAM
+                set_page(PAGE_CUSTOM_TEAM)
+
+            if st.button("Tournoi", use_container_width=True):
+                st.session_state["section"] = PAGE_TOURNAMENT
+                set_page(PAGE_TOURNAMENT)
 
 
 def go_to_player_page(player: dict):
@@ -544,6 +557,15 @@ def show_prediction_page():
 
 
 # -----------------------------------------------------------------------------
+# Page tournament
+# -----------------------------------------------------------------------------
+
+def show_tournament_page():
+    st.title("Tournoi")
+    st.info("La page tournoi sera construite à la prochaine étape.")
+
+
+# -----------------------------------------------------------------------------
 # Page composition du dernier match
 # -----------------------------------------------------------------------------
 
@@ -599,6 +621,7 @@ ROUTES = {
     PAGE_TEAM: show_team_page,
     PAGE_PREDICT: show_prediction_page,
     PAGE_CUSTOM_TEAM: show_custom_team_page,
+    PAGE_TOURNAMENT: show_tournament_page,
     PAGE_LINEUP: show_lineup_page,
     PAGE_PLAYER: show_player_page,
 }
