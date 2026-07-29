@@ -16,6 +16,7 @@ import api_client
 
 
 TOURNAMENT_SIZES = [2, 4, 8, 16]
+DETAIL_PAGE = "tournament_detail"
 
 
 def go_to_page(page_name: str):
@@ -346,7 +347,7 @@ def show_tournament_detail_page(main_page: str):
     show_match_history(bracket["matches"])
 
 
-def show_tournament_create_page(main_page: str, detail_page: str):
+def show_tournament_create_page(main_page: str, detail_page: str = DETAIL_PAGE):
     if st.button("Retour"):
         go_to_page(main_page)
 
