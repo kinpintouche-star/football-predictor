@@ -32,6 +32,7 @@ uvicorn app.main:app --reload --port 8000
 
 ```text
 GET /teams/{search}
+POST /teams
 GET /team/{team_id}
 GET /player/{player_id}
 POST /players
@@ -39,6 +40,16 @@ POST /custom/team
 POST /custom/tournament
 POST /custom/tournament/set
 ```
+
+`POST /teams` recherche les équipes réelles et, si `custom=true`, les équipes
+custom :
+
+```json
+{ "search": "par", "custom": true, "limit": 200 }
+```
+
+`GET /team/{team_id}` accepte maintenant aussi les ids custom commençant par
+`c`.
 
 ## Docker
 

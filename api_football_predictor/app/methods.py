@@ -94,6 +94,66 @@ def search_teams(search: str):
     }
 
 
+def get_teams(payload):
+    # Endpoint unifié pour alimenter les recherches : équipes réelles + custom.
+    search_value = normalize_text(payload.search.strip())
+    limit = min(max(payload.limit, 1), 500)
+
+    real_query = text(
+        """
+        SELECT
+            team_id,
+            team_name,
+            'real' AS team_type,
+            NULL AS reference_formation,
+            NULL AS budget_eur,
+            overall,
+            attack,
+            midfield,
+            defence,
+            uefa_rank,
+            club_league_name
+        FROM "public"."team"
+        ORDER BY team_name
+        """
+    )
+
+    custom_query = text(
+        """
+        SELECT
+            ct.custom_team_id AS team_id,
+            ct.team_name,
+            'custom' AS team_type,
+            ct.reference_formation,
+            ct.budget_eur,
+            ct.overall,
+            ct.attack,
+            ct.midfield,
+            ct.defence,
+            NULL AS uefa_rank,
+            NULL AS club_league_name
+        FROM "public"."custom_team" ct
+        ORDER BY ct.team_name
+        """
+    )
+
+    with get_engine().connect() as connection:
+        teams = [dict(row) for row in connection.execute(real_query).mappings().all()]
+
+        if payload.custom:
+            teams.extend(
+                dict(row) for row in connection.execute(custom_query).mappings().all()
+            )
+
+    if search_value:
+        teams = [
+            team for team in teams
+            if search_value in normalize_text(team["team_name"])
+        ]
+
+    return {"teams": teams[:limit]}
+
+
 # Fetch des données suivantes :
 # Pour une équipe donnée ( recherche par id )
 # On renvoie le nom de l'équipe et son effectif de la saison en cours,
@@ -749,7 +809,73 @@ def set_tournament(payload):
         )
 
 
-def get_team(team_id: int):
+def get_custom_team(custom_team_id: str):
+    query = text(
+        """
+        SELECT
+            ct.custom_team_id,
+            ct.team_name,
+            ct.reference_formation,
+            ct.budget_eur,
+            ct.overall,
+            ct.attack,
+            ct.midfield,
+            ct.defence,
+            p.player_id,
+            p.player_name,
+            p.best_position,
+            p.overall_rating AS global_note,
+            p.transfermarkt_market_value_eur AS market_value_eur
+        FROM "public"."custom_team" ct
+        LEFT JOIN "public"."custom_team_player" ctp
+            ON ctp.custom_team_id = ct.custom_team_id
+        LEFT JOIN "public"."player" p
+            ON p.player_id = ctp.player_id
+        WHERE ct.custom_team_id = :custom_team_id
+        ORDER BY p.overall_rating DESC NULLS LAST, p.player_name
+        """
+    )
+
+    with get_engine().connect() as connection:
+        rows = connection.execute(
+            query, {"custom_team_id": custom_team_id}
+        ).mappings().all()
+
+    if not rows:
+        raise HTTPException(status_code=404, detail="Custom team not found")
+
+    first_row = rows[0]
+
+    return {
+        "team": {
+            "team_id": first_row["custom_team_id"],
+            "custom_team_id": first_row["custom_team_id"],
+            "team_type": "custom",
+            "team_name": first_row["team_name"],
+            "reference_formation": first_row["reference_formation"],
+            "budget_eur": first_row["budget_eur"],
+            "overall": first_row["overall"],
+            "attack": first_row["attack"],
+            "midfield": first_row["midfield"],
+            "defence": first_row["defence"],
+        },
+        "players": [
+            {
+                "player_id": row["player_id"],
+                "player_name": row["player_name"],
+                "global_note": row["global_note"],
+                "position": row["best_position"],
+                "appearances": None,
+                "is_new_this_season": None,
+                "market_value_eur": row["market_value_eur"],
+            }
+            for row in rows
+            if row["player_id"] is not None
+        ],
+    }
+
+
+def get_real_team(team_id: int):
 
     query = text(
         f"""
@@ -789,6 +915,7 @@ def get_team(team_id: int):
     return {
         "team": {
             "team_id": team_id,
+            "team_type": "real",
             "team_name": team_name,
         },
         "players": [
@@ -806,6 +933,18 @@ def get_team(team_id: int):
             for row in rows
         ],
     }
+
+
+def get_team(team_id: str):
+    if team_id.startswith("c"):
+        return get_custom_team(team_id)
+
+    try:
+        real_team_id = int(team_id)
+    except ValueError as error:
+        raise HTTPException(status_code=422, detail="team_id invalide") from error
+
+    return get_real_team(real_team_id)
 
 
 # Mouvements d'effectif entre la saison précédente et la saison en cours.

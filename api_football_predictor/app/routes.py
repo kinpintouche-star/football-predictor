@@ -15,6 +15,12 @@ class CreateCustomTeamRequest(BaseModel):
     players: list[int]
 
 
+class SearchTeamsRequest(BaseModel):
+    search: str = ""
+    custom: bool = True
+    limit: int = 200
+
+
 class GetPlayersRequest(BaseModel):
     player_ids: list[int]
 
@@ -39,8 +45,13 @@ def search_teams(search: str):
     return methods.search_teams(search)
 
 
+@router.post("/teams")
+def get_teams(payload: SearchTeamsRequest):
+    return methods.get_teams(payload)
+
+
 @router.get("/team/{team_id}")
-def get_team(team_id: int):
+def get_team(team_id: str):
     return methods.get_team(team_id)
 
 

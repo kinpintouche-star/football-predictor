@@ -239,16 +239,17 @@ def create_team(
     player_ids: list[int],
     budget: int | None = DEFAULT_BUDGET_EUR,
 ) -> dict:
+    is_budget_limited = budget is not None
+
     payload = {
         "team_name": name,
         "reference_formation": compo_ref,
-        "isBudget": budget is not None,
-        "players": player_ids,
+        "isBudget": is_budget_limited,
+        "players": [int(player_id) for player_id in player_ids],
     }
 
-    # Sans `budget`, l'API applique son propre plafond ( 500 M€ ).
-    if budget is not None:
-        payload["budget"] = budget
+    if is_budget_limited:
+        payload["budget"] = int(budget)
 
     response = _request("POST", "/custom/team", json=payload)
     team = response["team"]
@@ -264,7 +265,7 @@ def create_team(
                 "player_name": player["player_name"],
                 "best_position": player.get("position"),
                 "note": catalogue_player["note"] if catalogue_player else None,
-                "price": player.get("market_value_eur"),
+                "price": player.get("market_value_eur") or 0,
             }
         )
 

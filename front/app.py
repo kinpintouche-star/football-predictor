@@ -184,19 +184,28 @@ def show_players_block(title: str, players: list[dict], key_prefix: str):
         st.info("Aucun joueur.")
         return
 
-    # La composition d'un match ne porte ni compteur d'apparitions ni valeur
-    # marchande : ces colonnes n'apparaissent que pour l'effectif de la saison.
-    show_squad_columns = any("appearances" in player for player in players)
-    widths = [4, 2, 2, 2, 3] if show_squad_columns else [4, 3, 2]
+    show_appearances = any(player.get("appearances") is not None for player in players)
+    show_market_value = any(player.get("market_value_eur") is not None for player in players)
+    widths = [4, 2, 2]
+
+    if show_appearances:
+        widths.append(2)
+
+    if show_market_value:
+        widths.append(3)
 
     header = st.columns(widths)
     header[0].markdown("**Joueur**")
     header[1].markdown("**Poste**")
     header[2].markdown("**Note**")
 
-    if show_squad_columns:
-        header[3].markdown("**Matchs**")
-        header[4].markdown("**Valeur**")
+    column_index = 3
+    if show_appearances:
+        header[column_index].markdown("**Matchs**")
+        column_index += 1
+
+    if show_market_value:
+        header[column_index].markdown("**Valeur**")
 
     for player in players:
         columns = st.columns(widths)
@@ -206,9 +215,13 @@ def show_players_block(title: str, players: list[dict], key_prefix: str):
         columns[1].write(player["position"])
         columns[2].write(format_note(player["global_note"]))
 
-        if show_squad_columns:
-            columns[3].write(player.get("appearances", "-"))
-            columns[4].write(format_market_value(player.get("market_value_eur")))
+        column_index = 3
+        if show_appearances:
+            columns[column_index].write(player.get("appearances", "-"))
+            column_index += 1
+
+        if show_market_value:
+            columns[column_index].write(format_market_value(player.get("market_value_eur")))
 
 
 def show_movements_block(title: str, players: list[dict], date_label: str, key_prefix: str):
@@ -441,14 +454,21 @@ def show_team_section():
 
     team = team_data["team"]
     players = team_data["players"]
+    is_custom_team = team.get("team_type") == "custom"
 
-    show_team_header(team, f"Effectif de la saison - {len(players)} joueurs")
+    subtitle = f"Équipe custom - {len(players)} joueurs" if is_custom_team else (
+        f"Effectif de la saison - {len(players)} joueurs"
+    )
+    show_team_header(team, subtitle)
+
+    if is_custom_team:
+        show_players_block("Effectif", players, key_prefix="custom_squad")
+        return
 
     if st.button("Voir la dernière composition"):
         set_page(PAGE_LINEUP)
 
     squad_tab, movements_tab = st.tabs(["Effectif", "Mouvements"])
-
     with squad_tab:
         show_players_block("Effectif", players, key_prefix="squad")
 
