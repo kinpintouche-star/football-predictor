@@ -128,22 +128,108 @@ def show_team_slot(slot_index: int, selected_teams: list[dict | None]):
 def get_bracket_state(record: dict) -> dict:
     tournament_id = record["tournament"]["tournament_id"]
     brackets = st.session_state.setdefault("tournament_brackets", {})
+    saved_match_count = len(record.get("matches", []))
 
-    if tournament_id not in brackets:
-        teams = sorted(
-            record.get("teams", []),
-            key=lambda team: (
-                team.get("slot_index") is None,
-                team.get("slot_index") or 0,
-                format_team_name(team),
-            ),
-        )
-        brackets[tournament_id] = {
-            "rounds": build_initial_rounds(teams),
-            "matches": [],
-        }
+    if (
+        tournament_id not in brackets
+        or saved_match_count > len(brackets[tournament_id]["matches"])
+    ):
+        brackets[tournament_id] = build_bracket_state(record)
 
     return brackets[tournament_id]
+
+
+def get_saved_match_winner_id(match: dict) -> str | None:
+    if match.get("winner_team_id"):
+        return str(match["winner_team_id"])
+
+    score_1 = match.get("score_team_1")
+    score_2 = match.get("score_team_2")
+    if score_1 is None or score_2 is None or score_1 == score_2:
+        return None
+
+    return str(match["team_id_1"] if score_1 > score_2 else match["team_id_2"])
+
+
+def find_saved_match_slot(
+    rounds: list[list[dict | None]],
+    team_id_1: str,
+    team_id_2: str,
+) -> tuple[int, int] | None:
+    expected_ids = {str(team_id_1), str(team_id_2)}
+
+    for round_index in range(len(rounds) - 1):
+        round_teams = rounds[round_index]
+
+        for slot_index in range(0, len(round_teams), 2):
+            team_1 = round_teams[slot_index]
+            team_2 = round_teams[slot_index + 1]
+
+            if not team_1 or not team_2:
+                continue
+
+            if {get_team_id(team_1), get_team_id(team_2)} == expected_ids:
+                return round_index, slot_index
+
+    return None
+
+
+def saved_match_to_history(match: dict) -> dict:
+    return {
+        "custom_match_id": match.get("custom_match_id"),
+        "phase": match.get("phase"),
+        "team_1_name": match.get("team_1_name"),
+        "team_2_name": match.get("team_2_name"),
+        "score_team_1": match.get("score_team_1"),
+        "score_team_2": match.get("score_team_2"),
+        "winner_name": match.get("winner_name") or match.get("winner_team_id") or "-",
+    }
+
+
+def build_bracket_state(record: dict) -> dict:
+    teams = sorted(
+        record.get("teams", []),
+        key=lambda team: (
+            team.get("slot_index") is None,
+            team.get("slot_index") or 0,
+            format_team_name(team),
+        ),
+    )
+    rounds = build_initial_rounds(teams)
+    teams_by_id = {get_team_id(team): normalize_team(team) for team in teams}
+    history = []
+
+    for match in record.get("matches", []):
+        history.append(saved_match_to_history(match))
+        winner_id = get_saved_match_winner_id(match)
+        slot = find_saved_match_slot(
+            rounds,
+            str(match["team_id_1"]),
+            str(match["team_id_2"]),
+        )
+
+        if not winner_id or not slot:
+            continue
+
+        round_index, slot_index = slot
+        current_pair = rounds[round_index][slot_index:slot_index + 2]
+        winner = next(
+            (team for team in current_pair if team and get_team_id(team) == winner_id),
+            teams_by_id.get(winner_id),
+        )
+
+        if winner:
+            rounds[round_index + 1][slot_index // 2] = winner
+
+    return {"rounds": rounds, "matches": history}
+
+
+def render_tournament_state(bracket: dict, bracket_placeholder, history_placeholder):
+    with bracket_placeholder.container():
+        show_bracket(bracket["rounds"])
+
+    with history_placeholder.container():
+        show_match_history(bracket["matches"])
 
 
 def show_bracket(rounds: list[list[dict | None]]):
@@ -363,7 +449,7 @@ def play_next_match(record: dict, bracket: dict, feature_cache: dict[str, dict])
     )
     winner, score_1, score_2, message = prediction_to_winner(prediction, team_1, team_2)
 
-    api_client.set_tournament(
+    saved_match = api_client.set_tournament(
         record["tournament"]["tournament_id"],
         get_team_id(team_1),
         get_team_id(team_2),
@@ -372,10 +458,15 @@ def play_next_match(record: dict, bracket: dict, feature_cache: dict[str, dict])
         phase,
         get_team_id(winner),
     )
+    custom_match_id = saved_match.get("match", {}).get("custom_match_id")
+
+    if not custom_match_id:
+        raise api_client.ApiError("Match prédit mais non confirmé dans custom_match")
 
     rounds[round_index + 1][slot_index // 2] = winner
     bracket["matches"].append(
         {
+            "custom_match_id": custom_match_id,
             "phase": phase,
             "team_1_name": format_team_name(team_1),
             "team_2_name": format_team_name(team_2),
@@ -389,7 +480,13 @@ def play_next_match(record: dict, bracket: dict, feature_cache: dict[str, dict])
     return True
 
 
-def run_remaining_predictions(record: dict, bracket: dict):
+def run_remaining_predictions(
+    record: dict,
+    bracket: dict,
+    bracket_placeholder,
+    history_placeholder,
+    progress_placeholder,
+):
     team_ids = {
         get_team_id(team)
         for round_teams in bracket["rounds"]
@@ -401,6 +498,8 @@ def run_remaining_predictions(record: dict, bracket: dict):
 
     while play_next_match(record, bracket, feature_cache):
         played += 1
+        progress_placeholder.info(f"{played} match(s) joué(s).")
+        render_tournament_state(bracket, bracket_placeholder, history_placeholder)
 
     winner = bracket["rounds"][-1][0] if bracket["rounds"] and bracket["rounds"][-1] else None
     if winner:
@@ -410,7 +509,7 @@ def run_remaining_predictions(record: dict, bracket: dict):
     return played, winner
 
 
-def show_tournament_action(record: dict, bracket: dict):
+def show_tournament_action(record: dict, bracket: dict, bracket_placeholder, history_placeholder):
     rounds = bracket["rounds"]
     next_match = find_next_match(rounds)
 
@@ -429,8 +528,16 @@ def show_tournament_action(record: dict, bracket: dict):
     if not st.button(button_label, type="primary", use_container_width=True):
         return
 
+    progress_placeholder = st.empty()
+
     try:
-        played, winner = run_remaining_predictions(record, bracket)
+        played, winner = run_remaining_predictions(
+            record,
+            bracket,
+            bracket_placeholder,
+            history_placeholder,
+            progress_placeholder,
+        )
     except api_client.ApiError as error:
         st.error(f"Prédiction impossible : {error}")
         return
@@ -439,8 +546,6 @@ def show_tournament_action(record: dict, bracket: dict):
         st.success(f"{played} match(s) prédit(s). Vainqueur : {format_team_name(winner)}")
     else:
         st.success(f"{played} match(s) prédit(s).")
-
-    st.rerun()
 
 
 def show_tournament_page(create_page: str, detail_page: str):
@@ -505,12 +610,13 @@ def show_tournament_detail_page(main_page: str):
     bracket = get_bracket_state(record)
     title_column, action_column = st.columns([3, 1])
     title_column.subheader("Tableau")
+    bracket_placeholder = st.empty()
+    history_placeholder = st.empty()
 
     with action_column:
-        show_tournament_action(record, bracket)
+        show_tournament_action(record, bracket, bracket_placeholder, history_placeholder)
 
-    show_bracket(bracket["rounds"])
-    show_match_history(bracket["matches"])
+    render_tournament_state(bracket, bracket_placeholder, history_placeholder)
 
 
 def show_tournament_create_page(main_page: str, detail_page: str = DETAIL_PAGE):

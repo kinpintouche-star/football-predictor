@@ -623,10 +623,60 @@ def set_tournament_match(
             },
         )
 
+    existing_match = connection.execute(
+        text(
+            """
+            SELECT
+                custom_match_id,
+                tournament_id,
+                tournament_phase AS phase,
+                home_custom_team_id AS team_id_1,
+                away_custom_team_id AS team_id_2,
+                home_score AS score_team_1,
+                away_score AS score_team_2,
+                result,
+                winner_team_id
+            FROM "public"."custom_match"
+            WHERE tournament_id = :tournament_id
+              AND tournament_phase = :phase
+              AND (
+                  (
+                      home_custom_team_id = :team_id_1
+                      AND away_custom_team_id = :team_id_2
+                  )
+                  OR (
+                      home_custom_team_id = :team_id_2
+                      AND away_custom_team_id = :team_id_1
+                  )
+              )
+            ORDER BY created_at, custom_match_id
+            LIMIT 1
+            """
+        ),
+        {
+            "tournament_id": tournament_id,
+            "phase": phase.strip(),
+            "team_id_1": team_id_1,
+            "team_id_2": team_id_2,
+        },
+    ).mappings().first()
+
+    if existing_match:
+        return {
+            "match": dict(existing_match),
+            "lineup": {},
+            "teams": [dict(row) for row in teams],
+        }
+
     result = get_match_result(score_team_1, score_team_2)
+    saved_winner_team_id = winner_team_id
+
+    if not saved_winner_team_id and result != "draw":
+        saved_winner_team_id = team_id_1 if result == "team_1_win" else team_id_2
+
     custom_match_id = f"c{uuid.uuid4().hex[:12]}"
 
-    connection.execute(
+    saved_custom_match_id = connection.execute(
         text(
             """
             INSERT INTO "public"."custom_match" (
@@ -636,6 +686,7 @@ def set_tournament_match(
                 home_score,
                 away_score,
                 result,
+                winner_team_id,
                 tournament_phase,
                 tournament_id
             )
@@ -646,9 +697,11 @@ def set_tournament_match(
                 :score_team_1,
                 :score_team_2,
                 :result,
+                :winner_team_id,
                 :phase,
                 :tournament_id
             )
+            RETURNING custom_match_id
             """
         ),
         {
@@ -658,10 +711,11 @@ def set_tournament_match(
             "score_team_1": score_team_1,
             "score_team_2": score_team_2,
             "result": result,
+            "winner_team_id": saved_winner_team_id,
             "phase": phase.strip(),
             "tournament_id": tournament_id,
         },
-    )
+    ).scalar_one()
 
     lineup_rows = []
     lineup_counts_by_team = {}
@@ -773,7 +827,7 @@ def set_tournament_match(
 
     return {
         "match": {
-            "custom_match_id": custom_match_id,
+            "custom_match_id": saved_custom_match_id,
             "tournament_id": tournament_id,
             "phase": phase.strip(),
             "team_id_1": team_id_1,
@@ -781,6 +835,7 @@ def set_tournament_match(
             "score_team_1": score_team_1,
             "score_team_2": score_team_2,
             "result": result,
+            "winner_team_id": saved_winner_team_id,
         },
         "lineup": {
             "team_id_1_players": lineup_counts_by_team[team_id_1],
@@ -1104,9 +1159,47 @@ def read_tournament(connection, tournament_id: str) -> dict:
         {"tournament_id": tournament_id},
     ).mappings().all()
 
+    matches = connection.execute(
+        text(
+            """
+            SELECT
+                cm.custom_match_id,
+                cm.tournament_id,
+                cm.home_custom_team_id AS team_id_1,
+                COALESCE(home_ct.team_name, home_t.team_name) AS team_1_name,
+                cm.away_custom_team_id AS team_id_2,
+                COALESCE(away_ct.team_name, away_t.team_name) AS team_2_name,
+                cm.home_score AS score_team_1,
+                cm.away_score AS score_team_2,
+                cm.result,
+                cm.winner_team_id,
+                COALESCE(winner_ct.team_name, winner_t.team_name) AS winner_name,
+                cm.tournament_phase AS phase,
+                cm.created_at
+            FROM "public"."custom_match" cm
+            LEFT JOIN "public"."custom_team" home_ct
+                ON home_ct.custom_team_id = cm.home_custom_team_id
+            LEFT JOIN "public"."team" home_t
+                ON home_t.team_id::text = cm.home_custom_team_id
+            LEFT JOIN "public"."custom_team" away_ct
+                ON away_ct.custom_team_id = cm.away_custom_team_id
+            LEFT JOIN "public"."team" away_t
+                ON away_t.team_id::text = cm.away_custom_team_id
+            LEFT JOIN "public"."custom_team" winner_ct
+                ON winner_ct.custom_team_id = cm.winner_team_id
+            LEFT JOIN "public"."team" winner_t
+                ON winner_t.team_id::text = cm.winner_team_id
+            WHERE cm.tournament_id = :tournament_id
+            ORDER BY cm.created_at, cm.custom_match_id
+            """
+        ),
+        {"tournament_id": tournament_id},
+    ).mappings().all()
+
     return {
         "tournament": dict(tournament),
         "teams": [dict(row) for row in teams],
+        "matches": [dict(row) for row in matches],
     }
 
 

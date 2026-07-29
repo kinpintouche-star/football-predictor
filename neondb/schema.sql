@@ -162,8 +162,10 @@ CREATE TABLE IF NOT EXISTS "custom_match" (
     home_score INTEGER,
     away_score INTEGER,
     result TEXT,
+    winner_team_id TEXT,
     tournament_phase TEXT,
-    tournament_id TEXT REFERENCES "tournament"(tournament_id)
+    tournament_id TEXT REFERENCES "tournament"(tournament_id),
+    created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
 ALTER TABLE "custom_match"
@@ -174,6 +176,12 @@ ADD COLUMN IF NOT EXISTS away_score INTEGER;
 
 ALTER TABLE "custom_match"
 ADD COLUMN IF NOT EXISTS result TEXT;
+
+ALTER TABLE "custom_match"
+ADD COLUMN IF NOT EXISTS winner_team_id TEXT;
+
+ALTER TABLE "custom_match"
+ADD COLUMN IF NOT EXISTS created_at TIMESTAMPTZ DEFAULT NOW();
 
 CREATE TABLE IF NOT EXISTS "custom_lineup" (
     custom_match_id TEXT REFERENCES "custom_match"(custom_match_id),
