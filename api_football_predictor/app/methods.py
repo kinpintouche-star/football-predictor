@@ -71,6 +71,20 @@ def normalize_text(value: str) -> str:
     return value.lower()
 
 
+def to_float(value):
+    if value is None:
+        return None
+
+    return float(value)
+
+
+def to_int(value):
+    if value is None:
+        return None
+
+    return int(value)
+
+
 def search_teams(search: str):
     query = text(
         """
@@ -735,12 +749,10 @@ def create_custom_team(payload):
                 ],
             )
         except SQLAlchemyError as error:
+            message = str(getattr(error, "orig", error)).splitlines()[0]
             raise HTTPException(
                 status_code=500,
-                detail=(
-                    "Creation custom team impossible cote Neon. "
-                    "Lance python neondb/create_tables.py pour mettre a jour le schema."
-                ),
+                detail=f"Creation custom team impossible cote Neon : {message}",
             ) from error
 
     return {
@@ -759,8 +771,8 @@ def create_custom_team(payload):
                 "player_id": row["player_id"],
                 "player_name": row["player_name"],
                 "position": row["best_position"],
-                "overall_rating": row["overall_rating"],
-                "market_value_eur": row["market_value_eur"],
+                "overall_rating": to_float(row["overall_rating"]),
+                "market_value_eur": to_int(row["market_value_eur"]),
             }
             for row in players
         ],
