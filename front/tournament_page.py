@@ -431,6 +431,42 @@ def show_match_history(matches: list[dict]):
         )
 
 
+def show_action_loader(placeholder, message: str):
+    """Petit loader local, plus discret que le flou global Streamlit."""
+    placeholder.markdown(
+        f"""
+        <style>
+            .tournament-action-loader {{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 0.5rem;
+                margin-top: 0.75rem;
+                color: #2563eb;
+                font-size: 0.9rem;
+                font-weight: 700;
+            }}
+            .tournament-action-spinner {{
+                width: 16px;
+                height: 16px;
+                border: 2px solid rgba(37, 99, 235, 0.25);
+                border-top-color: #2563eb;
+                border-radius: 50%;
+                animation: tournament-spin 0.8s linear infinite;
+            }}
+            @keyframes tournament-spin {{
+                to {{ transform: rotate(360deg); }}
+            }}
+        </style>
+        <div class="tournament-action-loader">
+            <span>{escape(message)}</span>
+            <span class="tournament-action-spinner"></span>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 def play_next_match(record: dict, bracket: dict, feature_cache: dict[str, dict]) -> bool:
     rounds = bracket["rounds"]
     next_match = find_next_match(rounds)
@@ -487,6 +523,7 @@ def run_remaining_predictions(
     history_placeholder,
     progress_placeholder,
 ):
+    show_action_loader(progress_placeholder, "Préparation des équipes")
     team_ids = {
         get_team_id(team)
         for round_teams in bracket["rounds"]
@@ -498,7 +535,7 @@ def run_remaining_predictions(
 
     while play_next_match(record, bracket, feature_cache):
         played += 1
-        progress_placeholder.info(f"{played} match(s) joué(s).")
+        show_action_loader(progress_placeholder, f"{played} match(s) joué(s)")
         render_tournament_state(bracket, bracket_placeholder, history_placeholder)
 
     winner = bracket["rounds"][-1][0] if bracket["rounds"] and bracket["rounds"][-1] else None
@@ -539,9 +576,11 @@ def show_tournament_action(record: dict, bracket: dict, bracket_placeholder, his
             progress_placeholder,
         )
     except api_client.ApiError as error:
+        progress_placeholder.empty()
         st.error(f"Prédiction impossible : {error}")
         return
 
+    progress_placeholder.empty()
     if winner:
         st.success(f"{played} match(s) prédit(s). Vainqueur : {format_team_name(winner)}")
     else:

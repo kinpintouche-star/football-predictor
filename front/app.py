@@ -34,6 +34,24 @@ st.markdown(
             padding-left: 2rem;
             padding-right: 2rem;
         }
+
+        /* Garde l'interface lisible pendant les reruns Streamlit. */
+        .stApp [data-testid="staleElement"],
+        .stApp [data-stale="true"],
+        .stApp [class*="stale"],
+        .stApp [class*="Stale"] {
+            opacity: 1 !important;
+            filter: none !important;
+            transition: none !important;
+        }
+
+        .stApp [data-testid="staleElement"] *,
+        .stApp [data-stale="true"] *,
+        .stApp [class*="stale"] *,
+        .stApp [class*="Stale"] * {
+            opacity: 1 !important;
+            filter: none !important;
+        }
     </style>
     """,
     unsafe_allow_html=True,
