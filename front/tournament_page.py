@@ -652,10 +652,10 @@ def show_tournament_detail_page(main_page: str):
     bracket_placeholder = st.empty()
     history_placeholder = st.empty()
 
+    render_tournament_state(bracket, bracket_placeholder, history_placeholder)
+
     with action_column:
         show_tournament_action(record, bracket, bracket_placeholder, history_placeholder)
-
-    render_tournament_state(bracket, bracket_placeholder, history_placeholder)
 
 
 def show_tournament_create_page(main_page: str, detail_page: str = DETAIL_PAGE):
