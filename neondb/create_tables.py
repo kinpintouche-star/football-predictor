@@ -23,6 +23,17 @@ TABLES = [
 ]
 
 MIGRATIONS = [
+    'ALTER TABLE "public"."team" ADD COLUMN IF NOT EXISTS sofifa_team_id BIGINT',
+    'ALTER TABLE "public"."team" ADD COLUMN IF NOT EXISTS club_key TEXT',
+    'ALTER TABLE "public"."team" ADD COLUMN IF NOT EXISTS uefa_rank INTEGER',
+    'ALTER TABLE "public"."team" ADD COLUMN IF NOT EXISTS club_league_name TEXT',
+    'ALTER TABLE "public"."team" ADD COLUMN IF NOT EXISTS overall NUMERIC',
+    'ALTER TABLE "public"."team" ADD COLUMN IF NOT EXISTS attack NUMERIC',
+    'ALTER TABLE "public"."team" ADD COLUMN IF NOT EXISTS midfield NUMERIC',
+    'ALTER TABLE "public"."team" ADD COLUMN IF NOT EXISTS defence NUMERIC',
+    'ALTER TABLE "public"."team" ADD COLUMN IF NOT EXISTS build_up_style TEXT',
+    'ALTER TABLE "public"."team" ADD COLUMN IF NOT EXISTS defensive_line NUMERIC',
+    'ALTER TABLE "public"."team" ADD COLUMN IF NOT EXISTS defensive_approach TEXT',
     'ALTER TABLE "public"."player" ADD COLUMN IF NOT EXISTS current_sofifa_team_id BIGINT',
     'ALTER TABLE "public"."player" ADD COLUMN IF NOT EXISTS current_club_name TEXT',
     'ALTER TABLE "public"."player" ADD COLUMN IF NOT EXISTS sofifa_value_eur BIGINT',
