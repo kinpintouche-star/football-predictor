@@ -8,11 +8,7 @@ from streamlit_searchbox import st_searchbox
 
 from custom_team_page import show_custom_team_page
 from player_stat_groups import PLAYER_STAT_GROUPS
-from tournament_page import (
-    show_tournament_create_page,
-    show_tournament_detail_page,
-    show_tournament_page,
-)
+import tournament_page
 
 
 # -----------------------------------------------------------------------------
@@ -661,12 +657,12 @@ ROUTES = {
     PAGE_TEAM: show_team_page,
     PAGE_PREDICT: show_prediction_page,
     PAGE_CUSTOM_TEAM: show_custom_team_page,
-    PAGE_TOURNAMENT: lambda: show_tournament_page(
+    PAGE_TOURNAMENT: lambda: tournament_page.show_tournament_page(
         PAGE_TOURNAMENT_CREATE,
         PAGE_TOURNAMENT_DETAIL,
     ),
-    PAGE_TOURNAMENT_CREATE: lambda: show_tournament_create_page(PAGE_TOURNAMENT),
-    PAGE_TOURNAMENT_DETAIL: lambda: show_tournament_detail_page(PAGE_TOURNAMENT),
+    PAGE_TOURNAMENT_CREATE: lambda: tournament_page.show_tournament_create_page(PAGE_TOURNAMENT),
+    PAGE_TOURNAMENT_DETAIL: lambda: tournament_page.show_tournament_detail_page(PAGE_TOURNAMENT),
     PAGE_LINEUP: show_lineup_page,
     PAGE_PLAYER: show_player_page,
 }
