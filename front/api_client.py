@@ -299,6 +299,46 @@ def get_tournament(tournament_id: str) -> dict | None:
     return _created_tournaments().get(tournament_id)
 
 
+def list_tournament_candidate_teams() -> list[dict]:
+    """Équipes custom utilisables en tournoi.
+
+    Une équipe est gardée seulement si l'API sait produire ses 11 notes de
+    prédiction. C'est plus lent qu'un endpoint spécialisé, mais clair pour ce
+    premier écran.
+    """
+    response = _request(
+        "POST",
+        "/teams",
+        json={"search": "", "custom": True, "limit": 500},
+    )
+
+    candidates = []
+
+    for team in response["teams"]:
+        team_id = str(team["team_id"])
+
+        if not team_id.startswith("c"):
+            continue
+
+        try:
+            _request("GET", f"/team/{team_id}/prediction_features")
+        except ApiError:
+            continue
+
+        candidates.append(
+            {
+                "team_id": team_id,
+                "team_name": team["team_name"],
+                "overall": team.get("overall"),
+                "attack": team.get("attack"),
+                "midfield": team.get("midfield"),
+                "defence": team.get("defence"),
+            }
+        )
+
+    return candidates
+
+
 def set_tournament(
     tournament_id: str,
     team_id_1: str,
