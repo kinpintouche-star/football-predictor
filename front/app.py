@@ -50,7 +50,10 @@ def search_teams(search: str):
     if not search or len(search) < 3:
         return []
 
-    response = requests.get(f"{API_BASE_URL}/teams/{search}")
+    response = requests.post(
+        f"{API_BASE_URL}/teams",
+        json={"search": search, "custom": True, "limit": 20},
+    )
     response.raise_for_status()
 
     return [
@@ -59,7 +62,7 @@ def search_teams(search: str):
     ]
 
 
-def get_team(team_id: int):
+def get_team(team_id: str):
     response = requests.get(f"{API_BASE_URL}/team/{team_id}")
     response.raise_for_status()
     return response.json()
@@ -77,7 +80,7 @@ def get_team_movements(team_id: int):
     return response.json()
 
 
-def get_prediction_features(team_id: int):
+def get_prediction_features(team_id: str):
     response = requests.get(f"{API_BASE_URL}/team/{team_id}/prediction_features")
 
     if response.status_code == 422:

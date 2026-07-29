@@ -51,6 +51,9 @@ custom :
 `GET /team/{team_id}` accepte maintenant aussi les ids custom commençant par
 `c`.
 
+`GET /team/{team_id}/prediction_features` accepte aussi les ids custom et
+renvoie les 11 notes nécessaires au modèle.
+
 ## Docker
 
 Le service est lancé par le `docker-compose.yml` racine.

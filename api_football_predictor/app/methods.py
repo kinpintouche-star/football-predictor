@@ -1210,7 +1210,27 @@ SEASON_SQUAD_BY_NOTE_SQL = f"""
 """
 
 
-def get_team_prediction_features(team_id: int):
+CUSTOM_TEAM_PLAYERS_BY_NOTE_SQL = f"""
+    SELECT
+        ct.custom_team_id,
+        ct.team_name,
+        ct.reference_formation,
+        ctp.player_id,
+        p.player_name,
+        p.best_position,
+        {GLOBAL_NOTE_SQL} AS global_note
+    FROM "public"."custom_team" ct
+    JOIN "public"."custom_team_player" ctp
+        ON ctp.custom_team_id = ct.custom_team_id
+    JOIN "public"."player" p
+        ON p.player_id = ctp.player_id
+    WHERE ct.custom_team_id = :custom_team_id
+      AND {HAS_SOFIFA_PROFILE_SQL}
+    ORDER BY ctp.player_id
+"""
+
+
+def get_real_team_prediction_features(team_id: int):
 
     with get_engine().connect() as connection:
         team_name = fetch_team_name(connection, team_id)
@@ -1263,3 +1283,54 @@ def get_team_prediction_features(team_id: int):
         ],
         "notes": [float(row["global_note"]) for row in selected],
     }
+
+
+def get_custom_team_prediction_features(custom_team_id: str):
+    with get_engine().connect() as connection:
+        rows = connection.execute(
+            text(CUSTOM_TEAM_PLAYERS_BY_NOTE_SQL), {"custom_team_id": custom_team_id}
+        ).mappings().all()
+
+    if not rows:
+        raise HTTPException(status_code=404, detail="Custom team not found")
+
+    if len(rows) != STARTERS_PER_TEAM:
+        raise HTTPException(
+            status_code=422,
+            detail=(
+                f"{len(rows)} joueurs notés pour cette équipe custom, "
+                f"{STARTERS_PER_TEAM} sont nécessaires"
+            ),
+        )
+
+    return {
+        "team": {
+            "team_id": rows[0]["custom_team_id"],
+            "team_name": rows[0]["team_name"],
+            "match_date": None,
+            "formation": rows[0]["reference_formation"],
+            "substituted_players": 0,
+        },
+        "players": [
+            {
+                "player_id": row["player_id"],
+                "player_name": row["player_name"],
+                "position": row["best_position"],
+                "global_note": float(row["global_note"]),
+            }
+            for row in rows
+        ],
+        "notes": [float(row["global_note"]) for row in rows],
+    }
+
+
+def get_team_prediction_features(team_id: str):
+    if team_id.startswith("c"):
+        return get_custom_team_prediction_features(team_id)
+
+    try:
+        real_team_id = int(team_id)
+    except ValueError as error:
+        raise HTTPException(status_code=422, detail="team_id invalide") from error
+
+    return get_real_team_prediction_features(real_team_id)

@@ -66,7 +66,7 @@ def get_team_lineup(team_id: int):
 
 
 @router.get("/team/{team_id}/prediction_features")
-def get_team_prediction_features(team_id: int):
+def get_team_prediction_features(team_id: str):
     return methods.get_team_prediction_features(team_id)
 
 
