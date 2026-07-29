@@ -18,6 +18,10 @@ load_dotenv()
 
 API_BASE_URL = os.getenv("API_BASE_URL", "http://127.0.0.1:8000").rstrip("/")
 PREDICT_API_BASE_URL = os.getenv("PREDICT_API_BASE_URL", "http://127.0.0.1:4000").rstrip("/")
+SQL_AGENT_API_URL = os.getenv(
+    "SQL_AGENT_API_URL",
+    "https://8100-01kyne3htfkyrjy07tgdspdwhp.cloudspaces.litng.ai",
+).rstrip("/")
 
 PAGE_TEAM = "team"
 PAGE_LINEUP = "lineup"
@@ -369,6 +373,34 @@ def show_player_stat_groups(player: dict):
                 columns[index % 2].write(f"{label} : {format_note(player[column])}")
 
 
+def show_sql_agent_chat():
+    st.divider()
+
+    with st.expander("Chat data", expanded=True):
+        with st.form("sql_agent_chat_form"):
+            message = st.text_input(
+                "Question",
+                placeholder="Ex : quels sont les 10 meilleurs joueurs ?",
+            )
+            submitted = st.form_submit_button("Envoyer")
+
+        if not submitted:
+            return
+
+        if not message.strip():
+            st.warning("Écris une question.")
+            return
+
+        try:
+            with st.spinner("Recherche dans les données..."):
+                result = ask_sql_agent(message.strip())
+        except requests.RequestException as error:
+            st.error(f"Agent indisponible : {error}")
+            return
+
+        st.write(result["answer"])
+
+
 # -----------------------------------------------------------------------------
 # Page équipe
 # -----------------------------------------------------------------------------
@@ -576,3 +608,4 @@ show_sidebar_navigation()
 current_page = st.session_state.get("page", PAGE_TEAM)
 page_function = ROUTES.get(current_page, show_team_page)
 page_function()
+show_sql_agent_chat()
