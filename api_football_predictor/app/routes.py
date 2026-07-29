@@ -26,6 +26,10 @@ class GetPlayersRequest(BaseModel):
     player_ids: list[int]
 
 
+class GetTeamsPredictionFeaturesRequest(BaseModel):
+    team_ids: list[str]
+
+
 class CreateTournamentRequest(BaseModel):
     tournament_name: str
     nb_teams: int
@@ -70,6 +74,11 @@ def get_team_lineup(team_id: int):
 @router.get("/team/{team_id}/prediction_features")
 def get_team_prediction_features(team_id: str):
     return methods.get_team_prediction_features(team_id)
+
+
+@router.post("/teams/prediction_features")
+def get_teams_prediction_features(payload: GetTeamsPredictionFeaturesRequest):
+    return methods.get_teams_prediction_features(payload)
 
 
 @router.get("/player/{player_id}")

@@ -13,6 +13,7 @@ Ce qui passe par l'API ( api_football_predictor/app/routes.py ) :
     POST   /players                 fetch_players
     POST   /teams                   search teams réelles + custom
     GET    /team/{team_id}/prediction_features
+    POST   /teams/prediction_features
     POST   /custom/tournament       create_tournament
     GET    /custom/tournaments      list_tournaments
     GET    /custom/tournament/{id}  get_tournament
@@ -298,13 +299,28 @@ def get_prediction_features(team_id: str) -> dict:
     return _request("GET", f"/team/{team_id}/prediction_features")
 
 
+def get_many_prediction_features(team_ids: list[str]) -> dict[str, dict]:
+    response = _request(
+        "POST",
+        "/teams/prediction_features",
+        json={"team_ids": [str(team_id) for team_id in team_ids]},
+    )
+
+    return response["teams"]
+
+
 def predict_match(team_id_1: str, team_id_2: str) -> int:
     """Prédit le résultat du point de vue de l'équipe 1."""
     team_1 = get_prediction_features(team_id_1)
     team_2 = get_prediction_features(team_id_2)
+    return predict_match_from_notes(team_1["notes"], team_2["notes"])
+
+
+def predict_match_from_notes(team_1_notes: list[float], team_2_notes: list[float]) -> int:
+    """Appelle le modèle avec deux listes de 11 notes déjà préparées."""
     payload = {}
 
-    for team_number, notes in [(1, team_1["notes"]), (2, team_2["notes"])]:
+    for team_number, notes in [(1, team_1_notes), (2, team_2_notes)]:
         for player_number, note in enumerate(notes, start=1):
             payload[f"team_{team_number}_player_{player_number}_note"] = note
 

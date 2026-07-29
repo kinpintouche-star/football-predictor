@@ -1677,3 +1677,14 @@ def get_team_prediction_features(team_id: str):
         raise HTTPException(status_code=422, detail="team_id invalide") from error
 
     return get_real_team_prediction_features(real_team_id)
+
+
+def get_teams_prediction_features(payload):
+    team_ids = [str(team_id) for team_id in dict.fromkeys(payload.team_ids)]
+
+    return {
+        "teams": {
+            team_id: get_team_prediction_features(team_id)
+            for team_id in team_ids
+        }
+    }

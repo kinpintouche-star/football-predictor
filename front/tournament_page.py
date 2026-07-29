@@ -130,8 +130,16 @@ def get_bracket_state(record: dict) -> dict:
     brackets = st.session_state.setdefault("tournament_brackets", {})
 
     if tournament_id not in brackets:
+        teams = sorted(
+            record.get("teams", []),
+            key=lambda team: (
+                team.get("slot_index") is None,
+                team.get("slot_index") or 0,
+                format_team_name(team),
+            ),
+        )
         brackets[tournament_id] = {
-            "rounds": build_initial_rounds(record.get("teams", [])),
+            "rounds": build_initial_rounds(teams),
             "matches": [],
         }
 
@@ -337,47 +345,33 @@ def show_match_history(matches: list[dict]):
         )
 
 
-def show_next_prediction(record: dict, bracket: dict):
+def play_next_match(record: dict, bracket: dict, feature_cache: dict[str, dict]) -> bool:
     rounds = bracket["rounds"]
     next_match = find_next_match(rounds)
 
     if not next_match:
-        winner = rounds[-1][0] if rounds and rounds[-1] else None
-
-        if winner:
-            record["tournament"]["winner_team_id"] = get_team_id(winner)
-            record["tournament"]["winner_team_name"] = format_team_name(winner)
-            st.success(f"Vainqueur : {format_team_name(winner)}")
-
-        return
+        return False
 
     round_index, slot_index = next_match
     team_1 = rounds[round_index][slot_index]
     team_2 = rounds[round_index][slot_index + 1]
     phase = round_label(len(rounds[round_index]))
-    button_label = "Poursuivre tournoi" if bracket["matches"] else "Lancer tournoi"
 
-    st.subheader("Prochain match")
-    st.write(f"{phase} : {format_team_name(team_1)} vs {format_team_name(team_2)}")
+    prediction = api_client.predict_match_from_notes(
+        feature_cache[get_team_id(team_1)]["notes"],
+        feature_cache[get_team_id(team_2)]["notes"],
+    )
+    winner, score_1, score_2, message = prediction_to_winner(prediction, team_1, team_2)
 
-    if not st.button(button_label, type="primary"):
-        return
-
-    try:
-        prediction = api_client.predict_match(get_team_id(team_1), get_team_id(team_2))
-        winner, score_1, score_2, message = prediction_to_winner(prediction, team_1, team_2)
-        api_client.set_tournament(
-            record["tournament"]["tournament_id"],
-            get_team_id(team_1),
-            get_team_id(team_2),
-            score_1,
-            score_2,
-            phase,
-            get_team_id(winner),
-        )
-    except api_client.ApiError as error:
-        st.error(f"Prédiction impossible : {error}")
-        return
+    api_client.set_tournament(
+        record["tournament"]["tournament_id"],
+        get_team_id(team_1),
+        get_team_id(team_2),
+        score_1,
+        score_2,
+        phase,
+        get_team_id(winner),
+    )
 
     rounds[round_index + 1][slot_index // 2] = winner
     bracket["matches"].append(
@@ -392,7 +386,60 @@ def show_next_prediction(record: dict, bracket: dict):
         }
     )
 
-    st.success(message)
+    return True
+
+
+def run_remaining_predictions(record: dict, bracket: dict):
+    team_ids = {
+        get_team_id(team)
+        for round_teams in bracket["rounds"]
+        for team in round_teams
+        if team
+    }
+    feature_cache = api_client.get_many_prediction_features(sorted(team_ids))
+    played = 0
+
+    while play_next_match(record, bracket, feature_cache):
+        played += 1
+
+    winner = bracket["rounds"][-1][0] if bracket["rounds"] and bracket["rounds"][-1] else None
+    if winner:
+        record["tournament"]["winner_team_id"] = get_team_id(winner)
+        record["tournament"]["winner_team_name"] = format_team_name(winner)
+
+    return played, winner
+
+
+def show_tournament_action(record: dict, bracket: dict):
+    rounds = bracket["rounds"]
+    next_match = find_next_match(rounds)
+
+    if not next_match:
+        winner = rounds[-1][0] if rounds and rounds[-1] else None
+
+        if winner:
+            record["tournament"]["winner_team_id"] = get_team_id(winner)
+            record["tournament"]["winner_team_name"] = format_team_name(winner)
+            st.success(f"Vainqueur : {format_team_name(winner)}")
+
+        return
+
+    button_label = "Poursuivre tournoi" if bracket["matches"] else "Lancer tournoi"
+
+    if not st.button(button_label, type="primary", use_container_width=True):
+        return
+
+    try:
+        played, winner = run_remaining_predictions(record, bracket)
+    except api_client.ApiError as error:
+        st.error(f"Prédiction impossible : {error}")
+        return
+
+    if winner:
+        st.success(f"{played} match(s) prédit(s). Vainqueur : {format_team_name(winner)}")
+    else:
+        st.success(f"{played} match(s) prédit(s).")
+
     st.rerun()
 
 
@@ -455,10 +502,14 @@ def show_tournament_detail_page(main_page: str):
     info_columns[1].metric("Statut", status)
     info_columns[2].metric("Vainqueur", winner or "-")
 
-    st.subheader("Tableau")
     bracket = get_bracket_state(record)
+    title_column, action_column = st.columns([3, 1])
+    title_column.subheader("Tableau")
+
+    with action_column:
+        show_tournament_action(record, bracket)
+
     show_bracket(bracket["rounds"])
-    show_next_prediction(record, bracket)
     show_match_history(bracket["matches"])
 
 
