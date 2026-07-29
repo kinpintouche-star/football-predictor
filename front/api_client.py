@@ -14,6 +14,8 @@ Ce qui passe par l'API ( api_football_predictor/app/routes.py ) :
     POST   /teams                   search teams réelles + custom
     GET    /team/{team_id}/prediction_features
     POST   /custom/tournament       create_tournament
+    GET    /custom/tournaments      list_tournaments
+    GET    /custom/tournament/{id}  get_tournament
     POST   /custom/tournament/set   set_tournament
 
 Ce qui reste local :
@@ -24,8 +26,6 @@ Ce qui reste local :
   custom_team. La liste affichée est celle des équipes créées pendant la
   session, alimentée par la réponse du POST. Conséquence à connaitre : une
   équipe retirée ici disparait de l'écran mais reste en base ;
-* `get_tournament` / `list_tournaments` : pas de GET sur tournament.
-
 Les endpoints qui lèveraient ces limites sont listés dans front/README.md.
 """
 
@@ -271,15 +271,11 @@ def delete_custom_team(custom_team_id: str) -> None:
 
 
 # -----------------------------------------------------------------------------
-# Tournois - création par l'API, relecture en session
+# Tournois - API
 # -----------------------------------------------------------------------------
 
-def _created_tournaments() -> dict:
-    return st.session_state.setdefault("created_tournaments", {})
-
-
 def create_tournament(name: str, team_ids: list[str]) -> dict:
-    response = _request(
+    return _request(
         "POST",
         "/custom/tournament",
         json={
@@ -289,17 +285,13 @@ def create_tournament(name: str, team_ids: list[str]) -> dict:
         },
     )
 
-    tournament_id = response["tournament"]["tournament_id"]
-    _created_tournaments()[tournament_id] = response
-    return response
-
 
 def list_tournaments() -> list[dict]:
-    return list(_created_tournaments().values())
+    return _request("GET", "/custom/tournaments")["tournaments"]
 
 
-def get_tournament(tournament_id: str) -> dict | None:
-    return _created_tournaments().get(tournament_id)
+def get_tournament(tournament_id: str) -> dict:
+    return _request("GET", f"/custom/tournament/{tournament_id}")
 
 
 def get_prediction_features(team_id: str) -> dict:
@@ -384,6 +376,7 @@ def set_tournament(
     score_team_1: int,
     score_team_2: int,
     phase: str,
+    winner_team_id: str | None = None,
 ) -> dict:
     """Enregistre le résultat d'un match de tournoi.
 
@@ -400,5 +393,6 @@ def set_tournament(
             "score_team_1": score_team_1,
             "score_team_2": score_team_2,
             "phase": phase,
+            "winner_team_id": winner_team_id,
         },
     )

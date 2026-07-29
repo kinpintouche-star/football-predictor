@@ -373,6 +373,7 @@ def show_next_prediction(record: dict, bracket: dict):
             score_1,
             score_2,
             phase,
+            get_team_id(winner),
         )
     except api_client.ApiError as error:
         st.error(f"Prédiction impossible : {error}")
@@ -401,7 +402,12 @@ def show_tournament_page(create_page: str, detail_page: str):
     if st.button("Créer tournoi", type="primary"):
         go_to_page(create_page)
 
-    tournaments = api_client.list_tournaments()
+    try:
+        tournaments = api_client.list_tournaments()
+    except api_client.ApiError as error:
+        st.error(f"Liste des tournois indisponible : {error}")
+        return
+
     list_column, content_column = st.columns([1, 3])
 
     with list_column:
@@ -432,9 +438,10 @@ def show_tournament_detail_page(main_page: str):
         st.warning("Aucun tournoi sélectionné.")
         return
 
-    record = api_client.get_tournament(selected_id)
-    if not record:
-        st.warning("Tournoi introuvable dans la session.")
+    try:
+        record = api_client.get_tournament(selected_id)
+    except api_client.ApiError as error:
+        st.error(f"Tournoi indisponible : {error}")
         return
 
     tournament = record["tournament"]

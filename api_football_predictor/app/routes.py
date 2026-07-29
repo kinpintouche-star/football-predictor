@@ -39,6 +39,7 @@ class SetTournamentRequest(BaseModel):
     score_team_1: int
     score_team_2: int
     phase: str
+    winner_team_id: str | None = None
 
 
 @router.get("/teams/{search}")
@@ -94,6 +95,16 @@ def create_custom_team(payload: CreateCustomTeamRequest):
 @router.post("/custom/tournament")
 def create_tournament(payload: CreateTournamentRequest):
     return methods.create_tournament(payload)
+
+
+@router.get("/custom/tournaments")
+def list_tournaments():
+    return methods.list_tournaments()
+
+
+@router.get("/custom/tournament/{tournament_id}")
+def get_tournament(tournament_id: str):
+    return methods.get_tournament(tournament_id)
 
 
 @router.post("/custom/tournament/set")

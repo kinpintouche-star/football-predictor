@@ -559,6 +559,7 @@ def set_tournament_match(
     score_team_1: int,
     score_team_2: int,
     phase: str,
+    winner_team_id: str | None = None,
 ):
     # Règle métier complète : match + lineups + compteurs du tournoi.
     if team_id_1 == team_id_2:
@@ -569,6 +570,12 @@ def set_tournament_match(
 
     if not phase.strip():
         raise HTTPException(status_code=422, detail="phase est obligatoire")
+
+    if winner_team_id and winner_team_id not in (team_id_1, team_id_2):
+        raise HTTPException(
+            status_code=422,
+            detail="winner_team_id doit correspondre a une des deux equipes",
+        )
 
     tournament = connection.execute(
         text(
@@ -730,6 +737,18 @@ def set_tournament_match(
                 """
             ),
             {"tournament_id": tournament_id, "loser_id": loser_id},
+        )
+
+    if phase.strip().lower() == "finale" and winner_team_id:
+        connection.execute(
+            text(
+                """
+                UPDATE "public"."tournament"
+                SET winner_team_id = :winner_team_id
+                WHERE tournament_id = :tournament_id
+                """
+            ),
+            {"tournament_id": tournament_id, "winner_team_id": winner_team_id},
         )
 
     updated_teams = connection.execute(
@@ -987,6 +1006,7 @@ def create_tournament(payload):
                 INSERT INTO "public"."tournament_team" (
                     tournament_id,
                     custom_team_id,
+                    slot_index,
                     nb_wins,
                     nb_loss,
                     nb_equal
@@ -994,6 +1014,7 @@ def create_tournament(payload):
                 VALUES (
                     :tournament_id,
                     :custom_team_id,
+                    :slot_index,
                     0,
                     0,
                     0
@@ -1001,8 +1022,12 @@ def create_tournament(payload):
                 """
             ),
             [
-                {"tournament_id": tournament_id, "custom_team_id": team_id}
-                for team_id in team_ids
+                {
+                    "tournament_id": tournament_id,
+                    "custom_team_id": team_id,
+                    "slot_index": slot_index,
+                }
+                for slot_index, team_id in enumerate(team_ids)
             ],
         )
 
@@ -1018,13 +1043,96 @@ def create_tournament(payload):
                 "custom_team_id": team_id,
                 "team_name": teams_by_id[team_id]["team_name"],
                 "team_type": teams_by_id[team_id]["team_type"],
+                "slot_index": slot_index,
                 "nb_wins": 0,
                 "nb_loss": 0,
                 "nb_equal": 0,
             }
-            for team_id in team_ids
+            for slot_index, team_id in enumerate(team_ids)
         ],
     }
+
+
+def read_tournament(connection, tournament_id: str) -> dict:
+    tournament = connection.execute(
+        text(
+            """
+            SELECT
+                t.tournament_id,
+                t.tournament_name,
+                t.nb_teams,
+                t.winner_team_id,
+                COALESCE(wct.team_name, wt.team_name) AS winner_team_name
+            FROM "public"."tournament" t
+            LEFT JOIN "public"."custom_team" wct
+                ON wct.custom_team_id = t.winner_team_id
+            LEFT JOIN "public"."team" wt
+                ON wt.team_id::text = t.winner_team_id
+            WHERE t.tournament_id = :tournament_id
+            """
+        ),
+        {"tournament_id": tournament_id},
+    ).mappings().first()
+
+    if not tournament:
+        raise HTTPException(status_code=404, detail="Tournament not found")
+
+    teams = connection.execute(
+        text(
+            """
+            SELECT
+                tt.custom_team_id AS team_id,
+                tt.custom_team_id,
+                COALESCE(ct.team_name, t.team_name) AS team_name,
+                CASE
+                    WHEN ct.custom_team_id IS NOT NULL THEN 'custom'
+                    ELSE 'real'
+                END AS team_type,
+                tt.slot_index,
+                tt.nb_wins,
+                tt.nb_loss,
+                tt.nb_equal
+            FROM "public"."tournament_team" tt
+            LEFT JOIN "public"."custom_team" ct
+                ON ct.custom_team_id = tt.custom_team_id
+            LEFT JOIN "public"."team" t
+                ON t.team_id::text = tt.custom_team_id
+            WHERE tt.tournament_id = :tournament_id
+            ORDER BY tt.slot_index NULLS LAST, tt.custom_team_id
+            """
+        ),
+        {"tournament_id": tournament_id},
+    ).mappings().all()
+
+    return {
+        "tournament": dict(tournament),
+        "teams": [dict(row) for row in teams],
+    }
+
+
+def list_tournaments():
+    with get_engine().connect() as connection:
+        rows = connection.execute(
+            text(
+                """
+                SELECT tournament_id
+                FROM "public"."tournament"
+                ORDER BY tournament_id DESC
+                """
+            )
+        ).scalars().all()
+
+        return {
+            "tournaments": [
+                read_tournament(connection, tournament_id)
+                for tournament_id in rows
+            ]
+        }
+
+
+def get_tournament(tournament_id: str):
+    with get_engine().connect() as connection:
+        return read_tournament(connection, tournament_id)
 
 
 def set_tournament(payload):
@@ -1037,6 +1145,7 @@ def set_tournament(payload):
             score_team_1=payload.score_team_1,
             score_team_2=payload.score_team_2,
             phase=payload.phase,
+            winner_team_id=payload.winner_team_id,
         )
 
 

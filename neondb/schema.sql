@@ -148,6 +148,7 @@ ADD COLUMN IF NOT EXISTS tournament_name TEXT;
 CREATE TABLE IF NOT EXISTS "tournament_team" (
     tournament_id TEXT REFERENCES "tournament"(tournament_id),
     custom_team_id TEXT,
+    slot_index INTEGER,
     nb_wins INTEGER NOT NULL DEFAULT 0,
     nb_loss INTEGER NOT NULL DEFAULT 0,
     nb_equal INTEGER NOT NULL DEFAULT 0,

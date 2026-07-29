@@ -50,6 +50,7 @@ MIGRATIONS = [
     'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS defensive_approach TEXT',
     'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS reference_formation TEXT',
     'ALTER TABLE "public"."custom_team" ADD COLUMN IF NOT EXISTS budget_eur BIGINT DEFAULT 500000000',
+    'ALTER TABLE "public"."tournament_team" ADD COLUMN IF NOT EXISTS slot_index INTEGER',
     """
     DO $$
     DECLARE constraint_row record;
