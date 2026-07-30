@@ -87,15 +87,29 @@ STARTERS_PER_TEAM = 11
 # Appels API
 # -----------------------------------------------------------------------------
 
+def api_error_message(error: requests.RequestException) -> str:
+    response = getattr(error, "response", None)
+    if response is not None:
+        return f"API indisponible ({response.status_code}). Réessaie dans quelques secondes."
+    return "API indisponible. Vérifie que le service est lancé."
+
+
 def search_teams(search: str):
     if not search or len(search) < 3:
         return []
 
-    response = requests.post(
-        f"{API_BASE_URL}/teams",
-        json={"search": search, "custom": True, "limit": 20},
-    )
-    response.raise_for_status()
+    try:
+        response = requests.post(
+            f"{API_BASE_URL}/teams",
+            json={"search": search, "custom": True, "limit": 20},
+            timeout=20,
+        )
+        response.raise_for_status()
+    except requests.RequestException as error:
+        st.session_state["team_search_error"] = api_error_message(error)
+        return []
+
+    st.session_state.pop("team_search_error", None)
 
     return [
         {"id": team["team_id"], "name": team["team_name"]}
@@ -487,9 +501,16 @@ def show_team_section():
         label="Équipe",
     )
 
+    if st.session_state.get("team_search_error"):
+        st.warning(st.session_state["team_search_error"])
+
     if selected_team and st.button("Valider"):
-        st.session_state["team_id"] = selected_team["id"]
-        st.session_state["team_data"] = get_team(selected_team["id"])
+        try:
+            st.session_state["team_id"] = selected_team["id"]
+            st.session_state["team_data"] = get_team(selected_team["id"])
+        except requests.RequestException as error:
+            st.error(api_error_message(error))
+            return
 
     team_data = st.session_state.get("team_data")
     if not team_data:
