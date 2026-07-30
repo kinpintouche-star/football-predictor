@@ -96,9 +96,17 @@ Chaque fichier porte le nom du besoin, par exemple :
 team_by_name.sql
 player_data_by_name.sql
 players_of_team_by_name.sql
+custom_team_by_name.sql
+custom_team_by_id.sql
+custom_team_players_by_id.sql
 matches_of_team_by_name.sql
 best_real_teams_by_uefa_rank.sql
 best_players_by_overall.sql
+tournaments_list.sql
+tournament_by_name.sql
+tournament_by_id.sql
+tournament_winner_by_name.sql
+tournament_winner_by_id.sql
 tournament_matches_with_winners.sql
 ```
 
@@ -110,7 +118,8 @@ templates proches du besoin sont ajoutes au prompt du LLM.
 Organisation :
 
 - templates simples : retrouver une equipe, retrouver un joueur, lister les
-  joueurs d'une equipe, lister les matchs d'une equipe ;
+  joueurs d'une equipe, lister les matchs d'une equipe, recuperer les infos
+  custom, lister les tournois et recuperer un vainqueur par id ou par nom ;
 - templates complexes : tops, classements, meilleurs joueurs/equipes, matchs de
   tournoi avec vainqueurs.
 

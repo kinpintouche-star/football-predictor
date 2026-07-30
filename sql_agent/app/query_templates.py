@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 import unicodedata
 
 
@@ -39,6 +40,30 @@ QUERY_TEMPLATES = [
         "direct": False,
     },
     {
+        "id": "custom_team_by_id",
+        "file": "custom_team_by_id.sql",
+        "level": "simple",
+        "description": "Recuperer les infos generales d'une equipe custom par custom_team_id.",
+        "keywords": ["custom", "fantasy", "custom_team_id", "identifiant", "equipe", "team", "infos", "info", "data", "budget"],
+        "direct": False,
+    },
+    {
+        "id": "custom_team_by_name",
+        "file": "custom_team_by_name.sql",
+        "level": "simple",
+        "description": "Recuperer les infos generales d'une equipe custom par nom.",
+        "keywords": ["custom", "fantasy", "nom", "name", "equipe", "team", "infos", "info", "data", "budget"],
+        "direct": False,
+    },
+    {
+        "id": "custom_team_players_by_id",
+        "file": "custom_team_players_by_id.sql",
+        "level": "simple",
+        "description": "Lister les joueurs d'une equipe custom par custom_team_id.",
+        "keywords": ["custom", "fantasy", "custom_team_id", "identifiant", "joueurs", "players", "effectif", "equipe", "team"],
+        "direct": False,
+    },
+    {
         "id": "latest_starting_xi_by_team_name",
         "file": "latest_starting_xi_by_team_name.sql",
         "level": "simple",
@@ -52,6 +77,46 @@ QUERY_TEMPLATES = [
         "level": "simple",
         "description": "Lister les derniers matchs d'une equipe par nom.",
         "keywords": ["match", "matchs", "matches", "calendrier", "resultat", "resultats", "score", "equipe", "team", "club"],
+        "direct": False,
+    },
+    {
+        "id": "tournaments_list",
+        "file": "tournaments_list.sql",
+        "level": "simple",
+        "description": "Lister les tournois custom avec statut et vainqueur si connu.",
+        "keywords": ["tournoi", "tournois", "tournament", "tournaments", "liste", "list", "status", "statut", "vainqueur", "winner"],
+        "direct": False,
+    },
+    {
+        "id": "tournament_by_id",
+        "file": "tournament_by_id.sql",
+        "level": "simple",
+        "description": "Recuperer un tournoi et ses equipes par tournament_id.",
+        "keywords": ["tournoi", "tournament", "tournament_id", "identifiant", "equipe", "equipes", "teams", "statut"],
+        "direct": False,
+    },
+    {
+        "id": "tournament_by_name",
+        "file": "tournament_by_name.sql",
+        "level": "simple",
+        "description": "Recuperer un tournoi et ses equipes par nom.",
+        "keywords": ["tournoi", "tournament", "nom", "name", "equipe", "equipes", "teams", "statut"],
+        "direct": False,
+    },
+    {
+        "id": "tournament_winner_by_id",
+        "file": "tournament_winner_by_id.sql",
+        "level": "simple",
+        "description": "Recuperer le vainqueur d'un tournoi par tournament_id.",
+        "keywords": ["tournoi", "tournament", "tournament_id", "identifiant", "vainqueur", "winner", "gagnant", "champion"],
+        "direct": False,
+    },
+    {
+        "id": "tournament_winner_by_name",
+        "file": "tournament_winner_by_name.sql",
+        "level": "simple",
+        "description": "Recuperer le vainqueur d'un tournoi par nom.",
+        "keywords": ["tournoi", "tournament", "nom", "name", "vainqueur", "winner", "gagnant", "champion"],
         "direct": False,
     },
     {
@@ -117,6 +182,8 @@ def load_template(template: dict) -> str:
 
 def score_template(question: str, template: dict) -> int:
     question_text = normalize_text(question)
+    words = set(re.findall(r"\b\w+\b", question_text))
+    has_custom_id = bool(re.search(r"\bc[a-z0-9]{6,}\b", question_text))
     score = sum(1 for keyword in template["keywords"] if keyword in question_text)
     template_id = template["id"]
 
@@ -125,6 +192,11 @@ def score_template(question: str, template: dict) -> int:
         for phrase in ("players of", "joueurs de", "joueurs du", "effectif de", "squad of")
     ):
         score += 4
+
+    if template_id == "players_of_team_by_name" and (
+        "custom_team_id" in question_text or has_custom_id or ("custom" in question_text and "id" in words)
+    ):
+        score -= 5
 
     if template_id == "player_data_by_name" and any(
         phrase in question_text
@@ -137,6 +209,43 @@ def score_template(question: str, template: dict) -> int:
         for phrase in ("best team", "best teams", "meilleure equipe", "meilleur club")
     ):
         score -= 3
+
+    asks_custom = "custom" in question_text or "fantasy" in question_text
+    asks_players = any(word in question_text for word in ("joueur", "joueurs", "player", "players", "effectif", "squad"))
+
+    if template_id == "custom_team_by_name" and asks_custom and not asks_players:
+        score += 4
+
+    if template_id == "custom_team_players_by_id" and asks_custom and asks_players:
+        score += 5
+
+    if template_id == "custom_team_players_by_id" and has_custom_id and asks_players:
+        score += 4
+
+    if template_id == "custom_team_players_by_name" and asks_custom and not asks_players:
+        score -= 2
+
+    if template_id in ("tournament_winner_by_id", "tournament_winner_by_name") and any(
+        word in question_text
+        for word in ("vainqueur", "winner", "gagnant", "champion")
+    ):
+        score += 5
+
+    if template_id.endswith("_by_id") and (
+        "id" in words or "identifiant" in question_text or "tournament_id" in question_text or "custom_team_id" in question_text
+    ):
+        score += 3
+
+    if template_id.endswith("_by_name") and (
+        "nom" in words or "name" in words or "appele" in words or "s'appelle" in question_text
+    ):
+        score += 2
+
+    if template_id == "tournaments_list" and any(
+        word in question_text
+        for word in ("liste", "list", "tous les tournois", "all tournaments")
+    ):
+        score += 4
 
     return score
 

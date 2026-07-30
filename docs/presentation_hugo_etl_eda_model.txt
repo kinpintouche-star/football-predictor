@@ -1,0 +1,85 @@
+Partie présentation - ETL, EDA et choix modèle
+Deck : FootballPredictorDemoDay20260803.pptx
+Slides concernées : 5 à 7
+
+Objectif de ma partie :
+Expliquer comment nous sommes passés de sources de données hétérogènes à un dataset exploitable pour entraîner un modèle de prédiction de match.
+
+
+Slide 5 - ETL, EDA et choix de données modèle
+
+Je vais maintenant rentrer dans la partie data du projet.
+
+L'enjeu principal, ce n'était pas seulement de créer un modèle, mais surtout de construire une donnée fiable pour pouvoir l'entraîner.
+
+On part de sources assez différentes : des données de matchs, des compositions d'équipes, des informations joueurs, et des notes détaillées issues de SoFIFA.
+
+La décision importante que nous avons prise, c'est de conserver au maximum l'information détaillée au niveau joueur.
+
+Au début, on a testé des abstractions, par exemple du clustering de profils joueurs. L'idée était intéressante : transformer chaque joueur en un profil plus simple à utiliser.
+
+Mais en pratique, ces abstractions faisaient perdre de l'information. Les clusters séparaient surtout les joueurs forts des joueurs faibles, plutôt que de vrais profils techniques.
+
+Donc notre choix final a été de garder les caractéristiques détaillées des joueurs, puis de créer des features plus contrôlées à partir de ces données.
+
+
+Transition vers slide 6 :
+Pour faire ça proprement, on a structuré notre pipeline de données en plusieurs niveaux.
+
+
+Slide 6 - ETL : les données passent par trois niveaux clairs
+
+Nous avons utilisé deux sources principales.
+
+La première source est SoFIFA, que nous avons scrapée pour récupérer les notes détaillées des joueurs : vitesse, tir, passe, dribble, défense, physique, et les notes spécifiques aux gardiens.
+
+La deuxième source est le dataset Transfermarkt disponible sur GitHub. Il nous donne les matchs, les clubs, les joueurs, les lineups, et les transferts.
+
+Ensuite, nous avons organisé les données en trois niveaux.
+
+Le premier niveau, c'est raw. On y conserve les données sources quasiment telles quelles. L'objectif est de garder une trace propre de ce qui vient de chaque source.
+
+Le deuxième niveau, c'est staging. C'est là qu'on construit des tables plus utiles pour l'analyse et l'entraînement, comme training_match_dataset ou match_outcome_team_ratings.
+
+Le troisième niveau, c'est curated. Ce sont les datasets prêts à être utilisés dans les notebooks et dans les modèles, par exemple training_dataset_df.
+
+Le point technique le plus important dans cette partie, c'est la réconciliation entre les identifiants SoFIFA et Transfermarkt.
+
+Sans cette étape, on a d'un côté des joueurs présents dans les compositions de match, et de l'autre leurs notes détaillées, mais pas de lien fiable entre les deux.
+
+Cette jointure est donc centrale : elle permet de passer d'une donnée brute à une donnée exploitable pour le machine learning.
+
+
+Transition vers slide 7 :
+Une fois le pipeline construit, il fallait vérifier que le dataset final était vraiment utilisable.
+
+
+Slide 7 - EDA : sécuriser le dataset d'entraînement
+
+L'EDA nous a servi à contrôler la qualité du dataset avant de lancer les modèles.
+
+Nous avons limité le périmètre aux matchs UEFA des cinq dernières années, entre les cent meilleurs clubs UEFA.
+
+Ce filtre permet d'avoir des matchs relativement comparables, avec des équipes de niveau européen, et d'éviter de mélanger des contextes trop différents.
+
+Au départ, nous avions environ 6000 matchs.
+
+Après les jointures entre Transfermarkt et SoFIFA, et après retrait des matchs où il manquait trop d'informations joueurs, on arrive à environ 3800 matchs exploitables.
+
+C'est une baisse importante, mais elle est logique : pour entraîner correctement le modèle, il vaut mieux avoir moins de lignes mais des lignes complètes.
+
+Nous avons aussi testé le clustering de joueurs.
+
+L'idée était de voir si on pouvait réduire les caractéristiques détaillées en profils plus simples : par exemple créateur, finisseur, défenseur physique, etc.
+
+Mais les résultats n'ont pas vraiment fait apparaître ces profils.
+
+Les clusters étaient surtout guidés par le niveau global des joueurs. En gros, ils séparaient davantage les joueurs très forts des joueurs moins forts que des styles de jeu précis.
+
+Conclusion : pour notre modèle, le clustering faisait perdre de l'information et n'apportait pas de meilleure performance.
+
+Nous avons donc gardé une approche plus directe : utiliser les notes détaillées et des features construites à partir des équipes, comme les moyennes de notes, les différences entre équipes, et certaines informations de composition.
+
+
+Transition vers la suite :
+Maintenant que le dataset est construit et validé, on peut passer à la partie architecture et entraînement : comment le modèle est entraîné, suivi, puis utilisé dans l'application.
