@@ -24,8 +24,11 @@ mlflow.set_tracking_uri(os.environ["APP_URI"])
 model_id = os.environ["MODEL_ID"]
 model = mlflow.sklearn.load_model(f"models:/{model_id}")
 
+print(f"Model loaded from MLflow model registry: {model_id}")
 y_pred=model.predict(X_test)
 print(y_pred)
+print()
+print(y_already_predicted.to_numpy())
 
 accuracy = accuracy_score(y_test, y_pred)
 print(accuracy)
