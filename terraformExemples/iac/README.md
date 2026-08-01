@@ -34,7 +34,11 @@ pathsuffix = "mycreds"
 
 key_name = "mykey" # à personnaliser avec le nom de la clé SSH que vous avez créée dans AWS pour accéder à votre instance EC2.
 
-ami_name= "ami-0fa5b605ef6209559" # à personnaliser avc l'ami_id de l'image à utiliser
+ami_name= "ami-0fa5b605ef6209559" # à personnaliser avc l'ami_id de l'image à utiliser - ami_id dépend de la région de déploiement
+
+aws_profile= "default" # à personnaliser en fonction du profile du compte à utiliser du fichier 'pathsuffix' si autre que default
+
+
 ```
 
 A noter : **pathprefix/pathsuffix** : chemin vers le fichier contenant les credentials aws (aws_access_key_id et aws_secret_access_key) pour accéder à AWS. 

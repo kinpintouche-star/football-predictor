@@ -27,3 +27,7 @@ variable "key_name" {
 variable "ami_name" {
   type = string
 }
+
+variable "aws_profile" {
+  type = string
+}
