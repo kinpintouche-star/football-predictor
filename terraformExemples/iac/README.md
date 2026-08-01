@@ -23,12 +23,12 @@ exemple de crontab déployé
 
 # Utilisation de terraform pour déployer la VM 
 
-## 1. créer un fichir terraform.tfvars et personnaliser les variables suivantes
+## 1. créer un fichier terraform.tfvars et personnaliser les variables suivantes
 
 ```
 region = "eu-west-3"  # region a deployer
 
-pathprefix = "/toto/titi/tata/Documents/projetsExterneGithub"
+pathprefix = "/toto/titi/tata/hsdhfhs/tutu"
 
 pathsuffix = "mycreds"
 
